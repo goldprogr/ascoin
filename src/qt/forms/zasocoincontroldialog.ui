@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>ZCondominiumControlDialog</class>
- <widget class="QDialog" name="ZCondominiumControlDialog">
+ <class>ZasocoinControlDialog</class>
+ <widget class="QDialog" name="ZasocoinControlDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -40,14 +40,14 @@
       </widget>
      </item>
      <item row="1" column="0">
-      <widget class="QLabel" name="labelZCondominium">
+      <widget class="QLabel" name="labelZasocoin">
        <property name="text">
         <string>zCDM</string>
        </property>
       </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QLabel" name="labelZCondominium_int">
+      <widget class="QLabel" name="labelZasocoin_int">
        <property name="text">
         <string>0</string>
        </property>
@@ -130,7 +130,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
-   <receiver>ZCondominiumControlDialog</receiver>
+   <receiver>ZasocoinControlDialog</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -146,7 +146,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
-   <receiver>ZCondominiumControlDialog</receiver>
+   <receiver>ZasocoinControlDialog</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
