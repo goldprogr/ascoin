@@ -3,7 +3,7 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-BUILDDIR="/home/mini/condominium"
+BUILDDIR="/home/mini/asocoin"
 EXEEXT=".exe"
 
 # These will turn into comments if they were disabled when configuring.
@@ -11,6 +11,6 @@ ENABLE_WALLET=1
 ENABLE_UTILS=1
 ENABLE_BITCOIND=1
 
-REAL_BITCOIND="$BUILDDIR/src/condominiumd${EXEEXT}"
-REAL_BITCOINCLI="$BUILDDIR/src/condominium-cli${EXEEXT}"
+REAL_BITCOIND="$BUILDDIR/src/asocoind${EXEEXT}"
+REAL_BITCOINCLI="$BUILDDIR/src/asocoin-cli${EXEEXT}"
 

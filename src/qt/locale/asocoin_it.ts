@@ -62,12 +62,12 @@
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
-        <source>These are your Condominium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono gli indirizzi Condominium per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
+        <source>These are your asocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Questi sono gli indirizzi asocoin per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
     </message>
     <message>
-        <source>These are your Condominium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono gli indirizzi Condominium per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
+        <source>These are your asocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Questi sono gli indirizzi asocoin per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
-        <source>Condominium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CONDOMINIUMs from being stolen by malware infecting your computer.</source>
-        <translation>Condominium verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi CONDOMINIUM dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>asocoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your asocoins from being stolen by malware infecting your computer.</source>
+        <translation>asocoin verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi asocoin dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Confermi di voler crittografare il portafoglio?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CONDOMINIUM&lt;/b&gt;!</source>
-        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI CONDOMINIUM&lt;7b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR asocoin&lt;/b&gt;!</source>
+        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI asocoin&lt;7b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Criptato</translation>
     </message>
     <message>
-        <source>Enter a Condominium Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Inserisci un indirizzo Condominium che desideri crittografare utilizzando BIP 38. Inserisci una passphrase nella casella centrale. Premi Cripta per calcolare la chiave privata crittografata.</translation>
+        <source>Enter a asocoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Inserisci un indirizzo asocoin che desideri crittografare utilizzando BIP 38. Inserisci una passphrase nella casella centrale. Premi Cripta per calcolare la chiave privata crittografata.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Indirizzo:</translation>
     </message>
     <message>
-        <source>The Condominium address to sign the message with</source>
-        <translation>L'indirizzo Condominium per firmare il messaggio con</translation>
+        <source>The asocoin address to sign the message with</source>
+        <translation>L'indirizzo asocoin per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Condominium address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo Condominium</translation>
+        <source>Sign the message to prove you own this asocoin address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo asocoin</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Immettere la chiave privata codificata BIP 38. Inserire la passphrase nella casella centrale. Fare clic su Decripta Chiave per calcolare la chiave privata. Dopo che la chiave viene decrittata, cliccando su "Importa indirizzo" verrà aggiunta questa chiave privata al portafoglio.</translation>
     </message>
     <message>
-        <source>The Condominium address the message was signed with</source>
-        <translation>L'indirizzo Condominium con cui è stato firmato il messaggio</translation>
+        <source>The asocoin address the message was signed with</source>
+        <translation>L'indirizzo asocoin con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Condominium address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo Condominium specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified asocoin address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo asocoin specificato </translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -590,16 +590,16 @@
         <translation>Schede degli strumenti</translation>
     </message>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium Core</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin Core</translation>
     </message>
     <message>
-        <source>Send coins to a Condominium address</source>
-        <translation>Invia monete all' indirizzo Condominium</translation>
+        <source>Send coins to a asocoin address</source>
+        <translation>Invia monete all' indirizzo asocoin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and condominium: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e condominium: URIs)</translation>
+        <source>Request payments (generates QR codes and asocoin: URIs)</source>
+        <translation>Richiedi pagamenti (genera codici QR e asocoin: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -610,24 +610,24 @@
         <translation>Esplora i masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Condominium Core</source>
-        <translation>&amp;Informazioni Condominium Core</translation>
+        <source>&amp;About asocoin Core</source>
+        <translation>&amp;Informazioni asocoin Core</translation>
     </message>
     <message>
-        <source>Show information about Condominium Core</source>
-        <translation>Visualizza informazioni su Condominium Core</translation>
+        <source>Show information about asocoin Core</source>
+        <translation>Visualizza informazioni su asocoin Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Condominium</source>
-        <translation>Modifica le opzioni di configurazione per Condominium</translation>
+        <source>Modify configuration options for asocoin</source>
+        <translation>Modifica le opzioni di configurazione per asocoin</translation>
     </message>
     <message>
-        <source>Sign messages with your Condominium addresses to prove you own them</source>
-        <translation>Firma i messaggi con i tuoi indirizzi Condominium per dimostrare di essere il proprietario </translation>
+        <source>Sign messages with your asocoin addresses to prove you own them</source>
+        <translation>Firma i messaggi con i tuoi indirizzi asocoin per dimostrare di essere il proprietario </translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Condominium addresses</source>
-        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi Condominium specifici</translation>
+        <source>Verify messages to ensure they were signed with specified asocoin addresses</source>
+        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi asocoin specifici</translation>
     </message>
     <message>
         <source>Encrypt and decrypt private keys using a passphrase</source>
@@ -638,16 +638,16 @@
         <translation>Impostazioni MultiSend</translation>
     </message>
     <message>
-        <source>Open a Condominium: URI or payment request</source>
-        <translation>Apri un Condominium: URI o richiesta di pagamento</translation>
+        <source>Open a asocoin: URI or payment request</source>
+        <translation>Apri un asocoin: URI o richiesta di pagamento</translation>
     </message>
     <message>
         <source>Block explorer window</source>
         <translation>Finestra Block Explorer</translation>
     </message>
     <message>
-        <source>Show the Condominium Core help message to get a list with possible Condominium command-line options</source>
-        <translation>Mostra il messaggio di aiuto Condominium Core per ottenere un elenco con le possibili opzioni di riga di comando Condominium</translation>
+        <source>Show the asocoin Core help message to get a list with possible asocoin command-line options</source>
+        <translation>Mostra il messaggio di aiuto asocoin Core per ottenere un elenco con le possibili opzioni di riga di comando asocoin</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -753,8 +753,8 @@ MultiSend: %1</translation>
         <translation>Cerca</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (condominium.conf).</source>
-        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (condominium.conf)</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (asocoin.conf).</source>
+        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (asocoin.conf)</translation>
     </message>
 </context>
 <context>
@@ -888,8 +888,8 @@ MultiSend: %1</translation>
         <translation>versione</translation>
     </message>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium Core</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -915,8 +915,8 @@ MultiSend: %1</translation>
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium Core</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1144,8 +1144,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Condominium address to sign the message with</source>
-        <translation>L'indirizzo Condominium per firmare il messaggio con</translation>
+        <source>The asocoin address to sign the message with</source>
+        <translation>L'indirizzo asocoin per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1168,16 +1168,16 @@ MultiSend: %1</translation>
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Condominium address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo Condominium</translation>
+        <source>Sign the message to prove you own this asocoin address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo asocoin</translation>
     </message>
     <message>
-        <source>The Condominium address the message was signed with</source>
-        <translation>L'indirizzo Condominium con cui è stato firmato il messaggio</translation>
+        <source>The asocoin address the message was signed with</source>
+        <translation>L'indirizzo asocoin con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Condominium address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo Condominium specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified asocoin address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo asocoin specificato </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1215,8 +1215,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium Core</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin Core</translation>
     </message>
     </context>
 <context>
@@ -1314,7 +1314,7 @@ MultiSend: %1</translation>
     <name>ZPhrControlDialog</name>
     </context>
 <context>
-    <name>condominium-core</name>
+    <name>asocoin-core</name>
     <message>
         <source>Error</source>
         <translation>Errore</translation>

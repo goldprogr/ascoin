@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your Condominium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun Condominium osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your asocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun asocoin osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your Condominium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun Condominium osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your asocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun asocoin osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>Condominium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CONDOMINIUMs from being stolen by malware infecting your computer.</source>
-        <translation>Condominium sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella CONDOMINIUMien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>asocoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your asocoins from being stolen by malware infecting your computer.</source>
+        <translation>asocoin sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella asocoinien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CONDOMINIUM&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki CONDOMINIUMisi&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR asocoin&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki asocoinisi&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,8 +235,8 @@
         <translation>&amp;BIP 38 Salaus</translation>
     </message>
     <message>
-        <source>Enter a Condominium Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Syötä Condominium osoite, jonnka tahtoisit salata käyttäen BIP 38.
+        <source>Enter a asocoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Syötä asocoin osoite, jonnka tahtoisit salata käyttäen BIP 38.
 Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityisavaimen.</translation>
     </message>
     <message>
@@ -244,8 +244,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Osoite:</translation>
     </message>
     <message>
-        <source>The Condominium address to sign the message with</source>
-        <translation>Condominium osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The asocoin address to sign the message with</source>
+        <translation>asocoin osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -276,8 +276,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Condominium address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Condominium osoitteen</translation>
+        <source>Sign the message to prove you own this asocoin address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän asocoin osoitteen</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -300,12 +300,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Syötä BIP 38 salattu yksityisavain. Syötä salausavain laatikkoon. Paina Avaa Salaus tuottaaksesi yksityisavaimen. Kun avain on dekryptattu, painamalla "Import osoite" lisää tämän yksityisavaimen lompakkoon.</translation>
     </message>
     <message>
-        <source>The Condominium address the message was signed with</source>
-        <translation>Condominium osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The asocoin address the message was signed with</source>
+        <translation>asocoin osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Condominium address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Condominium osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified asocoin address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla asocoin osoitteella.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -591,16 +591,16 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium Ydin</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a Condominium address</source>
-        <translation>Lähetä kolikkoja Condominium osoitteeseen</translation>
+        <source>Send coins to a asocoin address</source>
+        <translation>Lähetä kolikkoja asocoin osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and condominium: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja condominium: URIja)</translation>
+        <source>Request payments (generates QR codes and asocoin: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja asocoin: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -611,24 +611,24 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About Condominium Core</source>
-        <translation>Condominium Core &amp;ytimestä</translation>
+        <source>&amp;About asocoin Core</source>
+        <translation>asocoin Core &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about Condominium Core</source>
-        <translation>Näytä tietoja Condominium Ytimestä</translation>
+        <source>Show information about asocoin Core</source>
+        <translation>Näytä tietoja asocoin Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for Condominium</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja Condominium:lle</translation>
+        <source>Modify configuration options for asocoin</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja asocoin:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your Condominium addresses to prove you own them</source>
+        <source>Sign messages with your asocoin addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Condominium addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä Condominium osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified asocoin addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä asocoin osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -659,8 +659,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a Condominium: URI or payment request</source>
-        <translation>Avaa Condominium: URI tai pyydä maksua</translation>
+        <source>Open a asocoin: URI or payment request</source>
+        <translation>Avaa asocoin: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -671,12 +671,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the Condominium Core help message to get a list with possible Condominium command-line options</source>
-        <translation>Näytä Condominium Ydin apuviesti saadaksesi lista mahdollisista Condominium komentolinja komennoista.</translation>
+        <source>Show the asocoin Core help message to get a list with possible asocoin command-line options</source>
+        <translation>Näytä asocoin Ydin apuviesti saadaksesi lista mahdollisista asocoin komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>Condominium Core client</source>
-        <translation>Condominium Ydin asiakasohjelma</translation>
+        <source>asocoin Core client</source>
+        <translation>asocoin Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -934,8 +934,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium Ydin</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -953,12 +953,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to Condominium Core.</source>
-        <translation>Tervetuloa Condominium Ytimeen.</translation>
+        <source>Welcome to asocoin Core.</source>
+        <translation>Tervetuloa asocoin Ytimeen.</translation>
     </message>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium Ydin</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1135,32 +1135,32 @@ Please check the address and try again.</source>
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CONDOMINIUM</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 Condominium</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 asocoin</source>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 asocoin</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 CONDOMINIUM</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 Condominium</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 asocoin</source>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 asocoin</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 CONDOMINIUM to anonymize 10000 CONDOMINIUM</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 CONDOMINIUM anonymoidaksesi 10000 Condominium</translation>
+        <source>This option is the quickest and will cost about ~0.025 asocoin to anonymize 10000 asocoin</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 asocoin anonymoidaksesi 10000 asocoin</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 CONDOMINIUM to anonymize 10000 CONDOMINIUM</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 Condominium anonymoidaksesi 10000 Condominium</translation>
+        <source>This option is moderately fast and will cost about 0.05 asocoin to anonymize 10000 asocoin</source>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 asocoin anonymoidaksesi 10000 asocoin</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tämä on hitain ja turvallisin vaihtoehto. Täydesti anonymisoiminen ei maksa mitään.</translation>
     </message>
     <message>
-        <source>0.1 CONDOMINIUM per 10000 CONDOMINIUM you anonymize.</source>
-        <translation>0.1 per 10000 Condominium, jotka anonymisoit.</translation>
+        <source>0.1 asocoin per 10000 asocoin you anonymize.</source>
+        <translation>0.1 per 10000 asocoin, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1209,12 +1209,12 @@ Please check the address and try again.</source>
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start Condominium after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä Condominium kun kirjaudut sisään.</translation>
+        <source>Automatically start asocoin after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä asocoin kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start Condominium on system login</source>
-        <translation>&amp;Aloita Condominium järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start asocoin on system login</source>
+        <translation>&amp;Aloita asocoin järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1233,12 +1233,12 @@ Please check the address and try again.</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Condominium.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting asocoin.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the Condominium network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä Condominium verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the asocoin network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä asocoin verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1542,8 +1542,8 @@ Please check the address and try again.</source>
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the Condominium debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa Condominium debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the asocoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa asocoin debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1654,8 +1654,8 @@ Please check the address and try again.</source>
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the Condominium RPC console.</source>
-        <translation>Tervetuloa Condominium RPC konsoliin.</translation>
+        <source>Welcome to the asocoin RPC console.</source>
+        <translation>Tervetuloa asocoin RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1697,12 +1697,12 @@ Please check the address and try again.</source>
         <translation>Vaihtoehtoinen nimike uudelle vastaanottavalle osoitteelle</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Condominium network.</source>
-        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana Condominium verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the asocoin network.</source>
+        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana asocoin verkolle.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Condominium network.</source>
-        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana Condominium  verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the asocoin network.</source>
+        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana asocoin  verkolle.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1898,8 +1898,8 @@ Please check the address and try again.</source>
         <translation>Muutos:</translation>
     </message>
     <message>
-        <source>0 CONDOMINIUM</source>
-        <translation>0 CONDOMINIUM</translation>
+        <source>0 asocoin</source>
+        <translation>0 asocoin</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1982,8 +1982,8 @@ Please check the address and try again.</source>
         <translation>käyttää</translation>
     </message>
     <message>
-        <source>Warning: Invalid Condominium address</source>
-        <translation>Varoitus: Virheellinen Condominium osoite</translation>
+        <source>Warning: Invalid asocoin address</source>
+        <translation>Varoitus: Virheellinen asocoin osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -2029,8 +2029,8 @@ Please check the address and try again.</source>
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The Condominium address to send the payment to</source>
-        <translation>Condominium osoite johon maksu lähetetään</translation>
+        <source>The asocoin address to send the payment to</source>
+        <translation>asocoin osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2072,8 +2072,8 @@ Please check the address and try again.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Condominium Core is shutting down...</source>
-        <translation>Condominium core sammuu...</translation>
+        <source>asocoin Core is shutting down...</source>
+        <translation>asocoin core sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2091,8 +2091,8 @@ Please check the address and try again.</source>
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The Condominium address to sign the message with</source>
-        <translation>Condominium osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The asocoin address to sign the message with</source>
+        <translation>asocoin osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2123,16 +2123,16 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Condominium address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Condominium osoitteen</translation>
+        <source>Sign the message to prove you own this asocoin address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän asocoin osoitteen</translation>
     </message>
     <message>
-        <source>The Condominium address the message was signed with</source>
-        <translation>Condominium osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The asocoin address the message was signed with</source>
+        <translation>asocoin osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Condominium address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Condominium osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified asocoin address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla asocoin osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2214,8 +2214,8 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium Ydin</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2230,8 +2230,8 @@ Please check the address and try again.</source>
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The Condominium Core developers</source>
-        <translation>Condominium core kehittäjät</translation>
+        <source>The asocoin Core developers</source>
+        <translation>asocoin core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2541,7 +2541,7 @@ Please check the address and try again.</source>
     </message>
     </context>
 <context>
-    <name>condominium-core</name>
+    <name>asocoin-core</name>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Varoitus: Verkko ei näytä olevan samaa mieltä! Jotkin mainaajat saattavat kokea ongelmia.</translation>
@@ -2591,8 +2591,8 @@ Please check the address and try again.</source>
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Condominium Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version Condominium Coresta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of asocoin Core</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version asocoin Coresta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

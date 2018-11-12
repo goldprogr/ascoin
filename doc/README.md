@@ -1,39 +1,39 @@
-Condominium Core
+asocoin Core
 =====================
 
 Setup
 ---------------------
-[Condominium Core](http://Condominiumcoin.com) is the original Condominium client and it builds the backbone of the network. However, it downloads and stores the entire history of Condominium transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[asocoin Core](http://asocoincoin.com) is the original asocoin client and it builds the backbone of the network. However, it downloads and stores the entire history of asocoin transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Condominium on your native platform.
+The following are some helpful notes on how to run asocoin on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- bin/32/condominium-qt (GUI, 32-bit) or bin/32/condominiumd (headless, 32-bit)
-- bin/64/condominium-qt (GUI, 64-bit) or bin/64/condominiumd (headless, 64-bit)
+- bin/32/asocoin-qt (GUI, 32-bit) or bin/32/asocoind (headless, 32-bit)
+- bin/64/asocoin-qt (GUI, 64-bit) or bin/64/asocoind (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run condominium-qt.exe.
+Unpack the files into a directory, and then run asocoin-qt.exe.
 
 ### OSX
 
-Drag Condominium-Qt to your applications folder, and then run Condominium-Qt.
+Drag asocoin-Qt to your applications folder, and then run asocoin-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Condominium Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
+* See the documentation at the [asocoin Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php) or on the [Condominium Forum](http://Condominiumcoin.com/).
-* Join one of our Discord groups [Condominium Discord Groups](https://discord.gg/YcnvMqt).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php) or on the [asocoin Forum](http://asocoincoin.com/).
+* Join one of our Discord groups [asocoin Discord Groups](https://discord.gg/YcnvMqt).
 
 Building
 ---------------------
-The following are developer notes on how to build Condominium on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build asocoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -41,7 +41,7 @@ The following are developer notes on how to build Condominium on your native pla
 
 Development
 ---------------------
-The Condominium repo's [root README](https://github.com/eastcoastcrypto/Condominium/blob/master/README.md) contains relevant information on the development process and automated testing.
+The asocoin repo's [root README](https://github.com/eastcoastcrypto/asocoin/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -56,7 +56,7 @@ The Condominium repo's [root README](https://github.com/eastcoastcrypto/Condomin
 ### Resources
 
 * Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) .
-* Join the [Condominium-Dev] Discord groups [Condominium Discord Groups](https://discord.gg/YcnvMqt).
+* Join the [asocoin-Dev] Discord groups [asocoin Discord Groups](https://discord.gg/YcnvMqt).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

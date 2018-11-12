@@ -115,8 +115,8 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>The Condominium address the message was signed with</source>
-        <translation>Condominium adresa s kojom je potpisana poruka</translation>
+        <source>The asocoin address the message was signed with</source>
+        <translation>asocoin adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Allowed: 0-9,a-z,A-Z,</source>
@@ -150,8 +150,8 @@
         <translation>Otvori konfiguracijsku datoteku</translation>
     </message>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium Core</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin Core</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -162,8 +162,8 @@
         <translation>&amp;BIP38 alat</translation>
     </message>
     <message>
-        <source>Condominium Core client</source>
-        <translation>Condominium Core klijent</translation>
+        <source>asocoin Core client</source>
+        <translation>asocoin Core klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -256,15 +256,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium Core</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium Core</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -535,8 +535,8 @@
         <translation>ne</translation>
     </message>
     <message>
-        <source>0 CONDOMINIUM</source>
-        <translation>0 CONDOMINIUM</translation>
+        <source>0 asocoin</source>
+        <translation>0 asocoin</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -597,8 +597,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Condominium Core is shutting down...</source>
-        <translation>Condominium Core se gasi...</translation>
+        <source>asocoin Core is shutting down...</source>
+        <translation>asocoin Core se gasi...</translation>
     </message>
     </context>
 <context>
@@ -620,8 +620,8 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>The Condominium address the message was signed with</source>
-        <translation>Condominium adresa s kojom je potpisana poruka</translation>
+        <source>The asocoin address the message was signed with</source>
+        <translation>asocoin adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Message signed.</source>
@@ -635,8 +635,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium Core</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -790,7 +790,7 @@
     </message>
     </context>
 <context>
-    <name>condominium-core</name>
+    <name>asocoin-core</name>
     <message>
         <source>Error</source>
         <translation>Greška</translation>

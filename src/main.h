@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017 The Condominium developers
+// Copyright (c) 2017 The asocoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,7 +10,7 @@
 #define BITCOIN_MAIN_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/condominium-config.h"
+#include "config/asocoin-config.h"
 #endif
 
 #include "amount.h"
@@ -445,9 +445,9 @@ bool RemoveSerialFromDB(const CBigNum& bnSerial);
 int GetZerocoinStartHeight();
 bool IsTransactionInChain(uint256 txId, int& nHeightTx);
 bool IsBlockHashInChain(const uint256& hashBlock);
-void RecalculateZCONDOMINIUMSpent();
-void RecalculateZCONDOMINIUMMinted();
-bool RecalculateCONDOMINIUMSupply(int nHeightStart);
+void RecalculateZasocoinSpent();
+void RecalculateZasocoinMinted();
+bool RecalculateasocoinSupply(int nHeightStart);
 
 
 /**

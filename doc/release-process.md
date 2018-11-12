@@ -24,11 +24,11 @@ Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
     git clone https://github.com/eastcoastcrypto/gitian.sigs.git
-    git clone https://github.com/eastcoastcrypto/condominium-detached-sigs.git
+    git clone https://github.com/eastcoastcrypto/asocoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/eastcoastcrypto/condominium.git
+    git clone https://github.com/eastcoastcrypto/asocoin.git
 
-### Condominium maintainers/release engineers, suggestion for writing release notes
+### asocoin maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -49,7 +49,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./condominium
+    pushd ./asocoin
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -83,7 +83,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../condominium/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../asocoin/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -91,55 +91,55 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url condominium=/path/to/condominium,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url asocoin=/path/to/asocoin,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Condominium Core for Linux, Windows, and OS X:
+### Build and sign asocoin Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --memory 3000 --commit condominium=v${VERSION} ../condominium/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../condominium/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/condominium-*.tar.gz build/out/src/condominium-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit asocoin=v${VERSION} ../asocoin/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../asocoin/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/asocoin-*.tar.gz build/out/src/asocoin-*.tar.gz ../
 
-    ./bin/gbuild --memory 3000 --commit condominium=v${VERSION} ../condominium/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../condominium/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/condominium-*-win-unsigned.tar.gz inputs/condominium-win-unsigned.tar.gz
-    mv build/out/condominium-*.zip build/out/condominium-*.exe ../
+    ./bin/gbuild --memory 3000 --commit asocoin=v${VERSION} ../asocoin/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../asocoin/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/asocoin-*-win-unsigned.tar.gz inputs/asocoin-win-unsigned.tar.gz
+    mv build/out/asocoin-*.zip build/out/asocoin-*.exe ../
 
-    ./bin/gbuild --memory 3000 --commit condominium=v${VERSION} ../condominium/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../condominium/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/condominium-*-osx-unsigned.tar.gz inputs/condominium-osx-unsigned.tar.gz
-    mv build/out/condominium-*.tar.gz build/out/condominium-*.dmg ../
+    ./bin/gbuild --memory 3000 --commit asocoin=v${VERSION} ../asocoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../asocoin/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/asocoin-*-osx-unsigned.tar.gz inputs/asocoin-osx-unsigned.tar.gz
+    mv build/out/asocoin-*.tar.gz build/out/asocoin-*.dmg ../
 
-    ./bin/gbuild --memory 3000 --commit condominium=v${VERSION} ../condominium/contrib/gitian-descriptors/gitian-aarch64.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../condominium/contrib/gitian-descriptors/gitian-aarch64.yml
-    mv build/out/condominium-*.tar.gz build/out/src/condominium-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit asocoin=v${VERSION} ../asocoin/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../asocoin/contrib/gitian-descriptors/gitian-aarch64.yml
+    mv build/out/asocoin-*.tar.gz build/out/src/asocoin-*.tar.gz ../
     popd
 
 Build output expected:
 
-  1. source tarball (`condominium-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`condominium-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`condominium-${VERSION}-win[32|64]-setup-unsigned.exe`, `condominium-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`condominium-${VERSION}-osx-unsigned.dmg`, `condominium-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`asocoin-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`asocoin-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`asocoin-${VERSION}-win[32|64]-setup-unsigned.exe`, `asocoin-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`asocoin-${VERSION}-osx-unsigned.dmg`, `asocoin-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import condominium/contrib/gitian-keys/*.gpg
+    gpg --import asocoin/contrib/gitian-keys/*.gpg
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../condominium/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../condominium/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../condominium/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../condominium/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../asocoin/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../asocoin/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../asocoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../asocoin/contrib/gitian-descriptors/gitian-aarch64.yml
     popd
 
 ### Next steps:
@@ -161,22 +161,22 @@ Codesigner only: Create Windows/OS X detached signatures:
 
 Codesigner only: Sign the osx binary:
 
-    transfer condominium-osx-unsigned.tar.gz to osx for signing
-    tar xf condominium-osx-unsigned.tar.gz
+    transfer asocoin-osx-unsigned.tar.gz to osx for signing
+    tar xf asocoin-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf condominium-win-unsigned.tar.gz
+    tar xf asocoin-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/condominium-detached-sigs
+    cd ~/asocoin-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -189,25 +189,25 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [condominium-detached-sigs](https://github.com/eastcoastcrypto/condominium-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [asocoin-detached-sigs](https://github.com/eastcoastcrypto/asocoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../condominium/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../condominium/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../condominium/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/condominium-osx-signed.dmg ../condominium-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../asocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../asocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../asocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/asocoin-osx-signed.dmg ../asocoin-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../condominium/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../condominium/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../condominium/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/condominium-*win64-setup.exe ../condominium-${VERSION}-win64-setup.exe
-    mv build/out/condominium-*win32-setup.exe ../condominium-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../asocoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../asocoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../asocoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/asocoin-*win64-setup.exe ../asocoin-${VERSION}-win64-setup.exe
+    mv build/out/asocoin-*win32-setup.exe ../asocoin-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -229,23 +229,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-condominium-${VERSION}-aarch64-linux-gnu.tar.gz
-condominium-${VERSION}-arm-linux-gnueabihf.tar.gz
-condominium-${VERSION}-i686-pc-linux-gnu.tar.gz
-condominium-${VERSION}-x86_64-linux-gnu.tar.gz
-condominium-${VERSION}-osx64.tar.gz
-condominium-${VERSION}-osx.dmg
-condominium-${VERSION}.tar.gz
-condominium-${VERSION}-win32-setup.exe
-condominium-${VERSION}-win32.zip
-condominium-${VERSION}-win64-setup.exe
-condominium-${VERSION}-win64.zip
+asocoin-${VERSION}-aarch64-linux-gnu.tar.gz
+asocoin-${VERSION}-arm-linux-gnueabihf.tar.gz
+asocoin-${VERSION}-i686-pc-linux-gnu.tar.gz
+asocoin-${VERSION}-x86_64-linux-gnu.tar.gz
+asocoin-${VERSION}-osx64.tar.gz
+asocoin-${VERSION}-osx.dmg
+asocoin-${VERSION}.tar.gz
+asocoin-${VERSION}-win32-setup.exe
+asocoin-${VERSION}-win32.zip
+asocoin-${VERSION}-win64-setup.exe
+asocoin-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the condominiumcoin.com server*.
+space *do not upload these to the asocoincoin.com server*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -261,10 +261,10 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - bitcointalk announcement thread
 
-  - Optionally twitter, reddit /r/condominium, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/asocoin, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/eastcoastcrypto/Condominium/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/eastcoastcrypto/asocoin/releases/new) with a link to the archived release notes.
 
   - Celebrate

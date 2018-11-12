@@ -168,7 +168,7 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="../condominium.qrc"/>
+  <include location="../asocoin.qrc"/>
  </resources>
  <connections/>
 </ui>

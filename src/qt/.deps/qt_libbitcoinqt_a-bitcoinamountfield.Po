@@ -196,41 +196,41 @@ qt/qt_libbitcoinqt_a-bitcoinamountfield.o: qt/bitcoinamountfield.cpp \
  /usr/share/mingw-w64/include/string.h \
  /usr/share/mingw-w64/include/sec_api/string_s.h \
  libzerocoin/Denominations.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/QWidget \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qwidget.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qwindowdefs.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qglobal.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/QWidget \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qwidget.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qwindowdefs.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qglobal.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/cstddef \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qconfig.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qfeatures.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qsystemdetection.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qprocessordetection.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qcompilerdetection.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qtypeinfo.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qtypetraits.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qisenum.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qsysinfo.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qlogging.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qflags.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qatomic.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qbasicatomic.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qatomic_cxx11.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qgenericatomic.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qconfig.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qfeatures.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qsystemdetection.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qprocessordetection.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qcompilerdetection.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qtypeinfo.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qtypetraits.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qisenum.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qsysinfo.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qlogging.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qflags.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qatomic.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qbasicatomic.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qatomic_cxx11.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qgenericatomic.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/atomic \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/atomic_base.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qglobalstatic.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qnumeric.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qversiontagging.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qobjectdefs.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qnamespace.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qobjectdefs_impl.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qwindowdefs_win.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qobject.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qstring.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qchar.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qbytearray.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qrefcount.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qarraydata.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qglobalstatic.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qnumeric.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qversiontagging.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qobjectdefs.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qnamespace.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qobjectdefs_impl.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qwindowdefs_win.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qobject.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qstring.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qchar.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qbytearray.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qrefcount.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qarraydata.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/stdarg.h \
  /usr/share/mingw-w64/include/stdarg.h \
  /usr/share/mingw-w64/include/_mingw_stdarg.h \
@@ -240,112 +240,112 @@ qt/qt_libbitcoinqt_a-bitcoinamountfield.o: qt/bitcoinamountfield.cpp \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/istream \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/istream.tcc \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/stream_iterator.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qlist.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qalgorithms.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qiterator.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qhashfunctions.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qpair.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qlist.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qalgorithms.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qiterator.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qhashfunctions.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qpair.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/list \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/stl_list.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/list.tcc \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qbytearraylist.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qstringlist.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qregexp.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qstringmatcher.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qscopedpointer.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qmetatype.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qvarlengtharray.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qcontainerfwd.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qobject_impl.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qmargins.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qpaintdevice.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qrect.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qsize.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qpoint.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qpalette.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qcolor.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qrgb.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qrgba64.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qbrush.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qvector.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qmatrix.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qpolygon.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qregion.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qdatastream.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qiodevice.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qline.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qtransform.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qpainterpath.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qimage.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qpixelformat.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qpixmap.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qsharedpointer.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qshareddata.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qhash.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qsharedpointer_impl.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qfont.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qfontmetrics.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qfontinfo.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qsizepolicy.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qcursor.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qkeysequence.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qbytearraylist.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qstringlist.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qregexp.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qstringmatcher.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qscopedpointer.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qmetatype.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qvarlengtharray.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qcontainerfwd.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qobject_impl.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qmargins.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qpaintdevice.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qrect.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qsize.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qpoint.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qpalette.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qcolor.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qrgb.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qrgba64.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qbrush.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qvector.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qmatrix.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qpolygon.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qregion.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qdatastream.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qiodevice.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qline.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qtransform.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qpainterpath.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qimage.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qpixelformat.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qpixmap.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qsharedpointer.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qshareddata.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qhash.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qsharedpointer_impl.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qfont.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qfontmetrics.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qfontinfo.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qsizepolicy.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qcursor.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qkeysequence.h \
  qt/bitcoinunits.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/QAbstractListModel \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qabstractitemmodel.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qvariant.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qmap.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/QString \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qstring.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/QAbstractListModel \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qabstractitemmodel.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qvariant.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qmap.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/QString \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qstring.h \
  qt/guiconstants.h qt/qvaluecombobox.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/QComboBox \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qcombobox.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qwidget.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qabstractitemdelegate.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qstyleoption.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qabstractspinbox.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qvalidator.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qregularexpression.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qlocale.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qicon.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qslider.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qabstractslider.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qstyle.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qtabbar.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qtabwidget.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qrubberband.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qframe.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qabstractitemmodel.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/QVariant \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qvariant.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/QAbstractSpinBox \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qabstractspinbox.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/QApplication \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qapplication.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qcoreapplication.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qcoreevent.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qeventloop.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qguiapplication.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qinputmethod.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/QHBoxLayout \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qboxlayout.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qlayout.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qlayoutitem.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qboxlayout.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qgridlayout.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/QKeyEvent \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qevent.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qset.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qurl.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qfile.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qfiledevice.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qvector2d.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qtouchdevice.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/QLineEdit \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qlineedit.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qtextcursor.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qtextformat.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qpen.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qtextoption.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/QComboBox \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qcombobox.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qwidget.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qabstractitemdelegate.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qstyleoption.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qabstractspinbox.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qvalidator.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qregularexpression.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qlocale.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qicon.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qslider.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qabstractslider.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qstyle.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qtabbar.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qtabwidget.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qrubberband.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qframe.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qabstractitemmodel.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/QVariant \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qvariant.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/QAbstractSpinBox \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qabstractspinbox.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/QApplication \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qapplication.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qcoreapplication.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qcoreevent.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qeventloop.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qguiapplication.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qinputmethod.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/QHBoxLayout \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qboxlayout.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qlayout.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qlayoutitem.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qboxlayout.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qgridlayout.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/QKeyEvent \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qevent.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qset.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qurl.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qfile.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qfiledevice.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qvector2d.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qtouchdevice.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/QLineEdit \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qlineedit.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qtextcursor.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qtextformat.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qpen.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qtextoption.h \
  qt/bitcoinamountfield.moc
 
 qt/bitcoinamountfield.h:
@@ -746,75 +746,75 @@ serialize.h:
 
 libzerocoin/Denominations.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/QWidget:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/QWidget:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qwidget.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qwidget.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qwindowdefs.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qwindowdefs.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qglobal.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qglobal.h:
 
 /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/cstddef:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qconfig.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qconfig.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qfeatures.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qfeatures.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qsystemdetection.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qsystemdetection.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qprocessordetection.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qprocessordetection.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qcompilerdetection.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qcompilerdetection.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qtypeinfo.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qtypeinfo.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qtypetraits.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qtypetraits.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qisenum.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qisenum.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qsysinfo.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qsysinfo.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qlogging.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qlogging.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qflags.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qflags.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qatomic.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qatomic.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qbasicatomic.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qbasicatomic.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qatomic_cxx11.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qatomic_cxx11.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qgenericatomic.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qgenericatomic.h:
 
 /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/atomic:
 
 /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/atomic_base.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qglobalstatic.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qglobalstatic.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qnumeric.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qnumeric.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qversiontagging.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qversiontagging.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qobjectdefs.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qobjectdefs.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qnamespace.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qnamespace.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qobjectdefs_impl.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qobjectdefs_impl.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qwindowdefs_win.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qwindowdefs_win.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qobject.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qobject.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qstring.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qstring.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qchar.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qchar.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qbytearray.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qbytearray.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qrefcount.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qrefcount.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qarraydata.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qarraydata.h:
 
 /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/stdarg.h:
 
@@ -834,15 +834,15 @@ libzerocoin/Denominations.h:
 
 /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/stream_iterator.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qlist.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qlist.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qalgorithms.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qalgorithms.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qiterator.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qiterator.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qhashfunctions.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qhashfunctions.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qpair.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qpair.h:
 
 /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/list:
 
@@ -850,202 +850,202 @@ libzerocoin/Denominations.h:
 
 /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/list.tcc:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qbytearraylist.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qbytearraylist.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qstringlist.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qstringlist.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qregexp.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qregexp.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qstringmatcher.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qstringmatcher.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qscopedpointer.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qscopedpointer.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qmetatype.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qmetatype.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qvarlengtharray.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qvarlengtharray.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qcontainerfwd.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qcontainerfwd.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qobject_impl.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qobject_impl.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qmargins.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qmargins.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qpaintdevice.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qpaintdevice.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qrect.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qrect.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qsize.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qsize.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qpoint.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qpoint.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qpalette.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qpalette.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qcolor.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qcolor.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qrgb.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qrgb.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qrgba64.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qrgba64.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qbrush.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qbrush.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qvector.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qvector.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qmatrix.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qmatrix.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qpolygon.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qpolygon.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qregion.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qregion.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qdatastream.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qdatastream.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qiodevice.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qiodevice.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qline.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qline.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qtransform.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qtransform.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qpainterpath.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qpainterpath.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qimage.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qimage.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qpixelformat.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qpixelformat.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qpixmap.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qpixmap.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qsharedpointer.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qsharedpointer.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qshareddata.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qshareddata.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qhash.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qhash.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qsharedpointer_impl.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qsharedpointer_impl.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qfont.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qfont.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qfontmetrics.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qfontmetrics.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qfontinfo.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qfontinfo.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qsizepolicy.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qsizepolicy.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qcursor.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qcursor.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qkeysequence.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qkeysequence.h:
 
 qt/bitcoinunits.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/QAbstractListModel:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/QAbstractListModel:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qabstractitemmodel.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qabstractitemmodel.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qvariant.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qvariant.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qmap.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qmap.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/QString:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/QString:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qstring.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qstring.h:
 
 qt/guiconstants.h:
 
 qt/qvaluecombobox.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/QComboBox:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/QComboBox:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qcombobox.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qcombobox.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qwidget.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qwidget.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qabstractitemdelegate.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qabstractitemdelegate.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qstyleoption.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qstyleoption.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qabstractspinbox.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qabstractspinbox.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qvalidator.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qvalidator.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qregularexpression.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qregularexpression.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qlocale.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qlocale.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qicon.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qicon.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qslider.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qslider.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qabstractslider.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qabstractslider.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qstyle.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qstyle.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qtabbar.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qtabbar.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qtabwidget.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qtabwidget.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qrubberband.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qrubberband.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qframe.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qframe.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qabstractitemmodel.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qabstractitemmodel.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/QVariant:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/QVariant:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qvariant.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qvariant.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/QAbstractSpinBox:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/QAbstractSpinBox:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qabstractspinbox.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qabstractspinbox.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/QApplication:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/QApplication:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qapplication.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qapplication.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qcoreapplication.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qcoreapplication.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qcoreevent.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qcoreevent.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qeventloop.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qeventloop.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qguiapplication.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qguiapplication.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qinputmethod.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qinputmethod.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/QHBoxLayout:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/QHBoxLayout:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qboxlayout.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qboxlayout.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qlayout.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qlayout.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qlayoutitem.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qlayoutitem.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qboxlayout.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qboxlayout.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qgridlayout.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qgridlayout.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/QKeyEvent:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/QKeyEvent:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qevent.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qevent.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qset.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qset.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qurl.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qurl.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qfile.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qfile.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore/qfiledevice.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qfiledevice.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qvector2d.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qvector2d.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qtouchdevice.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qtouchdevice.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/QLineEdit:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/QLineEdit:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets/qlineedit.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qlineedit.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qtextcursor.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qtextcursor.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qtextformat.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qtextformat.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qpen.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qpen.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui/qtextoption.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qtextoption.h:
 
 qt/bitcoinamountfield.moc:

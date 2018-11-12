@@ -100,4 +100,4 @@ AlexMomo
 snogcel
 bertlebbert
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/condominium-project/condominium-project-translations).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/asocoin-project/asocoin-project-translations).

@@ -49,16 +49,16 @@ libbitcoin_common_a-ecwrapper.o: ecwrapper.cpp ecwrapper.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/hash_bytes.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/range_access.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/vector.tcc \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/ec.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/asn1.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/ec.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/asn1.h \
  /usr/share/mingw-w64/include/time.h \
  /usr/share/mingw-w64/include/_timeval.h \
  /usr/share/mingw-w64/include/sys/timeb.h \
  /usr/share/mingw-w64/include/sec_api/sys/timeb_s.h \
  /usr/share/mingw-w64/include/pthread_time.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/bio.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/bio.h \
  /usr/share/mingw-w64/include/stdio.h \
  /usr/share/mingw-w64/include/_mingw_print_push.h \
  /usr/share/mingw-w64/include/_mingw_off_t.h \
@@ -68,19 +68,19 @@ libbitcoin_common_a-ecwrapper.o: ecwrapper.cpp ecwrapper.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/stdarg.h \
  /usr/share/mingw-w64/include/stdarg.h \
  /usr/share/mingw-w64/include/_mingw_stdarg.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/crypto.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/crypto.h \
  /usr/share/mingw-w64/include/stdlib.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include-fixed/limits.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include-fixed/syslimits.h \
  /usr/share/mingw-w64/include/limits.h \
  /usr/share/mingw-w64/include/sec_api/stdlib_s.h \
  /usr/share/mingw-w64/include/malloc.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/stack.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/safestack.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/opensslv.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/ossl_typ.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/symhacks.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/bn.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/stack.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/safestack.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/opensslv.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/ossl_typ.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/symhacks.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/bn.h \
  serialize.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/algorithm \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/utility \
@@ -218,8 +218,8 @@ libbitcoin_common_a-ecwrapper.o: ecwrapper.cpp ecwrapper.h \
  /usr/share/mingw-w64/include/sec_api/string_s.h \
  libzerocoin/Denominations.h uint256.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/cstring \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/ecdsa.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/obj_mac.h
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/ecdsa.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/obj_mac.h
 
 ecwrapper.h:
 
@@ -323,11 +323,11 @@ ecwrapper.h:
 
 /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/vector.tcc:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/ec.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/ec.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/asn1.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/asn1.h:
 
 /usr/share/mingw-w64/include/time.h:
 
@@ -339,9 +339,9 @@ ecwrapper.h:
 
 /usr/share/mingw-w64/include/pthread_time.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/bio.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/bio.h:
 
 /usr/share/mingw-w64/include/stdio.h:
 
@@ -361,7 +361,7 @@ ecwrapper.h:
 
 /usr/share/mingw-w64/include/_mingw_stdarg.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/crypto.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/crypto.h:
 
 /usr/share/mingw-w64/include/stdlib.h:
 
@@ -375,17 +375,17 @@ ecwrapper.h:
 
 /usr/share/mingw-w64/include/malloc.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/stack.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/stack.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/safestack.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/safestack.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/opensslv.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/opensslv.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/ossl_typ.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/ossl_typ.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/symhacks.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/symhacks.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/bn.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/bn.h:
 
 serialize.h:
 
@@ -663,6 +663,6 @@ uint256.h:
 
 /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/cstring:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/ecdsa.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/ecdsa.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/obj_mac.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/obj_mac.h:

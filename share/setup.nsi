@@ -1,4 +1,4 @@
-Name "Condominium Core (32-bit)"
+Name "asocoin Core (32-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -6,23 +6,23 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION 1.1.0
-!define COMPANY "Condominium Core project"
-!define URL https://www.condominium.org
+!define COMPANY "asocoin Core project"
+!define URL https://www.asocoin.org
 
 # MUI Symbol Definitions
-!define MUI_ICON "/home/mini/condominium/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/mini/condominium/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/home/mini/asocoin/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/mini/asocoin/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/home/mini/condominium/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/home/mini/asocoin/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Condominium Core"
-!define MUI_FINISHPAGE_RUN $INSTDIR\condominium-qt.exe
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER "asocoin Core"
+!define MUI_FINISHPAGE_RUN $INSTDIR\asocoin-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/mini/condominium/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/mini/asocoin/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -48,18 +48,18 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /home/mini/condominium/condominium-${VERSION}-win32-setup.exe
+OutFile /home/mini/asocoin/asocoin-${VERSION}-win32-setup.exe
 !if "32" == "64"
-InstallDir $PROGRAMFILES64\Condominium
+InstallDir $PROGRAMFILES64\asocoin
 !else
-InstallDir $PROGRAMFILES\Condominium
+InstallDir $PROGRAMFILES\asocoin
 !endif
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
 VIProductVersion ${VERSION}.0
-VIAddVersionKey ProductName "Condominium Core"
+VIAddVersionKey ProductName "asocoin Core"
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
@@ -73,14 +73,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /home/mini/condominium/release/condominium-qt.exe
-    File /oname=COPYING.txt /home/mini/condominium/COPYING
-    File /oname=readme.txt /home/mini/condominium/doc/README_windows.txt
+    File /home/mini/asocoin/release/asocoin-qt.exe
+    File /oname=COPYING.txt /home/mini/asocoin/COPYING
+    File /oname=readme.txt /home/mini/asocoin/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /home/mini/condominium/release/condominiumd.exe
-    File /home/mini/condominium/release/condominium-cli.exe
+    File /home/mini/asocoin/release/asocoind.exe
+    File /home/mini/asocoin/release/asocoin-cli.exe
     SetOutPath $INSTDIR\doc
-    File /r /home/mini/condominium/doc\*.*
+    File /r /home/mini/asocoin/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd
@@ -91,8 +91,8 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\condominium-qt.exe
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Condominium Core (testnet, 32-bit).lnk" "$INSTDIR\condominium-qt.exe" "-testnet" "$INSTDIR\condominium-qt.exe" 1
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\asocoin-qt.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\asocoin Core (testnet, 32-bit).lnk" "$INSTDIR\asocoin-qt.exe" "-testnet" "$INSTDIR\asocoin-qt.exe" 1
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
@@ -103,10 +103,10 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-    WriteRegStr HKCR "condominium" "URL Protocol" ""
-    WriteRegStr HKCR "condominium" "" "URL:Condominium"
-    WriteRegStr HKCR "condominium\DefaultIcon" "" $INSTDIR\condominium-qt.exe
-    WriteRegStr HKCR "condominium\shell\open\command" "" '"$INSTDIR\condominium-qt.exe" "%1"'
+    WriteRegStr HKCR "asocoin" "URL Protocol" ""
+    WriteRegStr HKCR "asocoin" "" "URL:asocoin"
+    WriteRegStr HKCR "asocoin\DefaultIcon" "" $INSTDIR\asocoin-qt.exe
+    WriteRegStr HKCR "asocoin\shell\open\command" "" '"$INSTDIR\asocoin-qt.exe" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -124,7 +124,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\condominium-qt.exe
+    Delete /REBOOTOK $INSTDIR\asocoin-qt.exe
     Delete /REBOOTOK $INSTDIR\COPYING.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -136,8 +136,8 @@ Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Condominium Core (testnet, 32-bit).lnk"
-    Delete /REBOOTOK "$SMSTARTUP\Condominium.lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\asocoin Core (testnet, 32-bit).lnk"
+    Delete /REBOOTOK "$SMSTARTUP\asocoin.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log
@@ -145,7 +145,7 @@ Section -un.post UNSEC0001
     DeleteRegValue HKCU "${REGKEY}" Path
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
-    DeleteRegKey HKCR "condominium"
+    DeleteRegKey HKCR "asocoin"
     RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0

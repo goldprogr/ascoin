@@ -17,7 +17,7 @@ osx=true
 SIGNER=
 VERSION=
 commit=false
-url=https://github.com/condominiumproject/condominium
+url=https://github.com/asocoinproject/asocoin
 proc=2
 mem=2000
 lxc=true
@@ -31,7 +31,7 @@ commitFiles=true
 read -d '' usage <<- EOF
 Usage: $scriptName [-c|u|v|b|s|B|o|h|j|m|] signer version
 
-Run this script from the directory containing the condominium, gitian-builder, gitian.sigs, and condominium-detached-sigs.
+Run this script from the directory containing the asocoin, gitian-builder, gitian.sigs, and asocoin-detached-sigs.
 
 Arguments:
 signer          GPG signer to sign each build assert file
@@ -39,7 +39,7 @@ version		Version number, commit, or branch to build. If building a commit or bra
 
 Options:
 -c|--commit	Indicate that the version argument is for a commit or branch
--u|--url	Specify the URL of the repository. Default is https://github.com/condominiumproject/condominium
+-u|--url	Specify the URL of the repository. Default is https://github.com/asocoinproject/asocoin
 -v|--verify 	Verify the gitian build
 -b|--build	Do a gitian build
 -s|--sign	Make signed binaries for Windows and Mac OSX
@@ -237,8 +237,8 @@ echo ${COMMIT}
 if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
-    git clone https://github.com/condominiumproject/gitian.sigs.git
-    git clone https://github.com/condominiumproject/condominium-detached-sigs.git
+    git clone https://github.com/asocoinproject/gitian.sigs.git
+    git clone https://github.com/asocoinproject/asocoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     pushd ./gitian-builder
     if [[ -n "$USE_LXC" ]]
@@ -252,7 +252,7 @@ then
 fi
 
 # Set up build
-pushd ./condominium
+pushd ./asocoin
 git fetch
 git checkout ${COMMIT}
 popd
@@ -261,7 +261,7 @@ popd
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p ./condominium-binaries/${VERSION}
+	mkdir -p ./asocoin-binaries/${VERSION}
 
 	# Build Dependencies
 	echo ""
@@ -271,7 +271,7 @@ then
 	mkdir -p inputs
 	wget -N -P inputs $osslPatchUrl
 	wget -N -P inputs $osslTarUrl
-	make -C ../condominium/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../asocoin/depends download SOURCES_PATH=`pwd`/cache/common
 
 	# Linux
 	if [[ $linux = true ]]
@@ -279,9 +279,9 @@ then
             echo ""
 	    echo "Compiling ${VERSION} Linux"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit condominium=${COMMIT} --url condominium=${url} ../condominium/contrib/gitian-descriptors/gitian-linux.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../condominium/contrib/gitian-descriptors/gitian-linux.yml
-	    mv build/out/condominium-*.tar.gz build/out/src/condominium-*.tar.gz ../condominium-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit asocoin=${COMMIT} --url asocoin=${url} ../asocoin/contrib/gitian-descriptors/gitian-linux.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../asocoin/contrib/gitian-descriptors/gitian-linux.yml
+	    mv build/out/asocoin-*.tar.gz build/out/src/asocoin-*.tar.gz ../asocoin-binaries/${VERSION}
 	fi
 	# Windows
 	if [[ $windows = true ]]
@@ -289,10 +289,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit condominium=${COMMIT} --url condominium=${url} ../condominium/contrib/gitian-descriptors/gitian-win.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../condominium/contrib/gitian-descriptors/gitian-win.yml
-	    mv build/out/condominium-*-win-unsigned.tar.gz inputs/condominium-win-unsigned.tar.gz
-	    mv build/out/condominium-*.zip build/out/condominium-*.exe ../condominium-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit asocoin=${COMMIT} --url asocoin=${url} ../asocoin/contrib/gitian-descriptors/gitian-win.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../asocoin/contrib/gitian-descriptors/gitian-win.yml
+	    mv build/out/asocoin-*-win-unsigned.tar.gz inputs/asocoin-win-unsigned.tar.gz
+	    mv build/out/asocoin-*.zip build/out/asocoin-*.exe ../asocoin-binaries/${VERSION}
 	fi
 	# Mac OSX
 	if [[ $osx = true ]]
@@ -300,10 +300,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit condominium=${COMMIT} --url condominium=${url} ../condominium/contrib/gitian-descriptors/gitian-osx.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../condominium/contrib/gitian-descriptors/gitian-osx.yml
-	    mv build/out/condominium-*-osx-unsigned.tar.gz inputs/condominium-osx-unsigned.tar.gz
-	    mv build/out/condominium-*.tar.gz build/out/condominium-*.dmg ../condominium-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit asocoin=${COMMIT} --url asocoin=${url} ../asocoin/contrib/gitian-descriptors/gitian-osx.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../asocoin/contrib/gitian-descriptors/gitian-osx.yml
+	    mv build/out/asocoin-*-osx-unsigned.tar.gz inputs/asocoin-osx-unsigned.tar.gz
+	    mv build/out/asocoin-*.tar.gz build/out/asocoin-*.dmg ../asocoin-binaries/${VERSION}
 	fi
 	# AArch64
 	if [[ $aarch64 = true ]]
@@ -311,9 +311,9 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} AArch64"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit condominium=${COMMIT} --url condominium=${url} ../condominium/contrib/gitian-descriptors/gitian-aarch64.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-aarch64 --destination ../gitian.sigs/ ../condominium/contrib/gitian-descriptors/gitian-aarch64.yml
-	    mv build/out/condominium-*.tar.gz build/out/src/condominium-*.tar.gz ../condominium-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit asocoin=${COMMIT} --url asocoin=${url} ../asocoin/contrib/gitian-descriptors/gitian-aarch64.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-aarch64 --destination ../gitian.sigs/ ../asocoin/contrib/gitian-descriptors/gitian-aarch64.yml
+	    mv build/out/asocoin-*.tar.gz build/out/src/asocoin-*.tar.gz ../asocoin-binaries/${VERSION}
 	popd
 
         if [[ $commitFiles = true ]]
@@ -340,32 +340,32 @@ then
 	echo ""
 	echo "Verifying v${VERSION} Linux"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../condominium/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../asocoin/contrib/gitian-descriptors/gitian-linux.yml
 	# Windows
 	echo ""
 	echo "Verifying v${VERSION} Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../condominium/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../asocoin/contrib/gitian-descriptors/gitian-win.yml
 	# Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../condominium/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../asocoin/contrib/gitian-descriptors/gitian-osx.yml
 	# AArch64
 	echo ""
 	echo "Verifying v${VERSION} AArch64"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../condominium/contrib/gitian-descriptors/gitian-aarch64.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../asocoin/contrib/gitian-descriptors/gitian-aarch64.yml
 	# Signed Windows
 	echo ""
 	echo "Verifying v${VERSION} Signed Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../condominium/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../asocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
 	# Signed Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Signed Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../condominium/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../asocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
 	popd
 fi
 
@@ -380,10 +380,10 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../condominium/contrib/gitian-descriptors/gitian-win-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../condominium/contrib/gitian-descriptors/gitian-win-signer.yml
-	    mv build/out/condominium-*win64-setup.exe ../condominium-binaries/${VERSION}
-	    mv build/out/condominium-*win32-setup.exe ../condominium-binaries/${VERSION}
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../asocoin/contrib/gitian-descriptors/gitian-win-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../asocoin/contrib/gitian-descriptors/gitian-win-signer.yml
+	    mv build/out/asocoin-*win64-setup.exe ../asocoin-binaries/${VERSION}
+	    mv build/out/asocoin-*win32-setup.exe ../asocoin-binaries/${VERSION}
 	fi
 	# Sign Mac OSX
 	if [[ $osx = true ]]
@@ -391,9 +391,9 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../condominium/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../condominium/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    mv build/out/condominium-osx-signed.dmg ../condominium-binaries/${VERSION}/condominium-${VERSION}-osx.dmg
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../asocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../asocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    mv build/out/asocoin-osx-signed.dmg ../asocoin-binaries/${VERSION}/asocoin-${VERSION}-osx.dmg
 	fi
 	popd
 

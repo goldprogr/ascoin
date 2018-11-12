@@ -62,11 +62,11 @@
         <translation>Modtageradresse</translation>
     </message>
     <message>
-        <source>These are your Condominium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your asocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Dine adresser til at sende betalinger med. Kontroller altid både beløb og modtageradresse før afsendelse.</translation>
     </message>
     <message>
-        <source>These are your Condominium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your asocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Dette er dine modtager adresser. Det anbefales at anvende en ny adresse til hver transaktion</translation>
     </message>
     <message>
@@ -176,16 +176,16 @@
         <translation>Bekræft, og tegnebogen krypteres.</translation>
     </message>
     <message>
-        <source>Condominium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CONDOMINIUMs from being stolen by malware infecting your computer.</source>
-        <translation>Condominium vil lukke ned for at færdiggøre kryptograferingsprocesserne. Husk at kryptering alene ikke sikrer mod tyveri af mønterne fra malware eller virus på computeren.</translation>
+        <source>asocoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your asocoins from being stolen by malware infecting your computer.</source>
+        <translation>asocoin vil lukke ned for at færdiggøre kryptograferingsprocesserne. Husk at kryptering alene ikke sikrer mod tyveri af mønterne fra malware eller virus på computeren.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Er du sikker på, at du vil kryptere din tegnebog?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CONDOMINIUM&lt;/b&gt;!</source>
-        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE CONDOMINIUM&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR asocoin&lt;/b&gt;!</source>
+        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE asocoin&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>BIP 38 kryptografering</translation>
     </message>
     <message>
-        <source>Enter a Condominium Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Indtast den Condominium adresse De ønsker at kryptografere ved hjælp af BIP 38. Indtast et kodeord i den midterste boks. Klik på krypter for at generere den kryptograferede private nøgle.</translation>
+        <source>Enter a asocoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Indtast den asocoin adresse De ønsker at kryptografere ved hjælp af BIP 38. Indtast et kodeord i den midterste boks. Klik på krypter for at generere den kryptograferede private nøgle.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse</translation>
     </message>
     <message>
-        <source>The Condominium address to sign the message with</source>
-        <translation>Den Condominium adresse, der skal bruges til at underskrive beskeden med.</translation>
+        <source>The asocoin address to sign the message with</source>
+        <translation>Den asocoin adresse, der skal bruges til at underskrive beskeden med.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopier den aktuelle underskrift til udklipsholderen.</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Condominium address</source>
-        <translation>Underskriv beskeden for at bevise, at De ejer denne Condominium adresse.</translation>
+        <source>Sign the message to prove you own this asocoin address</source>
+        <translation>Underskriv beskeden for at bevise, at De ejer denne asocoin adresse.</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Indtast den krypterede BIP 38 nøgle. Indtast kodeordet i den midterste boks. Klik på dekryptér for at generere den private nøgle. Når nøglen er dekrypteret vil klip på "importér adresse" overføre den private nøgle til tegnebogen.</translation>
     </message>
     <message>
-        <source>The Condominium address the message was signed with</source>
-        <translation>Beskeden er underskrevet med denne Condominium adresse</translation>
+        <source>The asocoin address the message was signed with</source>
+        <translation>Beskeden er underskrevet med denne asocoin adresse</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Condominium address</source>
-        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige Condominium adresse.</translation>
+        <source>Verify the message to ensure it was signed with the specified asocoin address</source>
+        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige asocoin adresse.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Værktøjslinier</translation>
     </message>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium kerne</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin kerne</translation>
     </message>
     <message>
-        <source>Send coins to a Condominium address</source>
-        <translation>Send mønter til en Condominium adresse</translation>
+        <source>Send coins to a asocoin address</source>
+        <translation>Send mønter til en asocoin adresse</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and condominium: URIs)</source>
-        <translation>Anmod om betaling (genrerer QR kode og Condominium URL)</translation>
+        <source>Request payments (generates QR codes and asocoin: URIs)</source>
+        <translation>Anmod om betaling (genrerer QR kode og asocoin URL)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Vis masternoder</translation>
     </message>
     <message>
-        <source>&amp;About Condominium Core</source>
-        <translation>&amp;Om Condominium kerne</translation>
+        <source>&amp;About asocoin Core</source>
+        <translation>&amp;Om asocoin kerne</translation>
     </message>
     <message>
-        <source>Show information about Condominium Core</source>
-        <translation>Vis information om Condominium kerne</translation>
+        <source>Show information about asocoin Core</source>
+        <translation>Vis information om asocoin kerne</translation>
     </message>
     <message>
-        <source>Modify configuration options for Condominium</source>
-        <translation>Ret konfigurationsindstillinger for Condominium</translation>
+        <source>Modify configuration options for asocoin</source>
+        <translation>Ret konfigurationsindstillinger for asocoin</translation>
     </message>
     <message>
-        <source>Sign messages with your Condominium addresses to prove you own them</source>
-        <translation>Underskriv beskeder med Deres Condominium adresser for at bekræfte at De ejer dem.</translation>
+        <source>Sign messages with your asocoin addresses to prove you own them</source>
+        <translation>Underskriv beskeder med Deres asocoin adresser for at bekræfte at De ejer dem.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Condominium addresses</source>
-        <translation>Verificer besked for at sikre, at den er underskrevet med den opgivne Condominium adresse</translation>
+        <source>Verify messages to ensure they were signed with specified asocoin addresses</source>
+        <translation>Verificer besked for at sikre, at den er underskrevet med den opgivne asocoin adresse</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>ÅbnMasternode konfigurationsfil</translation>
     </message>
     <message>
-        <source>Open a Condominium: URI or payment request</source>
-        <translation>Åbn en Condominium URl eller betalingsanmodning</translation>
+        <source>Open a asocoin: URI or payment request</source>
+        <translation>Åbn en asocoin URl eller betalingsanmodning</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Blockexplorer vindue</translation>
     </message>
     <message>
-        <source>Show the Condominium Core help message to get a list with possible Condominium command-line options</source>
-        <translation>Vis hjelpetekster fra Condominium kernen for at få en liste med mulige Condominium kommandolinie-startparametre</translation>
+        <source>Show the asocoin Core help message to get a list with possible asocoin command-line options</source>
+        <translation>Vis hjelpetekster fra asocoin kernen for at få en liste med mulige asocoin kommandolinie-startparametre</translation>
     </message>
     <message>
-        <source>Condominium Core client</source>
-        <translation>Condominium kerneklient</translation>
+        <source>asocoin Core client</source>
+        <translation>asocoin kerneklient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -813,8 +813,8 @@ Adresse: %4
         <translation>Tekstmærke</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (condominium.conf).</source>
-        <translation>Ikke alle transaktioner vil blive vist. For at vise alle transaktioner må De sætte "txindex=1" i konfigurationsfilen (condominium.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (asocoin.conf).</source>
+        <translation>Ikke alle transaktioner vil blive vist. For at vise alle transaktioner må De sætte "txindex=1" i konfigurationsfilen (asocoin.conf).</translation>
     </message>
 </context>
 <context>
@@ -1098,8 +1098,8 @@ Adresse: %4
         <translation>Ret afsenderadresse</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Condominium address.</source>
-        <translation>Den indtastede adresse %1 er ikke en gyldig Condominium adresse</translation>
+        <source>The entered address "%1" is not a valid asocoin address.</source>
+        <translation>Den indtastede adresse %1 er ikke en gyldig asocoin adresse</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1144,16 +1144,16 @@ Adresse: %4
         <translation>version</translation>
     </message>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium kerne</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin kerne</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Condominium Core</source>
-        <translation>om Condominium kerne</translation>
+        <source>About asocoin Core</source>
+        <translation>om asocoin kerne</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1199,16 +1199,16 @@ Adresse: %4
         <translation>Velkommen</translation>
     </message>
     <message>
-        <source>Welcome to Condominium Core.</source>
-        <translation>Velkommen til Condominium kerne</translation>
+        <source>Welcome to asocoin Core.</source>
+        <translation>Velkommen til asocoin kerne</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Condominium Core will store its data.</source>
-        <translation>Da det er første gang programmet startes, kan De vælge hvor Condominium kernen skal lagre sine data</translation>
+        <source>As this is the first time the program is launched, you can choose where asocoin Core will store its data.</source>
+        <translation>Da det er første gang programmet startes, kan De vælge hvor asocoin kernen skal lagre sine data</translation>
     </message>
     <message>
-        <source>Condominium Core will download and store a copy of the Condominium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Condominium kernen vil nu hente og gemme en kopi af Condominium blockchain. Der skal være mindst %1GB ledigt på lagermediet, og behovet vil stige efterhånden som tiden går. Selve tegnebogen vil også blive gemt her.</translation>
+        <source>asocoin Core will download and store a copy of the asocoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>asocoin kernen vil nu hente og gemme en kopi af asocoin blockchain. Der skal være mindst %1GB ledigt på lagermediet, og behovet vil stige efterhånden som tiden går. Selve tegnebogen vil også blive gemt her.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1219,8 +1219,8 @@ Adresse: %4
         <translation>Anvend en mappe valgt af brugeren</translation>
     </message>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium kerne</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin kerne</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1361,12 +1361,12 @@ Adresse: %4
         <translation>Indtast modtageradresse</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Condominium addresses after it matures.
-To Add: enter percentage to give and Condominium address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other asocoin addresses after it matures.
+To Add: enter percentage to give and asocoin address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>Multisend tillader at De automatisk kan sende op til 100% af Deres belønninger fra såvel indskud som masternodebelønninger til en liste over andre Condominium adressater når den er tilstrækkelig stor.
-For at tilføje: Indtast procentsatsen De ønsker at overføre samt den Condominium adresse som skal modtage via Multisendsystemet.
+        <translation>Multisend tillader at De automatisk kan sende op til 100% af Deres belønninger fra såvel indskud som masternodebelønninger til en liste over andre asocoin adressater når den er tilstrækkelig stor.
+For at tilføje: Indtast procentsatsen De ønsker at overføre samt den asocoin adresse som skal modtage via Multisendsystemet.
 For at fjerne: Indtast adressen som skal slettes og klik på slet.
 Multisend vil ikke fungere med mindre systemet er aktiveret.</translation>
     </message>
@@ -1504,48 +1504,48 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Vælg tilsløringsniveau</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CONDOMINIUM</source>
-        <translation>Brug 2 separate masternoder for at tilsløre beløb op til 10000 CONDOMINIUM</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 asocoin</source>
+        <translation>Brug 2 separate masternoder for at tilsløre beløb op til 10000 asocoin</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 CONDOMINIUM</source>
-        <translation>Brug 8 separate masternoder for at tilsløre op til 10000 CONDOMINIUM</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 asocoin</source>
+        <translation>Brug 8 separate masternoder for at tilsløre op til 10000 asocoin</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Brug 16 separate masternoder</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 CONDOMINIUM to anonymize 10000 CONDOMINIUM</source>
-        <translation>Dette valg er det hurtigste og vil koste i omegnen af 0.025 CONDOMINIUM for at anonymiser 10000 CONDOMINIUM</translation>
+        <source>This option is the quickest and will cost about ~0.025 asocoin to anonymize 10000 asocoin</source>
+        <translation>Dette valg er det hurtigste og vil koste i omegnen af 0.025 asocoin for at anonymiser 10000 asocoin</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 CONDOMINIUM to anonymize 10000 CONDOMINIUM</source>
-        <translation>Dette valg er relativt hurtigt og vil koste i omegnen af 0.05 CONDOMINIUM for at anonymiser 10000 CONDOMINIUM</translation>
+        <source>This option is moderately fast and will cost about 0.05 asocoin to anonymize 10000 asocoin</source>
+        <translation>Dette valg er relativt hurtigt og vil koste i omegnen af 0.05 asocoin for at anonymiser 10000 asocoin</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Denne mulighed er den langsomste og det mest sikre valg. Valg af maksimal tilsløring vil koste</translation>
     </message>
     <message>
-        <source>0.1 CONDOMINIUM per 10000 CONDOMINIUM you anonymize.</source>
-        <translation>0.1 pr 10000 CONDOMINIUM for at tilsløre.</translation>
+        <source>0.1 asocoin per 10000 asocoin you anonymize.</source>
+        <translation>0.1 pr 10000 asocoin for at tilsløre.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Tilsløringskonfiguration</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Condominium's configuration screen.</source>
-        <translation>Tilsløring blev sat til grundlæggende (%1 og 2 gennemløb) De kan ændre dette hvornår De vil ved at åbne Condominium konfigurationsbillede.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening asocoin's configuration screen.</source>
+        <translation>Tilsløring blev sat til grundlæggende (%1 og 2 gennemløb) De kan ændre dette hvornår De vil ved at åbne asocoin konfigurationsbillede.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Condominium's configuration screen.</source>
-        <translation>Tilsløring blev sat til høj (%1 og 8 gennemløb) De kan ændre dette hvornår De vil ved at åbne Condominium konfigurationsbillede.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening asocoin's configuration screen.</source>
+        <translation>Tilsløring blev sat til høj (%1 og 8 gennemløb) De kan ændre dette hvornår De vil ved at åbne asocoin konfigurationsbillede.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Condominium's configuration screen.</source>
-        <translation>Tilsløring blev sat til maksimum (%1 og 16 gennemløb) De kan ændre dette hvornår De vil ved at åbne Condominium konfigurationsbillede.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening asocoin's configuration screen.</source>
+        <translation>Tilsløring blev sat til maksimum (%1 og 16 gennemløb) De kan ændre dette hvornår De vil ved at åbne asocoin konfigurationsbillede.</translation>
     </message>
 </context>
 <context>
@@ -1606,8 +1606,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Hvis De slår "brug af ubekræftede penge tilbage" vil penge tilbage &lt;br/&gt; ikke kunne benyttes før transaktionen er bekræftet mindst en gang. &lt;br/&gt;Dette har også indflydelse på opgørelsen af saldoen.</translation>
     </message>
     <message>
-        <source>Automatically open the Condominium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Åbn Condominium klientporten på ruteren automatisk. Virker kun hvis UPnP er slået til i ruteren. </translation>
+        <source>Automatically open the asocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Åbn asocoin klientporten på ruteren automatisk. Virker kun hvis UPnP er slået til i ruteren. </translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1626,12 +1626,12 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Ekspert</translation>
     </message>
     <message>
-        <source>Automatically start Condominium after logging in to the system.</source>
-        <translation>Start Condominium automatisk, når der logges på systemet</translation>
+        <source>Automatically start asocoin after logging in to the system.</source>
+        <translation>Start asocoin automatisk, når der logges på systemet</translation>
     </message>
     <message>
-        <source>&amp;Start Condominium on system login</source>
-        <translation>&amp;start Condominium når der logges på systemet</translation>
+        <source>&amp;Start asocoin on system login</source>
+        <translation>&amp;start asocoin når der logges på systemet</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1658,22 +1658,22 @@ Kontroller adressen og prøv igen.</translation>
         <translation>&amp;netværk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Condominium.</source>
-        <translation>Vælg sprog her. Ændringerne træder i kraft næste gang Condominium klienten startes</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting asocoin.</source>
+        <translation>Vælg sprog her. Ændringerne træder i kraft næste gang asocoin klienten startes</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/condominium-project/condominium-project-translations</source>
+https://www.transifex.com/asocoin-project/asocoin-project-translations</source>
         <translation>Det valgte sprog mangler, eller oversættelsen er mangelfuld. Hjælp ved at bidrage med oversættelser her:
-https://www.transifex.com/condominium-project/condominium-project-translations</translation>
+https://www.transifex.com/asocoin-project/asocoin-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>MAP port ved hjælp af UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Condominium network through a SOCKS5 proxy.</source>
-        <translation>Tilslut Condominium netværket gennem en SOCKS5 PROXY</translation>
+        <source>Connect to the asocoin network through a SOCKS5 proxy.</source>
+        <translation>Tilslut asocoin netværket gennem en SOCKS5 PROXY</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1823,8 +1823,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Indskyder- eller masternodebelønning er stadig under behandling</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Condominium network after a connection is established, but this process has not completed yet.</source>
-        <translation>De viste informationer kan være uddaterede. Deres tegnebog synkronisere automatism med Condominium netværket så snart en forbindelse er etalbleret, men denne proces er ikke færdiggjort endnu. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the asocoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>De viste informationer kan være uddaterede. Deres tegnebog synkronisere automatism med asocoin netværket så snart en forbindelse er etalbleret, men denne proces er ikke færdiggjort endnu. </translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1890,11 +1890,11 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Ugyldig betalingsadresse: %1</translation>
     </message>
     <message>
-        <source>Cannot start condominium: click-to-pay handler</source>
-        <translation>Kan ikke starte Condominium "klik for at betale" systemet</translation>
+        <source>Cannot start asocoin: click-to-pay handler</source>
+        <translation>Kan ikke starte asocoin "klik for at betale" systemet</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Condominium address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid asocoin address or malformed URI parameters.</source>
         <translation>URl kan ikke fortolkes! Det kan skyldes en ugyldig adresse, eller forkerte URl parametre.</translation>
     </message>
     <message>
@@ -1976,8 +1976,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Condominium network after a connection is established, but this process has not completed yet.</source>
-        <translation>De viste informationer kan være uddaterede. Deres tegnebog synkronisere automatism med Condominium netværket så snart en forbindelse er etalbleret, men denne proces er ikke færdiggjort endnu. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the asocoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>De viste informationer kan være uddaterede. Deres tegnebog synkronisere automatism med asocoin netværket så snart en forbindelse er etalbleret, men denne proces er ikke færdiggjort endnu. </translation>
     </message>
     <message>
         <source>0</source>
@@ -2095,8 +2095,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Beløb</translation>
     </message>
     <message>
-        <source>Enter a Condominium address (e.g. %1)</source>
-        <translation>Indtast en Condominium adresse (F.eks. %1)</translation>
+        <source>Enter a asocoin address (e.g. %1)</source>
+        <translation>Indtast en asocoin adresse (F.eks. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2229,8 +2229,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the Condominium debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Åbn Condominium debug logfilen fra den aktuelle datamappe. Det kan godt tage lidt tid hvis filen er meget stor.</translation>
+        <source>Open the asocoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Åbn asocoin debug logfilen fra den aktuelle datamappe. Det kan godt tage lidt tid hvis filen er meget stor.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2397,8 +2397,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Ud:</translation>
     </message>
     <message>
-        <source>Welcome to the Condominium RPC console.</source>
-        <translation>Velkommen til Condominium RPC konsollet</translation>
+        <source>Welcome to the asocoin RPC console.</source>
+        <translation>Velkommen til asocoin RPC konsollet</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2468,12 +2468,12 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Valgfri opmærkning som tilknyttes den nye modtageradresse.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Condominium network.</source>
-        <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på Condominium netværket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the asocoin network.</source>
+        <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på asocoin netværket.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Condominium network.</source>
-        <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. &lt;br&gt;Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på Condominium netværket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the asocoin network.</source>
+        <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. &lt;br&gt;Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på asocoin netværket.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2697,8 +2697,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>UTXO størrelse:</translation>
     </message>
     <message>
-        <source>0 CONDOMINIUM</source>
-        <translation>0 CONDOMINIUM</translation>
+        <source>0 asocoin</source>
+        <translation>0 asocoin</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2741,15 +2741,15 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Bekræftelsestid</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCONDOMINIUMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCONDOMINIUMs in fee,&lt;br /&gt;while "at least" pays 1000 uCONDOMINIUMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uCONDOMINIUMs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uCONDOMINIUM i gebyr, &lt;br /&gt; mens "mindst" udbetaler 1000 uCONDOMINIUMs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
+        <source>If the custom fee is set to 1000 uasocoins and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uasocoins in fee,&lt;br /&gt;while "at least" pays 1000 uasocoins. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uasocoins og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uasocoin i gebyr, &lt;br /&gt; mens "mindst" udbetaler 1000 uasocoins. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCONDOMINIUMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCONDOMINIUMs in fee,&lt;br /&gt;while "total at least" pays 1000 uCONDOMINIUMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uCONDOMINIUMs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uCONDOMINIUM i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uCONDOMINIUMs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
+        <source>If the custom fee is set to 1000 uasocoins and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uasocoins in fee,&lt;br /&gt;while "total at least" pays 1000 uasocoins. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uasocoins og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uasocoin i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uasocoins. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Condominium transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for asocoin transactions than the network can process.</source>
         <translation>Betaling af mindste transaktionsgebyr vil være fint så længe der er færre transaktioner end der er plads til i blokkene. &lt;br /&gt; Men opmærksomheden henledes på, at det kan resultere i en transaktion der aldrig bliver bekræftet i det øjeblik der er større behov for transaktioner end netværket har plads til. </translation>
     </message>
     <message>
@@ -2853,8 +2853,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Anonyme saldi</translation>
     </message>
     <message>
-        <source>Warning: Invalid Condominium address</source>
-        <translation>Advarsel! Ugyldig Condominium adresse</translation>
+        <source>Warning: Invalid asocoin address</source>
+        <translation>Advarsel! Ugyldig asocoin adresse</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -2952,8 +2952,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Betal &amp;Til</translation>
     </message>
     <message>
-        <source>The Condominium address to send the payment to</source>
-        <translation>Condominium adressen, som betalingen skal sendes til</translation>
+        <source>The asocoin address to send the payment to</source>
+        <translation>asocoin adressen, som betalingen skal sendes til</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2992,8 +2992,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Besked</translation>
     </message>
     <message>
-        <source>A message that was attached to the Condominium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Condominium network.</source>
-        <translation>En besked, der var vedhæftet til Condominium: URl wil blive gemt sammen med transaktionen som reference. Note: Beskeden bliver medsendt transaktionen over netværket.</translation>
+        <source>A message that was attached to the asocoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the asocoin network.</source>
+        <translation>En besked, der var vedhæftet til asocoin: URl wil blive gemt sammen med transaktionen som reference. Note: Beskeden bliver medsendt transaktionen over netværket.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3019,8 +3019,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Condominium Core is shutting down...</source>
-        <translation>Condominium kernen lukker ned</translation>
+        <source>asocoin Core is shutting down...</source>
+        <translation>asocoin kernen lukker ned</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3042,8 +3042,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>De kan underskrive beskeder med Deres adresser or at bevise ejerskab. Vær forsigtig med at underskrive noget De er usikker på såsom forsøg op at narre Dem til at oplyse Deres identitet. Skriv kun under på noget De kan stå inde for, og som De er enig i. </translation>
     </message>
     <message>
-        <source>The Condominium address to sign the message with</source>
-        <translation>Den Condominium adresse, der skal bruges til at underskrive beskeden med.</translation>
+        <source>The asocoin address to sign the message with</source>
+        <translation>Den asocoin adresse, der skal bruges til at underskrive beskeden med.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3074,16 +3074,16 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Kopier den aktuelle underskrift til udklipsholderen.</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Condominium address</source>
-        <translation>Underskriv beskeden for at bevise, at De ejer denne Condominium adresse.</translation>
+        <source>Sign the message to prove you own this asocoin address</source>
+        <translation>Underskriv beskeden for at bevise, at De ejer denne asocoin adresse.</translation>
     </message>
     <message>
-        <source>The Condominium address the message was signed with</source>
-        <translation>Beskeden er underskrevet med denne Condominium adresse</translation>
+        <source>The asocoin address the message was signed with</source>
+        <translation>Beskeden er underskrevet med denne asocoin adresse</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Condominium address</source>
-        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige Condominium adresse.</translation>
+        <source>Verify the message to ensure it was signed with the specified asocoin address</source>
+        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige asocoin adresse.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3169,8 +3169,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium kerne</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin kerne</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3185,8 +3185,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>DASH "core" udviklerne</translation>
     </message>
     <message>
-        <source>The Condominium Core developers</source>
-        <translation>Condominium "core" udviklerne</translation>
+        <source>The asocoin Core developers</source>
+        <translation>asocoin "core" udviklerne</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3717,8 +3717,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Send mønter</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 CONDOMINIUM.</source>
-        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1CONDOMINIUM.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 asocoin.</source>
+        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1asocoin.</translation>
     </message>
 </context>
 <context>
@@ -3768,7 +3768,7 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
     </message>
     </context>
 <context>
-    <name>condominium-core</name>
+    <name>asocoin-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = beholdtx metadata. For eksempel information om kontoejer og betalngsanmodninger, 2 = drop TX metadata)</translation>
@@ -3794,8 +3794,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Forbind til den opgivne adresse og lyt efter JSON-.RPC forbindelser. Brug [host]:port notation for IPv6. Der kan indsættes flere linier (standard: Forbind til alle interfaces)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Condominium Core is probably already running.</source>
-        <translation>Kan ikke låse datamappen %s. Condominium core kører sandsynligvis allerede.</translation>
+        <source>Cannot obtain a lock on data directory %s. asocoin Core is probably already running.</source>
+        <translation>Kan ikke låse datamappen %s. asocoin core kører sandsynligvis allerede.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -3814,8 +3814,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Slet alle tegnebogens transaktioner og genskab kun fra blokkæden ved at tilføje -rescan i forbindes med opstart.</translation>
     </message>
     <message>
-        <source>Disable all Condominium specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Slå alle Condominium funktioner fra (Masternoder, Tilsløring, SwiftTX, Budgetting)(0-1,default:%u)</translation>
+        <source>Disable all asocoin specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Slå alle asocoin funktioner fra (Masternoder, Tilsløring, SwiftTX, Budgetting)(0-1,default:%u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -3855,12 +3855,12 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Udfør en kommando når den bedste blok ændres (%s in cmd erstattes med blok hashen)</translation>
     </message>
     <message>
-        <source>Fees (in CONDOMINIUM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebyrer (in CONDOMINIUM/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
+        <source>Fees (in asocoin/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebyrer (in asocoin/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in CONDOMINIUM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebyrer (in CONDOMINIUM/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
+        <source>Fees (in asocoin/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebyrer (in asocoin/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3908,7 +3908,7 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
     </message>
     <message>
         <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
-        <translation>Tilsløring bruger hele det tilslørede designerede beløb til at sende betalinger. De kan blot tilsløre yderligere Condominium</translation>
+        <translation>Tilsløring bruger hele det tilslørede designerede beløb til at sende betalinger. De kan blot tilsløre yderligere asocoin</translation>
     </message>
     <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
@@ -3955,44 +3955,44 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Dette produkt anvender software udviklet i OpenSSL projektet til brug i OpenSSL værktøjssættet &lt;https://www.openssl.org/&gt; og kryptosoftware skrevet afEric Young og UPnP software skrevet af Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use condominiumd, or the -server option to condominium-qt, you must set an rpcpassword in the configuration file:
+        <source>To use asocoind, or the -server option to asocoin-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=condominiumrpc
+rpcuser=asocoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Condominium Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "asocoin Alert" admin@foo.com
 </source>
-        <translation>For at bruge condominiumd eller -server muligheden sammen med condominium-qt skal der angives et rpc kodeord i konfigurationsfilen:
+        <translation>For at bruge asocoind eller -server muligheden sammen med asocoin-qt skal der angives et rpc kodeord i konfigurationsfilen:
 %s
 De anbefales at benytte følgende tilfældige kodeord
-Rpcuser=condominiumrpc
+Rpcuser=asocoinrpc
 rpcpasswrd=%s
 (Det er ikke nødvendigt at huske dette kodeord)
 Brugernavn og kodeord MÅ IKKE VÆRE ENS!
 Hvis filen ikke eksisterer, opret den med sikkerhedsindstillingen - ejer kun læserettigheder tilladelsen.
 Det anbefales tillige at vælge alertnotify til for at blive orienteret om eventuelle problemer.
-For eksempel: alertnotify=Echo %% | mail - s "Condominium ALARM!" e-mail@administrator.dk
+For eksempel: alertnotify=Echo %% | mail - s "asocoin ALARM!" e-mail@administrator.dk
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Condominium Core is probably already running.</source>
-        <translation>Det var ikke muligt at forbinde %s på denne computer. Condominium kører sandsynligvis allerede.</translation>
+        <source>Unable to bind to %s on this computer. asocoin Core is probably already running.</source>
+        <translation>Det var ikke muligt at forbinde %s på denne computer. asocoin kører sandsynligvis allerede.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret designeret indestående for at gennemføre denne transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CONDOMINIUM.</source>
-        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 CONDOMINIUM.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 asocoin.</source>
+        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 asocoin.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 CONDOMINIUM.</source>
-        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 CONDOMINIUM.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 asocoin.</source>
+        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 asocoin.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4007,8 +4007,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Condominium ALARM!" e-mail@adminis
         <translation>Advarsel! -paytxfee er sat meget højt. Det er dette gebyr De kommer til at betale for transaktionen, hvis De gennemfører. </translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Condominium Core will not work properly.</source>
-        <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil Condominium core ikke fungere ordentligt.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong asocoin Core will not work properly.</source>
+        <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil asocoin core ikke fungere ordentligt.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4155,8 +4155,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Condominium ALARM!" e-mail@adminis
         <translation>Copyright (C) 2014-%i The Dash Core Developers </translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Condominium Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Condominium Core Developers</translation>
+        <source>Copyright (C) 2015-%i The asocoin Core Developers</source>
+        <translation>Copyright (C) 2015-%i The asocoin Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4227,8 +4227,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Condominium ALARM!" e-mail@adminis
         <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen er beskadiget</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Condominium Core</source>
-        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af Condominium core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of asocoin Core</source>
+        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af asocoin core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4279,8 +4279,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Condominium ALARM!" e-mail@adminis
         <translation>Læsning af blokken mislykkedes</translation>
     </message>
     <message>
-        <source>Fee (in CONDOMINIUM/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebyr (i CONDOMINIUM/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
+        <source>Fee (in asocoin/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebyr (i asocoin/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4339,8 +4339,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Condominium ALARM!" e-mail@adminis
         <translation>Info:</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Condominium Core is shutting down.</source>
-        <translation>Initiering af sanitetskontrollen fejlede. Condominium core lukker ned. </translation>
+        <source>Initialization sanity check failed. asocoin Core is shutting down.</source>
+        <translation>Initiering af sanitetskontrollen fejlede. asocoin core lukker ned. </translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4895,8 +4895,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Condominium ALARM!" e-mail@adminis
         <translation>Tegnebogen er låst</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Condominium Core to complete</source>
-        <translation>Tegnebogen måtte genskrives. Genstart Condominium core for at gøre færdig</translation>
+        <source>Wallet needed to be rewritten: restart asocoin Core to complete</source>
+        <translation>Tegnebogen måtte genskrives. Genstart asocoin core for at gøre færdig</translation>
     </message>
     <message>
         <source>Wallet options:</source>

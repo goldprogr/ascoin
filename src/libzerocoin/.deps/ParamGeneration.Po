@@ -95,15 +95,15 @@ libzerocoin/ParamGeneration.o: libzerocoin/ParamGeneration.cpp \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/stl_vector.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/stl_bvector.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/vector.tcc \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/bn.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/ossl_typ.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/crypto.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/stack.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/safestack.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/opensslv.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/symhacks.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/bn.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/ossl_typ.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/crypto.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/stack.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/safestack.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/opensslv.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/symhacks.h \
  serialize.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/algorithm \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/utility \
@@ -233,7 +233,7 @@ libzerocoin/ParamGeneration.o: libzerocoin/ParamGeneration.cpp \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/allocator.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/codecvt.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/unique_ptr.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/sha.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/sha.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/sstream \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/istream \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/ostream \
@@ -437,23 +437,23 @@ libzerocoin/bignum.h:
 
 /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/vector.tcc:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/bn.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/bn.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/ossl_typ.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/ossl_typ.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/crypto.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/crypto.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/stack.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/stack.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/safestack.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/safestack.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/opensslv.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/opensslv.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/symhacks.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/symhacks.h:
 
 serialize.h:
 
@@ -751,7 +751,7 @@ crypto/sph_haval.h:
 
 /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/unique_ptr.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/sha.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/sha.h:
 
 /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/sstream:
 

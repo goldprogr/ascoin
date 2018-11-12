@@ -62,12 +62,12 @@
         <translation>Direcciones de recepción</translation>
     </message>
     <message>
-        <source>These are your Condominium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son sus direcciones Condominium para realizar pagos. Verifique siempre la cantidad y la dirección de recepción antes de enviar monedas.</translation>
+        <source>These are your asocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas son sus direcciones asocoin para realizar pagos. Verifique siempre la cantidad y la dirección de recepción antes de enviar monedas.</translation>
     </message>
     <message>
-        <source>These are your Condominium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas son sus direcciones Condominium para recibir pagos. Es recomendable usar una nueva dirección de recepción para cada transacción.</translation>
+        <source>These are your asocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estas son sus direcciones asocoin para recibir pagos. Es recomendable usar una nueva dirección de recepción para cada transacción.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Confirme el cifrado del monedero</translation>
     </message>
     <message>
-        <source>Condominium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CONDOMINIUMs from being stolen by malware infecting your computer.</source>
-        <translation>Condominium se cerrará para finalizar el proceso de cifrado. Recuerde que cifrar su monedero no garantiza que sus CONDOMINIUMs no sean robados mediante malware de su ordenador.</translation>
+        <source>asocoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your asocoins from being stolen by malware infecting your computer.</source>
+        <translation>asocoin se cerrará para finalizar el proceso de cifrado. Recuerde que cifrar su monedero no garantiza que sus asocoins no sean robados mediante malware de su ordenador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>¿Está seguro de que desea cifrar su monedero?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CONDOMINIUM&lt;/b&gt;!</source>
-        <translation>Atención: Si cifra su monedero y pierde su contraseña, perderá &lt;b&gt; TODOS SUS CONDOMINIUM&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR asocoin&lt;/b&gt;!</source>
+        <translation>Atención: Si cifra su monedero y pierde su contraseña, perderá &lt;b&gt; TODOS SUS asocoin&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>&amp;Cifrado BIP 38</translation>
     </message>
     <message>
-        <source>Enter a Condominium Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Introduzca la dirección Condominium que querría cifrar usando BIP 38. Introduzca una contraseña en el campo central. Haga clic en cifrar para generar la clave privada cifrada.</translation>
+        <source>Enter a asocoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Introduzca la dirección asocoin que querría cifrar usando BIP 38. Introduzca una contraseña en el campo central. Haga clic en cifrar para generar la clave privada cifrada.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Dirección:</translation>
     </message>
     <message>
-        <source>The Condominium address to sign the message with</source>
-        <translation>La dirección Condominium con la que desee firmar el mensaje</translation>
+        <source>The asocoin address to sign the message with</source>
+        <translation>La dirección asocoin con la que desee firmar el mensaje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Condominium address</source>
-        <translation>Firme el mensaje para demostrar que eres el propietario de esta dirección Condominium</translation>
+        <source>Sign the message to prove you own this asocoin address</source>
+        <translation>Firme el mensaje para demostrar que eres el propietario de esta dirección asocoin</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Introduzca la clave cifrada privada BIP 38. Introduzca la contraseña en el campo central. Haga clic en descifrar clave para generar la clave privada. Después de que la clave sea descifrada, pulsando en 'Importar dirección' añadirá esta clave privada al monedero.</translation>
     </message>
     <message>
-        <source>The Condominium address the message was signed with</source>
-        <translation>La dirección Condominium con la que se firmó el mensaje</translation>
+        <source>The asocoin address the message was signed with</source>
+        <translation>La dirección asocoin con la que se firmó el mensaje</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Condominium address</source>
-        <translation>Verifica el mensaje para asegurar que fue firmado con la dirección Condominium especificada</translation>
+        <source>Verify the message to ensure it was signed with the specified asocoin address</source>
+        <translation>Verifica el mensaje para asegurar que fue firmado con la dirección asocoin especificada</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,15 +602,15 @@
         <translation>Herramienta de pestañas</translation>
     </message>
     <message>
-        <source>Condominium Core</source>
-        <translation>Núcleo Condominium</translation>
+        <source>asocoin Core</source>
+        <translation>Núcleo asocoin</translation>
     </message>
     <message>
-        <source>Send coins to a Condominium address</source>
-        <translation>Enviar coins a una dirección Condominium</translation>
+        <source>Send coins to a asocoin address</source>
+        <translation>Enviar coins a una dirección asocoin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and condominium: URIs)</source>
+        <source>Request payments (generates QR codes and asocoin: URIs)</source>
         <translation>Solicitud de pago (genera un código QR y URIs)</translation>
     </message>
     <message>
@@ -630,24 +630,24 @@
         <translation>Explorar nodos maestros</translation>
     </message>
     <message>
-        <source>&amp;About Condominium Core</source>
-        <translation>&amp;Sobre el núcleo de Condominium</translation>
+        <source>&amp;About asocoin Core</source>
+        <translation>&amp;Sobre el núcleo de asocoin</translation>
     </message>
     <message>
-        <source>Show information about Condominium Core</source>
-        <translation>Mostrar información sobre el núcleo de Condominium</translation>
+        <source>Show information about asocoin Core</source>
+        <translation>Mostrar información sobre el núcleo de asocoin</translation>
     </message>
     <message>
-        <source>Modify configuration options for Condominium</source>
-        <translation>Modificar las opciones de configuración de Condominium</translation>
+        <source>Modify configuration options for asocoin</source>
+        <translation>Modificar las opciones de configuración de asocoin</translation>
     </message>
     <message>
-        <source>Sign messages with your Condominium addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones Condominium para demostrar que le pertenecen</translation>
+        <source>Sign messages with your asocoin addresses to prove you own them</source>
+        <translation>Firmar mensajes con sus direcciones asocoin para demostrar que le pertenecen</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Condominium addresses</source>
-        <translation>Verificar mensajes para asegurar que están firmados con la dirección Condominium especificada</translation>
+        <source>Verify messages to ensure they were signed with specified asocoin addresses</source>
+        <translation>Verificar mensajes para asegurar que están firmados con la dirección asocoin especificada</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -678,8 +678,8 @@
         <translation>Abrir Fichero de Configuración de Nodos Maestros</translation>
     </message>
     <message>
-        <source>Open a Condominium: URI or payment request</source>
-        <translation>Abrir un Condominium: URI o solicitud de pago</translation>
+        <source>Open a asocoin: URI or payment request</source>
+        <translation>Abrir un asocoin: URI o solicitud de pago</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -690,16 +690,16 @@
         <translation>Ventana del explorador de bloques</translation>
     </message>
     <message>
-        <source>Show the Condominium Core help message to get a list with possible Condominium command-line options</source>
-        <translation>Mostrar la ayuda de Condominium Core para obtener una lista de posibles opciones en línea de comandos</translation>
+        <source>Show the asocoin Core help message to get a list with possible asocoin command-line options</source>
+        <translation>Mostrar la ayuda de asocoin Core para obtener una lista de posibles opciones en línea de comandos</translation>
     </message>
     <message>
-        <source>Condominium Core client</source>
-        <translation>Cliente Condominium Core</translation>
+        <source>asocoin Core client</source>
+        <translation>Cliente asocoin Core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Condominium network</source>
-        <translation><numerusform>%n conexión(es) activa a la red Condominium</numerusform><numerusform>%n conexion(es) activas a la red Condominium</numerusform></translation>
+        <source>%n active connection(s) to asocoin network</source>
+        <translation><numerusform>%n conexión(es) activa a la red asocoin</numerusform><numerusform>%n conexion(es) activas a la red asocoin</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -853,8 +853,8 @@ MultiEnvío: %1</translation>
         <translation>EtiquetaDeTexto</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (condominium.conf).</source>
-        <translation>No se muestran todas las transacciones. Para ver todas las transacciones introduzca la línea "txindex=1" en el archivo de configuración (condominium.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (asocoin.conf).</source>
+        <translation>No se muestran todas las transacciones. Para ver todas las transacciones introduzca la línea "txindex=1" en el archivo de configuración (asocoin.conf).</translation>
     </message>
 </context>
 <context>
@@ -1142,8 +1142,8 @@ MultiEnvío: %1</translation>
         <translation>Editar dirección de envío</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Condominium address.</source>
-        <translation>La dirección introducida "%1" no es una dirección Condominium válida.</translation>
+        <source>The entered address "%1" is not a valid asocoin address.</source>
+        <translation>La dirección introducida "%1" no es una dirección asocoin válida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1188,16 +1188,16 @@ MultiEnvío: %1</translation>
         <translation>versión</translation>
     </message>
     <message>
-        <source>Condominium Core</source>
-        <translation>Núcleo Condominium</translation>
+        <source>asocoin Core</source>
+        <translation>Núcleo asocoin</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Condominium Core</source>
-        <translation>Acerca de Condominium Core</translation>
+        <source>About asocoin Core</source>
+        <translation>Acerca de asocoin Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1243,16 +1243,16 @@ MultiEnvío: %1</translation>
         <translation>Bienvenido/a</translation>
     </message>
     <message>
-        <source>Welcome to Condominium Core.</source>
-        <translation>Bienvenido/a a Condominium Core.</translation>
+        <source>Welcome to asocoin Core.</source>
+        <translation>Bienvenido/a a asocoin Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Condominium Core will store its data.</source>
-        <translation>Al ser la primera vez que se inicia el programa, usted puede elegir dónde guardará Condominium Core sus datos.</translation>
+        <source>As this is the first time the program is launched, you can choose where asocoin Core will store its data.</source>
+        <translation>Al ser la primera vez que se inicia el programa, usted puede elegir dónde guardará asocoin Core sus datos.</translation>
     </message>
     <message>
-        <source>Condominium Core will download and store a copy of the Condominium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Condominium Core descargará y guardará una copia de la cadena de bloques Condominium. Por lo menos %1GB de datos serán guardados en esta carpeta, y crecerá con el tiempo. El monedero también se guardará en esta carpeta.</translation>
+        <source>asocoin Core will download and store a copy of the asocoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>asocoin Core descargará y guardará una copia de la cadena de bloques asocoin. Por lo menos %1GB de datos serán guardados en esta carpeta, y crecerá con el tiempo. El monedero también se guardará en esta carpeta.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1263,8 +1263,8 @@ MultiEnvío: %1</translation>
         <translation>Usar una carpeta de datos personalizada:</translation>
     </message>
     <message>
-        <source>Condominium Core</source>
-        <translation>Núcleo Condominium</translation>
+        <source>asocoin Core</source>
+        <translation>Núcleo asocoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1405,12 +1405,12 @@ MultiEnvío: %1</translation>
         <translation>Introduzca Dirección a la cual Enviar</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Condominium addresses after it matures.
-To Add: enter percentage to give and Condominium address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other asocoin addresses after it matures.
+To Add: enter percentage to give and asocoin address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiEnvío le permite enviar automáticamente hasta el 100% de recompensa de participación o de nodo maestro a una lista de otras direcciones Condominium después de su maduración.
-Para Añadir: introduzca porcentaje a enviar y las direcciones Condominium a añadir al vector MultiEnvío.
+        <translation>MultiEnvío le permite enviar automáticamente hasta el 100% de recompensa de participación o de nodo maestro a una lista de otras direcciones asocoin después de su maduración.
+Para Añadir: introduzca porcentaje a enviar y las direcciones asocoin a añadir al vector MultiEnvío.
 Para Eliminar: Introduzca la dirección a eliminar y pulse la tecla delete.
 MultiEnvío no se activará a menos que haga usted click en Activar</translation>
     </message>
@@ -1548,48 +1548,48 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
         <translation>Por favor selecciones un nivel de privacidad.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CONDOMINIUM</source>
-        <translation>Use 2 nodos maestros diferentes para mezclar los fondos hasta los 10000 CONDOMINIUM</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 asocoin</source>
+        <translation>Use 2 nodos maestros diferentes para mezclar los fondos hasta los 10000 asocoin</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 CONDOMINIUM</source>
-        <translation>Use 8 nodos maestros diferentes para mezclar fondos hasta los 10000 CONDOMINIUM</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 asocoin</source>
+        <translation>Use 8 nodos maestros diferentes para mezclar fondos hasta los 10000 asocoin</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 nodos maestros diferentes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 CONDOMINIUM to anonymize 10000 CONDOMINIUM</source>
-        <translation>Esta opción es la más rápida y costará alrededor de ~0.025 CONDOMINIUM para anonimizar 10000 CONDOMINIUM</translation>
+        <source>This option is the quickest and will cost about ~0.025 asocoin to anonymize 10000 asocoin</source>
+        <translation>Esta opción es la más rápida y costará alrededor de ~0.025 asocoin para anonimizar 10000 asocoin</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 CONDOMINIUM to anonymize 10000 CONDOMINIUM</source>
-        <translation>Esta opción es moderadamente rápida y costará cerca de 0.05 CONDOMINIUM para anonimizar 10000 CONDOMINIUM.</translation>
+        <source>This option is moderately fast and will cost about 0.05 asocoin to anonymize 10000 asocoin</source>
+        <translation>Esta opción es moderadamente rápida y costará cerca de 0.05 asocoin para anonimizar 10000 asocoin.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Esta es la opción más lenta pero más segura. Usar el máximo anonimato costará</translation>
     </message>
     <message>
-        <source>0.1 CONDOMINIUM per 10000 CONDOMINIUM you anonymize.</source>
-        <translation>0.1 CONDOMINIUM por 10000 CONDOMINIUM que anonimizas.</translation>
+        <source>0.1 asocoin per 10000 asocoin you anonymize.</source>
+        <translation>0.1 asocoin por 10000 asocoin que anonimizas.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Configuración de Ofuscación</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Condominium's configuration screen.</source>
-        <translation>La Ofuscación se configuró correctamente en modo básico (%1 y 2 rondas). Puedes cambiar esto en cualquier momento accediendo a la ventana de configuración de Condominium.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening asocoin's configuration screen.</source>
+        <translation>La Ofuscación se configuró correctamente en modo básico (%1 y 2 rondas). Puedes cambiar esto en cualquier momento accediendo a la ventana de configuración de asocoin.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Condominium's configuration screen.</source>
-        <translation>La Ofuscación se activó correctamente en modo alto (%1 y 8 rondas). Usted puede cambiar esto en cualquier momento abriendo la ventana de configuración de Condominium.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening asocoin's configuration screen.</source>
+        <translation>La Ofuscación se activó correctamente en modo alto (%1 y 8 rondas). Usted puede cambiar esto en cualquier momento abriendo la ventana de configuración de asocoin.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Condominium's configuration screen.</source>
-        <translation>La Ofuscación se activó correctamente en su grado máximo (%1 y 16 rondas). Usted puede cambiar ésto en cualquier momento en la ventana de configuración de Condominium.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening asocoin's configuration screen.</source>
+        <translation>La Ofuscación se activó correctamente en su grado máximo (%1 y 16 rondas). Usted puede cambiar ésto en cualquier momento en la ventana de configuración de asocoin.</translation>
     </message>
 </context>
 <context>
@@ -1650,8 +1650,8 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
         <translation>Si deselecciona el gasto de cambio no confirmado, las entradas de una transacción&lt;br/&gt;no podrán ser usadas hasta que esa transacción tenga al menos una confirmación.&lt;br/&gt;Esto también afecta a cómo se calcula su balance actual.</translation>
     </message>
     <message>
-        <source>Automatically open the Condominium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente Condominium en el enrutador. Ésto sólo funciona si su enrutador soporta UPnP y esta función está activada.</translation>
+        <source>Automatically open the asocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente el puerto del cliente asocoin en el enrutador. Ésto sólo funciona si su enrutador soporta UPnP y esta función está activada.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1670,12 +1670,12 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
         <translation>Experto</translation>
     </message>
     <message>
-        <source>Automatically start Condominium after logging in to the system.</source>
-        <translation>Arrancar Condominium automáticamente después de identificarse en Windows.</translation>
+        <source>Automatically start asocoin after logging in to the system.</source>
+        <translation>Arrancar asocoin automáticamente después de identificarse en Windows.</translation>
     </message>
     <message>
-        <source>&amp;Start Condominium on system login</source>
-        <translation>&amp;Arrancar Condominium al inicio del sistema</translation>
+        <source>&amp;Start asocoin on system login</source>
+        <translation>&amp;Arrancar asocoin al inicio del sistema</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1702,38 +1702,38 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
         <translation>&amp;Red</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Condominium.</source>
-        <translation>El idioma de interface de usuario puede seleccionarse aquí. Este ajuste tomará efecto después de reiniciar Condominium.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting asocoin.</source>
+        <translation>El idioma de interface de usuario puede seleccionarse aquí. Este ajuste tomará efecto después de reiniciar asocoin.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/condominium-project/condominium-project-translations</source>
+https://www.transifex.com/asocoin-project/asocoin-project-translations</source>
         <translation>¿Falta su lenguaje o la traducción está incompleta? Contribuya con las traducciones aquí:
-https://www.transifex.com/condominium-project/condominium-project-translations</translation>
+https://www.transifex.com/asocoin-project/asocoin-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mapear un puerto utilizando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Percentage of incoming CONDOMINIUM which get automatically converted to zCDM via Zerocoin Protocol (min: 10%)</source>
-        <translation>Porcentaje de CONDOMINIUMs entrantes que serán automáticamente convertidos a zCDM a través del Protocolo Zerocoin (mín: 10%)</translation>
+        <source>Percentage of incoming asocoin which get automatically converted to zCDM via Zerocoin Protocol (min: 10%)</source>
+        <translation>Porcentaje de asocoins entrantes que serán automáticamente convertidos a zCDM a través del Protocolo Zerocoin (mín: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zCDM</source>
         <translation>Porcentaje de zCDM autogenerados</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough CONDOMINIUM for this denomination is available</source>
-        <translation>Retrasar la conversión automática a Zerocoin hasta que hayan suficientes CONDOMINIUM disponibles para este tamaño de billete</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough asocoin for this denomination is available</source>
+        <translation>Retrasar la conversión automática a Zerocoin hasta que hayan suficientes asocoin disponibles para este tamaño de billete</translation>
     </message>
     <message>
         <source>Preferred Automint zCDM Denomination</source>
         <translation>Tamaño de billete zCDM preferido en la creación automática de dinero</translation>
     </message>
     <message>
-        <source>Connect to the Condominium network through a SOCKS5 proxy.</source>
-        <translation>Conectar a la red Condominium mediante un proxy SOCKS5.</translation>
+        <source>Connect to the asocoin network through a SOCKS5 proxy.</source>
+        <translation>Conectar a la red asocoin mediante un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1863,8 +1863,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>CONDOMINIUM Balances</source>
-        <translation>Balances CONDOMINIUM</translation>
+        <source>asocoin Balances</source>
+        <translation>Balances asocoin</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1891,8 +1891,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Recompensa de participación o de nodo maestro que aún no ha madurado</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Condominium network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Condominium después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the asocoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red asocoin después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1931,8 +1931,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Balances Combinados (incluyendo monedas inmaduras)</translation>
     </message>
     <message>
-        <source>CONDOMINIUM:</source>
-        <translation>CONDOMINIUM:</translation>
+        <source>asocoin:</source>
+        <translation>asocoin:</translation>
     </message>
     <message>
         <source>zCDM:</source>
@@ -1978,12 +1978,12 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Dirección de pago inválida %1</translation>
     </message>
     <message>
-        <source>Cannot start condominium: click-to-pay handler</source>
-        <translation>No se puede iniciar condominium: módulo click-to-pay</translation>
+        <source>Cannot start asocoin: click-to-pay handler</source>
+        <translation>No se puede iniciar asocoin: módulo click-to-pay</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Condominium address or malformed URI parameters.</source>
-        <translation>¡El identificador de la dirección no puede ser analizado! Esto puede ser causado por una dirección Condominium inválida o parámetros del identificador malformados.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid asocoin address or malformed URI parameters.</source>
+        <translation>¡El identificador de la dirección no puede ser analizado! Esto puede ser causado por una dirección asocoin inválida o parámetros del identificador malformados.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2064,20 +2064,20 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>CONDOMINIUM which were anonymized via Zerocin Protocol</source>
-        <translation>CONDOMINIUM que fueron anonimizados mediante Protocolo Zerocoin</translation>
+        <source>asocoin which were anonymized via Zerocin Protocol</source>
+        <translation>asocoin que fueron anonimizados mediante Protocolo Zerocoin</translation>
     </message>
     <message>
-        <source>Zerocoin CONDOMINIUM (zCDM)</source>
-        <translation>Zerocoin CONDOMINIUM (zCDM)</translation>
+        <source>Zerocoin asocoin (zCDM)</source>
+        <translation>Zerocoin asocoin (zCDM)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
         <translation>Acciones Zerocoin:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Condominium network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Condominium después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the asocoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red asocoin después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Enter an amount of Phr to convert to zPhr</source>
@@ -2100,8 +2100,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Disponible para Creación de moneda:</translation>
     </message>
     <message>
-        <source>0.000 000 00 CONDOMINIUM</source>
-        <translation>0.000 000 00 CONDOMINIUM</translation>
+        <source>0.000 000 00 asocoin</source>
+        <translation>0.000 000 00 asocoin</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2180,8 +2180,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Pagar &amp;A:</translation>
     </message>
     <message>
-        <source>The Condominium address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>La dirección Condominium a la que enviar el pago. Si se deja en blanco, crea un pago a usted mismo.</translation>
+        <source>The asocoin address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>La dirección asocoin a la que enviar el pago. Si se deja en blanco, crea un pago a usted mismo.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2380,8 +2380,8 @@ https://www.transifex.com/condominium-project/condominium-project-translations</
         <translation>Copiar cantidad</translation>
     </message>
     <message>
-        <source>Zerocoin functionality is not enabled on the Condominium network yet.</source>
-        <translation>La funcionalidad Zerocoin todavía no está habilitada en la red Condominium.</translation>
+        <source>Zerocoin functionality is not enabled on the asocoin network yet.</source>
+        <translation>La funcionalidad Zerocoin todavía no está habilitada en la red asocoin.</translation>
     </message>
     <message>
         <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
@@ -2434,8 +2434,8 @@ Por favor espere...</translation>
         <translation>No se especificó drección 'Pagar A', por lo que asumimos un pago local</translation>
     </message>
     <message>
-        <source>Invalid Condominium Address</source>
-        <translation>Dirección Condominium Inválida</translation>
+        <source>Invalid asocoin Address</source>
+        <translation>Dirección asocoin Inválida</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2525,8 +2525,8 @@ Por favor tenga paciencia...</translation>
         <translation>Cantidad</translation>
     </message>
     <message>
-        <source>Enter a Condominium address (e.g. %1)</source>
-        <translation>Introduzca una dirección Condominium (p.e. %1)</translation>
+        <source>Enter a asocoin address (e.g. %1)</source>
+        <translation>Introduzca una dirección asocoin (p.e. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2663,8 +2663,8 @@ Por favor tenga paciencia...</translation>
         <translation>Cadena de bloques</translation>
     </message>
     <message>
-        <source>Open the Condominium debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Abrir el fichero de depuración Condominium en el directorio actual de datos. Esto puede llevar unos segundos para ficheros de depuración grandes.</translation>
+        <source>Open the asocoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Abrir el fichero de depuración asocoin en el directorio actual de datos. Esto puede llevar unos segundos para ficheros de depuración grandes.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2831,8 +2831,8 @@ Por favor tenga paciencia...</translation>
         <translation>Fuera:</translation>
     </message>
     <message>
-        <source>Welcome to the Condominium RPC console.</source>
-        <translation>Bienvenido a la consola RPC de Condominium.</translation>
+        <source>Welcome to the asocoin RPC console.</source>
+        <translation>Bienvenido a la consola RPC de asocoin.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2902,12 +2902,12 @@ Por favor tenga paciencia...</translation>
         <translation>Una etiqueta opcional a asociar con la nueva dirección de recepción.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Condominium network.</source>
-        <translation>Un mensaje opcional a adjuntar a la solicitud de pago, que será mostrado cuando se abra la solicitud. Nota: El mensaje no se envía junto al pago por la red Condominium.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the asocoin network.</source>
+        <translation>Un mensaje opcional a adjuntar a la solicitud de pago, que será mostrado cuando se abra la solicitud. Nota: El mensaje no se envía junto al pago por la red asocoin.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Condominium network.</source>
-        <translation>Un mensaje opcional a adjuntar a la solicitud de pago, que será mostrado cuando se abra la solicitud. &lt;br&gt;Nota: El mensaje no se envía junto al pago por la red Condominium.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the asocoin network.</source>
+        <translation>Un mensaje opcional a adjuntar a la solicitud de pago, que será mostrado cuando se abra la solicitud. &lt;br&gt;Nota: El mensaje no se envía junto al pago por la red asocoin.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3131,8 +3131,8 @@ Por favor tenga paciencia...</translation>
         <translation>Tamaño de UTXO:</translation>
     </message>
     <message>
-        <source>0 CONDOMINIUM</source>
-        <translation>0 CONDOMINIUM</translation>
+        <source>0 asocoin</source>
+        <translation>0 asocoin</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3183,16 +3183,16 @@ Por favor tenga paciencia...</translation>
         <translation>Monedas seleccionadas automáticamente</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCONDOMINIUMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCONDOMINIUMs in fee,&lt;br /&gt;while "at least" pays 1000 uCONDOMINIUMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Si la comisión personalizada se fija en 1000 uCONDOMINIUMs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uCONDOMINIUMs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uCONDOMINIUMs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uasocoins and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uasocoins in fee,&lt;br /&gt;while "at least" pays 1000 uasocoins. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Si la comisión personalizada se fija en 1000 uasocoins y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uasocoins de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uasocoins. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCONDOMINIUMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCONDOMINIUMs in fee,&lt;br /&gt;while "total at least" pays 1000 uCONDOMINIUMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Si la comisión personalizada se fija en 1000 uCONDOMINIUMs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uCONDOMINIUMs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uCONDOMINIUMs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uasocoins and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uasocoins in fee,&lt;br /&gt;while "total at least" pays 1000 uasocoins. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Si la comisión personalizada se fija en 1000 uasocoins y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uasocoins de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uasocoins. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Condominium transactions than the network can process.</source>
-        <translation>Pagar sólo la comisión mínima está bien mientras haya menos volumen de transacciones que espacio en los bloques.&lt;br/&gt;Pero tenga en cuenta que esto podría acabar en una transacción que nunca se confirme si hay más demanda de transacciones Condominium de las que la red puede procesar.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for asocoin transactions than the network can process.</source>
+        <translation>Pagar sólo la comisión mínima está bien mientras haya menos volumen de transacciones que espacio en los bloques.&lt;br/&gt;Pero tenga en cuenta que esto podría acabar en una transacción que nunca se confirme si hay más demanda de transacciones asocoin de las que la red puede procesar.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3239,8 +3239,8 @@ Por favor tenga paciencia...</translation>
         <translation>Añadir Destinata&amp;rio</translation>
     </message>
     <message>
-        <source>Anonymized CONDOMINIUM</source>
-        <translation>CONDOMINIUM anonimizados</translation>
+        <source>Anonymized asocoin</source>
+        <translation>asocoin anonimizados</translation>
     </message>
     <message>
         <source>SwiftTX</source>
@@ -3299,8 +3299,8 @@ Por favor tenga paciencia...</translation>
         <translation>fondos anónimos</translation>
     </message>
     <message>
-        <source>Warning: Invalid Condominium address</source>
-        <translation>Advertencia: Direcciones Condominium inválidas</translation>
+        <source>Warning: Invalid asocoin address</source>
+        <translation>Advertencia: Direcciones asocoin inválidas</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -3406,8 +3406,8 @@ Por favor tenga paciencia...</translation>
         <translation>Pagar &amp;A:</translation>
     </message>
     <message>
-        <source>The Condominium address to send the payment to</source>
-        <translation>La dirección Condominium a la cual enviar el pago</translation>
+        <source>The asocoin address to send the payment to</source>
+        <translation>La dirección asocoin a la cual enviar el pago</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3446,8 +3446,8 @@ Por favor tenga paciencia...</translation>
         <translation>Mensaje:</translation>
     </message>
     <message>
-        <source>A message that was attached to the Condominium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Condominium network.</source>
-        <translation>Un mensaje adjunto al Condominium: En recurso web especificado será guardado junto a la transacción para su referencia. Nota: Este mensaje no se enviará por la red Condominium.</translation>
+        <source>A message that was attached to the asocoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the asocoin network.</source>
+        <translation>Un mensaje adjunto al asocoin: En recurso web especificado será guardado junto a la transacción para su referencia. Nota: Este mensaje no se enviará por la red asocoin.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3473,8 +3473,8 @@ Por favor tenga paciencia...</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Condominium Core is shutting down...</source>
-        <translation>El programa Condominium se está cerrando...</translation>
+        <source>asocoin Core is shutting down...</source>
+        <translation>El programa asocoin se está cerrando...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3496,8 +3496,8 @@ Por favor tenga paciencia...</translation>
         <translation>Usted puede firmar mensajes con su dirección para probar que son auténticos. Tenga cuidado con firmar algo corto o vago como "hola", pues los ataques de phising pueden engañarle para que firme su identidad para ellos. Sólo firme textos detallados con los que esté de acuerdo.</translation>
     </message>
     <message>
-        <source>The Condominium address to sign the message with</source>
-        <translation>La dirección Condominium con la que desee firmar el mensaje</translation>
+        <source>The asocoin address to sign the message with</source>
+        <translation>La dirección asocoin con la que desee firmar el mensaje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3528,16 +3528,16 @@ Por favor tenga paciencia...</translation>
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Condominium address</source>
-        <translation>Firme el mensaje para demostrar que eres el propietario de esta dirección Condominium</translation>
+        <source>Sign the message to prove you own this asocoin address</source>
+        <translation>Firme el mensaje para demostrar que eres el propietario de esta dirección asocoin</translation>
     </message>
     <message>
-        <source>The Condominium address the message was signed with</source>
-        <translation>La dirección Condominium con la que se firmó el mensaje</translation>
+        <source>The asocoin address the message was signed with</source>
+        <translation>La dirección asocoin con la que se firmó el mensaje</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Condominium address</source>
-        <translation>Verifica el mensaje para asegurar que fue firmado con la dirección Condominium especificada</translation>
+        <source>Verify the message to ensure it was signed with the specified asocoin address</source>
+        <translation>Verifica el mensaje para asegurar que fue firmado con la dirección asocoin especificada</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3623,8 +3623,8 @@ Por favor tenga paciencia...</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Condominium Core</source>
-        <translation>Núcleo Condominium</translation>
+        <source>asocoin Core</source>
+        <translation>Núcleo asocoin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3639,8 +3639,8 @@ Por favor tenga paciencia...</translation>
         <translation>Los desarrolladores de Dash Core</translation>
     </message>
     <message>
-        <source>The Condominium Core developers</source>
-        <translation>Los desarrolladores de Condominium Core</translation>
+        <source>The asocoin Core developers</source>
+        <translation>Los desarrolladores de asocoin Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4231,8 +4231,8 @@ Por favor tenga paciencia...</translation>
         <translation>Enviar Monedas</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 CONDOMINIUM.</source>
-        <translation>SwiftTX no soporta el envío de importes tan altos todavía. Las transacciones están actualmente limitadas a %1 CONDOMINIUM.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 asocoin.</source>
+        <translation>SwiftTX no soporta el envío de importes tan altos todavía. Las transacciones están actualmente limitadas a %1 asocoin.</translation>
     </message>
 </context>
 <context>
@@ -4302,7 +4302,7 @@ Por favor tenga paciencia...</translation>
     </message>
 </context>
 <context>
-    <name>condominium-core</name>
+    <name>asocoin-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1= mantener los metadatos tx p.e. dueño de la cuenta e información de la solicitud de pago, 2 = ignorar metadatos tx)</translation>
@@ -4332,8 +4332,8 @@ Por favor tenga paciencia...</translation>
         <translation>El punto de chequeo del acumulador que hemos calculado no coincide con lo guardado en el índice de bloques</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Condominium Core is probably already running.</source>
-        <translation>No se puede obtener un bloqueo sobre el directorio de datos %s. Condominium Core esta probablemente en ejecución.</translation>
+        <source>Cannot obtain a lock on data directory %s. asocoin Core is probably already running.</source>
+        <translation>No se puede obtener un bloqueo sobre el directorio de datos %s. asocoin Core esta probablemente en ejecución.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4352,8 +4352,8 @@ Por favor tenga paciencia...</translation>
         <translation>Borrar todas las transacciones del monedero y solo recuperar partes de la cadena de bloque a traves de -rescan al inicio.</translation>
     </message>
     <message>
-        <source>Disable all Condominium specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Desabilitar toda la funcionalidad especifica Condominium (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, predeterminado: %u)</translation>
+        <source>Disable all asocoin specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Desabilitar toda la funcionalidad especifica asocoin (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, predeterminado: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -4392,12 +4392,12 @@ Por favor tenga paciencia...</translation>
         <translation>Ejecutar comando cuando el mejor bloque cambie (%s en cmd es reemplazado por el block hash)</translation>
     </message>
     <message>
-        <source>Fees (in CONDOMINIUM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Comisiones (en CONDOMINIUM/Kb) menores a esta son consideradas gratuitas para la propagación de la transacción (default: %s)</translation>
+        <source>Fees (in asocoin/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Comisiones (en asocoin/Kb) menores a esta son consideradas gratuitas para la propagación de la transacción (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in CONDOMINIUM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Comisiones (en CONDOMINIUM/Kb) menores a esta son consideradas gratuitas para la creación de la transacción (default: %s)</translation>
+        <source>Fees (in asocoin/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Comisiones (en asocoin/Kb) menores a esta son consideradas gratuitas para la creación de la transacción (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4496,44 +4496,44 @@ Por favor tenga paciencia...</translation>
         <translation>Este producto incluye software desarrollado por el Proyecto OpenSSL para uso en OpenSSL Toolkit &lt;https://www.openssl.org/&gt; y software de cifrado escrito por Eric Young y software de UPnP escrito por Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use condominiumd, or the -server option to condominium-qt, you must set an rpcpassword in the configuration file:
+        <source>To use asocoind, or the -server option to asocoin-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=condominiumrpc
+rpcuser=asocoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Condominium Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "asocoin Alert" admin@foo.com
 </source>
-        <translation>Para usar condominiumd, o la opción -server de condominium-qt, debes definir un rpcpassword en el archivo de configuración:
+        <translation>Para usar asocoind, o la opción -server de asocoin-qt, debes definir un rpcpassword en el archivo de configuración:
 %s
 Es recomendado que uses la siguiente contraseña aleatoria:
-rpcuser=condominium
+rpcuser=asocoin
 rpcrpcpassword=%s
 (No necesitas recordar esta contraseña)
 El nombre de usuario y contraseña NO DEBEN ser los mismos.
 Si el archivo no existe, crearlo con permisos de solo lectura para el propietario.
 También es recomendado definir alertnotify de manera que seas notificado de problemas;
-por ejemplo: alertnotify=echo %%s | mail -s "Condominium Alert" admin@foo.com
+por ejemplo: alertnotify=echo %%s | mail -s "asocoin Alert" admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Condominium Core is probably already running.</source>
-        <translation>Imposible conectar a %s en esta computadora. Es probable que Condominium Core ya este corriendo.</translation>
+        <source>Unable to bind to %s on this computer. asocoin Core is probably already running.</source>
+        <translation>Imposible conectar a %s en esta computadora. Es probable que asocoin Core ya este corriendo.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Imposible localizar suficientes fondos denominados de Ofuscación para esta transacción.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CONDOMINIUM.</source>
-        <translation>Imposible localizar suficientes fondos no-denominados de Ofuscación para esta transacción que no es igual a 10000 CONDOMINIUM.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 asocoin.</source>
+        <translation>Imposible localizar suficientes fondos no-denominados de Ofuscación para esta transacción que no es igual a 10000 asocoin.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 CONDOMINIUM.</source>
-        <translation>Imposible localizar fondos suficientes para esta transacción que no es igual a 10000 CONDOMINIUM.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 asocoin.</source>
+        <translation>Imposible localizar fondos suficientes para esta transacción que no es igual a 10000 asocoin.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4548,8 +4548,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Condominium Alert" admin@foo.com
         <translation>Advertencia: -paytxfee esta muy alta! Esta es la comisión de transacción que pagarás si envías una transacción.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Condominium Core will not work properly.</source>
-        <translation>Advertencia: Por favor verifique que la fecha y hora de su computadora sean correctas! Si su reloj esta fuera de hora Condominium Core no funcionará adecuadamente.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong asocoin Core will not work properly.</source>
+        <translation>Advertencia: Por favor verifique que la fecha y hora de su computadora sean correctas! Si su reloj esta fuera de hora asocoin Core no funcionará adecuadamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4704,8 +4704,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Condominium Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Condominium Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Condominium Core Developers</translation>
+        <source>Copyright (C) 2015-%i The asocoin Core Developers</source>
+        <translation>Copyright (C) 2015-%i The asocoin Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4784,8 +4784,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Condominium Alert" admin@foo.com
         <translation>Error al cargar wallet.dat: Billetera dañada</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Condominium Core</source>
-        <translation>Error al cargar wallet.dat: La Billetera requiere una nueva versión del Núcleo Condominium</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of asocoin Core</source>
+        <translation>Error al cargar wallet.dat: La Billetera requiere una nueva versión del Núcleo asocoin</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4836,8 +4836,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Condominium Alert" admin@foo.com
         <translation>Falló al leer el bloque</translation>
     </message>
     <message>
-        <source>Fee (in CONDOMINIUM/kB) to add to transactions you send (default: %s)</source>
-        <translation>Comisión (en CONDOMINIUM/kB) para agregar a la transacción que envías (predeterminado: %s)</translation>
+        <source>Fee (in asocoin/kB) to add to transactions you send (default: %s)</source>
+        <translation>Comisión (en asocoin/kB) para agregar a la transacción que envías (predeterminado: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4896,8 +4896,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Condominium Alert" admin@foo.com
         <translation>Información</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Condominium Core is shutting down.</source>
-        <translation>La prueba de salud de inicialización ha fallado. Condominium Core se cerrará.</translation>
+        <source>Initialization sanity check failed. asocoin Core is shutting down.</source>
+        <translation>La prueba de salud de inicialización ha fallado. asocoin Core se cerrará.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -5572,8 +5572,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Condominium Alert" admin@foo.com
         <translation>Monedero bloqueado.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Condominium Core to complete</source>
-        <translation>Monedero necesita ser reescrito: reinicie Condominium Core para completar</translation>
+        <source>Wallet needed to be rewritten: restart asocoin Core to complete</source>
+        <translation>Monedero necesita ser reescrito: reinicie asocoin Core para completar</translation>
     </message>
     <message>
         <source>Wallet options:</source>

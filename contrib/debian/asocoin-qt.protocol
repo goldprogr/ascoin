@@ -1,6 +1,6 @@
 [Protocol]
-exec=condominium-qt '%u'
-protocol=condominium
+exec=asocoin-qt '%u'
+protocol=asocoin
 input=none
 output=none
 helper=true

@@ -72,10 +72,10 @@ am__make_running_with_option = \
   test $$has_opt = yes
 am__make_dryrun = (target_option=n; $(am__make_running_with_option))
 am__make_keepgoing = (target_option=k; $(am__make_running_with_option))
-pkgdatadir = $(datadir)/condominium
-pkgincludedir = $(includedir)/condominium
-pkglibdir = $(libdir)/condominium
-pkglibexecdir = $(libexecdir)/condominium
+pkgdatadir = $(datadir)/asocoin
+pkgincludedir = $(includedir)/asocoin
+pkglibdir = $(libdir)/asocoin
+pkglibexecdir = $(libexecdir)/asocoin
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -100,20 +100,20 @@ am__append_6 = libbitcoin_zmq.a
 bin_PROGRAMS = $(am__EXEEXT_1) $(am__EXEEXT_2) $(am__EXEEXT_3) \
 	$(am__EXEEXT_4) $(am__EXEEXT_5)
 TESTS = $(am__EXEEXT_6) $(am__EXEEXT_5)
-am__append_7 = condominiumd
-am__append_8 = condominium-cli condominium-tx
+am__append_7 = asocoind
+am__append_8 = asocoin-cli asocoin-tx
 #am__append_9 = compat/glibc_compat.cpp \
 #	compat/glibcxx_compat.cpp
 am__append_10 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 am__append_11 = libbitcoin_wallet.a
 #
-am__append_12 = condominiumd-res.rc
-am__append_13 = condominium-cli-res.rc
+am__append_12 = asocoind-res.rc
+am__append_13 = asocoin-cli-res.rc
 ##am__append_14 = compat/glibc_compat.cpp \
 ##	compat/glibcxx_compat.cpp
 ##am__append_15 = secp256k1/libsecp256k1.la
-am__append_16 = test/test_condominium test/bitcoin-util-test.py
-am__append_17 = test/test_condominium
+am__append_16 = test/test_asocoin test/bitcoin-util-test.py
+am__append_17 = test/test_asocoin
 am__append_18 = \
 	test/bctest.py \
 	test/bitcoin-util-test.py \
@@ -135,7 +135,7 @@ am__append_19 = \
 am__append_20 = $(LIBBITCOIN_WALLET)
 am__append_21 = $(ZMQ_LIBS)
 am__append_22 = $(CLEAN_BITCOIN_TEST)
-am__append_23 = qt/condominium-qt
+am__append_23 = qt/asocoin-qt
 am__append_24 = qt/libbitcoinqt.a
 am__append_25 = \
   qt/addressbookpage.cpp \
@@ -171,15 +171,15 @@ am__append_25 = \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp \
   qt/walletview.cpp \
-  qt/zcondominiumcontroldialog.cpp
+  qt/zasocoincontroldialog.cpp
 
 #am__append_26 = $(BITCOIN_MM)
 am__append_27 = $(BITCOIN_RC)
 am__append_28 = $(LIBBITCOIN_WALLET)
 am__append_29 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 am__append_30 = $(CLEAN_QT)
-am__append_31 = qt/test/test_condominium-qt
-am__append_32 = qt/test/test_condominium-qt
+am__append_31 = qt/test/test_asocoin-qt
+am__append_32 = qt/test/test_asocoin-qt
 am__append_33 = qt/test/moc_paymentservertests.cpp
 am__append_34 = \
   qt/test/paymentservertests.cpp
@@ -217,7 +217,7 @@ am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 DIST_COMMON = $(srcdir)/Makefile.am $(am__include_HEADERS_DIST) \
 	$(am__DIST_COMMON)
 mkinstalldirs = $(install_sh) -d
-CONFIG_HEADER = $(top_builddir)/src/config/condominium-config.h
+CONFIG_HEADER = $(top_builddir)/src/config/asocoin-config.h
 CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 ARFLAGS = cru
@@ -455,7 +455,7 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 	qt/transactionrecord.cpp qt/transactiontablemodel.cpp \
 	qt/transactionview.cpp qt/walletframe.cpp qt/walletmodel.cpp \
 	qt/walletmodeltransaction.cpp qt/walletview.cpp \
-	qt/zcondominiumcontroldialog.cpp qt/addressbookpage.h \
+	qt/zasocoincontroldialog.cpp qt/addressbookpage.h \
 	qt/addresstablemodel.h qt/askpassphrasedialog.h \
 	qt/bip38tooldialog.h qt/bitcoinaddressvalidator.h \
 	qt/bitcoinamountfield.h qt/bitcoingui.h qt/bitcoinunits.h \
@@ -478,7 +478,7 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 	qt/transactionrecord.h qt/transactiontablemodel.h \
 	qt/transactionview.h qt/utilitydialog.h qt/walletframe.h \
 	qt/walletmodel.h qt/walletmodeltransaction.h qt/walletview.h \
-	qt/winshutdownmonitor.h qt/zcondominiumcontroldialog.h \
+	qt/winshutdownmonitor.h qt/zasocoincontroldialog.h \
 	qt/forms/addressbookpage.ui qt/forms/askpassphrasedialog.ui \
 	qt/forms/bip38tooldialog.ui qt/forms/coincontroldialog.ui \
 	qt/forms/blockexplorer.ui qt/forms/obfuscationconfig.ui \
@@ -491,21 +491,21 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 	qt/forms/rpcconsole.ui qt/forms/sendcoinsdialog.ui \
 	qt/forms/sendcoinsentry.ui qt/forms/signverifymessagedialog.ui \
 	qt/forms/transactiondescdialog.ui \
-	qt/forms/zcondominiumcontroldialog.ui qt/condominium.qrc \
-	qt/condominium_locale.qrc qt/locale/condominium_bg.ts \
-	qt/locale/condominium_ca.ts qt/locale/condominium_cs.ts \
-	qt/locale/condominium_da.ts qt/locale/condominium_de.ts \
-	qt/locale/condominium_en.ts qt/locale/condominium_en_US.ts \
-	qt/locale/condominium_es.ts qt/locale/condominium_fi.ts \
-	qt/locale/condominium_fr_FR.ts qt/locale/condominium_hr.ts \
-	qt/locale/condominium_it.ts qt/locale/condominium_ja.ts \
-	qt/locale/condominium_ko_KR.ts qt/locale/condominium_nl.ts \
-	qt/locale/condominium_pl.ts qt/locale/condominium_pt.ts \
-	qt/locale/condominium_pt_BR.ts qt/locale/condominium_ro_RO.ts \
-	qt/locale/condominium_ru.ts qt/locale/condominium_sk.ts \
-	qt/locale/condominium_sv.ts qt/locale/condominium_tr.ts \
-	qt/locale/condominium_uk.ts qt/locale/condominium_zh_CN.ts \
-	qt/locale/condominium_zh_TW.ts qt/paymentrequest.proto \
+	qt/forms/zasocoincontroldialog.ui qt/asocoin.qrc \
+	qt/asocoin_locale.qrc qt/locale/asocoin_bg.ts \
+	qt/locale/asocoin_ca.ts qt/locale/asocoin_cs.ts \
+	qt/locale/asocoin_da.ts qt/locale/asocoin_de.ts \
+	qt/locale/asocoin_en.ts qt/locale/asocoin_en_US.ts \
+	qt/locale/asocoin_es.ts qt/locale/asocoin_fi.ts \
+	qt/locale/asocoin_fr_FR.ts qt/locale/asocoin_hr.ts \
+	qt/locale/asocoin_it.ts qt/locale/asocoin_ja.ts \
+	qt/locale/asocoin_ko_KR.ts qt/locale/asocoin_nl.ts \
+	qt/locale/asocoin_pl.ts qt/locale/asocoin_pt.ts \
+	qt/locale/asocoin_pt_BR.ts qt/locale/asocoin_ro_RO.ts \
+	qt/locale/asocoin_ru.ts qt/locale/asocoin_sk.ts \
+	qt/locale/asocoin_sv.ts qt/locale/asocoin_tr.ts \
+	qt/locale/asocoin_uk.ts qt/locale/asocoin_zh_CN.ts \
+	qt/locale/asocoin_zh_TW.ts qt/paymentrequest.proto \
 	qt/res/icons/add.png qt/res/icons/address-book.png \
 	qt/res/icons/bitcoin.ico qt/res/icons/bitcoin.png \
 	qt/res/icons/bitcoin_testnet.ico \
@@ -533,14 +533,14 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 	qt/res/icons/transaction_conflicted.png \
 	qt/res/icons/tx_inout.png qt/res/icons/tx_input.png \
 	qt/res/icons/tx_output.png qt/res/icons/tx_mined.png \
-	qt/res/icons/unit_condominium.png \
-	qt/res/icons/unit_mcondominium.png \
-	qt/res/icons/unit_ucondominium.png \
-	qt/res/icons/unit_tcondominium.png \
-	qt/res/icons/unit_tmcondominium.png \
-	qt/res/icons/unit_tucondominium.png qt/res/images/about.png \
+	qt/res/icons/unit_asocoin.png \
+	qt/res/icons/unit_masocoin.png \
+	qt/res/icons/unit_uasocoin.png \
+	qt/res/icons/unit_tasocoin.png \
+	qt/res/icons/unit_tmasocoin.png \
+	qt/res/icons/unit_tuasocoin.png qt/res/images/about.png \
 	qt/res/images/splash.png qt/res/images/splash_testnet.png \
-	qt/res/images/condominium_logo_horizontal.png \
+	qt/res/images/asocoin_logo_horizontal.png \
 	qt/res/images/downArrow.png qt/res/images/downArrow_small.png \
 	qt/res/images/upArrow_small.png \
 	qt/res/images/leftArrow_small.png \
@@ -582,7 +582,7 @@ am__objects_3 = qt/qt_libbitcoinqt_a-addressbookpage.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-walletmodel.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-walletmodeltransaction.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-walletview.$(OBJEXT) \
-	qt/qt_libbitcoinqt_a-zcondominiumcontroldialog.$(OBJEXT)
+	qt/qt_libbitcoinqt_a-zasocoincontroldialog.$(OBJEXT)
 am__objects_4 = qt/qt_libbitcoinqt_a-bitcoinaddressvalidator.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-bitcoinamountfield.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-bitcoingui.$(OBJEXT) \
@@ -663,10 +663,10 @@ am__objects_5 = qt/qt_libbitcoinqt_a-moc_addressbookpage.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-moc_walletframe.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-moc_walletmodel.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-moc_walletview.$(OBJEXT) \
-	qt/qt_libbitcoinqt_a-moc_zcondominiumcontroldialog.$(OBJEXT)
+	qt/qt_libbitcoinqt_a-moc_zasocoincontroldialog.$(OBJEXT)
 am__objects_6 = qt/qt_libbitcoinqt_a-paymentrequest.pb.$(OBJEXT)
-am__objects_7 = qt/qt_libbitcoinqt_a-qrc_condominium.$(OBJEXT)
-am__objects_8 = qt/qt_libbitcoinqt_a-qrc_condominium_locale.$(OBJEXT)
+am__objects_7 = qt/qt_libbitcoinqt_a-qrc_asocoin.$(OBJEXT)
+am__objects_8 = qt/qt_libbitcoinqt_a-qrc_asocoin_locale.$(OBJEXT)
 nodist_qt_libbitcoinqt_a_OBJECTS = $(am__objects_5) \
 	$(am__objects_1) $(am__objects_6) \
 	$(am__objects_1) $(am__objects_7) \
@@ -755,47 +755,47 @@ libbitcoinconsensus_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(LDFLAGS) -o $@
 #am_libbitcoinconsensus_la_rpath = -rpath \
 #	$(libdir)
-am__EXEEXT_1 = condominiumd$(EXEEXT)
-am__EXEEXT_2 = condominium-cli$(EXEEXT) \
-	condominium-tx$(EXEEXT)
-am__EXEEXT_3 = test/test_condominium$(EXEEXT)
-am__EXEEXT_4 = qt/condominium-qt$(EXEEXT)
+am__EXEEXT_1 = asocoind$(EXEEXT)
+am__EXEEXT_2 = asocoin-cli$(EXEEXT) \
+	asocoin-tx$(EXEEXT)
+am__EXEEXT_3 = test/test_asocoin$(EXEEXT)
+am__EXEEXT_4 = qt/asocoin-qt$(EXEEXT)
 am__EXEEXT_5 =  \
-	qt/test/test_condominium-qt$(EXEEXT)
+	qt/test/test_asocoin-qt$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS)
-am__condominium_cli_SOURCES_DIST = condominium-cli.cpp \
-	condominium-cli-res.rc
-am__objects_10 = condominium-cli-res.$(OBJEXT)
-am_condominium_cli_OBJECTS =  \
-	condominium_cli-condominium-cli.$(OBJEXT) $(am__objects_10)
-condominium_cli_OBJECTS = $(am_condominium_cli_OBJECTS)
-condominium_cli_DEPENDENCIES = $(LIBBITCOIN_CLI) $(LIBBITCOIN_UTIL) \
+am__asocoin_cli_SOURCES_DIST = asocoin-cli.cpp \
+	asocoin-cli-res.rc
+am__objects_10 = asocoin-cli-res.$(OBJEXT)
+am_asocoin_cli_OBJECTS =  \
+	asocoin_cli-asocoin-cli.$(OBJEXT) $(am__objects_10)
+asocoin_cli_OBJECTS = $(am_asocoin_cli_OBJECTS)
+asocoin_cli_DEPENDENCIES = $(LIBBITCOIN_CLI) $(LIBBITCOIN_UTIL) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
-condominium_cli_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
+asocoin_cli_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
-	$(AM_CXXFLAGS) $(CXXFLAGS) $(condominium_cli_LDFLAGS) \
+	$(AM_CXXFLAGS) $(CXXFLAGS) $(asocoin_cli_LDFLAGS) \
 	$(LDFLAGS) -o $@
-am_condominium_tx_OBJECTS = condominium_tx-condominium-tx.$(OBJEXT)
-condominium_tx_OBJECTS = $(am_condominium_tx_OBJECTS)
-condominium_tx_DEPENDENCIES = $(LIBBITCOIN_UNIVALUE) \
+am_asocoin_tx_OBJECTS = asocoin_tx-asocoin-tx.$(OBJEXT)
+asocoin_tx_OBJECTS = $(am_asocoin_tx_OBJECTS)
+asocoin_tx_DEPENDENCIES = $(LIBBITCOIN_UNIVALUE) \
 	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_ZEROCOIN) $(LIBBITCOIN_UTIL) \
 	$(LIBBITCOIN_CRYPTO) $(LIBSECP256K1) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1)
-condominium_tx_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
+asocoin_tx_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
-	$(AM_CXXFLAGS) $(CXXFLAGS) $(condominium_tx_LDFLAGS) \
+	$(AM_CXXFLAGS) $(CXXFLAGS) $(asocoin_tx_LDFLAGS) \
 	$(LDFLAGS) -o $@
-am__condominiumd_SOURCES_DIST = condominiumd.cpp condominiumd-res.rc
-am__objects_11 = condominiumd-res.$(OBJEXT)
-am_condominiumd_OBJECTS = condominiumd-condominiumd.$(OBJEXT) \
+am__asocoind_SOURCES_DIST = asocoind.cpp asocoind-res.rc
+am__objects_11 = asocoind-res.$(OBJEXT)
+am_asocoind_OBJECTS = asocoind-asocoind.$(OBJEXT) \
 	$(am__objects_11)
-condominiumd_OBJECTS = $(am_condominiumd_OBJECTS)
+asocoind_OBJECTS = $(am_asocoind_OBJECTS)
 am__DEPENDENCIES_2 = $(am__append_2)
 am__DEPENDENCIES_3 = $(am__append_3)
 am__DEPENDENCIES_4 = $(LIBBITCOIN_ZMQ) \
 	$(am__DEPENDENCIES_1)
-condominiumd_DEPENDENCIES = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
+asocoind_DEPENDENCIES = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
 	$(LIBBITCOIN_UNIVALUE) $(LIBBITCOIN_ZEROCOIN) \
 	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(am__DEPENDENCIES_2) \
 	$(am__DEPENDENCIES_3) $(LIBSECP256K1) $(am__DEPENDENCIES_4) \
@@ -803,27 +803,27 @@ condominiumd_DEPENDENCIES = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1)
-condominiumd_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
+asocoind_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(AM_CXXFLAGS) \
-	$(CXXFLAGS) $(condominiumd_LDFLAGS) $(LDFLAGS) -o $@
-am__qt_condominium_qt_SOURCES_DIST = qt/condominium.cpp \
+	$(CXXFLAGS) $(asocoind_LDFLAGS) $(LDFLAGS) -o $@
+am__qt_asocoin_qt_SOURCES_DIST = qt/asocoin.cpp \
 	qt/macdockiconhandler.mm qt/macnotificationhandler.mm \
-	qt/res/condominium-qt-res.rc
-am__objects_12 = qt/qt_condominium_qt-macdockiconhandler.$(OBJEXT) \
-	qt/qt_condominium_qt-macnotificationhandler.$(OBJEXT)
+	qt/res/asocoin-qt-res.rc
+am__objects_12 = qt/qt_asocoin_qt-macdockiconhandler.$(OBJEXT) \
+	qt/qt_asocoin_qt-macnotificationhandler.$(OBJEXT)
 #am__objects_13 =  \
 #	$(am__objects_12)
-am__objects_14 = qt/res/condominium-qt-res.$(OBJEXT)
+am__objects_14 = qt/res/asocoin-qt-res.$(OBJEXT)
 am__objects_15 =  \
 	$(am__objects_14)
-am_qt_condominium_qt_OBJECTS =  \
-	qt/qt_condominium_qt-condominium.$(OBJEXT) \
+am_qt_asocoin_qt_OBJECTS =  \
+	qt/qt_asocoin_qt-asocoin.$(OBJEXT) \
 	$(am__objects_13) $(am__objects_15)
-qt_condominium_qt_OBJECTS = $(am_qt_condominium_qt_OBJECTS)
+qt_asocoin_qt_OBJECTS = $(am_qt_asocoin_qt_OBJECTS)
 am__DEPENDENCIES_5 =  \
 	$(LIBBITCOIN_ZMQ) \
 	$(am__DEPENDENCIES_1)
-qt_condominium_qt_DEPENDENCIES = qt/libbitcoinqt.a \
+qt_asocoin_qt_DEPENDENCIES = qt/libbitcoinqt.a \
 	$(LIBBITCOIN_SERVER) $(am__append_28) \
 	$(am__DEPENDENCIES_5) $(LIBBITCOIN_CLI) \
 	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
@@ -836,30 +836,30 @@ qt_condominium_qt_DEPENDENCIES = qt/libbitcoinqt.a \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 	$(LIBSECP256K1) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1)
-qt_condominium_qt_LINK = $(LIBTOOL) $(AM_V_lt) \
-	$(qt_condominium_qt_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link \
+qt_asocoin_qt_LINK = $(LIBTOOL) $(AM_V_lt) \
+	$(qt_asocoin_qt_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link \
 	$(OBJCXXLD) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) \
-	$(qt_condominium_qt_LDFLAGS) $(LDFLAGS) -o $@
-am__qt_test_test_condominium_qt_SOURCES_DIST = qt/test/test_main.cpp \
+	$(qt_asocoin_qt_LDFLAGS) $(LDFLAGS) -o $@
+am__qt_test_test_asocoin_qt_SOURCES_DIST = qt/test/test_main.cpp \
 	qt/test/uritests.cpp qt/test/uritests.h \
 	qt/test/paymentrequestdata.h qt/test/paymentservertests.h \
 	qt/test/paymentservertests.cpp
-am__objects_16 = qt/test/qt_test_test_condominium_qt-paymentservertests.$(OBJEXT)
-am_qt_test_test_condominium_qt_OBJECTS = qt/test/qt_test_test_condominium_qt-test_main.$(OBJEXT) \
-	qt/test/qt_test_test_condominium_qt-uritests.$(OBJEXT) \
+am__objects_16 = qt/test/qt_test_test_asocoin_qt-paymentservertests.$(OBJEXT)
+am_qt_test_test_asocoin_qt_OBJECTS = qt/test/qt_test_test_asocoin_qt-test_main.$(OBJEXT) \
+	qt/test/qt_test_test_asocoin_qt-uritests.$(OBJEXT) \
 	$(am__objects_1) $(am__objects_16)
-am__objects_17 = qt/test/qt_test_test_condominium_qt-moc_paymentservertests.$(OBJEXT)
-am__objects_18 = qt/test/qt_test_test_condominium_qt-moc_uritests.$(OBJEXT) \
+am__objects_17 = qt/test/qt_test_test_asocoin_qt-moc_paymentservertests.$(OBJEXT)
+am__objects_18 = qt/test/qt_test_test_asocoin_qt-moc_uritests.$(OBJEXT) \
 	$(am__objects_17)
-nodist_qt_test_test_condominium_qt_OBJECTS =  \
+nodist_qt_test_test_asocoin_qt_OBJECTS =  \
 	$(am__objects_18)
-qt_test_test_condominium_qt_OBJECTS =  \
-	$(am_qt_test_test_condominium_qt_OBJECTS) \
-	$(nodist_qt_test_test_condominium_qt_OBJECTS)
+qt_test_test_asocoin_qt_OBJECTS =  \
+	$(am_qt_test_test_asocoin_qt_OBJECTS) \
+	$(nodist_qt_test_test_asocoin_qt_OBJECTS)
 am__DEPENDENCIES_6 =  \
 	$(LIBBITCOIN_ZMQ) \
 	$(am__DEPENDENCIES_1)
-qt_test_test_condominium_qt_DEPENDENCIES =  \
+qt_test_test_asocoin_qt_DEPENDENCIES =  \
 	$(LIBBITCOINQT) $(LIBBITCOIN_SERVER) \
 	$(am__append_35) $(am__DEPENDENCIES_6) \
 	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
@@ -880,11 +880,11 @@ qt_test_test_condominium_qt_DEPENDENCIES =  \
 	$(am__DEPENDENCIES_1) $(LIBSECP256K1) \
 	$(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1)
-qt_test_test_condominium_qt_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
+qt_test_test_asocoin_qt_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(AM_CXXFLAGS) $(CXXFLAGS) \
-	$(qt_test_test_condominium_qt_LDFLAGS) $(LDFLAGS) -o $@
-am__test_test_condominium_SOURCES_DIST =  \
+	$(qt_test_test_asocoin_qt_LDFLAGS) $(LDFLAGS) -o $@
+am__test_test_asocoin_SOURCES_DIST =  \
 	test/zerocoin_implementation_tests.cpp \
 	test/zerocoin_denomination_tests.cpp \
 	test/zerocoin_transactions_tests.cpp \
@@ -902,7 +902,7 @@ am__test_test_condominium_SOURCES_DIST =  \
 	test/script_tests.cpp test/scriptnum_tests.cpp \
 	test/serialize_tests.cpp test/sighash_tests.cpp \
 	test/sigopcount_tests.cpp test/skiplist_tests.cpp \
-	test/test_condominium.cpp test/timedata_tests.cpp \
+	test/test_asocoin.cpp test/timedata_tests.cpp \
 	test/torcontrol_tests.cpp test/transaction_tests.cpp \
 	test/uint256_tests.cpp test/univalue_tests.cpp \
 	test/util_tests.cpp test/accounting_tests.cpp \
@@ -914,63 +914,63 @@ am__test_test_condominium_SOURCES_DIST =  \
 	test/data/script_invalid.json test/data/tx_invalid.json \
 	test/data/tx_valid.json test/data/sighash.json \
 	test/data/alertTests.raw
-am__objects_19 = test/test_test_condominium-accounting_tests.$(OBJEXT) \
-	test/test_test_condominium-wallet_tests.$(OBJEXT) \
-	test/test_test_condominium-rpc_wallet_tests.$(OBJEXT)
-am__objects_20 = test/test_test_condominium-zerocoin_implementation_tests.$(OBJEXT) \
-	test/test_test_condominium-zerocoin_denomination_tests.$(OBJEXT) \
-	test/test_test_condominium-zerocoin_transactions_tests.$(OBJEXT) \
-	test/test_test_condominium-benchmark_zerocoin.$(OBJEXT) \
-	test/test_test_condominium-tutorial_zerocoin.$(OBJEXT) \
-	test/test_test_condominium-libzerocoin_tests.$(OBJEXT) \
-	test/test_test_condominium-allocator_tests.$(OBJEXT) \
-	test/test_test_condominium-base32_tests.$(OBJEXT) \
-	test/test_test_condominium-base58_tests.$(OBJEXT) \
-	test/test_test_condominium-base64_tests.$(OBJEXT) \
-	test/test_test_condominium-checkblock_tests.$(OBJEXT) \
-	test/test_test_condominium-Checkpoints_tests.$(OBJEXT) \
-	test/test_test_condominium-coins_tests.$(OBJEXT) \
-	test/test_test_condominium-compress_tests.$(OBJEXT) \
-	test/test_test_condominium-crypto_tests.$(OBJEXT) \
-	test/test_test_condominium-DoS_tests.$(OBJEXT) \
-	test/test_test_condominium-getarg_tests.$(OBJEXT) \
-	test/test_test_condominium-hash_tests.$(OBJEXT) \
-	test/test_test_condominium-key_tests.$(OBJEXT) \
-	test/test_test_condominium-main_tests.$(OBJEXT) \
-	test/test_test_condominium-mempool_tests.$(OBJEXT) \
-	test/test_test_condominium-mruset_tests.$(OBJEXT) \
-	test/test_test_condominium-multisig_tests.$(OBJEXT) \
-	test/test_test_condominium-netbase_tests.$(OBJEXT) \
-	test/test_test_condominium-pmt_tests.$(OBJEXT) \
-	test/test_test_condominium-rpc_tests.$(OBJEXT) \
-	test/test_test_condominium-sanity_tests.$(OBJEXT) \
-	test/test_test_condominium-script_P2SH_tests.$(OBJEXT) \
-	test/test_test_condominium-script_tests.$(OBJEXT) \
-	test/test_test_condominium-scriptnum_tests.$(OBJEXT) \
-	test/test_test_condominium-serialize_tests.$(OBJEXT) \
-	test/test_test_condominium-sighash_tests.$(OBJEXT) \
-	test/test_test_condominium-sigopcount_tests.$(OBJEXT) \
-	test/test_test_condominium-skiplist_tests.$(OBJEXT) \
-	test/test_test_condominium-test_condominium.$(OBJEXT) \
-	test/test_test_condominium-timedata_tests.$(OBJEXT) \
-	test/test_test_condominium-torcontrol_tests.$(OBJEXT) \
-	test/test_test_condominium-transaction_tests.$(OBJEXT) \
-	test/test_test_condominium-uint256_tests.$(OBJEXT) \
-	test/test_test_condominium-univalue_tests.$(OBJEXT) \
-	test/test_test_condominium-util_tests.$(OBJEXT) \
+am__objects_19 = test/test_test_asocoin-accounting_tests.$(OBJEXT) \
+	test/test_test_asocoin-wallet_tests.$(OBJEXT) \
+	test/test_test_asocoin-rpc_wallet_tests.$(OBJEXT)
+am__objects_20 = test/test_test_asocoin-zerocoin_implementation_tests.$(OBJEXT) \
+	test/test_test_asocoin-zerocoin_denomination_tests.$(OBJEXT) \
+	test/test_test_asocoin-zerocoin_transactions_tests.$(OBJEXT) \
+	test/test_test_asocoin-benchmark_zerocoin.$(OBJEXT) \
+	test/test_test_asocoin-tutorial_zerocoin.$(OBJEXT) \
+	test/test_test_asocoin-libzerocoin_tests.$(OBJEXT) \
+	test/test_test_asocoin-allocator_tests.$(OBJEXT) \
+	test/test_test_asocoin-base32_tests.$(OBJEXT) \
+	test/test_test_asocoin-base58_tests.$(OBJEXT) \
+	test/test_test_asocoin-base64_tests.$(OBJEXT) \
+	test/test_test_asocoin-checkblock_tests.$(OBJEXT) \
+	test/test_test_asocoin-Checkpoints_tests.$(OBJEXT) \
+	test/test_test_asocoin-coins_tests.$(OBJEXT) \
+	test/test_test_asocoin-compress_tests.$(OBJEXT) \
+	test/test_test_asocoin-crypto_tests.$(OBJEXT) \
+	test/test_test_asocoin-DoS_tests.$(OBJEXT) \
+	test/test_test_asocoin-getarg_tests.$(OBJEXT) \
+	test/test_test_asocoin-hash_tests.$(OBJEXT) \
+	test/test_test_asocoin-key_tests.$(OBJEXT) \
+	test/test_test_asocoin-main_tests.$(OBJEXT) \
+	test/test_test_asocoin-mempool_tests.$(OBJEXT) \
+	test/test_test_asocoin-mruset_tests.$(OBJEXT) \
+	test/test_test_asocoin-multisig_tests.$(OBJEXT) \
+	test/test_test_asocoin-netbase_tests.$(OBJEXT) \
+	test/test_test_asocoin-pmt_tests.$(OBJEXT) \
+	test/test_test_asocoin-rpc_tests.$(OBJEXT) \
+	test/test_test_asocoin-sanity_tests.$(OBJEXT) \
+	test/test_test_asocoin-script_P2SH_tests.$(OBJEXT) \
+	test/test_test_asocoin-script_tests.$(OBJEXT) \
+	test/test_test_asocoin-scriptnum_tests.$(OBJEXT) \
+	test/test_test_asocoin-serialize_tests.$(OBJEXT) \
+	test/test_test_asocoin-sighash_tests.$(OBJEXT) \
+	test/test_test_asocoin-sigopcount_tests.$(OBJEXT) \
+	test/test_test_asocoin-skiplist_tests.$(OBJEXT) \
+	test/test_test_asocoin-test_asocoin.$(OBJEXT) \
+	test/test_test_asocoin-timedata_tests.$(OBJEXT) \
+	test/test_test_asocoin-torcontrol_tests.$(OBJEXT) \
+	test/test_test_asocoin-transaction_tests.$(OBJEXT) \
+	test/test_test_asocoin-uint256_tests.$(OBJEXT) \
+	test/test_test_asocoin-univalue_tests.$(OBJEXT) \
+	test/test_test_asocoin-util_tests.$(OBJEXT) \
 	$(am__objects_19)
-am_test_test_condominium_OBJECTS =  \
+am_test_test_asocoin_OBJECTS =  \
 	$(am__objects_20) $(am__objects_1) \
 	$(am__objects_1)
 am__objects_21 = $(am__objects_1) $(am__objects_1)
-nodist_test_test_condominium_OBJECTS =  \
+nodist_test_test_asocoin_OBJECTS =  \
 	$(am__objects_21)
-test_test_condominium_OBJECTS = $(am_test_test_condominium_OBJECTS) \
-	$(nodist_test_test_condominium_OBJECTS)
+test_test_asocoin_OBJECTS = $(am_test_test_asocoin_OBJECTS) \
+	$(nodist_test_test_asocoin_OBJECTS)
 #am__DEPENDENCIES_7 = libbitcoinconsensus.la
 am__DEPENDENCIES_8 =  \
 	$(am__DEPENDENCIES_1)
-test_test_condominium_DEPENDENCIES =  \
+test_test_asocoin_DEPENDENCIES =  \
 	$(LIBBITCOIN_SERVER) $(LIBBITCOIN_CLI) \
 	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
 	$(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) \
@@ -982,9 +982,9 @@ test_test_condominium_DEPENDENCIES =  \
 	$(am__DEPENDENCIES_7) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_8)
-test_test_condominium_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
+test_test_asocoin_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
-	$(AM_CXXFLAGS) $(CXXFLAGS) $(test_test_condominium_LDFLAGS) \
+	$(AM_CXXFLAGS) $(CXXFLAGS) $(test_test_asocoin_LDFLAGS) \
 	$(LDFLAGS) -o $@
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
@@ -1065,13 +1065,13 @@ SOURCES = $(crypto_libbitcoin_crypto_a_SOURCES) \
 	$(qt_libbitcoinqt_a_SOURCES) \
 	$(nodist_qt_libbitcoinqt_a_SOURCES) \
 	$(univalue_libbitcoin_univalue_a_SOURCES) \
-	$(libbitcoinconsensus_la_SOURCES) $(condominium_cli_SOURCES) \
-	$(condominium_tx_SOURCES) $(condominiumd_SOURCES) \
-	$(qt_condominium_qt_SOURCES) \
-	$(qt_test_test_condominium_qt_SOURCES) \
-	$(nodist_qt_test_test_condominium_qt_SOURCES) \
-	$(test_test_condominium_SOURCES) \
-	$(nodist_test_test_condominium_SOURCES)
+	$(libbitcoinconsensus_la_SOURCES) $(asocoin_cli_SOURCES) \
+	$(asocoin_tx_SOURCES) $(asocoind_SOURCES) \
+	$(qt_asocoin_qt_SOURCES) \
+	$(qt_test_test_asocoin_qt_SOURCES) \
+	$(nodist_qt_test_test_asocoin_qt_SOURCES) \
+	$(test_test_asocoin_SOURCES) \
+	$(nodist_test_test_asocoin_SOURCES)
 DIST_SOURCES = $(crypto_libbitcoin_crypto_a_SOURCES) \
 	$(libbitcoin_cli_a_SOURCES) $(libbitcoin_common_a_SOURCES) \
 	$(libbitcoin_server_a_SOURCES) \
@@ -1082,11 +1082,11 @@ DIST_SOURCES = $(crypto_libbitcoin_crypto_a_SOURCES) \
 	$(am__qt_libbitcoinqt_a_SOURCES_DIST) \
 	$(univalue_libbitcoin_univalue_a_SOURCES) \
 	$(am__libbitcoinconsensus_la_SOURCES_DIST) \
-	$(am__condominium_cli_SOURCES_DIST) $(condominium_tx_SOURCES) \
-	$(am__condominiumd_SOURCES_DIST) \
-	$(am__qt_condominium_qt_SOURCES_DIST) \
-	$(am__qt_test_test_condominium_qt_SOURCES_DIST) \
-	$(am__test_test_condominium_SOURCES_DIST)
+	$(am__asocoin_cli_SOURCES_DIST) $(asocoin_tx_SOURCES) \
+	$(am__asocoind_SOURCES_DIST) \
+	$(am__qt_asocoin_qt_SOURCES_DIST) \
+	$(am__qt_test_test_asocoin_qt_SOURCES_DIST) \
+	$(am__test_test_asocoin_SOURCES_DIST)
 RECURSIVE_TARGETS = all-recursive check-recursive cscopelist-recursive \
 	ctags-recursive dvi-recursive html-recursive info-recursive \
 	install-data-recursive install-dvi-recursive \
@@ -1285,7 +1285,7 @@ am__set_TESTS_bases = \
   bases=`for i in $$bases; do echo $$i; done | sed 's/\.log$$//'`; \
   bases=`echo $$bases`
 RECHECK_LOGS = $(TEST_LOGS)
-am__EXEEXT_6 = test/test_condominium$(EXEEXT) \
+am__EXEEXT_6 = test/test_asocoin$(EXEEXT) \
 	test/bitcoin-util-test.py
 TEST_SUITE_LOG = test-suite.log
 TEST_EXTENSIONS = .exe .test
@@ -1338,25 +1338,25 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /home/mini/condominium/build-aux/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/mini/asocoin/build-aux/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = /usr/bin/i686-w64-mingw32-ar
-AUTOCONF = ${SHELL} /home/mini/condominium/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /home/mini/condominium/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /home/mini/condominium/build-aux/missing automake-1.15
+AUTOCONF = ${SHELL} /home/mini/asocoin/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /home/mini/asocoin/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /home/mini/asocoin/build-aux/missing automake-1.15
 AWK = mawk
 BDB_CPPFLAGS = 
 BDB_LIBS = -ldb_cxx-4.8
-BITCOIN_CLI_NAME = condominium-cli
-BITCOIN_DAEMON_NAME = condominiumd
-BITCOIN_GUI_NAME = condominium-qt
-BITCOIN_TX_NAME = condominium-tx
+BITCOIN_CLI_NAME = asocoin-cli
+BITCOIN_DAEMON_NAME = asocoind
+BITCOIN_GUI_NAME = asocoin-qt
+BITCOIN_TX_NAME = asocoin-tx
 BOOST_CHRONO_LIB = -lboost_chrono-mt-s
-BOOST_CPPFLAGS = -mthreads -I/home/mini/condominium/depends/i686-w64-mingw32/share/../include
+BOOST_CPPFLAGS = -mthreads -I/home/mini/asocoin/depends/i686-w64-mingw32/share/../include
 BOOST_FILESYSTEM_LIB = -lboost_filesystem-mt-s
-BOOST_LDFLAGS = -L/home/mini/condominium/depends/i686-w64-mingw32/share/../lib
-BOOST_LIBS = -L/home/mini/condominium/depends/i686-w64-mingw32/share/../lib -lboost_system-mt-s -lboost_filesystem-mt-s -lboost_program_options-mt-s -lboost_thread_win32-mt-s -lboost_chrono-mt-s
+BOOST_LDFLAGS = -L/home/mini/asocoin/depends/i686-w64-mingw32/share/../lib
+BOOST_LIBS = -L/home/mini/asocoin/depends/i686-w64-mingw32/share/../lib -lboost_system-mt-s -lboost_filesystem-mt-s -lboost_program_options-mt-s -lboost_thread_win32-mt-s -lboost_chrono-mt-s
 BOOST_PROGRAM_OPTIONS_LIB = -lboost_program_options-mt-s
 BOOST_SYSTEM_LIB = -lboost_system-mt-s
 BOOST_THREAD_LIB = -lboost_thread_win32-mt-s
@@ -1365,8 +1365,8 @@ BREW =
 BUILD_QT = qt
 BUILD_TEST = test
 BUILD_TEST_QT = test
-CC = /home/mini/condominium/depends/i686-w64-mingw32/share/../native/bin/ccache i686-w64-mingw32-gcc
-CCACHE = /home/mini/condominium/depends/i686-w64-mingw32/share/../native/bin/ccache
+CC = /home/mini/asocoin/depends/i686-w64-mingw32/share/../native/bin/ccache i686-w64-mingw32-gcc
+CCACHE = /home/mini/asocoin/depends/i686-w64-mingw32/share/../native/bin/ccache
 CCDEPMODE = depmode=gcc3
 CFLAGS = -pipe -O2 
 CLIENT_VERSION_BUILD = 0
@@ -1378,10 +1378,10 @@ COMPARISON_TOOL_REORG_TESTS = 0
 COPYRIGHT_YEAR = 2017
 CPP = i686-w64-mingw32-gcc -E
 CPPFILT = /usr/bin/i686-w64-mingw32-c++filt
-CPPFLAGS = -I/home/mini/condominium/depends/i686-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -DHAVE_QT5
+CPPFLAGS = -I/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -DHAVE_QT5
 CRYPTO_CFLAGS = 
 CRYPTO_LIBS = -lcrypto
-CXX = /home/mini/condominium/depends/i686-w64-mingw32/share/../native/bin/ccache i686-w64-mingw32-g++ -std=c++11
+CXX = /home/mini/asocoin/depends/i686-w64-mingw32/share/../native/bin/ccache i686-w64-mingw32-g++ -std=c++11
 CXXCPP = i686-w64-mingw32-g++ -std=c++11 -E
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -pipe -O2 -Wno-narrowing  -Wstack-protector -fstack-protector-all -fvisibility=hidden
@@ -1419,7 +1419,7 @@ JAVA =
 JAVA_COMPARISON_TOOL = 
 LCOV = 
 LD = /usr/bin/i686-w64-mingw32-ld
-LDFLAGS = -L/home/mini/condominium/depends/i686-w64-mingw32/share/../lib  -Wl,--large-address-aware  -Wl,--dynamicbase -Wl,--nxcompat
+LDFLAGS = -L/home/mini/asocoin/depends/i686-w64-mingw32/share/../lib  -Wl,--large-address-aware  -Wl,--dynamicbase -Wl,--nxcompat
 LEVELDB_CPPFLAGS =  $(am__append_1)
 LEVELDB_TARGET_FLAGS = TARGET_OS=OS_WINDOWS_CROSSCOMPILE
 LIBLEVELDB =  $(am__append_2)
@@ -1430,18 +1430,18 @@ LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIBTOOL_APP_LDFLAGS =  -all-static
 LIPO = 
 LN_S = ln -s
-LRELEASE = /home/mini/condominium/depends/i686-w64-mingw32/share/../native/bin/lrelease
+LRELEASE = /home/mini/asocoin/depends/i686-w64-mingw32/share/../native/bin/lrelease
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
 LUPDATE = 
 MAINT = 
-MAKEINFO = ${SHELL} /home/mini/condominium/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /home/mini/asocoin/build-aux/missing makeinfo
 MAKENSIS = none
 MANIFEST_TOOL = :
 MINIUPNPC_CPPFLAGS = -DSTATICLIB -DMINIUPNP_STATICLIB
 MINIUPNPC_LIBS = -lminiupnpc
 MKDIR_P = /bin/mkdir -p
-MOC = /home/mini/condominium/depends/i686-w64-mingw32/share/../native/bin/moc
+MOC = /home/mini/asocoin/depends/i686-w64-mingw32/share/../native/bin/moc
 MOC_DEFS = -DHAVE_CONFIG_H -I$(srcdir)
 NM = i686-w64-mingw32-nm
 NMEDIT = 
@@ -1453,26 +1453,26 @@ OBJDUMP = i686-w64-mingw32-objdump
 OBJEXT = o
 OTOOL = 
 OTOOL64 = 
-PACKAGE = condominium
-PACKAGE_BUGREPORT = www.condominium.org
-PACKAGE_NAME = Condominium Core
-PACKAGE_STRING = Condominium Core 1.1.0
-PACKAGE_TARNAME = condominium
+PACKAGE = asocoin
+PACKAGE_BUGREPORT = www.asocoin.org
+PACKAGE_NAME = asocoin Core
+PACKAGE_STRING = asocoin Core 1.1.0
+PACKAGE_TARNAME = asocoin
 PACKAGE_URL = 
 PACKAGE_VERSION = 1.1.0
 PATH_SEPARATOR = :
 PKG_CONFIG = /usr/bin/pkg-config --static
 PKG_CONFIG_LIBDIR = 
-PKG_CONFIG_PATH = /home/mini/condominium/depends/i686-w64-mingw32/share/../share/pkgconfig:/home/mini/condominium/depends/i686-w64-mingw32/share/../lib/pkgconfig
+PKG_CONFIG_PATH = /home/mini/asocoin/depends/i686-w64-mingw32/share/../share/pkgconfig:/home/mini/asocoin/depends/i686-w64-mingw32/share/../lib/pkgconfig
 PORT = 
 PROTOBUF_CFLAGS = 
 PROTOBUF_LIBS = -lprotobuf
-PROTOC = /home/mini/condominium/depends/i686-w64-mingw32/share/../native/bin/protoc
+PROTOC = /home/mini/asocoin/depends/i686-w64-mingw32/share/../native/bin/protoc
 PTHREAD_CC = i686-w64-mingw32-gcc
 PTHREAD_CFLAGS = -pthread
 PTHREAD_LIBS = 
 PYTHON = /usr/bin/python3
-PYTHONPATH = /home/mini/condominium/depends/i686-w64-mingw32/share/../native/lib/python/dist-packages:
+PYTHONPATH = /home/mini/asocoin/depends/i686-w64-mingw32/share/../native/lib/python/dist-packages:
 QR_CFLAGS = 
 QR_LIBS = -lqrencode
 QTPLATFORM_CFLAGS = 
@@ -1484,18 +1484,18 @@ QTXCBQPA_LIBS =
 QT_CFLAGS = 
 QT_DBUS_CFLAGS = 
 QT_DBUS_INCLUDES = 
-QT_DBUS_LIBS = -lQt5DBus -L/home/mini/condominium/depends/i686-w64-mingw32/share/../lib
-QT_INCLUDES = -I/home/mini/condominium/depends/i686-w64-mingw32/share/../include -I/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore -I/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui -I/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets -I/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtNetwork -I/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtTest -I/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtDBus
+QT_DBUS_LIBS = -lQt5DBus -L/home/mini/asocoin/depends/i686-w64-mingw32/share/../lib
+QT_INCLUDES = -I/home/mini/asocoin/depends/i686-w64-mingw32/share/../include -I/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore -I/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui -I/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets -I/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtNetwork -I/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtTest -I/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtDBus
 QT_LDFLAGS =  -mwindows
-QT_LIBS = -lqwindows -lQt5Widgets -lQt5Network -lQt5Gui     -lQt5Core    -lqtharfbuzzng -lqtpcre -lqtpng -lz  -limm32  -L/home/mini/condominium/depends/i686-w64-mingw32/share/../lib -L/home/mini/condominium/depends/i686-w64-mingw32/share/../plugins/platforms
+QT_LIBS = -lqwindows -lQt5Widgets -lQt5Network -lQt5Gui     -lQt5Core    -lqtharfbuzzng -lqtpcre -lqtpng -lz  -limm32  -L/home/mini/asocoin/depends/i686-w64-mingw32/share/../lib -L/home/mini/asocoin/depends/i686-w64-mingw32/share/../plugins/platforms
 QT_PIE_FLAGS = 
 QT_SELECT = qt5
 QT_TEST_CFLAGS = 
 QT_TEST_INCLUDES = 
-QT_TEST_LIBS = -lQt5Test -L/home/mini/condominium/depends/i686-w64-mingw32/share/../lib
-QT_TRANSLATION_DIR = /home/mini/condominium/depends/i686-w64-mingw32/share/../translations
+QT_TEST_LIBS = -lQt5Test -L/home/mini/asocoin/depends/i686-w64-mingw32/share/../lib
+QT_TRANSLATION_DIR = /home/mini/asocoin/depends/i686-w64-mingw32/share/../translations
 RANLIB = /usr/bin/i686-w64-mingw32-ranlib
-RCC = /home/mini/condominium/depends/i686-w64-mingw32/share/../native/bin/rcc
+RCC = /home/mini/asocoin/depends/i686-w64-mingw32/share/../native/bin/rcc
 READELF = /usr/bin/i686-w64-mingw32-readelf
 RELDFLAGS = -Wl,--exclude-libs,ALL
 RSVG_CONVERT = 
@@ -1507,7 +1507,7 @@ SSL_LIBS = -lssl
 STRIP = /usr/bin/i686-w64-mingw32-strip
 TESTDEFS = 
 TIFFCP = 
-UIC = /home/mini/condominium/depends/i686-w64-mingw32/share/../native/bin/uic
+UIC = /home/mini/asocoin/depends/i686-w64-mingw32/share/../native/bin/uic
 USE_QRCODE = 
 USE_UPNP = 
 VERSION = 1.1.0
@@ -1518,10 +1518,10 @@ X11XCB_LIBS =
 XGETTEXT = /usr/bin/xgettext
 ZMQ_CFLAGS =  -DZMQ_STATIC
 ZMQ_LIBS = -lzmq
-abs_builddir = /home/mini/condominium/src
-abs_srcdir = /home/mini/condominium/src
-abs_top_builddir = /home/mini/condominium
-abs_top_srcdir = /home/mini/condominium
+abs_builddir = /home/mini/asocoin/src
+abs_srcdir = /home/mini/asocoin/src
+abs_top_builddir = /home/mini/asocoin
+abs_top_srcdir = /home/mini/asocoin
 ac_ct_AR = 
 ac_ct_CC = 
 ac_ct_CXX = 
@@ -1553,7 +1553,7 @@ host_vendor = w64
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/mini/condominium/build-aux/install-sh
+install_sh = ${SHELL} /home/mini/asocoin/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -1562,7 +1562,7 @@ mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /home/mini/condominium/depends/i686-w64-mingw32
+prefix = /home/mini/asocoin/depends/i686-w64-mingw32
 program_transform_name = s,x,x,
 psdir = ${docdir}
 runstatedir = ${localstatedir}/run
@@ -1602,7 +1602,7 @@ EXTRA_LIBRARIES = crypto/libbitcoin_crypto.a libbitcoin_util.a \
 #lib_LTLIBRARIES = libbitcoinconsensus.la
 LIBBITCOIN_CONSENSUS = 
 #LIBBITCOIN_CONSENSUS = libbitcoinconsensus.la
-# condominium core #
+# asocoin core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
@@ -1713,7 +1713,7 @@ JSON_H = \
   json/json_spirit_writer_template.h
 
 
-# server: shared between condominiumd and condominium-qt
+# server: shared between asocoind and asocoin-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -1757,7 +1757,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 
 
-# wallet: shared between condominiumd and condominium-qt, but only linked
+# wallet: shared between asocoind and asocoin-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CFLAGS = -fPIC
 libbitcoin_wallet_a_CPPFLAGS = $(BITCOIN_INCLUDES)
@@ -1880,7 +1880,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
 
-# common: shared between condominiumd, and condominium-qt and non-server tools
+# common: shared between asocoind, and asocoin-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   accumulators.cpp \
@@ -1926,7 +1926,7 @@ libbitcoin_util_a_SOURCES = allocators.cpp compat/strnlen.cpp \
 	utilstrencodings.cpp utilmoneystr.cpp utiltime.cpp \
 	$(BITCOIN_CORE_H) $(am__append_9)
 
-# cli: shared between condominium-cli and condominium-qt
+# cli: shared between asocoin-cli and asocoin-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -1936,18 +1936,18 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-condominiumd_LDADD = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
+asocoind_LDADD = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
 	$(LIBBITCOIN_UNIVALUE) $(LIBBITCOIN_ZEROCOIN) \
 	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBLEVELDB) \
 	$(LIBMEMENV) $(LIBSECP256K1) $(am__append_10) $(am__append_11) \
 	$(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) \
 	$(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-condominiumd_SOURCES = condominiumd.cpp $(am__append_12)
-condominiumd_CPPFLAGS = $(BITCOIN_INCLUDES)
-condominiumd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+asocoind_SOURCES = asocoind.cpp $(am__append_12)
+asocoind_CPPFLAGS = $(BITCOIN_INCLUDES)
+asocoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
-# condominium-cli binary #
-condominium_cli_LDADD = \
+# asocoin-cli binary #
+asocoin_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
@@ -1955,12 +1955,12 @@ condominium_cli_LDADD = \
   $(CRYPTO_LIBS) \
   $(EVENT_LIBS)
 
-condominium_cli_SOURCES = condominium-cli.cpp $(am__append_13)
-condominium_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+asocoin_cli_SOURCES = asocoin-cli.cpp $(am__append_13)
+asocoin_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 #
 
-# condominium-tx binary #
-condominium_tx_LDADD = \
+# asocoin-tx binary #
+asocoin_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -1970,11 +1970,11 @@ condominium_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-condominium_tx_SOURCES = condominium-tx.cpp
-condominium_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+asocoin_tx_SOURCES = asocoin-tx.cpp
+asocoin_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-condominium_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-condominium_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+asocoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+asocoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 #include_HEADERS = script/bitcoinconsensus.h
 #libbitcoinconsensus_la_SOURCES =  \
 #	allocators.cpp \
@@ -2002,7 +2002,7 @@ CLEANFILES = leveldb/libleveldb.a leveldb/libmemenv.a *.gcda *.gcno \
 DISTCLEANFILES = obj/build.h
 EXTRA_DIST = leveldb $(am__append_18)
 TEST_SRCDIR = test
-TEST_BINARY = test/test_condominium$(EXEEXT)
+TEST_BINARY = test/test_asocoin$(EXEEXT)
 JSON_TEST_FILES = \
   test/data/script_valid.json \
   test/data/base58_keys_valid.json \
@@ -2046,16 +2046,16 @@ BITCOIN_TESTS =  \
 	test/sighash_tests.cpp \
 	test/sigopcount_tests.cpp \
 	test/skiplist_tests.cpp \
-	test/test_condominium.cpp \
+	test/test_asocoin.cpp \
 	test/timedata_tests.cpp \
 	test/torcontrol_tests.cpp \
 	test/transaction_tests.cpp \
 	test/uint256_tests.cpp \
 	test/univalue_tests.cpp test/util_tests.cpp \
 	$(am__append_19)
-test_test_condominium_SOURCES = $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
-test_test_condominium_CPPFLAGS = $(BITCOIN_INCLUDES) -I$(builddir)/test/ $(TESTDEFS)
-test_test_condominium_LDADD = $(LIBBITCOIN_SERVER) \
+test_test_asocoin_SOURCES = $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
+test_test_asocoin_CPPFLAGS = $(BITCOIN_INCLUDES) -I$(builddir)/test/ $(TESTDEFS)
+test_test_asocoin_LDADD = $(LIBBITCOIN_SERVER) \
 	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
 	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
 	$(LIBBITCOIN_UNIVALUE) \
@@ -2067,38 +2067,38 @@ test_test_condominium_LDADD = $(LIBBITCOIN_SERVER) \
 	$(LIBBITCOIN_CONSENSUS) $(BDB_LIBS) \
 	$(SSL_LIBS) $(CRYPTO_LIBS) \
 	$(MINIUPNPC_LIBS) $(am__append_21)
-test_test_condominium_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
-nodist_test_test_condominium_SOURCES = $(GENERATED_TEST_FILES)
+test_test_asocoin_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
+nodist_test_test_asocoin_SOURCES = $(GENERATED_TEST_FILES)
 CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 
-# condominium qt core #
+# asocoin qt core #
 QT_TS = \
-  qt/locale/condominium_bg.ts \
-  qt/locale/condominium_ca.ts \
-  qt/locale/condominium_cs.ts \
-  qt/locale/condominium_da.ts \
-  qt/locale/condominium_de.ts \
-  qt/locale/condominium_en.ts \
-  qt/locale/condominium_en_US.ts \
-  qt/locale/condominium_es.ts \
-  qt/locale/condominium_fi.ts \
-  qt/locale/condominium_fr_FR.ts \
-  qt/locale/condominium_hr.ts \
-  qt/locale/condominium_it.ts \
-  qt/locale/condominium_ja.ts \
-  qt/locale/condominium_ko_KR.ts \
-  qt/locale/condominium_nl.ts \
-  qt/locale/condominium_pl.ts \
-  qt/locale/condominium_pt.ts \
-  qt/locale/condominium_pt_BR.ts \
-  qt/locale/condominium_ro_RO.ts \
-  qt/locale/condominium_ru.ts \
-  qt/locale/condominium_sk.ts \
-  qt/locale/condominium_sv.ts \
-  qt/locale/condominium_tr.ts \
-  qt/locale/condominium_uk.ts \
-  qt/locale/condominium_zh_CN.ts \
-  qt/locale/condominium_zh_TW.ts
+  qt/locale/asocoin_bg.ts \
+  qt/locale/asocoin_ca.ts \
+  qt/locale/asocoin_cs.ts \
+  qt/locale/asocoin_da.ts \
+  qt/locale/asocoin_de.ts \
+  qt/locale/asocoin_en.ts \
+  qt/locale/asocoin_en_US.ts \
+  qt/locale/asocoin_es.ts \
+  qt/locale/asocoin_fi.ts \
+  qt/locale/asocoin_fr_FR.ts \
+  qt/locale/asocoin_hr.ts \
+  qt/locale/asocoin_it.ts \
+  qt/locale/asocoin_ja.ts \
+  qt/locale/asocoin_ko_KR.ts \
+  qt/locale/asocoin_nl.ts \
+  qt/locale/asocoin_pl.ts \
+  qt/locale/asocoin_pt.ts \
+  qt/locale/asocoin_pt_BR.ts \
+  qt/locale/asocoin_ro_RO.ts \
+  qt/locale/asocoin_ru.ts \
+  qt/locale/asocoin_sk.ts \
+  qt/locale/asocoin_sv.ts \
+  qt/locale/asocoin_tr.ts \
+  qt/locale/asocoin_uk.ts \
+  qt/locale/asocoin_zh_CN.ts \
+  qt/locale/asocoin_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -2124,7 +2124,7 @@ QT_FORMS_UI = \
   qt/forms/sendcoinsentry.ui \
   qt/forms/signverifymessagedialog.ui \
   qt/forms/transactiondescdialog.ui \
-  qt/forms/zcondominiumcontroldialog.ui
+  qt/forms/zasocoincontroldialog.ui
 
 QT_MOC_CPP = \
   qt/moc_addressbookpage.cpp \
@@ -2177,23 +2177,23 @@ QT_MOC_CPP = \
   qt/moc_walletframe.cpp \
   qt/moc_walletmodel.cpp \
   qt/moc_walletview.cpp \
-  qt/moc_zcondominiumcontroldialog.cpp
+  qt/moc_zasocoincontroldialog.cpp
 
 BITCOIN_MM = \
   qt/macdockiconhandler.mm \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/condominium.moc \
+  qt/asocoin.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_condominium.cpp
-QT_QRC = qt/condominium.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_condominium_locale.cpp
-QT_QRC_LOCALE = qt/condominium_locale.qrc
+QT_QRC_CPP = qt/qrc_asocoin.cpp
+QT_QRC = qt/asocoin.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_asocoin_locale.cpp
+QT_QRC_LOCALE = qt/asocoin_locale.qrc
 PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
 PROTOBUF_PROTO = qt/paymentrequest.proto
@@ -2255,7 +2255,7 @@ BITCOIN_QT_H = \
   qt/walletmodeltransaction.h \
   qt/walletview.h \
   qt/winshutdownmonitor.h \
-  qt/zcondominiumcontroldialog.h
+  qt/zasocoincontroldialog.h
 
 RES_ICONS = \
   qt/res/icons/add.png \
@@ -2309,12 +2309,12 @@ RES_ICONS = \
   qt/res/icons/tx_input.png \
   qt/res/icons/tx_output.png \
   qt/res/icons/tx_mined.png \
-  qt/res/icons/unit_condominium.png \
-  qt/res/icons/unit_mcondominium.png \
-  qt/res/icons/unit_ucondominium.png \
-  qt/res/icons/unit_tcondominium.png \
-  qt/res/icons/unit_tmcondominium.png \
-  qt/res/icons/unit_tucondominium.png
+  qt/res/icons/unit_asocoin.png \
+  qt/res/icons/unit_masocoin.png \
+  qt/res/icons/unit_uasocoin.png \
+  qt/res/icons/unit_tasocoin.png \
+  qt/res/icons/unit_tmasocoin.png \
+  qt/res/icons/unit_tuasocoin.png
 
 BITCOIN_QT_CPP = qt/bitcoinaddressvalidator.cpp \
 	qt/bitcoinamountfield.cpp qt/bitcoingui.cpp \
@@ -2333,7 +2333,7 @@ RES_IMAGES = \
   qt/res/images/about.png \
   qt/res/images/splash.png \
   qt/res/images/splash_testnet.png \
-  qt/res/images/condominium_logo_horizontal.png \
+  qt/res/images/asocoin_logo_horizontal.png \
   qt/res/images/downArrow.png \
   qt/res/images/downArrow_small.png \
   qt/res/images/upArrow_small.png \
@@ -2348,7 +2348,7 @@ RES_CSS = \
   qt/res/css/default.css
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
-BITCOIN_RC = qt/res/condominium-qt-res.rc
+BITCOIN_RC = qt/res/asocoin-qt-res.rc
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
 
@@ -2365,13 +2365,13 @@ nodist_qt_libbitcoinqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
 # forms/foo.h -> forms/ui_foo.h
 QT_FORMS_H = $(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:.ui=.h))))
 
-# condominium-qt binary #
-qt_condominium_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# asocoin-qt binary #
+qt_asocoin_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_condominium_qt_SOURCES = qt/condominium.cpp \
+qt_asocoin_qt_SOURCES = qt/asocoin.cpp \
 	$(am__append_26) $(am__append_27)
-qt_condominium_qt_LDADD = qt/libbitcoinqt.a \
+qt_asocoin_qt_LDADD = qt/libbitcoinqt.a \
 	$(LIBBITCOIN_SERVER) $(am__append_28) \
 	$(am__append_29) $(LIBBITCOIN_CLI) \
 	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
@@ -2382,8 +2382,8 @@ qt_condominium_qt_LDADD = qt/libbitcoinqt.a \
 	$(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) \
 	$(MINIUPNPC_LIBS) $(LIBSECP256K1) \
 	$(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-qt_condominium_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_condominium_qt_LIBTOOLFLAGS = --tag CXX
+qt_asocoin_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_asocoin_qt_LIBTOOLFLAGS = --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM = $(QT_TS:.ts=.qm)
@@ -2395,15 +2395,15 @@ TEST_QT_H = \
   qt/test/paymentrequestdata.h \
   qt/test/paymentservertests.h
 
-qt_test_test_condominium_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+qt_test_test_asocoin_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(QT_TEST_INCLUDES) $(PROTOBUF_CFLAGS)
 
-qt_test_test_condominium_qt_SOURCES =  \
+qt_test_test_asocoin_qt_SOURCES =  \
 	qt/test/test_main.cpp \
 	qt/test/uritests.cpp $(TEST_QT_H) \
 	$(am__append_34)
-nodist_qt_test_test_condominium_qt_SOURCES = $(TEST_QT_MOC_CPP)
-qt_test_test_condominium_qt_LDADD =  \
+nodist_qt_test_test_asocoin_qt_SOURCES = $(TEST_QT_MOC_CPP)
+qt_test_test_asocoin_qt_LDADD =  \
 	$(LIBBITCOINQT) $(LIBBITCOIN_SERVER) \
 	$(am__append_35) $(am__append_36) \
 	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
@@ -2416,7 +2416,7 @@ qt_test_test_condominium_qt_LDADD =  \
 	$(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) \
 	$(MINIUPNPC_LIBS) $(LIBSECP256K1) \
 	$(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-qt_test_test_condominium_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_test_test_asocoin_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 CLEAN_BITCOIN_QT_TEST = $(TEST_QT_MOC_CPP) qt/test/*.gcda qt/test/*.gcno
 all: all-recursive
 
@@ -2758,7 +2758,7 @@ qt/qt_libbitcoinqt_a-walletmodeltransaction.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_libbitcoinqt_a-walletview.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_libbitcoinqt_a-zcondominiumcontroldialog.$(OBJEXT):  \
+qt/qt_libbitcoinqt_a-zasocoincontroldialog.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_libbitcoinqt_a-moc_addressbookpage.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
@@ -2860,13 +2860,13 @@ qt/qt_libbitcoinqt_a-moc_walletmodel.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_libbitcoinqt_a-moc_walletview.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_libbitcoinqt_a-moc_zcondominiumcontroldialog.$(OBJEXT):  \
+qt/qt_libbitcoinqt_a-moc_zasocoincontroldialog.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_libbitcoinqt_a-paymentrequest.pb.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_libbitcoinqt_a-qrc_condominium.$(OBJEXT): qt/$(am__dirstamp) \
+qt/qt_libbitcoinqt_a-qrc_asocoin.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_libbitcoinqt_a-qrc_condominium_locale.$(OBJEXT):  \
+qt/qt_libbitcoinqt_a-qrc_asocoin_locale.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
 
 qt/libbitcoinqt.a: $(qt_libbitcoinqt_a_OBJECTS) $(qt_libbitcoinqt_a_DEPENDENCIES) $(EXTRA_qt_libbitcoinqt_a_DEPENDENCIES) qt/$(am__dirstamp)
@@ -3003,22 +3003,22 @@ clean-binPROGRAMS:
 	echo " rm -f" $$list; \
 	rm -f $$list
 
-condominium-cli$(EXEEXT): $(condominium_cli_OBJECTS) $(condominium_cli_DEPENDENCIES) $(EXTRA_condominium_cli_DEPENDENCIES) 
-	@rm -f condominium-cli$(EXEEXT)
-	$(AM_V_CXXLD)$(condominium_cli_LINK) $(condominium_cli_OBJECTS) $(condominium_cli_LDADD) $(LIBS)
+asocoin-cli$(EXEEXT): $(asocoin_cli_OBJECTS) $(asocoin_cli_DEPENDENCIES) $(EXTRA_asocoin_cli_DEPENDENCIES) 
+	@rm -f asocoin-cli$(EXEEXT)
+	$(AM_V_CXXLD)$(asocoin_cli_LINK) $(asocoin_cli_OBJECTS) $(asocoin_cli_LDADD) $(LIBS)
 
-condominium-tx$(EXEEXT): $(condominium_tx_OBJECTS) $(condominium_tx_DEPENDENCIES) $(EXTRA_condominium_tx_DEPENDENCIES) 
-	@rm -f condominium-tx$(EXEEXT)
-	$(AM_V_CXXLD)$(condominium_tx_LINK) $(condominium_tx_OBJECTS) $(condominium_tx_LDADD) $(LIBS)
+asocoin-tx$(EXEEXT): $(asocoin_tx_OBJECTS) $(asocoin_tx_DEPENDENCIES) $(EXTRA_asocoin_tx_DEPENDENCIES) 
+	@rm -f asocoin-tx$(EXEEXT)
+	$(AM_V_CXXLD)$(asocoin_tx_LINK) $(asocoin_tx_OBJECTS) $(asocoin_tx_LDADD) $(LIBS)
 
-condominiumd$(EXEEXT): $(condominiumd_OBJECTS) $(condominiumd_DEPENDENCIES) $(EXTRA_condominiumd_DEPENDENCIES) 
-	@rm -f condominiumd$(EXEEXT)
-	$(AM_V_CXXLD)$(condominiumd_LINK) $(condominiumd_OBJECTS) $(condominiumd_LDADD) $(LIBS)
-qt/qt_condominium_qt-condominium.$(OBJEXT): qt/$(am__dirstamp) \
+asocoind$(EXEEXT): $(asocoind_OBJECTS) $(asocoind_DEPENDENCIES) $(EXTRA_asocoind_DEPENDENCIES) 
+	@rm -f asocoind$(EXEEXT)
+	$(AM_V_CXXLD)$(asocoind_LINK) $(asocoind_OBJECTS) $(asocoind_LDADD) $(LIBS)
+qt/qt_asocoin_qt-asocoin.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_condominium_qt-macdockiconhandler.$(OBJEXT): qt/$(am__dirstamp) \
+qt/qt_asocoin_qt-macdockiconhandler.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_condominium_qt-macnotificationhandler.$(OBJEXT):  \
+qt/qt_asocoin_qt-macnotificationhandler.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
 qt/res/$(am__dirstamp):
 	@$(MKDIR_P) qt/res
@@ -3026,130 +3026,130 @@ qt/res/$(am__dirstamp):
 qt/res/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) qt/res/$(DEPDIR)
 	@: > qt/res/$(DEPDIR)/$(am__dirstamp)
-qt/res/condominium-qt-res.$(OBJEXT): qt/res/$(am__dirstamp) \
+qt/res/asocoin-qt-res.$(OBJEXT): qt/res/$(am__dirstamp) \
 	qt/res/$(DEPDIR)/$(am__dirstamp)
 
-qt/condominium-qt$(EXEEXT): $(qt_condominium_qt_OBJECTS) $(qt_condominium_qt_DEPENDENCIES) $(EXTRA_qt_condominium_qt_DEPENDENCIES) qt/$(am__dirstamp)
-	@rm -f qt/condominium-qt$(EXEEXT)
-	$(AM_V_OBJCXXLD)$(qt_condominium_qt_LINK) $(qt_condominium_qt_OBJECTS) $(qt_condominium_qt_LDADD) $(LIBS)
+qt/asocoin-qt$(EXEEXT): $(qt_asocoin_qt_OBJECTS) $(qt_asocoin_qt_DEPENDENCIES) $(EXTRA_qt_asocoin_qt_DEPENDENCIES) qt/$(am__dirstamp)
+	@rm -f qt/asocoin-qt$(EXEEXT)
+	$(AM_V_OBJCXXLD)$(qt_asocoin_qt_LINK) $(qt_asocoin_qt_OBJECTS) $(qt_asocoin_qt_LDADD) $(LIBS)
 qt/test/$(am__dirstamp):
 	@$(MKDIR_P) qt/test
 	@: > qt/test/$(am__dirstamp)
 qt/test/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) qt/test/$(DEPDIR)
 	@: > qt/test/$(DEPDIR)/$(am__dirstamp)
-qt/test/qt_test_test_condominium_qt-test_main.$(OBJEXT):  \
+qt/test/qt_test_test_asocoin_qt-test_main.$(OBJEXT):  \
 	qt/test/$(am__dirstamp) qt/test/$(DEPDIR)/$(am__dirstamp)
-qt/test/qt_test_test_condominium_qt-uritests.$(OBJEXT):  \
+qt/test/qt_test_test_asocoin_qt-uritests.$(OBJEXT):  \
 	qt/test/$(am__dirstamp) qt/test/$(DEPDIR)/$(am__dirstamp)
-qt/test/qt_test_test_condominium_qt-paymentservertests.$(OBJEXT):  \
+qt/test/qt_test_test_asocoin_qt-paymentservertests.$(OBJEXT):  \
 	qt/test/$(am__dirstamp) qt/test/$(DEPDIR)/$(am__dirstamp)
-qt/test/qt_test_test_condominium_qt-moc_uritests.$(OBJEXT):  \
+qt/test/qt_test_test_asocoin_qt-moc_uritests.$(OBJEXT):  \
 	qt/test/$(am__dirstamp) qt/test/$(DEPDIR)/$(am__dirstamp)
-qt/test/qt_test_test_condominium_qt-moc_paymentservertests.$(OBJEXT):  \
+qt/test/qt_test_test_asocoin_qt-moc_paymentservertests.$(OBJEXT):  \
 	qt/test/$(am__dirstamp) qt/test/$(DEPDIR)/$(am__dirstamp)
 
-qt/test/test_condominium-qt$(EXEEXT): $(qt_test_test_condominium_qt_OBJECTS) $(qt_test_test_condominium_qt_DEPENDENCIES) $(EXTRA_qt_test_test_condominium_qt_DEPENDENCIES) qt/test/$(am__dirstamp)
-	@rm -f qt/test/test_condominium-qt$(EXEEXT)
-	$(AM_V_CXXLD)$(qt_test_test_condominium_qt_LINK) $(qt_test_test_condominium_qt_OBJECTS) $(qt_test_test_condominium_qt_LDADD) $(LIBS)
+qt/test/test_asocoin-qt$(EXEEXT): $(qt_test_test_asocoin_qt_OBJECTS) $(qt_test_test_asocoin_qt_DEPENDENCIES) $(EXTRA_qt_test_test_asocoin_qt_DEPENDENCIES) qt/test/$(am__dirstamp)
+	@rm -f qt/test/test_asocoin-qt$(EXEEXT)
+	$(AM_V_CXXLD)$(qt_test_test_asocoin_qt_LINK) $(qt_test_test_asocoin_qt_OBJECTS) $(qt_test_test_asocoin_qt_LDADD) $(LIBS)
 test/$(am__dirstamp):
 	@$(MKDIR_P) test
 	@: > test/$(am__dirstamp)
 test/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) test/$(DEPDIR)
 	@: > test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-zerocoin_implementation_tests.$(OBJEXT):  \
+test/test_test_asocoin-zerocoin_implementation_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-zerocoin_denomination_tests.$(OBJEXT):  \
+test/test_test_asocoin-zerocoin_denomination_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-zerocoin_transactions_tests.$(OBJEXT):  \
+test/test_test_asocoin-zerocoin_transactions_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-benchmark_zerocoin.$(OBJEXT):  \
+test/test_test_asocoin-benchmark_zerocoin.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-tutorial_zerocoin.$(OBJEXT):  \
+test/test_test_asocoin-tutorial_zerocoin.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-libzerocoin_tests.$(OBJEXT):  \
+test/test_test_asocoin-libzerocoin_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-allocator_tests.$(OBJEXT):  \
+test/test_test_asocoin-allocator_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-base32_tests.$(OBJEXT):  \
+test/test_test_asocoin-base32_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-base58_tests.$(OBJEXT):  \
+test/test_test_asocoin-base58_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-base64_tests.$(OBJEXT):  \
+test/test_test_asocoin-base64_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-checkblock_tests.$(OBJEXT):  \
+test/test_test_asocoin-checkblock_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-Checkpoints_tests.$(OBJEXT):  \
+test/test_test_asocoin-Checkpoints_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-coins_tests.$(OBJEXT):  \
+test/test_test_asocoin-coins_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-compress_tests.$(OBJEXT):  \
+test/test_test_asocoin-compress_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-crypto_tests.$(OBJEXT):  \
+test/test_test_asocoin-crypto_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-DoS_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_asocoin-DoS_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-getarg_tests.$(OBJEXT):  \
+test/test_test_asocoin-getarg_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-hash_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_asocoin-hash_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-key_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_asocoin-key_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-main_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_asocoin-main_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-mempool_tests.$(OBJEXT):  \
+test/test_test_asocoin-mempool_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-mruset_tests.$(OBJEXT):  \
+test/test_test_asocoin-mruset_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-multisig_tests.$(OBJEXT):  \
+test/test_test_asocoin-multisig_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-netbase_tests.$(OBJEXT):  \
+test/test_test_asocoin-netbase_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-pmt_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_asocoin-pmt_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-rpc_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_asocoin-rpc_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-sanity_tests.$(OBJEXT):  \
+test/test_test_asocoin-sanity_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-script_P2SH_tests.$(OBJEXT):  \
+test/test_test_asocoin-script_P2SH_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-script_tests.$(OBJEXT):  \
+test/test_test_asocoin-script_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-scriptnum_tests.$(OBJEXT):  \
+test/test_test_asocoin-scriptnum_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-serialize_tests.$(OBJEXT):  \
+test/test_test_asocoin-serialize_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-sighash_tests.$(OBJEXT):  \
+test/test_test_asocoin-sighash_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-sigopcount_tests.$(OBJEXT):  \
+test/test_test_asocoin-sigopcount_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-skiplist_tests.$(OBJEXT):  \
+test/test_test_asocoin-skiplist_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-test_condominium.$(OBJEXT):  \
+test/test_test_asocoin-test_asocoin.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-timedata_tests.$(OBJEXT):  \
+test/test_test_asocoin-timedata_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-torcontrol_tests.$(OBJEXT):  \
+test/test_test_asocoin-torcontrol_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-transaction_tests.$(OBJEXT):  \
+test/test_test_asocoin-transaction_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-uint256_tests.$(OBJEXT):  \
+test/test_test_asocoin-uint256_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-univalue_tests.$(OBJEXT):  \
+test/test_test_asocoin-univalue_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-util_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_asocoin-util_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-accounting_tests.$(OBJEXT):  \
+test/test_test_asocoin-accounting_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-wallet_tests.$(OBJEXT):  \
+test/test_test_asocoin-wallet_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_condominium-rpc_wallet_tests.$(OBJEXT):  \
+test/test_test_asocoin-rpc_wallet_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
 
-test/test_condominium$(EXEEXT): $(test_test_condominium_OBJECTS) $(test_test_condominium_DEPENDENCIES) $(EXTRA_test_test_condominium_DEPENDENCIES) test/$(am__dirstamp)
-	@rm -f test/test_condominium$(EXEEXT)
-	$(AM_V_CXXLD)$(test_test_condominium_LINK) $(test_test_condominium_OBJECTS) $(test_test_condominium_LDADD) $(LIBS)
+test/test_asocoin$(EXEEXT): $(test_test_asocoin_OBJECTS) $(test_test_asocoin_DEPENDENCIES) $(EXTRA_test_test_asocoin_DEPENDENCIES) test/$(am__dirstamp)
+	@rm -f test/test_asocoin$(EXEEXT)
+	$(AM_V_CXXLD)$(test_test_asocoin_LINK) $(test_test_asocoin_OBJECTS) $(test_test_asocoin_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -3172,9 +3172,9 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-include ./$(DEPDIR)/condominium_cli-condominium-cli.Po
-include ./$(DEPDIR)/condominium_tx-condominium-tx.Po
-include ./$(DEPDIR)/condominiumd-condominiumd.Po
+include ./$(DEPDIR)/asocoin_cli-asocoin-cli.Po
+include ./$(DEPDIR)/asocoin_tx-asocoin-tx.Po
+include ./$(DEPDIR)/asocoind-asocoind.Po
 include ./$(DEPDIR)/libbitcoin_cli_a-rpcclient.Po
 include ./$(DEPDIR)/libbitcoin_common_a-accumulatormap.Po
 include ./$(DEPDIR)/libbitcoin_common_a-accumulators.Po
@@ -3318,9 +3318,9 @@ include primitives/$(DEPDIR)/libbitcoin_common_a-transaction.Po
 include primitives/$(DEPDIR)/libbitcoin_common_a-zerocoin.Po
 include primitives/$(DEPDIR)/libbitcoin_wallet_a-zerocoin.Po
 include primitives/$(DEPDIR)/libbitcoinconsensus_la-transaction.Plo
-include qt/$(DEPDIR)/qt_condominium_qt-condominium.Po
-include qt/$(DEPDIR)/qt_condominium_qt-macdockiconhandler.Po
-include qt/$(DEPDIR)/qt_condominium_qt-macnotificationhandler.Po
+include qt/$(DEPDIR)/qt_asocoin_qt-asocoin.Po
+include qt/$(DEPDIR)/qt_asocoin_qt-macdockiconhandler.Po
+include qt/$(DEPDIR)/qt_asocoin_qt-macnotificationhandler.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-addressbookpage.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-addresstablemodel.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-askpassphrasedialog.Po
@@ -3388,7 +3388,7 @@ include qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_utilitydialog.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_walletframe.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_walletmodel.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_walletview.Po
-include qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zcondominiumcontroldialog.Po
+include qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zasocoincontroldialog.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-multisenddialog.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-multisigdialog.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-networkstyle.Po
@@ -3404,8 +3404,8 @@ include qt/$(DEPDIR)/qt_libbitcoinqt_a-paymentserver.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-peertablemodel.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-platformstyle.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-privacydialog.Po
-include qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_condominium.Po
-include qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_condominium_locale.Po
+include qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_asocoin.Po
+include qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_asocoin_locale.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-qvalidatedlineedit.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-qvaluecombobox.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-receivecoinsdialog.Po
@@ -3429,12 +3429,12 @@ include qt/$(DEPDIR)/qt_libbitcoinqt_a-walletmodel.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-walletmodeltransaction.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-walletview.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-winshutdownmonitor.Po
-include qt/$(DEPDIR)/qt_libbitcoinqt_a-zcondominiumcontroldialog.Po
-include qt/test/$(DEPDIR)/qt_test_test_condominium_qt-moc_paymentservertests.Po
-include qt/test/$(DEPDIR)/qt_test_test_condominium_qt-moc_uritests.Po
-include qt/test/$(DEPDIR)/qt_test_test_condominium_qt-paymentservertests.Po
-include qt/test/$(DEPDIR)/qt_test_test_condominium_qt-test_main.Po
-include qt/test/$(DEPDIR)/qt_test_test_condominium_qt-uritests.Po
+include qt/$(DEPDIR)/qt_libbitcoinqt_a-zasocoincontroldialog.Po
+include qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-moc_paymentservertests.Po
+include qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-moc_uritests.Po
+include qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-paymentservertests.Po
+include qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-test_main.Po
+include qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-uritests.Po
 include script/$(DEPDIR)/libbitcoin_common_a-interpreter.Po
 include script/$(DEPDIR)/libbitcoin_common_a-script.Po
 include script/$(DEPDIR)/libbitcoin_common_a-script_error.Po
@@ -3444,50 +3444,50 @@ include script/$(DEPDIR)/libbitcoin_server_a-sigcache.Po
 include script/$(DEPDIR)/libbitcoinconsensus_la-bitcoinconsensus.Plo
 include script/$(DEPDIR)/libbitcoinconsensus_la-interpreter.Plo
 include script/$(DEPDIR)/libbitcoinconsensus_la-script.Plo
-include test/$(DEPDIR)/test_test_condominium-Checkpoints_tests.Po
-include test/$(DEPDIR)/test_test_condominium-DoS_tests.Po
-include test/$(DEPDIR)/test_test_condominium-accounting_tests.Po
-include test/$(DEPDIR)/test_test_condominium-allocator_tests.Po
-include test/$(DEPDIR)/test_test_condominium-base32_tests.Po
-include test/$(DEPDIR)/test_test_condominium-base58_tests.Po
-include test/$(DEPDIR)/test_test_condominium-base64_tests.Po
-include test/$(DEPDIR)/test_test_condominium-benchmark_zerocoin.Po
-include test/$(DEPDIR)/test_test_condominium-checkblock_tests.Po
-include test/$(DEPDIR)/test_test_condominium-coins_tests.Po
-include test/$(DEPDIR)/test_test_condominium-compress_tests.Po
-include test/$(DEPDIR)/test_test_condominium-crypto_tests.Po
-include test/$(DEPDIR)/test_test_condominium-getarg_tests.Po
-include test/$(DEPDIR)/test_test_condominium-hash_tests.Po
-include test/$(DEPDIR)/test_test_condominium-key_tests.Po
-include test/$(DEPDIR)/test_test_condominium-libzerocoin_tests.Po
-include test/$(DEPDIR)/test_test_condominium-main_tests.Po
-include test/$(DEPDIR)/test_test_condominium-mempool_tests.Po
-include test/$(DEPDIR)/test_test_condominium-mruset_tests.Po
-include test/$(DEPDIR)/test_test_condominium-multisig_tests.Po
-include test/$(DEPDIR)/test_test_condominium-netbase_tests.Po
-include test/$(DEPDIR)/test_test_condominium-pmt_tests.Po
-include test/$(DEPDIR)/test_test_condominium-rpc_tests.Po
-include test/$(DEPDIR)/test_test_condominium-rpc_wallet_tests.Po
-include test/$(DEPDIR)/test_test_condominium-sanity_tests.Po
-include test/$(DEPDIR)/test_test_condominium-script_P2SH_tests.Po
-include test/$(DEPDIR)/test_test_condominium-script_tests.Po
-include test/$(DEPDIR)/test_test_condominium-scriptnum_tests.Po
-include test/$(DEPDIR)/test_test_condominium-serialize_tests.Po
-include test/$(DEPDIR)/test_test_condominium-sighash_tests.Po
-include test/$(DEPDIR)/test_test_condominium-sigopcount_tests.Po
-include test/$(DEPDIR)/test_test_condominium-skiplist_tests.Po
-include test/$(DEPDIR)/test_test_condominium-test_condominium.Po
-include test/$(DEPDIR)/test_test_condominium-timedata_tests.Po
-include test/$(DEPDIR)/test_test_condominium-torcontrol_tests.Po
-include test/$(DEPDIR)/test_test_condominium-transaction_tests.Po
-include test/$(DEPDIR)/test_test_condominium-tutorial_zerocoin.Po
-include test/$(DEPDIR)/test_test_condominium-uint256_tests.Po
-include test/$(DEPDIR)/test_test_condominium-univalue_tests.Po
-include test/$(DEPDIR)/test_test_condominium-util_tests.Po
-include test/$(DEPDIR)/test_test_condominium-wallet_tests.Po
-include test/$(DEPDIR)/test_test_condominium-zerocoin_denomination_tests.Po
-include test/$(DEPDIR)/test_test_condominium-zerocoin_implementation_tests.Po
-include test/$(DEPDIR)/test_test_condominium-zerocoin_transactions_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-Checkpoints_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-DoS_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-accounting_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-allocator_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-base32_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-base58_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-base64_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-benchmark_zerocoin.Po
+include test/$(DEPDIR)/test_test_asocoin-checkblock_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-coins_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-compress_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-crypto_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-getarg_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-hash_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-key_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-libzerocoin_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-main_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-mempool_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-mruset_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-multisig_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-netbase_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-pmt_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-rpc_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-rpc_wallet_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-sanity_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-script_P2SH_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-script_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-scriptnum_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-serialize_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-sighash_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-sigopcount_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-skiplist_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-test_asocoin.Po
+include test/$(DEPDIR)/test_test_asocoin-timedata_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-torcontrol_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-transaction_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-tutorial_zerocoin.Po
+include test/$(DEPDIR)/test_test_asocoin-uint256_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-univalue_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-util_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-wallet_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-zerocoin_denomination_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-zerocoin_implementation_tests.Po
+include test/$(DEPDIR)/test_test_asocoin-zerocoin_transactions_tests.Po
 include univalue/$(DEPDIR)/univalue.Po
 include univalue/$(DEPDIR)/univalue_read.Po
 include univalue/$(DEPDIR)/univalue_write.Po
@@ -6077,19 +6077,19 @@ qt/qt_libbitcoinqt_a-walletview.obj: qt/walletview.cpp
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-walletview.obj `if test -f 'qt/walletview.cpp'; then $(CYGPATH_W) 'qt/walletview.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/walletview.cpp'; fi`
 
-qt/qt_libbitcoinqt_a-zcondominiumcontroldialog.o: qt/zcondominiumcontroldialog.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-zcondominiumcontroldialog.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-zcondominiumcontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-zcondominiumcontroldialog.o `test -f 'qt/zcondominiumcontroldialog.cpp' || echo '$(srcdir)/'`qt/zcondominiumcontroldialog.cpp
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-zcondominiumcontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-zcondominiumcontroldialog.Po
-#	$(AM_V_CXX)source='qt/zcondominiumcontroldialog.cpp' object='qt/qt_libbitcoinqt_a-zcondominiumcontroldialog.o' libtool=no \
+qt/qt_libbitcoinqt_a-zasocoincontroldialog.o: qt/zasocoincontroldialog.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-zasocoincontroldialog.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-zasocoincontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-zasocoincontroldialog.o `test -f 'qt/zasocoincontroldialog.cpp' || echo '$(srcdir)/'`qt/zasocoincontroldialog.cpp
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-zasocoincontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-zasocoincontroldialog.Po
+#	$(AM_V_CXX)source='qt/zasocoincontroldialog.cpp' object='qt/qt_libbitcoinqt_a-zasocoincontroldialog.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-zcondominiumcontroldialog.o `test -f 'qt/zcondominiumcontroldialog.cpp' || echo '$(srcdir)/'`qt/zcondominiumcontroldialog.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-zasocoincontroldialog.o `test -f 'qt/zasocoincontroldialog.cpp' || echo '$(srcdir)/'`qt/zasocoincontroldialog.cpp
 
-qt/qt_libbitcoinqt_a-zcondominiumcontroldialog.obj: qt/zcondominiumcontroldialog.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-zcondominiumcontroldialog.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-zcondominiumcontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-zcondominiumcontroldialog.obj `if test -f 'qt/zcondominiumcontroldialog.cpp'; then $(CYGPATH_W) 'qt/zcondominiumcontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/zcondominiumcontroldialog.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-zcondominiumcontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-zcondominiumcontroldialog.Po
-#	$(AM_V_CXX)source='qt/zcondominiumcontroldialog.cpp' object='qt/qt_libbitcoinqt_a-zcondominiumcontroldialog.obj' libtool=no \
+qt/qt_libbitcoinqt_a-zasocoincontroldialog.obj: qt/zasocoincontroldialog.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-zasocoincontroldialog.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-zasocoincontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-zasocoincontroldialog.obj `if test -f 'qt/zasocoincontroldialog.cpp'; then $(CYGPATH_W) 'qt/zasocoincontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/zasocoincontroldialog.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-zasocoincontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-zasocoincontroldialog.Po
+#	$(AM_V_CXX)source='qt/zasocoincontroldialog.cpp' object='qt/qt_libbitcoinqt_a-zasocoincontroldialog.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-zcondominiumcontroldialog.obj `if test -f 'qt/zcondominiumcontroldialog.cpp'; then $(CYGPATH_W) 'qt/zcondominiumcontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/zcondominiumcontroldialog.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-zasocoincontroldialog.obj `if test -f 'qt/zasocoincontroldialog.cpp'; then $(CYGPATH_W) 'qt/zasocoincontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/zasocoincontroldialog.cpp'; fi`
 
 qt/qt_libbitcoinqt_a-moc_addressbookpage.o: qt/moc_addressbookpage.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-moc_addressbookpage.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_addressbookpage.Tpo -c -o qt/qt_libbitcoinqt_a-moc_addressbookpage.o `test -f 'qt/moc_addressbookpage.cpp' || echo '$(srcdir)/'`qt/moc_addressbookpage.cpp
@@ -6791,19 +6791,19 @@ qt/qt_libbitcoinqt_a-moc_walletview.obj: qt/moc_walletview.cpp
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-moc_walletview.obj `if test -f 'qt/moc_walletview.cpp'; then $(CYGPATH_W) 'qt/moc_walletview.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/moc_walletview.cpp'; fi`
 
-qt/qt_libbitcoinqt_a-moc_zcondominiumcontroldialog.o: qt/moc_zcondominiumcontroldialog.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-moc_zcondominiumcontroldialog.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zcondominiumcontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-moc_zcondominiumcontroldialog.o `test -f 'qt/moc_zcondominiumcontroldialog.cpp' || echo '$(srcdir)/'`qt/moc_zcondominiumcontroldialog.cpp
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zcondominiumcontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zcondominiumcontroldialog.Po
-#	$(AM_V_CXX)source='qt/moc_zcondominiumcontroldialog.cpp' object='qt/qt_libbitcoinqt_a-moc_zcondominiumcontroldialog.o' libtool=no \
+qt/qt_libbitcoinqt_a-moc_zasocoincontroldialog.o: qt/moc_zasocoincontroldialog.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-moc_zasocoincontroldialog.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zasocoincontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-moc_zasocoincontroldialog.o `test -f 'qt/moc_zasocoincontroldialog.cpp' || echo '$(srcdir)/'`qt/moc_zasocoincontroldialog.cpp
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zasocoincontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zasocoincontroldialog.Po
+#	$(AM_V_CXX)source='qt/moc_zasocoincontroldialog.cpp' object='qt/qt_libbitcoinqt_a-moc_zasocoincontroldialog.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-moc_zcondominiumcontroldialog.o `test -f 'qt/moc_zcondominiumcontroldialog.cpp' || echo '$(srcdir)/'`qt/moc_zcondominiumcontroldialog.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-moc_zasocoincontroldialog.o `test -f 'qt/moc_zasocoincontroldialog.cpp' || echo '$(srcdir)/'`qt/moc_zasocoincontroldialog.cpp
 
-qt/qt_libbitcoinqt_a-moc_zcondominiumcontroldialog.obj: qt/moc_zcondominiumcontroldialog.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-moc_zcondominiumcontroldialog.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zcondominiumcontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-moc_zcondominiumcontroldialog.obj `if test -f 'qt/moc_zcondominiumcontroldialog.cpp'; then $(CYGPATH_W) 'qt/moc_zcondominiumcontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/moc_zcondominiumcontroldialog.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zcondominiumcontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zcondominiumcontroldialog.Po
-#	$(AM_V_CXX)source='qt/moc_zcondominiumcontroldialog.cpp' object='qt/qt_libbitcoinqt_a-moc_zcondominiumcontroldialog.obj' libtool=no \
+qt/qt_libbitcoinqt_a-moc_zasocoincontroldialog.obj: qt/moc_zasocoincontroldialog.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-moc_zasocoincontroldialog.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zasocoincontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-moc_zasocoincontroldialog.obj `if test -f 'qt/moc_zasocoincontroldialog.cpp'; then $(CYGPATH_W) 'qt/moc_zasocoincontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/moc_zasocoincontroldialog.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zasocoincontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zasocoincontroldialog.Po
+#	$(AM_V_CXX)source='qt/moc_zasocoincontroldialog.cpp' object='qt/qt_libbitcoinqt_a-moc_zasocoincontroldialog.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-moc_zcondominiumcontroldialog.obj `if test -f 'qt/moc_zcondominiumcontroldialog.cpp'; then $(CYGPATH_W) 'qt/moc_zcondominiumcontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/moc_zcondominiumcontroldialog.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-moc_zasocoincontroldialog.obj `if test -f 'qt/moc_zasocoincontroldialog.cpp'; then $(CYGPATH_W) 'qt/moc_zasocoincontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/moc_zasocoincontroldialog.cpp'; fi`
 
 qt/qt_libbitcoinqt_a-paymentrequest.pb.o: qt/paymentrequest.pb.cc
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-paymentrequest.pb.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-paymentrequest.pb.Tpo -c -o qt/qt_libbitcoinqt_a-paymentrequest.pb.o `test -f 'qt/paymentrequest.pb.cc' || echo '$(srcdir)/'`qt/paymentrequest.pb.cc
@@ -6819,33 +6819,33 @@ qt/qt_libbitcoinqt_a-paymentrequest.pb.obj: qt/paymentrequest.pb.cc
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-paymentrequest.pb.obj `if test -f 'qt/paymentrequest.pb.cc'; then $(CYGPATH_W) 'qt/paymentrequest.pb.cc'; else $(CYGPATH_W) '$(srcdir)/qt/paymentrequest.pb.cc'; fi`
 
-qt/qt_libbitcoinqt_a-qrc_condominium.o: qt/qrc_condominium.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_condominium.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_condominium.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_condominium.o `test -f 'qt/qrc_condominium.cpp' || echo '$(srcdir)/'`qt/qrc_condominium.cpp
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_condominium.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_condominium.Po
-#	$(AM_V_CXX)source='qt/qrc_condominium.cpp' object='qt/qt_libbitcoinqt_a-qrc_condominium.o' libtool=no \
+qt/qt_libbitcoinqt_a-qrc_asocoin.o: qt/qrc_asocoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_asocoin.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_asocoin.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_asocoin.o `test -f 'qt/qrc_asocoin.cpp' || echo '$(srcdir)/'`qt/qrc_asocoin.cpp
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_asocoin.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_asocoin.Po
+#	$(AM_V_CXX)source='qt/qrc_asocoin.cpp' object='qt/qt_libbitcoinqt_a-qrc_asocoin.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_condominium.o `test -f 'qt/qrc_condominium.cpp' || echo '$(srcdir)/'`qt/qrc_condominium.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_asocoin.o `test -f 'qt/qrc_asocoin.cpp' || echo '$(srcdir)/'`qt/qrc_asocoin.cpp
 
-qt/qt_libbitcoinqt_a-qrc_condominium.obj: qt/qrc_condominium.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_condominium.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_condominium.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_condominium.obj `if test -f 'qt/qrc_condominium.cpp'; then $(CYGPATH_W) 'qt/qrc_condominium.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_condominium.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_condominium.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_condominium.Po
-#	$(AM_V_CXX)source='qt/qrc_condominium.cpp' object='qt/qt_libbitcoinqt_a-qrc_condominium.obj' libtool=no \
+qt/qt_libbitcoinqt_a-qrc_asocoin.obj: qt/qrc_asocoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_asocoin.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_asocoin.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_asocoin.obj `if test -f 'qt/qrc_asocoin.cpp'; then $(CYGPATH_W) 'qt/qrc_asocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_asocoin.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_asocoin.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_asocoin.Po
+#	$(AM_V_CXX)source='qt/qrc_asocoin.cpp' object='qt/qt_libbitcoinqt_a-qrc_asocoin.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_condominium.obj `if test -f 'qt/qrc_condominium.cpp'; then $(CYGPATH_W) 'qt/qrc_condominium.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_condominium.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_asocoin.obj `if test -f 'qt/qrc_asocoin.cpp'; then $(CYGPATH_W) 'qt/qrc_asocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_asocoin.cpp'; fi`
 
-qt/qt_libbitcoinqt_a-qrc_condominium_locale.o: qt/qrc_condominium_locale.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_condominium_locale.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_condominium_locale.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_condominium_locale.o `test -f 'qt/qrc_condominium_locale.cpp' || echo '$(srcdir)/'`qt/qrc_condominium_locale.cpp
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_condominium_locale.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_condominium_locale.Po
-#	$(AM_V_CXX)source='qt/qrc_condominium_locale.cpp' object='qt/qt_libbitcoinqt_a-qrc_condominium_locale.o' libtool=no \
+qt/qt_libbitcoinqt_a-qrc_asocoin_locale.o: qt/qrc_asocoin_locale.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_asocoin_locale.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_asocoin_locale.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_asocoin_locale.o `test -f 'qt/qrc_asocoin_locale.cpp' || echo '$(srcdir)/'`qt/qrc_asocoin_locale.cpp
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_asocoin_locale.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_asocoin_locale.Po
+#	$(AM_V_CXX)source='qt/qrc_asocoin_locale.cpp' object='qt/qt_libbitcoinqt_a-qrc_asocoin_locale.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_condominium_locale.o `test -f 'qt/qrc_condominium_locale.cpp' || echo '$(srcdir)/'`qt/qrc_condominium_locale.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_asocoin_locale.o `test -f 'qt/qrc_asocoin_locale.cpp' || echo '$(srcdir)/'`qt/qrc_asocoin_locale.cpp
 
-qt/qt_libbitcoinqt_a-qrc_condominium_locale.obj: qt/qrc_condominium_locale.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_condominium_locale.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_condominium_locale.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_condominium_locale.obj `if test -f 'qt/qrc_condominium_locale.cpp'; then $(CYGPATH_W) 'qt/qrc_condominium_locale.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_condominium_locale.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_condominium_locale.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_condominium_locale.Po
-#	$(AM_V_CXX)source='qt/qrc_condominium_locale.cpp' object='qt/qt_libbitcoinqt_a-qrc_condominium_locale.obj' libtool=no \
+qt/qt_libbitcoinqt_a-qrc_asocoin_locale.obj: qt/qrc_asocoin_locale.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_asocoin_locale.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_asocoin_locale.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_asocoin_locale.obj `if test -f 'qt/qrc_asocoin_locale.cpp'; then $(CYGPATH_W) 'qt/qrc_asocoin_locale.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_asocoin_locale.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_asocoin_locale.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_asocoin_locale.Po
+#	$(AM_V_CXX)source='qt/qrc_asocoin_locale.cpp' object='qt/qt_libbitcoinqt_a-qrc_asocoin_locale.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_condominium_locale.obj `if test -f 'qt/qrc_condominium_locale.cpp'; then $(CYGPATH_W) 'qt/qrc_condominium_locale.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_condominium_locale.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_asocoin_locale.obj `if test -f 'qt/qrc_asocoin_locale.cpp'; then $(CYGPATH_W) 'qt/qrc_asocoin_locale.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_asocoin_locale.cpp'; fi`
 
 libbitcoinconsensus_la-allocators.lo: allocators.cpp
 	$(AM_V_CXX)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoinconsensus_la_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT libbitcoinconsensus_la-allocators.lo -MD -MP -MF $(DEPDIR)/libbitcoinconsensus_la-allocators.Tpo -c -o libbitcoinconsensus_la-allocators.lo `test -f 'allocators.cpp' || echo '$(srcdir)/'`allocators.cpp
@@ -6980,747 +6980,747 @@ compat/libbitcoinconsensus_la-glibcxx_compat.lo: compat/glibcxx_compat.cpp
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoinconsensus_la_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o compat/libbitcoinconsensus_la-glibcxx_compat.lo `test -f 'compat/glibcxx_compat.cpp' || echo '$(srcdir)/'`compat/glibcxx_compat.cpp
 
-condominium_cli-condominium-cli.o: condominium-cli.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(condominium_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT condominium_cli-condominium-cli.o -MD -MP -MF $(DEPDIR)/condominium_cli-condominium-cli.Tpo -c -o condominium_cli-condominium-cli.o `test -f 'condominium-cli.cpp' || echo '$(srcdir)/'`condominium-cli.cpp
-	$(AM_V_at)$(am__mv) $(DEPDIR)/condominium_cli-condominium-cli.Tpo $(DEPDIR)/condominium_cli-condominium-cli.Po
-#	$(AM_V_CXX)source='condominium-cli.cpp' object='condominium_cli-condominium-cli.o' libtool=no \
+asocoin_cli-asocoin-cli.o: asocoin-cli.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(asocoin_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT asocoin_cli-asocoin-cli.o -MD -MP -MF $(DEPDIR)/asocoin_cli-asocoin-cli.Tpo -c -o asocoin_cli-asocoin-cli.o `test -f 'asocoin-cli.cpp' || echo '$(srcdir)/'`asocoin-cli.cpp
+	$(AM_V_at)$(am__mv) $(DEPDIR)/asocoin_cli-asocoin-cli.Tpo $(DEPDIR)/asocoin_cli-asocoin-cli.Po
+#	$(AM_V_CXX)source='asocoin-cli.cpp' object='asocoin_cli-asocoin-cli.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(condominium_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o condominium_cli-condominium-cli.o `test -f 'condominium-cli.cpp' || echo '$(srcdir)/'`condominium-cli.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(asocoin_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o asocoin_cli-asocoin-cli.o `test -f 'asocoin-cli.cpp' || echo '$(srcdir)/'`asocoin-cli.cpp
 
-condominium_cli-condominium-cli.obj: condominium-cli.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(condominium_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT condominium_cli-condominium-cli.obj -MD -MP -MF $(DEPDIR)/condominium_cli-condominium-cli.Tpo -c -o condominium_cli-condominium-cli.obj `if test -f 'condominium-cli.cpp'; then $(CYGPATH_W) 'condominium-cli.cpp'; else $(CYGPATH_W) '$(srcdir)/condominium-cli.cpp'; fi`
-	$(AM_V_at)$(am__mv) $(DEPDIR)/condominium_cli-condominium-cli.Tpo $(DEPDIR)/condominium_cli-condominium-cli.Po
-#	$(AM_V_CXX)source='condominium-cli.cpp' object='condominium_cli-condominium-cli.obj' libtool=no \
+asocoin_cli-asocoin-cli.obj: asocoin-cli.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(asocoin_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT asocoin_cli-asocoin-cli.obj -MD -MP -MF $(DEPDIR)/asocoin_cli-asocoin-cli.Tpo -c -o asocoin_cli-asocoin-cli.obj `if test -f 'asocoin-cli.cpp'; then $(CYGPATH_W) 'asocoin-cli.cpp'; else $(CYGPATH_W) '$(srcdir)/asocoin-cli.cpp'; fi`
+	$(AM_V_at)$(am__mv) $(DEPDIR)/asocoin_cli-asocoin-cli.Tpo $(DEPDIR)/asocoin_cli-asocoin-cli.Po
+#	$(AM_V_CXX)source='asocoin-cli.cpp' object='asocoin_cli-asocoin-cli.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(condominium_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o condominium_cli-condominium-cli.obj `if test -f 'condominium-cli.cpp'; then $(CYGPATH_W) 'condominium-cli.cpp'; else $(CYGPATH_W) '$(srcdir)/condominium-cli.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(asocoin_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o asocoin_cli-asocoin-cli.obj `if test -f 'asocoin-cli.cpp'; then $(CYGPATH_W) 'asocoin-cli.cpp'; else $(CYGPATH_W) '$(srcdir)/asocoin-cli.cpp'; fi`
 
-condominium_tx-condominium-tx.o: condominium-tx.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(condominium_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT condominium_tx-condominium-tx.o -MD -MP -MF $(DEPDIR)/condominium_tx-condominium-tx.Tpo -c -o condominium_tx-condominium-tx.o `test -f 'condominium-tx.cpp' || echo '$(srcdir)/'`condominium-tx.cpp
-	$(AM_V_at)$(am__mv) $(DEPDIR)/condominium_tx-condominium-tx.Tpo $(DEPDIR)/condominium_tx-condominium-tx.Po
-#	$(AM_V_CXX)source='condominium-tx.cpp' object='condominium_tx-condominium-tx.o' libtool=no \
+asocoin_tx-asocoin-tx.o: asocoin-tx.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(asocoin_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT asocoin_tx-asocoin-tx.o -MD -MP -MF $(DEPDIR)/asocoin_tx-asocoin-tx.Tpo -c -o asocoin_tx-asocoin-tx.o `test -f 'asocoin-tx.cpp' || echo '$(srcdir)/'`asocoin-tx.cpp
+	$(AM_V_at)$(am__mv) $(DEPDIR)/asocoin_tx-asocoin-tx.Tpo $(DEPDIR)/asocoin_tx-asocoin-tx.Po
+#	$(AM_V_CXX)source='asocoin-tx.cpp' object='asocoin_tx-asocoin-tx.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(condominium_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o condominium_tx-condominium-tx.o `test -f 'condominium-tx.cpp' || echo '$(srcdir)/'`condominium-tx.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(asocoin_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o asocoin_tx-asocoin-tx.o `test -f 'asocoin-tx.cpp' || echo '$(srcdir)/'`asocoin-tx.cpp
 
-condominium_tx-condominium-tx.obj: condominium-tx.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(condominium_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT condominium_tx-condominium-tx.obj -MD -MP -MF $(DEPDIR)/condominium_tx-condominium-tx.Tpo -c -o condominium_tx-condominium-tx.obj `if test -f 'condominium-tx.cpp'; then $(CYGPATH_W) 'condominium-tx.cpp'; else $(CYGPATH_W) '$(srcdir)/condominium-tx.cpp'; fi`
-	$(AM_V_at)$(am__mv) $(DEPDIR)/condominium_tx-condominium-tx.Tpo $(DEPDIR)/condominium_tx-condominium-tx.Po
-#	$(AM_V_CXX)source='condominium-tx.cpp' object='condominium_tx-condominium-tx.obj' libtool=no \
+asocoin_tx-asocoin-tx.obj: asocoin-tx.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(asocoin_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT asocoin_tx-asocoin-tx.obj -MD -MP -MF $(DEPDIR)/asocoin_tx-asocoin-tx.Tpo -c -o asocoin_tx-asocoin-tx.obj `if test -f 'asocoin-tx.cpp'; then $(CYGPATH_W) 'asocoin-tx.cpp'; else $(CYGPATH_W) '$(srcdir)/asocoin-tx.cpp'; fi`
+	$(AM_V_at)$(am__mv) $(DEPDIR)/asocoin_tx-asocoin-tx.Tpo $(DEPDIR)/asocoin_tx-asocoin-tx.Po
+#	$(AM_V_CXX)source='asocoin-tx.cpp' object='asocoin_tx-asocoin-tx.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(condominium_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o condominium_tx-condominium-tx.obj `if test -f 'condominium-tx.cpp'; then $(CYGPATH_W) 'condominium-tx.cpp'; else $(CYGPATH_W) '$(srcdir)/condominium-tx.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(asocoin_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o asocoin_tx-asocoin-tx.obj `if test -f 'asocoin-tx.cpp'; then $(CYGPATH_W) 'asocoin-tx.cpp'; else $(CYGPATH_W) '$(srcdir)/asocoin-tx.cpp'; fi`
 
-condominiumd-condominiumd.o: condominiumd.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(condominiumd_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT condominiumd-condominiumd.o -MD -MP -MF $(DEPDIR)/condominiumd-condominiumd.Tpo -c -o condominiumd-condominiumd.o `test -f 'condominiumd.cpp' || echo '$(srcdir)/'`condominiumd.cpp
-	$(AM_V_at)$(am__mv) $(DEPDIR)/condominiumd-condominiumd.Tpo $(DEPDIR)/condominiumd-condominiumd.Po
-#	$(AM_V_CXX)source='condominiumd.cpp' object='condominiumd-condominiumd.o' libtool=no \
+asocoind-asocoind.o: asocoind.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(asocoind_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT asocoind-asocoind.o -MD -MP -MF $(DEPDIR)/asocoind-asocoind.Tpo -c -o asocoind-asocoind.o `test -f 'asocoind.cpp' || echo '$(srcdir)/'`asocoind.cpp
+	$(AM_V_at)$(am__mv) $(DEPDIR)/asocoind-asocoind.Tpo $(DEPDIR)/asocoind-asocoind.Po
+#	$(AM_V_CXX)source='asocoind.cpp' object='asocoind-asocoind.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(condominiumd_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o condominiumd-condominiumd.o `test -f 'condominiumd.cpp' || echo '$(srcdir)/'`condominiumd.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(asocoind_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o asocoind-asocoind.o `test -f 'asocoind.cpp' || echo '$(srcdir)/'`asocoind.cpp
 
-condominiumd-condominiumd.obj: condominiumd.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(condominiumd_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT condominiumd-condominiumd.obj -MD -MP -MF $(DEPDIR)/condominiumd-condominiumd.Tpo -c -o condominiumd-condominiumd.obj `if test -f 'condominiumd.cpp'; then $(CYGPATH_W) 'condominiumd.cpp'; else $(CYGPATH_W) '$(srcdir)/condominiumd.cpp'; fi`
-	$(AM_V_at)$(am__mv) $(DEPDIR)/condominiumd-condominiumd.Tpo $(DEPDIR)/condominiumd-condominiumd.Po
-#	$(AM_V_CXX)source='condominiumd.cpp' object='condominiumd-condominiumd.obj' libtool=no \
+asocoind-asocoind.obj: asocoind.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(asocoind_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT asocoind-asocoind.obj -MD -MP -MF $(DEPDIR)/asocoind-asocoind.Tpo -c -o asocoind-asocoind.obj `if test -f 'asocoind.cpp'; then $(CYGPATH_W) 'asocoind.cpp'; else $(CYGPATH_W) '$(srcdir)/asocoind.cpp'; fi`
+	$(AM_V_at)$(am__mv) $(DEPDIR)/asocoind-asocoind.Tpo $(DEPDIR)/asocoind-asocoind.Po
+#	$(AM_V_CXX)source='asocoind.cpp' object='asocoind-asocoind.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(condominiumd_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o condominiumd-condominiumd.obj `if test -f 'condominiumd.cpp'; then $(CYGPATH_W) 'condominiumd.cpp'; else $(CYGPATH_W) '$(srcdir)/condominiumd.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(asocoind_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o asocoind-asocoind.obj `if test -f 'asocoind.cpp'; then $(CYGPATH_W) 'asocoind.cpp'; else $(CYGPATH_W) '$(srcdir)/asocoind.cpp'; fi`
 
-qt/qt_condominium_qt-condominium.o: qt/condominium.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_condominium_qt-condominium.o -MD -MP -MF qt/$(DEPDIR)/qt_condominium_qt-condominium.Tpo -c -o qt/qt_condominium_qt-condominium.o `test -f 'qt/condominium.cpp' || echo '$(srcdir)/'`qt/condominium.cpp
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_condominium_qt-condominium.Tpo qt/$(DEPDIR)/qt_condominium_qt-condominium.Po
-#	$(AM_V_CXX)source='qt/condominium.cpp' object='qt/qt_condominium_qt-condominium.o' libtool=no \
+qt/qt_asocoin_qt-asocoin.o: qt/asocoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_asocoin_qt-asocoin.o -MD -MP -MF qt/$(DEPDIR)/qt_asocoin_qt-asocoin.Tpo -c -o qt/qt_asocoin_qt-asocoin.o `test -f 'qt/asocoin.cpp' || echo '$(srcdir)/'`qt/asocoin.cpp
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_asocoin_qt-asocoin.Tpo qt/$(DEPDIR)/qt_asocoin_qt-asocoin.Po
+#	$(AM_V_CXX)source='qt/asocoin.cpp' object='qt/qt_asocoin_qt-asocoin.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_condominium_qt-condominium.o `test -f 'qt/condominium.cpp' || echo '$(srcdir)/'`qt/condominium.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_asocoin_qt-asocoin.o `test -f 'qt/asocoin.cpp' || echo '$(srcdir)/'`qt/asocoin.cpp
 
-qt/qt_condominium_qt-condominium.obj: qt/condominium.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_condominium_qt-condominium.obj -MD -MP -MF qt/$(DEPDIR)/qt_condominium_qt-condominium.Tpo -c -o qt/qt_condominium_qt-condominium.obj `if test -f 'qt/condominium.cpp'; then $(CYGPATH_W) 'qt/condominium.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/condominium.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_condominium_qt-condominium.Tpo qt/$(DEPDIR)/qt_condominium_qt-condominium.Po
-#	$(AM_V_CXX)source='qt/condominium.cpp' object='qt/qt_condominium_qt-condominium.obj' libtool=no \
+qt/qt_asocoin_qt-asocoin.obj: qt/asocoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_asocoin_qt-asocoin.obj -MD -MP -MF qt/$(DEPDIR)/qt_asocoin_qt-asocoin.Tpo -c -o qt/qt_asocoin_qt-asocoin.obj `if test -f 'qt/asocoin.cpp'; then $(CYGPATH_W) 'qt/asocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/asocoin.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_asocoin_qt-asocoin.Tpo qt/$(DEPDIR)/qt_asocoin_qt-asocoin.Po
+#	$(AM_V_CXX)source='qt/asocoin.cpp' object='qt/qt_asocoin_qt-asocoin.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_condominium_qt-condominium.obj `if test -f 'qt/condominium.cpp'; then $(CYGPATH_W) 'qt/condominium.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/condominium.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_asocoin_qt-asocoin.obj `if test -f 'qt/asocoin.cpp'; then $(CYGPATH_W) 'qt/asocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/asocoin.cpp'; fi`
 
-qt/test/qt_test_test_condominium_qt-test_main.o: qt/test/test_main.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_condominium_qt-test_main.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_condominium_qt-test_main.Tpo -c -o qt/test/qt_test_test_condominium_qt-test_main.o `test -f 'qt/test/test_main.cpp' || echo '$(srcdir)/'`qt/test/test_main.cpp
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_condominium_qt-test_main.Tpo qt/test/$(DEPDIR)/qt_test_test_condominium_qt-test_main.Po
-#	$(AM_V_CXX)source='qt/test/test_main.cpp' object='qt/test/qt_test_test_condominium_qt-test_main.o' libtool=no \
+qt/test/qt_test_test_asocoin_qt-test_main.o: qt/test/test_main.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_asocoin_qt-test_main.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-test_main.Tpo -c -o qt/test/qt_test_test_asocoin_qt-test_main.o `test -f 'qt/test/test_main.cpp' || echo '$(srcdir)/'`qt/test/test_main.cpp
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-test_main.Tpo qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-test_main.Po
+#	$(AM_V_CXX)source='qt/test/test_main.cpp' object='qt/test/qt_test_test_asocoin_qt-test_main.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_condominium_qt-test_main.o `test -f 'qt/test/test_main.cpp' || echo '$(srcdir)/'`qt/test/test_main.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_asocoin_qt-test_main.o `test -f 'qt/test/test_main.cpp' || echo '$(srcdir)/'`qt/test/test_main.cpp
 
-qt/test/qt_test_test_condominium_qt-test_main.obj: qt/test/test_main.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_condominium_qt-test_main.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_condominium_qt-test_main.Tpo -c -o qt/test/qt_test_test_condominium_qt-test_main.obj `if test -f 'qt/test/test_main.cpp'; then $(CYGPATH_W) 'qt/test/test_main.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/test_main.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_condominium_qt-test_main.Tpo qt/test/$(DEPDIR)/qt_test_test_condominium_qt-test_main.Po
-#	$(AM_V_CXX)source='qt/test/test_main.cpp' object='qt/test/qt_test_test_condominium_qt-test_main.obj' libtool=no \
+qt/test/qt_test_test_asocoin_qt-test_main.obj: qt/test/test_main.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_asocoin_qt-test_main.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-test_main.Tpo -c -o qt/test/qt_test_test_asocoin_qt-test_main.obj `if test -f 'qt/test/test_main.cpp'; then $(CYGPATH_W) 'qt/test/test_main.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/test_main.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-test_main.Tpo qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-test_main.Po
+#	$(AM_V_CXX)source='qt/test/test_main.cpp' object='qt/test/qt_test_test_asocoin_qt-test_main.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_condominium_qt-test_main.obj `if test -f 'qt/test/test_main.cpp'; then $(CYGPATH_W) 'qt/test/test_main.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/test_main.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_asocoin_qt-test_main.obj `if test -f 'qt/test/test_main.cpp'; then $(CYGPATH_W) 'qt/test/test_main.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/test_main.cpp'; fi`
 
-qt/test/qt_test_test_condominium_qt-uritests.o: qt/test/uritests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_condominium_qt-uritests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_condominium_qt-uritests.Tpo -c -o qt/test/qt_test_test_condominium_qt-uritests.o `test -f 'qt/test/uritests.cpp' || echo '$(srcdir)/'`qt/test/uritests.cpp
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_condominium_qt-uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_condominium_qt-uritests.Po
-#	$(AM_V_CXX)source='qt/test/uritests.cpp' object='qt/test/qt_test_test_condominium_qt-uritests.o' libtool=no \
+qt/test/qt_test_test_asocoin_qt-uritests.o: qt/test/uritests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_asocoin_qt-uritests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-uritests.Tpo -c -o qt/test/qt_test_test_asocoin_qt-uritests.o `test -f 'qt/test/uritests.cpp' || echo '$(srcdir)/'`qt/test/uritests.cpp
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-uritests.Po
+#	$(AM_V_CXX)source='qt/test/uritests.cpp' object='qt/test/qt_test_test_asocoin_qt-uritests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_condominium_qt-uritests.o `test -f 'qt/test/uritests.cpp' || echo '$(srcdir)/'`qt/test/uritests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_asocoin_qt-uritests.o `test -f 'qt/test/uritests.cpp' || echo '$(srcdir)/'`qt/test/uritests.cpp
 
-qt/test/qt_test_test_condominium_qt-uritests.obj: qt/test/uritests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_condominium_qt-uritests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_condominium_qt-uritests.Tpo -c -o qt/test/qt_test_test_condominium_qt-uritests.obj `if test -f 'qt/test/uritests.cpp'; then $(CYGPATH_W) 'qt/test/uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/uritests.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_condominium_qt-uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_condominium_qt-uritests.Po
-#	$(AM_V_CXX)source='qt/test/uritests.cpp' object='qt/test/qt_test_test_condominium_qt-uritests.obj' libtool=no \
+qt/test/qt_test_test_asocoin_qt-uritests.obj: qt/test/uritests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_asocoin_qt-uritests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-uritests.Tpo -c -o qt/test/qt_test_test_asocoin_qt-uritests.obj `if test -f 'qt/test/uritests.cpp'; then $(CYGPATH_W) 'qt/test/uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/uritests.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-uritests.Po
+#	$(AM_V_CXX)source='qt/test/uritests.cpp' object='qt/test/qt_test_test_asocoin_qt-uritests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_condominium_qt-uritests.obj `if test -f 'qt/test/uritests.cpp'; then $(CYGPATH_W) 'qt/test/uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/uritests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_asocoin_qt-uritests.obj `if test -f 'qt/test/uritests.cpp'; then $(CYGPATH_W) 'qt/test/uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/uritests.cpp'; fi`
 
-qt/test/qt_test_test_condominium_qt-paymentservertests.o: qt/test/paymentservertests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_condominium_qt-paymentservertests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_condominium_qt-paymentservertests.Tpo -c -o qt/test/qt_test_test_condominium_qt-paymentservertests.o `test -f 'qt/test/paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/paymentservertests.cpp
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_condominium_qt-paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_condominium_qt-paymentservertests.Po
-#	$(AM_V_CXX)source='qt/test/paymentservertests.cpp' object='qt/test/qt_test_test_condominium_qt-paymentservertests.o' libtool=no \
+qt/test/qt_test_test_asocoin_qt-paymentservertests.o: qt/test/paymentservertests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_asocoin_qt-paymentservertests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-paymentservertests.Tpo -c -o qt/test/qt_test_test_asocoin_qt-paymentservertests.o `test -f 'qt/test/paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/paymentservertests.cpp
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-paymentservertests.Po
+#	$(AM_V_CXX)source='qt/test/paymentservertests.cpp' object='qt/test/qt_test_test_asocoin_qt-paymentservertests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_condominium_qt-paymentservertests.o `test -f 'qt/test/paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/paymentservertests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_asocoin_qt-paymentservertests.o `test -f 'qt/test/paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/paymentservertests.cpp
 
-qt/test/qt_test_test_condominium_qt-paymentservertests.obj: qt/test/paymentservertests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_condominium_qt-paymentservertests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_condominium_qt-paymentservertests.Tpo -c -o qt/test/qt_test_test_condominium_qt-paymentservertests.obj `if test -f 'qt/test/paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/paymentservertests.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_condominium_qt-paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_condominium_qt-paymentservertests.Po
-#	$(AM_V_CXX)source='qt/test/paymentservertests.cpp' object='qt/test/qt_test_test_condominium_qt-paymentservertests.obj' libtool=no \
+qt/test/qt_test_test_asocoin_qt-paymentservertests.obj: qt/test/paymentservertests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_asocoin_qt-paymentservertests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-paymentservertests.Tpo -c -o qt/test/qt_test_test_asocoin_qt-paymentservertests.obj `if test -f 'qt/test/paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/paymentservertests.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-paymentservertests.Po
+#	$(AM_V_CXX)source='qt/test/paymentservertests.cpp' object='qt/test/qt_test_test_asocoin_qt-paymentservertests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_condominium_qt-paymentservertests.obj `if test -f 'qt/test/paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/paymentservertests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_asocoin_qt-paymentservertests.obj `if test -f 'qt/test/paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/paymentservertests.cpp'; fi`
 
-qt/test/qt_test_test_condominium_qt-moc_uritests.o: qt/test/moc_uritests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_condominium_qt-moc_uritests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_condominium_qt-moc_uritests.Tpo -c -o qt/test/qt_test_test_condominium_qt-moc_uritests.o `test -f 'qt/test/moc_uritests.cpp' || echo '$(srcdir)/'`qt/test/moc_uritests.cpp
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_condominium_qt-moc_uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_condominium_qt-moc_uritests.Po
-#	$(AM_V_CXX)source='qt/test/moc_uritests.cpp' object='qt/test/qt_test_test_condominium_qt-moc_uritests.o' libtool=no \
+qt/test/qt_test_test_asocoin_qt-moc_uritests.o: qt/test/moc_uritests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_asocoin_qt-moc_uritests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-moc_uritests.Tpo -c -o qt/test/qt_test_test_asocoin_qt-moc_uritests.o `test -f 'qt/test/moc_uritests.cpp' || echo '$(srcdir)/'`qt/test/moc_uritests.cpp
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-moc_uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-moc_uritests.Po
+#	$(AM_V_CXX)source='qt/test/moc_uritests.cpp' object='qt/test/qt_test_test_asocoin_qt-moc_uritests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_condominium_qt-moc_uritests.o `test -f 'qt/test/moc_uritests.cpp' || echo '$(srcdir)/'`qt/test/moc_uritests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_asocoin_qt-moc_uritests.o `test -f 'qt/test/moc_uritests.cpp' || echo '$(srcdir)/'`qt/test/moc_uritests.cpp
 
-qt/test/qt_test_test_condominium_qt-moc_uritests.obj: qt/test/moc_uritests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_condominium_qt-moc_uritests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_condominium_qt-moc_uritests.Tpo -c -o qt/test/qt_test_test_condominium_qt-moc_uritests.obj `if test -f 'qt/test/moc_uritests.cpp'; then $(CYGPATH_W) 'qt/test/moc_uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_uritests.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_condominium_qt-moc_uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_condominium_qt-moc_uritests.Po
-#	$(AM_V_CXX)source='qt/test/moc_uritests.cpp' object='qt/test/qt_test_test_condominium_qt-moc_uritests.obj' libtool=no \
+qt/test/qt_test_test_asocoin_qt-moc_uritests.obj: qt/test/moc_uritests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_asocoin_qt-moc_uritests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-moc_uritests.Tpo -c -o qt/test/qt_test_test_asocoin_qt-moc_uritests.obj `if test -f 'qt/test/moc_uritests.cpp'; then $(CYGPATH_W) 'qt/test/moc_uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_uritests.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-moc_uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-moc_uritests.Po
+#	$(AM_V_CXX)source='qt/test/moc_uritests.cpp' object='qt/test/qt_test_test_asocoin_qt-moc_uritests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_condominium_qt-moc_uritests.obj `if test -f 'qt/test/moc_uritests.cpp'; then $(CYGPATH_W) 'qt/test/moc_uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_uritests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_asocoin_qt-moc_uritests.obj `if test -f 'qt/test/moc_uritests.cpp'; then $(CYGPATH_W) 'qt/test/moc_uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_uritests.cpp'; fi`
 
-qt/test/qt_test_test_condominium_qt-moc_paymentservertests.o: qt/test/moc_paymentservertests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_condominium_qt-moc_paymentservertests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_condominium_qt-moc_paymentservertests.Tpo -c -o qt/test/qt_test_test_condominium_qt-moc_paymentservertests.o `test -f 'qt/test/moc_paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/moc_paymentservertests.cpp
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_condominium_qt-moc_paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_condominium_qt-moc_paymentservertests.Po
-#	$(AM_V_CXX)source='qt/test/moc_paymentservertests.cpp' object='qt/test/qt_test_test_condominium_qt-moc_paymentservertests.o' libtool=no \
+qt/test/qt_test_test_asocoin_qt-moc_paymentservertests.o: qt/test/moc_paymentservertests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_asocoin_qt-moc_paymentservertests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-moc_paymentservertests.Tpo -c -o qt/test/qt_test_test_asocoin_qt-moc_paymentservertests.o `test -f 'qt/test/moc_paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/moc_paymentservertests.cpp
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-moc_paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-moc_paymentservertests.Po
+#	$(AM_V_CXX)source='qt/test/moc_paymentservertests.cpp' object='qt/test/qt_test_test_asocoin_qt-moc_paymentservertests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_condominium_qt-moc_paymentservertests.o `test -f 'qt/test/moc_paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/moc_paymentservertests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_asocoin_qt-moc_paymentservertests.o `test -f 'qt/test/moc_paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/moc_paymentservertests.cpp
 
-qt/test/qt_test_test_condominium_qt-moc_paymentservertests.obj: qt/test/moc_paymentservertests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_condominium_qt-moc_paymentservertests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_condominium_qt-moc_paymentservertests.Tpo -c -o qt/test/qt_test_test_condominium_qt-moc_paymentservertests.obj `if test -f 'qt/test/moc_paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/moc_paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_paymentservertests.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_condominium_qt-moc_paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_condominium_qt-moc_paymentservertests.Po
-#	$(AM_V_CXX)source='qt/test/moc_paymentservertests.cpp' object='qt/test/qt_test_test_condominium_qt-moc_paymentservertests.obj' libtool=no \
+qt/test/qt_test_test_asocoin_qt-moc_paymentservertests.obj: qt/test/moc_paymentservertests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_asocoin_qt-moc_paymentservertests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-moc_paymentservertests.Tpo -c -o qt/test/qt_test_test_asocoin_qt-moc_paymentservertests.obj `if test -f 'qt/test/moc_paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/moc_paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_paymentservertests.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-moc_paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_asocoin_qt-moc_paymentservertests.Po
+#	$(AM_V_CXX)source='qt/test/moc_paymentservertests.cpp' object='qt/test/qt_test_test_asocoin_qt-moc_paymentservertests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_condominium_qt-moc_paymentservertests.obj `if test -f 'qt/test/moc_paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/moc_paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_paymentservertests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_asocoin_qt-moc_paymentservertests.obj `if test -f 'qt/test/moc_paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/moc_paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_paymentservertests.cpp'; fi`
 
-test/test_test_condominium-zerocoin_implementation_tests.o: test/zerocoin_implementation_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-zerocoin_implementation_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-zerocoin_implementation_tests.Tpo -c -o test/test_test_condominium-zerocoin_implementation_tests.o `test -f 'test/zerocoin_implementation_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_implementation_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-zerocoin_implementation_tests.Tpo test/$(DEPDIR)/test_test_condominium-zerocoin_implementation_tests.Po
-#	$(AM_V_CXX)source='test/zerocoin_implementation_tests.cpp' object='test/test_test_condominium-zerocoin_implementation_tests.o' libtool=no \
+test/test_test_asocoin-zerocoin_implementation_tests.o: test/zerocoin_implementation_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-zerocoin_implementation_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-zerocoin_implementation_tests.Tpo -c -o test/test_test_asocoin-zerocoin_implementation_tests.o `test -f 'test/zerocoin_implementation_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_implementation_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-zerocoin_implementation_tests.Tpo test/$(DEPDIR)/test_test_asocoin-zerocoin_implementation_tests.Po
+#	$(AM_V_CXX)source='test/zerocoin_implementation_tests.cpp' object='test/test_test_asocoin-zerocoin_implementation_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-zerocoin_implementation_tests.o `test -f 'test/zerocoin_implementation_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_implementation_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-zerocoin_implementation_tests.o `test -f 'test/zerocoin_implementation_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_implementation_tests.cpp
 
-test/test_test_condominium-zerocoin_implementation_tests.obj: test/zerocoin_implementation_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-zerocoin_implementation_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-zerocoin_implementation_tests.Tpo -c -o test/test_test_condominium-zerocoin_implementation_tests.obj `if test -f 'test/zerocoin_implementation_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_implementation_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_implementation_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-zerocoin_implementation_tests.Tpo test/$(DEPDIR)/test_test_condominium-zerocoin_implementation_tests.Po
-#	$(AM_V_CXX)source='test/zerocoin_implementation_tests.cpp' object='test/test_test_condominium-zerocoin_implementation_tests.obj' libtool=no \
+test/test_test_asocoin-zerocoin_implementation_tests.obj: test/zerocoin_implementation_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-zerocoin_implementation_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-zerocoin_implementation_tests.Tpo -c -o test/test_test_asocoin-zerocoin_implementation_tests.obj `if test -f 'test/zerocoin_implementation_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_implementation_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_implementation_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-zerocoin_implementation_tests.Tpo test/$(DEPDIR)/test_test_asocoin-zerocoin_implementation_tests.Po
+#	$(AM_V_CXX)source='test/zerocoin_implementation_tests.cpp' object='test/test_test_asocoin-zerocoin_implementation_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-zerocoin_implementation_tests.obj `if test -f 'test/zerocoin_implementation_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_implementation_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_implementation_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-zerocoin_implementation_tests.obj `if test -f 'test/zerocoin_implementation_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_implementation_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_implementation_tests.cpp'; fi`
 
-test/test_test_condominium-zerocoin_denomination_tests.o: test/zerocoin_denomination_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-zerocoin_denomination_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-zerocoin_denomination_tests.Tpo -c -o test/test_test_condominium-zerocoin_denomination_tests.o `test -f 'test/zerocoin_denomination_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_denomination_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-zerocoin_denomination_tests.Tpo test/$(DEPDIR)/test_test_condominium-zerocoin_denomination_tests.Po
-#	$(AM_V_CXX)source='test/zerocoin_denomination_tests.cpp' object='test/test_test_condominium-zerocoin_denomination_tests.o' libtool=no \
+test/test_test_asocoin-zerocoin_denomination_tests.o: test/zerocoin_denomination_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-zerocoin_denomination_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-zerocoin_denomination_tests.Tpo -c -o test/test_test_asocoin-zerocoin_denomination_tests.o `test -f 'test/zerocoin_denomination_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_denomination_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-zerocoin_denomination_tests.Tpo test/$(DEPDIR)/test_test_asocoin-zerocoin_denomination_tests.Po
+#	$(AM_V_CXX)source='test/zerocoin_denomination_tests.cpp' object='test/test_test_asocoin-zerocoin_denomination_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-zerocoin_denomination_tests.o `test -f 'test/zerocoin_denomination_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_denomination_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-zerocoin_denomination_tests.o `test -f 'test/zerocoin_denomination_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_denomination_tests.cpp
 
-test/test_test_condominium-zerocoin_denomination_tests.obj: test/zerocoin_denomination_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-zerocoin_denomination_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-zerocoin_denomination_tests.Tpo -c -o test/test_test_condominium-zerocoin_denomination_tests.obj `if test -f 'test/zerocoin_denomination_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_denomination_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_denomination_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-zerocoin_denomination_tests.Tpo test/$(DEPDIR)/test_test_condominium-zerocoin_denomination_tests.Po
-#	$(AM_V_CXX)source='test/zerocoin_denomination_tests.cpp' object='test/test_test_condominium-zerocoin_denomination_tests.obj' libtool=no \
+test/test_test_asocoin-zerocoin_denomination_tests.obj: test/zerocoin_denomination_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-zerocoin_denomination_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-zerocoin_denomination_tests.Tpo -c -o test/test_test_asocoin-zerocoin_denomination_tests.obj `if test -f 'test/zerocoin_denomination_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_denomination_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_denomination_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-zerocoin_denomination_tests.Tpo test/$(DEPDIR)/test_test_asocoin-zerocoin_denomination_tests.Po
+#	$(AM_V_CXX)source='test/zerocoin_denomination_tests.cpp' object='test/test_test_asocoin-zerocoin_denomination_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-zerocoin_denomination_tests.obj `if test -f 'test/zerocoin_denomination_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_denomination_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_denomination_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-zerocoin_denomination_tests.obj `if test -f 'test/zerocoin_denomination_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_denomination_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_denomination_tests.cpp'; fi`
 
-test/test_test_condominium-zerocoin_transactions_tests.o: test/zerocoin_transactions_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-zerocoin_transactions_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-zerocoin_transactions_tests.Tpo -c -o test/test_test_condominium-zerocoin_transactions_tests.o `test -f 'test/zerocoin_transactions_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_transactions_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-zerocoin_transactions_tests.Tpo test/$(DEPDIR)/test_test_condominium-zerocoin_transactions_tests.Po
-#	$(AM_V_CXX)source='test/zerocoin_transactions_tests.cpp' object='test/test_test_condominium-zerocoin_transactions_tests.o' libtool=no \
+test/test_test_asocoin-zerocoin_transactions_tests.o: test/zerocoin_transactions_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-zerocoin_transactions_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-zerocoin_transactions_tests.Tpo -c -o test/test_test_asocoin-zerocoin_transactions_tests.o `test -f 'test/zerocoin_transactions_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_transactions_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-zerocoin_transactions_tests.Tpo test/$(DEPDIR)/test_test_asocoin-zerocoin_transactions_tests.Po
+#	$(AM_V_CXX)source='test/zerocoin_transactions_tests.cpp' object='test/test_test_asocoin-zerocoin_transactions_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-zerocoin_transactions_tests.o `test -f 'test/zerocoin_transactions_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_transactions_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-zerocoin_transactions_tests.o `test -f 'test/zerocoin_transactions_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_transactions_tests.cpp
 
-test/test_test_condominium-zerocoin_transactions_tests.obj: test/zerocoin_transactions_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-zerocoin_transactions_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-zerocoin_transactions_tests.Tpo -c -o test/test_test_condominium-zerocoin_transactions_tests.obj `if test -f 'test/zerocoin_transactions_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_transactions_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_transactions_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-zerocoin_transactions_tests.Tpo test/$(DEPDIR)/test_test_condominium-zerocoin_transactions_tests.Po
-#	$(AM_V_CXX)source='test/zerocoin_transactions_tests.cpp' object='test/test_test_condominium-zerocoin_transactions_tests.obj' libtool=no \
+test/test_test_asocoin-zerocoin_transactions_tests.obj: test/zerocoin_transactions_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-zerocoin_transactions_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-zerocoin_transactions_tests.Tpo -c -o test/test_test_asocoin-zerocoin_transactions_tests.obj `if test -f 'test/zerocoin_transactions_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_transactions_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_transactions_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-zerocoin_transactions_tests.Tpo test/$(DEPDIR)/test_test_asocoin-zerocoin_transactions_tests.Po
+#	$(AM_V_CXX)source='test/zerocoin_transactions_tests.cpp' object='test/test_test_asocoin-zerocoin_transactions_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-zerocoin_transactions_tests.obj `if test -f 'test/zerocoin_transactions_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_transactions_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_transactions_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-zerocoin_transactions_tests.obj `if test -f 'test/zerocoin_transactions_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_transactions_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_transactions_tests.cpp'; fi`
 
-test/test_test_condominium-benchmark_zerocoin.o: test/benchmark_zerocoin.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-benchmark_zerocoin.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-benchmark_zerocoin.Tpo -c -o test/test_test_condominium-benchmark_zerocoin.o `test -f 'test/benchmark_zerocoin.cpp' || echo '$(srcdir)/'`test/benchmark_zerocoin.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-benchmark_zerocoin.Tpo test/$(DEPDIR)/test_test_condominium-benchmark_zerocoin.Po
-#	$(AM_V_CXX)source='test/benchmark_zerocoin.cpp' object='test/test_test_condominium-benchmark_zerocoin.o' libtool=no \
+test/test_test_asocoin-benchmark_zerocoin.o: test/benchmark_zerocoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-benchmark_zerocoin.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-benchmark_zerocoin.Tpo -c -o test/test_test_asocoin-benchmark_zerocoin.o `test -f 'test/benchmark_zerocoin.cpp' || echo '$(srcdir)/'`test/benchmark_zerocoin.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-benchmark_zerocoin.Tpo test/$(DEPDIR)/test_test_asocoin-benchmark_zerocoin.Po
+#	$(AM_V_CXX)source='test/benchmark_zerocoin.cpp' object='test/test_test_asocoin-benchmark_zerocoin.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-benchmark_zerocoin.o `test -f 'test/benchmark_zerocoin.cpp' || echo '$(srcdir)/'`test/benchmark_zerocoin.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-benchmark_zerocoin.o `test -f 'test/benchmark_zerocoin.cpp' || echo '$(srcdir)/'`test/benchmark_zerocoin.cpp
 
-test/test_test_condominium-benchmark_zerocoin.obj: test/benchmark_zerocoin.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-benchmark_zerocoin.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-benchmark_zerocoin.Tpo -c -o test/test_test_condominium-benchmark_zerocoin.obj `if test -f 'test/benchmark_zerocoin.cpp'; then $(CYGPATH_W) 'test/benchmark_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/benchmark_zerocoin.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-benchmark_zerocoin.Tpo test/$(DEPDIR)/test_test_condominium-benchmark_zerocoin.Po
-#	$(AM_V_CXX)source='test/benchmark_zerocoin.cpp' object='test/test_test_condominium-benchmark_zerocoin.obj' libtool=no \
+test/test_test_asocoin-benchmark_zerocoin.obj: test/benchmark_zerocoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-benchmark_zerocoin.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-benchmark_zerocoin.Tpo -c -o test/test_test_asocoin-benchmark_zerocoin.obj `if test -f 'test/benchmark_zerocoin.cpp'; then $(CYGPATH_W) 'test/benchmark_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/benchmark_zerocoin.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-benchmark_zerocoin.Tpo test/$(DEPDIR)/test_test_asocoin-benchmark_zerocoin.Po
+#	$(AM_V_CXX)source='test/benchmark_zerocoin.cpp' object='test/test_test_asocoin-benchmark_zerocoin.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-benchmark_zerocoin.obj `if test -f 'test/benchmark_zerocoin.cpp'; then $(CYGPATH_W) 'test/benchmark_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/benchmark_zerocoin.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-benchmark_zerocoin.obj `if test -f 'test/benchmark_zerocoin.cpp'; then $(CYGPATH_W) 'test/benchmark_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/benchmark_zerocoin.cpp'; fi`
 
-test/test_test_condominium-tutorial_zerocoin.o: test/tutorial_zerocoin.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-tutorial_zerocoin.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-tutorial_zerocoin.Tpo -c -o test/test_test_condominium-tutorial_zerocoin.o `test -f 'test/tutorial_zerocoin.cpp' || echo '$(srcdir)/'`test/tutorial_zerocoin.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-tutorial_zerocoin.Tpo test/$(DEPDIR)/test_test_condominium-tutorial_zerocoin.Po
-#	$(AM_V_CXX)source='test/tutorial_zerocoin.cpp' object='test/test_test_condominium-tutorial_zerocoin.o' libtool=no \
+test/test_test_asocoin-tutorial_zerocoin.o: test/tutorial_zerocoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-tutorial_zerocoin.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-tutorial_zerocoin.Tpo -c -o test/test_test_asocoin-tutorial_zerocoin.o `test -f 'test/tutorial_zerocoin.cpp' || echo '$(srcdir)/'`test/tutorial_zerocoin.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-tutorial_zerocoin.Tpo test/$(DEPDIR)/test_test_asocoin-tutorial_zerocoin.Po
+#	$(AM_V_CXX)source='test/tutorial_zerocoin.cpp' object='test/test_test_asocoin-tutorial_zerocoin.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-tutorial_zerocoin.o `test -f 'test/tutorial_zerocoin.cpp' || echo '$(srcdir)/'`test/tutorial_zerocoin.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-tutorial_zerocoin.o `test -f 'test/tutorial_zerocoin.cpp' || echo '$(srcdir)/'`test/tutorial_zerocoin.cpp
 
-test/test_test_condominium-tutorial_zerocoin.obj: test/tutorial_zerocoin.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-tutorial_zerocoin.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-tutorial_zerocoin.Tpo -c -o test/test_test_condominium-tutorial_zerocoin.obj `if test -f 'test/tutorial_zerocoin.cpp'; then $(CYGPATH_W) 'test/tutorial_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/tutorial_zerocoin.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-tutorial_zerocoin.Tpo test/$(DEPDIR)/test_test_condominium-tutorial_zerocoin.Po
-#	$(AM_V_CXX)source='test/tutorial_zerocoin.cpp' object='test/test_test_condominium-tutorial_zerocoin.obj' libtool=no \
+test/test_test_asocoin-tutorial_zerocoin.obj: test/tutorial_zerocoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-tutorial_zerocoin.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-tutorial_zerocoin.Tpo -c -o test/test_test_asocoin-tutorial_zerocoin.obj `if test -f 'test/tutorial_zerocoin.cpp'; then $(CYGPATH_W) 'test/tutorial_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/tutorial_zerocoin.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-tutorial_zerocoin.Tpo test/$(DEPDIR)/test_test_asocoin-tutorial_zerocoin.Po
+#	$(AM_V_CXX)source='test/tutorial_zerocoin.cpp' object='test/test_test_asocoin-tutorial_zerocoin.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-tutorial_zerocoin.obj `if test -f 'test/tutorial_zerocoin.cpp'; then $(CYGPATH_W) 'test/tutorial_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/tutorial_zerocoin.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-tutorial_zerocoin.obj `if test -f 'test/tutorial_zerocoin.cpp'; then $(CYGPATH_W) 'test/tutorial_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/tutorial_zerocoin.cpp'; fi`
 
-test/test_test_condominium-libzerocoin_tests.o: test/libzerocoin_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-libzerocoin_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-libzerocoin_tests.Tpo -c -o test/test_test_condominium-libzerocoin_tests.o `test -f 'test/libzerocoin_tests.cpp' || echo '$(srcdir)/'`test/libzerocoin_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-libzerocoin_tests.Tpo test/$(DEPDIR)/test_test_condominium-libzerocoin_tests.Po
-#	$(AM_V_CXX)source='test/libzerocoin_tests.cpp' object='test/test_test_condominium-libzerocoin_tests.o' libtool=no \
+test/test_test_asocoin-libzerocoin_tests.o: test/libzerocoin_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-libzerocoin_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-libzerocoin_tests.Tpo -c -o test/test_test_asocoin-libzerocoin_tests.o `test -f 'test/libzerocoin_tests.cpp' || echo '$(srcdir)/'`test/libzerocoin_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-libzerocoin_tests.Tpo test/$(DEPDIR)/test_test_asocoin-libzerocoin_tests.Po
+#	$(AM_V_CXX)source='test/libzerocoin_tests.cpp' object='test/test_test_asocoin-libzerocoin_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-libzerocoin_tests.o `test -f 'test/libzerocoin_tests.cpp' || echo '$(srcdir)/'`test/libzerocoin_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-libzerocoin_tests.o `test -f 'test/libzerocoin_tests.cpp' || echo '$(srcdir)/'`test/libzerocoin_tests.cpp
 
-test/test_test_condominium-libzerocoin_tests.obj: test/libzerocoin_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-libzerocoin_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-libzerocoin_tests.Tpo -c -o test/test_test_condominium-libzerocoin_tests.obj `if test -f 'test/libzerocoin_tests.cpp'; then $(CYGPATH_W) 'test/libzerocoin_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/libzerocoin_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-libzerocoin_tests.Tpo test/$(DEPDIR)/test_test_condominium-libzerocoin_tests.Po
-#	$(AM_V_CXX)source='test/libzerocoin_tests.cpp' object='test/test_test_condominium-libzerocoin_tests.obj' libtool=no \
+test/test_test_asocoin-libzerocoin_tests.obj: test/libzerocoin_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-libzerocoin_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-libzerocoin_tests.Tpo -c -o test/test_test_asocoin-libzerocoin_tests.obj `if test -f 'test/libzerocoin_tests.cpp'; then $(CYGPATH_W) 'test/libzerocoin_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/libzerocoin_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-libzerocoin_tests.Tpo test/$(DEPDIR)/test_test_asocoin-libzerocoin_tests.Po
+#	$(AM_V_CXX)source='test/libzerocoin_tests.cpp' object='test/test_test_asocoin-libzerocoin_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-libzerocoin_tests.obj `if test -f 'test/libzerocoin_tests.cpp'; then $(CYGPATH_W) 'test/libzerocoin_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/libzerocoin_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-libzerocoin_tests.obj `if test -f 'test/libzerocoin_tests.cpp'; then $(CYGPATH_W) 'test/libzerocoin_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/libzerocoin_tests.cpp'; fi`
 
-test/test_test_condominium-allocator_tests.o: test/allocator_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-allocator_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-allocator_tests.Tpo -c -o test/test_test_condominium-allocator_tests.o `test -f 'test/allocator_tests.cpp' || echo '$(srcdir)/'`test/allocator_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-allocator_tests.Tpo test/$(DEPDIR)/test_test_condominium-allocator_tests.Po
-#	$(AM_V_CXX)source='test/allocator_tests.cpp' object='test/test_test_condominium-allocator_tests.o' libtool=no \
+test/test_test_asocoin-allocator_tests.o: test/allocator_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-allocator_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-allocator_tests.Tpo -c -o test/test_test_asocoin-allocator_tests.o `test -f 'test/allocator_tests.cpp' || echo '$(srcdir)/'`test/allocator_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-allocator_tests.Tpo test/$(DEPDIR)/test_test_asocoin-allocator_tests.Po
+#	$(AM_V_CXX)source='test/allocator_tests.cpp' object='test/test_test_asocoin-allocator_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-allocator_tests.o `test -f 'test/allocator_tests.cpp' || echo '$(srcdir)/'`test/allocator_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-allocator_tests.o `test -f 'test/allocator_tests.cpp' || echo '$(srcdir)/'`test/allocator_tests.cpp
 
-test/test_test_condominium-allocator_tests.obj: test/allocator_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-allocator_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-allocator_tests.Tpo -c -o test/test_test_condominium-allocator_tests.obj `if test -f 'test/allocator_tests.cpp'; then $(CYGPATH_W) 'test/allocator_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/allocator_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-allocator_tests.Tpo test/$(DEPDIR)/test_test_condominium-allocator_tests.Po
-#	$(AM_V_CXX)source='test/allocator_tests.cpp' object='test/test_test_condominium-allocator_tests.obj' libtool=no \
+test/test_test_asocoin-allocator_tests.obj: test/allocator_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-allocator_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-allocator_tests.Tpo -c -o test/test_test_asocoin-allocator_tests.obj `if test -f 'test/allocator_tests.cpp'; then $(CYGPATH_W) 'test/allocator_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/allocator_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-allocator_tests.Tpo test/$(DEPDIR)/test_test_asocoin-allocator_tests.Po
+#	$(AM_V_CXX)source='test/allocator_tests.cpp' object='test/test_test_asocoin-allocator_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-allocator_tests.obj `if test -f 'test/allocator_tests.cpp'; then $(CYGPATH_W) 'test/allocator_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/allocator_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-allocator_tests.obj `if test -f 'test/allocator_tests.cpp'; then $(CYGPATH_W) 'test/allocator_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/allocator_tests.cpp'; fi`
 
-test/test_test_condominium-base32_tests.o: test/base32_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-base32_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-base32_tests.Tpo -c -o test/test_test_condominium-base32_tests.o `test -f 'test/base32_tests.cpp' || echo '$(srcdir)/'`test/base32_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-base32_tests.Tpo test/$(DEPDIR)/test_test_condominium-base32_tests.Po
-#	$(AM_V_CXX)source='test/base32_tests.cpp' object='test/test_test_condominium-base32_tests.o' libtool=no \
+test/test_test_asocoin-base32_tests.o: test/base32_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-base32_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-base32_tests.Tpo -c -o test/test_test_asocoin-base32_tests.o `test -f 'test/base32_tests.cpp' || echo '$(srcdir)/'`test/base32_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-base32_tests.Tpo test/$(DEPDIR)/test_test_asocoin-base32_tests.Po
+#	$(AM_V_CXX)source='test/base32_tests.cpp' object='test/test_test_asocoin-base32_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-base32_tests.o `test -f 'test/base32_tests.cpp' || echo '$(srcdir)/'`test/base32_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-base32_tests.o `test -f 'test/base32_tests.cpp' || echo '$(srcdir)/'`test/base32_tests.cpp
 
-test/test_test_condominium-base32_tests.obj: test/base32_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-base32_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-base32_tests.Tpo -c -o test/test_test_condominium-base32_tests.obj `if test -f 'test/base32_tests.cpp'; then $(CYGPATH_W) 'test/base32_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base32_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-base32_tests.Tpo test/$(DEPDIR)/test_test_condominium-base32_tests.Po
-#	$(AM_V_CXX)source='test/base32_tests.cpp' object='test/test_test_condominium-base32_tests.obj' libtool=no \
+test/test_test_asocoin-base32_tests.obj: test/base32_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-base32_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-base32_tests.Tpo -c -o test/test_test_asocoin-base32_tests.obj `if test -f 'test/base32_tests.cpp'; then $(CYGPATH_W) 'test/base32_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base32_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-base32_tests.Tpo test/$(DEPDIR)/test_test_asocoin-base32_tests.Po
+#	$(AM_V_CXX)source='test/base32_tests.cpp' object='test/test_test_asocoin-base32_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-base32_tests.obj `if test -f 'test/base32_tests.cpp'; then $(CYGPATH_W) 'test/base32_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base32_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-base32_tests.obj `if test -f 'test/base32_tests.cpp'; then $(CYGPATH_W) 'test/base32_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base32_tests.cpp'; fi`
 
-test/test_test_condominium-base58_tests.o: test/base58_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-base58_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-base58_tests.Tpo -c -o test/test_test_condominium-base58_tests.o `test -f 'test/base58_tests.cpp' || echo '$(srcdir)/'`test/base58_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-base58_tests.Tpo test/$(DEPDIR)/test_test_condominium-base58_tests.Po
-#	$(AM_V_CXX)source='test/base58_tests.cpp' object='test/test_test_condominium-base58_tests.o' libtool=no \
+test/test_test_asocoin-base58_tests.o: test/base58_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-base58_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-base58_tests.Tpo -c -o test/test_test_asocoin-base58_tests.o `test -f 'test/base58_tests.cpp' || echo '$(srcdir)/'`test/base58_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-base58_tests.Tpo test/$(DEPDIR)/test_test_asocoin-base58_tests.Po
+#	$(AM_V_CXX)source='test/base58_tests.cpp' object='test/test_test_asocoin-base58_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-base58_tests.o `test -f 'test/base58_tests.cpp' || echo '$(srcdir)/'`test/base58_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-base58_tests.o `test -f 'test/base58_tests.cpp' || echo '$(srcdir)/'`test/base58_tests.cpp
 
-test/test_test_condominium-base58_tests.obj: test/base58_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-base58_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-base58_tests.Tpo -c -o test/test_test_condominium-base58_tests.obj `if test -f 'test/base58_tests.cpp'; then $(CYGPATH_W) 'test/base58_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base58_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-base58_tests.Tpo test/$(DEPDIR)/test_test_condominium-base58_tests.Po
-#	$(AM_V_CXX)source='test/base58_tests.cpp' object='test/test_test_condominium-base58_tests.obj' libtool=no \
+test/test_test_asocoin-base58_tests.obj: test/base58_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-base58_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-base58_tests.Tpo -c -o test/test_test_asocoin-base58_tests.obj `if test -f 'test/base58_tests.cpp'; then $(CYGPATH_W) 'test/base58_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base58_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-base58_tests.Tpo test/$(DEPDIR)/test_test_asocoin-base58_tests.Po
+#	$(AM_V_CXX)source='test/base58_tests.cpp' object='test/test_test_asocoin-base58_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-base58_tests.obj `if test -f 'test/base58_tests.cpp'; then $(CYGPATH_W) 'test/base58_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base58_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-base58_tests.obj `if test -f 'test/base58_tests.cpp'; then $(CYGPATH_W) 'test/base58_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base58_tests.cpp'; fi`
 
-test/test_test_condominium-base64_tests.o: test/base64_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-base64_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-base64_tests.Tpo -c -o test/test_test_condominium-base64_tests.o `test -f 'test/base64_tests.cpp' || echo '$(srcdir)/'`test/base64_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-base64_tests.Tpo test/$(DEPDIR)/test_test_condominium-base64_tests.Po
-#	$(AM_V_CXX)source='test/base64_tests.cpp' object='test/test_test_condominium-base64_tests.o' libtool=no \
+test/test_test_asocoin-base64_tests.o: test/base64_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-base64_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-base64_tests.Tpo -c -o test/test_test_asocoin-base64_tests.o `test -f 'test/base64_tests.cpp' || echo '$(srcdir)/'`test/base64_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-base64_tests.Tpo test/$(DEPDIR)/test_test_asocoin-base64_tests.Po
+#	$(AM_V_CXX)source='test/base64_tests.cpp' object='test/test_test_asocoin-base64_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-base64_tests.o `test -f 'test/base64_tests.cpp' || echo '$(srcdir)/'`test/base64_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-base64_tests.o `test -f 'test/base64_tests.cpp' || echo '$(srcdir)/'`test/base64_tests.cpp
 
-test/test_test_condominium-base64_tests.obj: test/base64_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-base64_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-base64_tests.Tpo -c -o test/test_test_condominium-base64_tests.obj `if test -f 'test/base64_tests.cpp'; then $(CYGPATH_W) 'test/base64_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base64_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-base64_tests.Tpo test/$(DEPDIR)/test_test_condominium-base64_tests.Po
-#	$(AM_V_CXX)source='test/base64_tests.cpp' object='test/test_test_condominium-base64_tests.obj' libtool=no \
+test/test_test_asocoin-base64_tests.obj: test/base64_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-base64_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-base64_tests.Tpo -c -o test/test_test_asocoin-base64_tests.obj `if test -f 'test/base64_tests.cpp'; then $(CYGPATH_W) 'test/base64_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base64_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-base64_tests.Tpo test/$(DEPDIR)/test_test_asocoin-base64_tests.Po
+#	$(AM_V_CXX)source='test/base64_tests.cpp' object='test/test_test_asocoin-base64_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-base64_tests.obj `if test -f 'test/base64_tests.cpp'; then $(CYGPATH_W) 'test/base64_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base64_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-base64_tests.obj `if test -f 'test/base64_tests.cpp'; then $(CYGPATH_W) 'test/base64_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base64_tests.cpp'; fi`
 
-test/test_test_condominium-checkblock_tests.o: test/checkblock_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-checkblock_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-checkblock_tests.Tpo -c -o test/test_test_condominium-checkblock_tests.o `test -f 'test/checkblock_tests.cpp' || echo '$(srcdir)/'`test/checkblock_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-checkblock_tests.Tpo test/$(DEPDIR)/test_test_condominium-checkblock_tests.Po
-#	$(AM_V_CXX)source='test/checkblock_tests.cpp' object='test/test_test_condominium-checkblock_tests.o' libtool=no \
+test/test_test_asocoin-checkblock_tests.o: test/checkblock_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-checkblock_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-checkblock_tests.Tpo -c -o test/test_test_asocoin-checkblock_tests.o `test -f 'test/checkblock_tests.cpp' || echo '$(srcdir)/'`test/checkblock_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-checkblock_tests.Tpo test/$(DEPDIR)/test_test_asocoin-checkblock_tests.Po
+#	$(AM_V_CXX)source='test/checkblock_tests.cpp' object='test/test_test_asocoin-checkblock_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-checkblock_tests.o `test -f 'test/checkblock_tests.cpp' || echo '$(srcdir)/'`test/checkblock_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-checkblock_tests.o `test -f 'test/checkblock_tests.cpp' || echo '$(srcdir)/'`test/checkblock_tests.cpp
 
-test/test_test_condominium-checkblock_tests.obj: test/checkblock_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-checkblock_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-checkblock_tests.Tpo -c -o test/test_test_condominium-checkblock_tests.obj `if test -f 'test/checkblock_tests.cpp'; then $(CYGPATH_W) 'test/checkblock_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/checkblock_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-checkblock_tests.Tpo test/$(DEPDIR)/test_test_condominium-checkblock_tests.Po
-#	$(AM_V_CXX)source='test/checkblock_tests.cpp' object='test/test_test_condominium-checkblock_tests.obj' libtool=no \
+test/test_test_asocoin-checkblock_tests.obj: test/checkblock_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-checkblock_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-checkblock_tests.Tpo -c -o test/test_test_asocoin-checkblock_tests.obj `if test -f 'test/checkblock_tests.cpp'; then $(CYGPATH_W) 'test/checkblock_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/checkblock_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-checkblock_tests.Tpo test/$(DEPDIR)/test_test_asocoin-checkblock_tests.Po
+#	$(AM_V_CXX)source='test/checkblock_tests.cpp' object='test/test_test_asocoin-checkblock_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-checkblock_tests.obj `if test -f 'test/checkblock_tests.cpp'; then $(CYGPATH_W) 'test/checkblock_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/checkblock_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-checkblock_tests.obj `if test -f 'test/checkblock_tests.cpp'; then $(CYGPATH_W) 'test/checkblock_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/checkblock_tests.cpp'; fi`
 
-test/test_test_condominium-Checkpoints_tests.o: test/Checkpoints_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-Checkpoints_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-Checkpoints_tests.Tpo -c -o test/test_test_condominium-Checkpoints_tests.o `test -f 'test/Checkpoints_tests.cpp' || echo '$(srcdir)/'`test/Checkpoints_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-Checkpoints_tests.Tpo test/$(DEPDIR)/test_test_condominium-Checkpoints_tests.Po
-#	$(AM_V_CXX)source='test/Checkpoints_tests.cpp' object='test/test_test_condominium-Checkpoints_tests.o' libtool=no \
+test/test_test_asocoin-Checkpoints_tests.o: test/Checkpoints_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-Checkpoints_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-Checkpoints_tests.Tpo -c -o test/test_test_asocoin-Checkpoints_tests.o `test -f 'test/Checkpoints_tests.cpp' || echo '$(srcdir)/'`test/Checkpoints_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-Checkpoints_tests.Tpo test/$(DEPDIR)/test_test_asocoin-Checkpoints_tests.Po
+#	$(AM_V_CXX)source='test/Checkpoints_tests.cpp' object='test/test_test_asocoin-Checkpoints_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-Checkpoints_tests.o `test -f 'test/Checkpoints_tests.cpp' || echo '$(srcdir)/'`test/Checkpoints_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-Checkpoints_tests.o `test -f 'test/Checkpoints_tests.cpp' || echo '$(srcdir)/'`test/Checkpoints_tests.cpp
 
-test/test_test_condominium-Checkpoints_tests.obj: test/Checkpoints_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-Checkpoints_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-Checkpoints_tests.Tpo -c -o test/test_test_condominium-Checkpoints_tests.obj `if test -f 'test/Checkpoints_tests.cpp'; then $(CYGPATH_W) 'test/Checkpoints_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/Checkpoints_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-Checkpoints_tests.Tpo test/$(DEPDIR)/test_test_condominium-Checkpoints_tests.Po
-#	$(AM_V_CXX)source='test/Checkpoints_tests.cpp' object='test/test_test_condominium-Checkpoints_tests.obj' libtool=no \
+test/test_test_asocoin-Checkpoints_tests.obj: test/Checkpoints_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-Checkpoints_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-Checkpoints_tests.Tpo -c -o test/test_test_asocoin-Checkpoints_tests.obj `if test -f 'test/Checkpoints_tests.cpp'; then $(CYGPATH_W) 'test/Checkpoints_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/Checkpoints_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-Checkpoints_tests.Tpo test/$(DEPDIR)/test_test_asocoin-Checkpoints_tests.Po
+#	$(AM_V_CXX)source='test/Checkpoints_tests.cpp' object='test/test_test_asocoin-Checkpoints_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-Checkpoints_tests.obj `if test -f 'test/Checkpoints_tests.cpp'; then $(CYGPATH_W) 'test/Checkpoints_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/Checkpoints_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-Checkpoints_tests.obj `if test -f 'test/Checkpoints_tests.cpp'; then $(CYGPATH_W) 'test/Checkpoints_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/Checkpoints_tests.cpp'; fi`
 
-test/test_test_condominium-coins_tests.o: test/coins_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-coins_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-coins_tests.Tpo -c -o test/test_test_condominium-coins_tests.o `test -f 'test/coins_tests.cpp' || echo '$(srcdir)/'`test/coins_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-coins_tests.Tpo test/$(DEPDIR)/test_test_condominium-coins_tests.Po
-#	$(AM_V_CXX)source='test/coins_tests.cpp' object='test/test_test_condominium-coins_tests.o' libtool=no \
+test/test_test_asocoin-coins_tests.o: test/coins_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-coins_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-coins_tests.Tpo -c -o test/test_test_asocoin-coins_tests.o `test -f 'test/coins_tests.cpp' || echo '$(srcdir)/'`test/coins_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-coins_tests.Tpo test/$(DEPDIR)/test_test_asocoin-coins_tests.Po
+#	$(AM_V_CXX)source='test/coins_tests.cpp' object='test/test_test_asocoin-coins_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-coins_tests.o `test -f 'test/coins_tests.cpp' || echo '$(srcdir)/'`test/coins_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-coins_tests.o `test -f 'test/coins_tests.cpp' || echo '$(srcdir)/'`test/coins_tests.cpp
 
-test/test_test_condominium-coins_tests.obj: test/coins_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-coins_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-coins_tests.Tpo -c -o test/test_test_condominium-coins_tests.obj `if test -f 'test/coins_tests.cpp'; then $(CYGPATH_W) 'test/coins_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/coins_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-coins_tests.Tpo test/$(DEPDIR)/test_test_condominium-coins_tests.Po
-#	$(AM_V_CXX)source='test/coins_tests.cpp' object='test/test_test_condominium-coins_tests.obj' libtool=no \
+test/test_test_asocoin-coins_tests.obj: test/coins_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-coins_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-coins_tests.Tpo -c -o test/test_test_asocoin-coins_tests.obj `if test -f 'test/coins_tests.cpp'; then $(CYGPATH_W) 'test/coins_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/coins_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-coins_tests.Tpo test/$(DEPDIR)/test_test_asocoin-coins_tests.Po
+#	$(AM_V_CXX)source='test/coins_tests.cpp' object='test/test_test_asocoin-coins_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-coins_tests.obj `if test -f 'test/coins_tests.cpp'; then $(CYGPATH_W) 'test/coins_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/coins_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-coins_tests.obj `if test -f 'test/coins_tests.cpp'; then $(CYGPATH_W) 'test/coins_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/coins_tests.cpp'; fi`
 
-test/test_test_condominium-compress_tests.o: test/compress_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-compress_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-compress_tests.Tpo -c -o test/test_test_condominium-compress_tests.o `test -f 'test/compress_tests.cpp' || echo '$(srcdir)/'`test/compress_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-compress_tests.Tpo test/$(DEPDIR)/test_test_condominium-compress_tests.Po
-#	$(AM_V_CXX)source='test/compress_tests.cpp' object='test/test_test_condominium-compress_tests.o' libtool=no \
+test/test_test_asocoin-compress_tests.o: test/compress_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-compress_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-compress_tests.Tpo -c -o test/test_test_asocoin-compress_tests.o `test -f 'test/compress_tests.cpp' || echo '$(srcdir)/'`test/compress_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-compress_tests.Tpo test/$(DEPDIR)/test_test_asocoin-compress_tests.Po
+#	$(AM_V_CXX)source='test/compress_tests.cpp' object='test/test_test_asocoin-compress_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-compress_tests.o `test -f 'test/compress_tests.cpp' || echo '$(srcdir)/'`test/compress_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-compress_tests.o `test -f 'test/compress_tests.cpp' || echo '$(srcdir)/'`test/compress_tests.cpp
 
-test/test_test_condominium-compress_tests.obj: test/compress_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-compress_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-compress_tests.Tpo -c -o test/test_test_condominium-compress_tests.obj `if test -f 'test/compress_tests.cpp'; then $(CYGPATH_W) 'test/compress_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/compress_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-compress_tests.Tpo test/$(DEPDIR)/test_test_condominium-compress_tests.Po
-#	$(AM_V_CXX)source='test/compress_tests.cpp' object='test/test_test_condominium-compress_tests.obj' libtool=no \
+test/test_test_asocoin-compress_tests.obj: test/compress_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-compress_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-compress_tests.Tpo -c -o test/test_test_asocoin-compress_tests.obj `if test -f 'test/compress_tests.cpp'; then $(CYGPATH_W) 'test/compress_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/compress_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-compress_tests.Tpo test/$(DEPDIR)/test_test_asocoin-compress_tests.Po
+#	$(AM_V_CXX)source='test/compress_tests.cpp' object='test/test_test_asocoin-compress_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-compress_tests.obj `if test -f 'test/compress_tests.cpp'; then $(CYGPATH_W) 'test/compress_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/compress_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-compress_tests.obj `if test -f 'test/compress_tests.cpp'; then $(CYGPATH_W) 'test/compress_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/compress_tests.cpp'; fi`
 
-test/test_test_condominium-crypto_tests.o: test/crypto_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-crypto_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-crypto_tests.Tpo -c -o test/test_test_condominium-crypto_tests.o `test -f 'test/crypto_tests.cpp' || echo '$(srcdir)/'`test/crypto_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-crypto_tests.Tpo test/$(DEPDIR)/test_test_condominium-crypto_tests.Po
-#	$(AM_V_CXX)source='test/crypto_tests.cpp' object='test/test_test_condominium-crypto_tests.o' libtool=no \
+test/test_test_asocoin-crypto_tests.o: test/crypto_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-crypto_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-crypto_tests.Tpo -c -o test/test_test_asocoin-crypto_tests.o `test -f 'test/crypto_tests.cpp' || echo '$(srcdir)/'`test/crypto_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-crypto_tests.Tpo test/$(DEPDIR)/test_test_asocoin-crypto_tests.Po
+#	$(AM_V_CXX)source='test/crypto_tests.cpp' object='test/test_test_asocoin-crypto_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-crypto_tests.o `test -f 'test/crypto_tests.cpp' || echo '$(srcdir)/'`test/crypto_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-crypto_tests.o `test -f 'test/crypto_tests.cpp' || echo '$(srcdir)/'`test/crypto_tests.cpp
 
-test/test_test_condominium-crypto_tests.obj: test/crypto_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-crypto_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-crypto_tests.Tpo -c -o test/test_test_condominium-crypto_tests.obj `if test -f 'test/crypto_tests.cpp'; then $(CYGPATH_W) 'test/crypto_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/crypto_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-crypto_tests.Tpo test/$(DEPDIR)/test_test_condominium-crypto_tests.Po
-#	$(AM_V_CXX)source='test/crypto_tests.cpp' object='test/test_test_condominium-crypto_tests.obj' libtool=no \
+test/test_test_asocoin-crypto_tests.obj: test/crypto_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-crypto_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-crypto_tests.Tpo -c -o test/test_test_asocoin-crypto_tests.obj `if test -f 'test/crypto_tests.cpp'; then $(CYGPATH_W) 'test/crypto_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/crypto_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-crypto_tests.Tpo test/$(DEPDIR)/test_test_asocoin-crypto_tests.Po
+#	$(AM_V_CXX)source='test/crypto_tests.cpp' object='test/test_test_asocoin-crypto_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-crypto_tests.obj `if test -f 'test/crypto_tests.cpp'; then $(CYGPATH_W) 'test/crypto_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/crypto_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-crypto_tests.obj `if test -f 'test/crypto_tests.cpp'; then $(CYGPATH_W) 'test/crypto_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/crypto_tests.cpp'; fi`
 
-test/test_test_condominium-DoS_tests.o: test/DoS_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-DoS_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-DoS_tests.Tpo -c -o test/test_test_condominium-DoS_tests.o `test -f 'test/DoS_tests.cpp' || echo '$(srcdir)/'`test/DoS_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-DoS_tests.Tpo test/$(DEPDIR)/test_test_condominium-DoS_tests.Po
-#	$(AM_V_CXX)source='test/DoS_tests.cpp' object='test/test_test_condominium-DoS_tests.o' libtool=no \
+test/test_test_asocoin-DoS_tests.o: test/DoS_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-DoS_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-DoS_tests.Tpo -c -o test/test_test_asocoin-DoS_tests.o `test -f 'test/DoS_tests.cpp' || echo '$(srcdir)/'`test/DoS_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-DoS_tests.Tpo test/$(DEPDIR)/test_test_asocoin-DoS_tests.Po
+#	$(AM_V_CXX)source='test/DoS_tests.cpp' object='test/test_test_asocoin-DoS_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-DoS_tests.o `test -f 'test/DoS_tests.cpp' || echo '$(srcdir)/'`test/DoS_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-DoS_tests.o `test -f 'test/DoS_tests.cpp' || echo '$(srcdir)/'`test/DoS_tests.cpp
 
-test/test_test_condominium-DoS_tests.obj: test/DoS_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-DoS_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-DoS_tests.Tpo -c -o test/test_test_condominium-DoS_tests.obj `if test -f 'test/DoS_tests.cpp'; then $(CYGPATH_W) 'test/DoS_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/DoS_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-DoS_tests.Tpo test/$(DEPDIR)/test_test_condominium-DoS_tests.Po
-#	$(AM_V_CXX)source='test/DoS_tests.cpp' object='test/test_test_condominium-DoS_tests.obj' libtool=no \
+test/test_test_asocoin-DoS_tests.obj: test/DoS_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-DoS_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-DoS_tests.Tpo -c -o test/test_test_asocoin-DoS_tests.obj `if test -f 'test/DoS_tests.cpp'; then $(CYGPATH_W) 'test/DoS_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/DoS_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-DoS_tests.Tpo test/$(DEPDIR)/test_test_asocoin-DoS_tests.Po
+#	$(AM_V_CXX)source='test/DoS_tests.cpp' object='test/test_test_asocoin-DoS_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-DoS_tests.obj `if test -f 'test/DoS_tests.cpp'; then $(CYGPATH_W) 'test/DoS_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/DoS_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-DoS_tests.obj `if test -f 'test/DoS_tests.cpp'; then $(CYGPATH_W) 'test/DoS_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/DoS_tests.cpp'; fi`
 
-test/test_test_condominium-getarg_tests.o: test/getarg_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-getarg_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-getarg_tests.Tpo -c -o test/test_test_condominium-getarg_tests.o `test -f 'test/getarg_tests.cpp' || echo '$(srcdir)/'`test/getarg_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-getarg_tests.Tpo test/$(DEPDIR)/test_test_condominium-getarg_tests.Po
-#	$(AM_V_CXX)source='test/getarg_tests.cpp' object='test/test_test_condominium-getarg_tests.o' libtool=no \
+test/test_test_asocoin-getarg_tests.o: test/getarg_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-getarg_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-getarg_tests.Tpo -c -o test/test_test_asocoin-getarg_tests.o `test -f 'test/getarg_tests.cpp' || echo '$(srcdir)/'`test/getarg_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-getarg_tests.Tpo test/$(DEPDIR)/test_test_asocoin-getarg_tests.Po
+#	$(AM_V_CXX)source='test/getarg_tests.cpp' object='test/test_test_asocoin-getarg_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-getarg_tests.o `test -f 'test/getarg_tests.cpp' || echo '$(srcdir)/'`test/getarg_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-getarg_tests.o `test -f 'test/getarg_tests.cpp' || echo '$(srcdir)/'`test/getarg_tests.cpp
 
-test/test_test_condominium-getarg_tests.obj: test/getarg_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-getarg_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-getarg_tests.Tpo -c -o test/test_test_condominium-getarg_tests.obj `if test -f 'test/getarg_tests.cpp'; then $(CYGPATH_W) 'test/getarg_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/getarg_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-getarg_tests.Tpo test/$(DEPDIR)/test_test_condominium-getarg_tests.Po
-#	$(AM_V_CXX)source='test/getarg_tests.cpp' object='test/test_test_condominium-getarg_tests.obj' libtool=no \
+test/test_test_asocoin-getarg_tests.obj: test/getarg_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-getarg_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-getarg_tests.Tpo -c -o test/test_test_asocoin-getarg_tests.obj `if test -f 'test/getarg_tests.cpp'; then $(CYGPATH_W) 'test/getarg_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/getarg_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-getarg_tests.Tpo test/$(DEPDIR)/test_test_asocoin-getarg_tests.Po
+#	$(AM_V_CXX)source='test/getarg_tests.cpp' object='test/test_test_asocoin-getarg_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-getarg_tests.obj `if test -f 'test/getarg_tests.cpp'; then $(CYGPATH_W) 'test/getarg_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/getarg_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-getarg_tests.obj `if test -f 'test/getarg_tests.cpp'; then $(CYGPATH_W) 'test/getarg_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/getarg_tests.cpp'; fi`
 
-test/test_test_condominium-hash_tests.o: test/hash_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-hash_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-hash_tests.Tpo -c -o test/test_test_condominium-hash_tests.o `test -f 'test/hash_tests.cpp' || echo '$(srcdir)/'`test/hash_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-hash_tests.Tpo test/$(DEPDIR)/test_test_condominium-hash_tests.Po
-#	$(AM_V_CXX)source='test/hash_tests.cpp' object='test/test_test_condominium-hash_tests.o' libtool=no \
+test/test_test_asocoin-hash_tests.o: test/hash_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-hash_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-hash_tests.Tpo -c -o test/test_test_asocoin-hash_tests.o `test -f 'test/hash_tests.cpp' || echo '$(srcdir)/'`test/hash_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-hash_tests.Tpo test/$(DEPDIR)/test_test_asocoin-hash_tests.Po
+#	$(AM_V_CXX)source='test/hash_tests.cpp' object='test/test_test_asocoin-hash_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-hash_tests.o `test -f 'test/hash_tests.cpp' || echo '$(srcdir)/'`test/hash_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-hash_tests.o `test -f 'test/hash_tests.cpp' || echo '$(srcdir)/'`test/hash_tests.cpp
 
-test/test_test_condominium-hash_tests.obj: test/hash_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-hash_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-hash_tests.Tpo -c -o test/test_test_condominium-hash_tests.obj `if test -f 'test/hash_tests.cpp'; then $(CYGPATH_W) 'test/hash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/hash_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-hash_tests.Tpo test/$(DEPDIR)/test_test_condominium-hash_tests.Po
-#	$(AM_V_CXX)source='test/hash_tests.cpp' object='test/test_test_condominium-hash_tests.obj' libtool=no \
+test/test_test_asocoin-hash_tests.obj: test/hash_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-hash_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-hash_tests.Tpo -c -o test/test_test_asocoin-hash_tests.obj `if test -f 'test/hash_tests.cpp'; then $(CYGPATH_W) 'test/hash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/hash_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-hash_tests.Tpo test/$(DEPDIR)/test_test_asocoin-hash_tests.Po
+#	$(AM_V_CXX)source='test/hash_tests.cpp' object='test/test_test_asocoin-hash_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-hash_tests.obj `if test -f 'test/hash_tests.cpp'; then $(CYGPATH_W) 'test/hash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/hash_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-hash_tests.obj `if test -f 'test/hash_tests.cpp'; then $(CYGPATH_W) 'test/hash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/hash_tests.cpp'; fi`
 
-test/test_test_condominium-key_tests.o: test/key_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-key_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-key_tests.Tpo -c -o test/test_test_condominium-key_tests.o `test -f 'test/key_tests.cpp' || echo '$(srcdir)/'`test/key_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-key_tests.Tpo test/$(DEPDIR)/test_test_condominium-key_tests.Po
-#	$(AM_V_CXX)source='test/key_tests.cpp' object='test/test_test_condominium-key_tests.o' libtool=no \
+test/test_test_asocoin-key_tests.o: test/key_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-key_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-key_tests.Tpo -c -o test/test_test_asocoin-key_tests.o `test -f 'test/key_tests.cpp' || echo '$(srcdir)/'`test/key_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-key_tests.Tpo test/$(DEPDIR)/test_test_asocoin-key_tests.Po
+#	$(AM_V_CXX)source='test/key_tests.cpp' object='test/test_test_asocoin-key_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-key_tests.o `test -f 'test/key_tests.cpp' || echo '$(srcdir)/'`test/key_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-key_tests.o `test -f 'test/key_tests.cpp' || echo '$(srcdir)/'`test/key_tests.cpp
 
-test/test_test_condominium-key_tests.obj: test/key_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-key_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-key_tests.Tpo -c -o test/test_test_condominium-key_tests.obj `if test -f 'test/key_tests.cpp'; then $(CYGPATH_W) 'test/key_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/key_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-key_tests.Tpo test/$(DEPDIR)/test_test_condominium-key_tests.Po
-#	$(AM_V_CXX)source='test/key_tests.cpp' object='test/test_test_condominium-key_tests.obj' libtool=no \
+test/test_test_asocoin-key_tests.obj: test/key_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-key_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-key_tests.Tpo -c -o test/test_test_asocoin-key_tests.obj `if test -f 'test/key_tests.cpp'; then $(CYGPATH_W) 'test/key_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/key_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-key_tests.Tpo test/$(DEPDIR)/test_test_asocoin-key_tests.Po
+#	$(AM_V_CXX)source='test/key_tests.cpp' object='test/test_test_asocoin-key_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-key_tests.obj `if test -f 'test/key_tests.cpp'; then $(CYGPATH_W) 'test/key_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/key_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-key_tests.obj `if test -f 'test/key_tests.cpp'; then $(CYGPATH_W) 'test/key_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/key_tests.cpp'; fi`
 
-test/test_test_condominium-main_tests.o: test/main_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-main_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-main_tests.Tpo -c -o test/test_test_condominium-main_tests.o `test -f 'test/main_tests.cpp' || echo '$(srcdir)/'`test/main_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-main_tests.Tpo test/$(DEPDIR)/test_test_condominium-main_tests.Po
-#	$(AM_V_CXX)source='test/main_tests.cpp' object='test/test_test_condominium-main_tests.o' libtool=no \
+test/test_test_asocoin-main_tests.o: test/main_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-main_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-main_tests.Tpo -c -o test/test_test_asocoin-main_tests.o `test -f 'test/main_tests.cpp' || echo '$(srcdir)/'`test/main_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-main_tests.Tpo test/$(DEPDIR)/test_test_asocoin-main_tests.Po
+#	$(AM_V_CXX)source='test/main_tests.cpp' object='test/test_test_asocoin-main_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-main_tests.o `test -f 'test/main_tests.cpp' || echo '$(srcdir)/'`test/main_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-main_tests.o `test -f 'test/main_tests.cpp' || echo '$(srcdir)/'`test/main_tests.cpp
 
-test/test_test_condominium-main_tests.obj: test/main_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-main_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-main_tests.Tpo -c -o test/test_test_condominium-main_tests.obj `if test -f 'test/main_tests.cpp'; then $(CYGPATH_W) 'test/main_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/main_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-main_tests.Tpo test/$(DEPDIR)/test_test_condominium-main_tests.Po
-#	$(AM_V_CXX)source='test/main_tests.cpp' object='test/test_test_condominium-main_tests.obj' libtool=no \
+test/test_test_asocoin-main_tests.obj: test/main_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-main_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-main_tests.Tpo -c -o test/test_test_asocoin-main_tests.obj `if test -f 'test/main_tests.cpp'; then $(CYGPATH_W) 'test/main_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/main_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-main_tests.Tpo test/$(DEPDIR)/test_test_asocoin-main_tests.Po
+#	$(AM_V_CXX)source='test/main_tests.cpp' object='test/test_test_asocoin-main_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-main_tests.obj `if test -f 'test/main_tests.cpp'; then $(CYGPATH_W) 'test/main_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/main_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-main_tests.obj `if test -f 'test/main_tests.cpp'; then $(CYGPATH_W) 'test/main_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/main_tests.cpp'; fi`
 
-test/test_test_condominium-mempool_tests.o: test/mempool_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-mempool_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-mempool_tests.Tpo -c -o test/test_test_condominium-mempool_tests.o `test -f 'test/mempool_tests.cpp' || echo '$(srcdir)/'`test/mempool_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-mempool_tests.Tpo test/$(DEPDIR)/test_test_condominium-mempool_tests.Po
-#	$(AM_V_CXX)source='test/mempool_tests.cpp' object='test/test_test_condominium-mempool_tests.o' libtool=no \
+test/test_test_asocoin-mempool_tests.o: test/mempool_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-mempool_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-mempool_tests.Tpo -c -o test/test_test_asocoin-mempool_tests.o `test -f 'test/mempool_tests.cpp' || echo '$(srcdir)/'`test/mempool_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-mempool_tests.Tpo test/$(DEPDIR)/test_test_asocoin-mempool_tests.Po
+#	$(AM_V_CXX)source='test/mempool_tests.cpp' object='test/test_test_asocoin-mempool_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-mempool_tests.o `test -f 'test/mempool_tests.cpp' || echo '$(srcdir)/'`test/mempool_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-mempool_tests.o `test -f 'test/mempool_tests.cpp' || echo '$(srcdir)/'`test/mempool_tests.cpp
 
-test/test_test_condominium-mempool_tests.obj: test/mempool_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-mempool_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-mempool_tests.Tpo -c -o test/test_test_condominium-mempool_tests.obj `if test -f 'test/mempool_tests.cpp'; then $(CYGPATH_W) 'test/mempool_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mempool_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-mempool_tests.Tpo test/$(DEPDIR)/test_test_condominium-mempool_tests.Po
-#	$(AM_V_CXX)source='test/mempool_tests.cpp' object='test/test_test_condominium-mempool_tests.obj' libtool=no \
+test/test_test_asocoin-mempool_tests.obj: test/mempool_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-mempool_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-mempool_tests.Tpo -c -o test/test_test_asocoin-mempool_tests.obj `if test -f 'test/mempool_tests.cpp'; then $(CYGPATH_W) 'test/mempool_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mempool_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-mempool_tests.Tpo test/$(DEPDIR)/test_test_asocoin-mempool_tests.Po
+#	$(AM_V_CXX)source='test/mempool_tests.cpp' object='test/test_test_asocoin-mempool_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-mempool_tests.obj `if test -f 'test/mempool_tests.cpp'; then $(CYGPATH_W) 'test/mempool_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mempool_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-mempool_tests.obj `if test -f 'test/mempool_tests.cpp'; then $(CYGPATH_W) 'test/mempool_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mempool_tests.cpp'; fi`
 
-test/test_test_condominium-mruset_tests.o: test/mruset_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-mruset_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-mruset_tests.Tpo -c -o test/test_test_condominium-mruset_tests.o `test -f 'test/mruset_tests.cpp' || echo '$(srcdir)/'`test/mruset_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-mruset_tests.Tpo test/$(DEPDIR)/test_test_condominium-mruset_tests.Po
-#	$(AM_V_CXX)source='test/mruset_tests.cpp' object='test/test_test_condominium-mruset_tests.o' libtool=no \
+test/test_test_asocoin-mruset_tests.o: test/mruset_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-mruset_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-mruset_tests.Tpo -c -o test/test_test_asocoin-mruset_tests.o `test -f 'test/mruset_tests.cpp' || echo '$(srcdir)/'`test/mruset_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-mruset_tests.Tpo test/$(DEPDIR)/test_test_asocoin-mruset_tests.Po
+#	$(AM_V_CXX)source='test/mruset_tests.cpp' object='test/test_test_asocoin-mruset_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-mruset_tests.o `test -f 'test/mruset_tests.cpp' || echo '$(srcdir)/'`test/mruset_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-mruset_tests.o `test -f 'test/mruset_tests.cpp' || echo '$(srcdir)/'`test/mruset_tests.cpp
 
-test/test_test_condominium-mruset_tests.obj: test/mruset_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-mruset_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-mruset_tests.Tpo -c -o test/test_test_condominium-mruset_tests.obj `if test -f 'test/mruset_tests.cpp'; then $(CYGPATH_W) 'test/mruset_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mruset_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-mruset_tests.Tpo test/$(DEPDIR)/test_test_condominium-mruset_tests.Po
-#	$(AM_V_CXX)source='test/mruset_tests.cpp' object='test/test_test_condominium-mruset_tests.obj' libtool=no \
+test/test_test_asocoin-mruset_tests.obj: test/mruset_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-mruset_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-mruset_tests.Tpo -c -o test/test_test_asocoin-mruset_tests.obj `if test -f 'test/mruset_tests.cpp'; then $(CYGPATH_W) 'test/mruset_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mruset_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-mruset_tests.Tpo test/$(DEPDIR)/test_test_asocoin-mruset_tests.Po
+#	$(AM_V_CXX)source='test/mruset_tests.cpp' object='test/test_test_asocoin-mruset_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-mruset_tests.obj `if test -f 'test/mruset_tests.cpp'; then $(CYGPATH_W) 'test/mruset_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mruset_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-mruset_tests.obj `if test -f 'test/mruset_tests.cpp'; then $(CYGPATH_W) 'test/mruset_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mruset_tests.cpp'; fi`
 
-test/test_test_condominium-multisig_tests.o: test/multisig_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-multisig_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-multisig_tests.Tpo -c -o test/test_test_condominium-multisig_tests.o `test -f 'test/multisig_tests.cpp' || echo '$(srcdir)/'`test/multisig_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-multisig_tests.Tpo test/$(DEPDIR)/test_test_condominium-multisig_tests.Po
-#	$(AM_V_CXX)source='test/multisig_tests.cpp' object='test/test_test_condominium-multisig_tests.o' libtool=no \
+test/test_test_asocoin-multisig_tests.o: test/multisig_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-multisig_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-multisig_tests.Tpo -c -o test/test_test_asocoin-multisig_tests.o `test -f 'test/multisig_tests.cpp' || echo '$(srcdir)/'`test/multisig_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-multisig_tests.Tpo test/$(DEPDIR)/test_test_asocoin-multisig_tests.Po
+#	$(AM_V_CXX)source='test/multisig_tests.cpp' object='test/test_test_asocoin-multisig_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-multisig_tests.o `test -f 'test/multisig_tests.cpp' || echo '$(srcdir)/'`test/multisig_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-multisig_tests.o `test -f 'test/multisig_tests.cpp' || echo '$(srcdir)/'`test/multisig_tests.cpp
 
-test/test_test_condominium-multisig_tests.obj: test/multisig_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-multisig_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-multisig_tests.Tpo -c -o test/test_test_condominium-multisig_tests.obj `if test -f 'test/multisig_tests.cpp'; then $(CYGPATH_W) 'test/multisig_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/multisig_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-multisig_tests.Tpo test/$(DEPDIR)/test_test_condominium-multisig_tests.Po
-#	$(AM_V_CXX)source='test/multisig_tests.cpp' object='test/test_test_condominium-multisig_tests.obj' libtool=no \
+test/test_test_asocoin-multisig_tests.obj: test/multisig_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-multisig_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-multisig_tests.Tpo -c -o test/test_test_asocoin-multisig_tests.obj `if test -f 'test/multisig_tests.cpp'; then $(CYGPATH_W) 'test/multisig_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/multisig_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-multisig_tests.Tpo test/$(DEPDIR)/test_test_asocoin-multisig_tests.Po
+#	$(AM_V_CXX)source='test/multisig_tests.cpp' object='test/test_test_asocoin-multisig_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-multisig_tests.obj `if test -f 'test/multisig_tests.cpp'; then $(CYGPATH_W) 'test/multisig_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/multisig_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-multisig_tests.obj `if test -f 'test/multisig_tests.cpp'; then $(CYGPATH_W) 'test/multisig_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/multisig_tests.cpp'; fi`
 
-test/test_test_condominium-netbase_tests.o: test/netbase_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-netbase_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-netbase_tests.Tpo -c -o test/test_test_condominium-netbase_tests.o `test -f 'test/netbase_tests.cpp' || echo '$(srcdir)/'`test/netbase_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-netbase_tests.Tpo test/$(DEPDIR)/test_test_condominium-netbase_tests.Po
-#	$(AM_V_CXX)source='test/netbase_tests.cpp' object='test/test_test_condominium-netbase_tests.o' libtool=no \
+test/test_test_asocoin-netbase_tests.o: test/netbase_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-netbase_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-netbase_tests.Tpo -c -o test/test_test_asocoin-netbase_tests.o `test -f 'test/netbase_tests.cpp' || echo '$(srcdir)/'`test/netbase_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-netbase_tests.Tpo test/$(DEPDIR)/test_test_asocoin-netbase_tests.Po
+#	$(AM_V_CXX)source='test/netbase_tests.cpp' object='test/test_test_asocoin-netbase_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-netbase_tests.o `test -f 'test/netbase_tests.cpp' || echo '$(srcdir)/'`test/netbase_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-netbase_tests.o `test -f 'test/netbase_tests.cpp' || echo '$(srcdir)/'`test/netbase_tests.cpp
 
-test/test_test_condominium-netbase_tests.obj: test/netbase_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-netbase_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-netbase_tests.Tpo -c -o test/test_test_condominium-netbase_tests.obj `if test -f 'test/netbase_tests.cpp'; then $(CYGPATH_W) 'test/netbase_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/netbase_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-netbase_tests.Tpo test/$(DEPDIR)/test_test_condominium-netbase_tests.Po
-#	$(AM_V_CXX)source='test/netbase_tests.cpp' object='test/test_test_condominium-netbase_tests.obj' libtool=no \
+test/test_test_asocoin-netbase_tests.obj: test/netbase_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-netbase_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-netbase_tests.Tpo -c -o test/test_test_asocoin-netbase_tests.obj `if test -f 'test/netbase_tests.cpp'; then $(CYGPATH_W) 'test/netbase_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/netbase_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-netbase_tests.Tpo test/$(DEPDIR)/test_test_asocoin-netbase_tests.Po
+#	$(AM_V_CXX)source='test/netbase_tests.cpp' object='test/test_test_asocoin-netbase_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-netbase_tests.obj `if test -f 'test/netbase_tests.cpp'; then $(CYGPATH_W) 'test/netbase_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/netbase_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-netbase_tests.obj `if test -f 'test/netbase_tests.cpp'; then $(CYGPATH_W) 'test/netbase_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/netbase_tests.cpp'; fi`
 
-test/test_test_condominium-pmt_tests.o: test/pmt_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-pmt_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-pmt_tests.Tpo -c -o test/test_test_condominium-pmt_tests.o `test -f 'test/pmt_tests.cpp' || echo '$(srcdir)/'`test/pmt_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-pmt_tests.Tpo test/$(DEPDIR)/test_test_condominium-pmt_tests.Po
-#	$(AM_V_CXX)source='test/pmt_tests.cpp' object='test/test_test_condominium-pmt_tests.o' libtool=no \
+test/test_test_asocoin-pmt_tests.o: test/pmt_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-pmt_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-pmt_tests.Tpo -c -o test/test_test_asocoin-pmt_tests.o `test -f 'test/pmt_tests.cpp' || echo '$(srcdir)/'`test/pmt_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-pmt_tests.Tpo test/$(DEPDIR)/test_test_asocoin-pmt_tests.Po
+#	$(AM_V_CXX)source='test/pmt_tests.cpp' object='test/test_test_asocoin-pmt_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-pmt_tests.o `test -f 'test/pmt_tests.cpp' || echo '$(srcdir)/'`test/pmt_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-pmt_tests.o `test -f 'test/pmt_tests.cpp' || echo '$(srcdir)/'`test/pmt_tests.cpp
 
-test/test_test_condominium-pmt_tests.obj: test/pmt_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-pmt_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-pmt_tests.Tpo -c -o test/test_test_condominium-pmt_tests.obj `if test -f 'test/pmt_tests.cpp'; then $(CYGPATH_W) 'test/pmt_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/pmt_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-pmt_tests.Tpo test/$(DEPDIR)/test_test_condominium-pmt_tests.Po
-#	$(AM_V_CXX)source='test/pmt_tests.cpp' object='test/test_test_condominium-pmt_tests.obj' libtool=no \
+test/test_test_asocoin-pmt_tests.obj: test/pmt_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-pmt_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-pmt_tests.Tpo -c -o test/test_test_asocoin-pmt_tests.obj `if test -f 'test/pmt_tests.cpp'; then $(CYGPATH_W) 'test/pmt_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/pmt_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-pmt_tests.Tpo test/$(DEPDIR)/test_test_asocoin-pmt_tests.Po
+#	$(AM_V_CXX)source='test/pmt_tests.cpp' object='test/test_test_asocoin-pmt_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-pmt_tests.obj `if test -f 'test/pmt_tests.cpp'; then $(CYGPATH_W) 'test/pmt_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/pmt_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-pmt_tests.obj `if test -f 'test/pmt_tests.cpp'; then $(CYGPATH_W) 'test/pmt_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/pmt_tests.cpp'; fi`
 
-test/test_test_condominium-rpc_tests.o: test/rpc_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-rpc_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-rpc_tests.Tpo -c -o test/test_test_condominium-rpc_tests.o `test -f 'test/rpc_tests.cpp' || echo '$(srcdir)/'`test/rpc_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-rpc_tests.Tpo test/$(DEPDIR)/test_test_condominium-rpc_tests.Po
-#	$(AM_V_CXX)source='test/rpc_tests.cpp' object='test/test_test_condominium-rpc_tests.o' libtool=no \
+test/test_test_asocoin-rpc_tests.o: test/rpc_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-rpc_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-rpc_tests.Tpo -c -o test/test_test_asocoin-rpc_tests.o `test -f 'test/rpc_tests.cpp' || echo '$(srcdir)/'`test/rpc_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-rpc_tests.Tpo test/$(DEPDIR)/test_test_asocoin-rpc_tests.Po
+#	$(AM_V_CXX)source='test/rpc_tests.cpp' object='test/test_test_asocoin-rpc_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-rpc_tests.o `test -f 'test/rpc_tests.cpp' || echo '$(srcdir)/'`test/rpc_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-rpc_tests.o `test -f 'test/rpc_tests.cpp' || echo '$(srcdir)/'`test/rpc_tests.cpp
 
-test/test_test_condominium-rpc_tests.obj: test/rpc_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-rpc_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-rpc_tests.Tpo -c -o test/test_test_condominium-rpc_tests.obj `if test -f 'test/rpc_tests.cpp'; then $(CYGPATH_W) 'test/rpc_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-rpc_tests.Tpo test/$(DEPDIR)/test_test_condominium-rpc_tests.Po
-#	$(AM_V_CXX)source='test/rpc_tests.cpp' object='test/test_test_condominium-rpc_tests.obj' libtool=no \
+test/test_test_asocoin-rpc_tests.obj: test/rpc_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-rpc_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-rpc_tests.Tpo -c -o test/test_test_asocoin-rpc_tests.obj `if test -f 'test/rpc_tests.cpp'; then $(CYGPATH_W) 'test/rpc_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-rpc_tests.Tpo test/$(DEPDIR)/test_test_asocoin-rpc_tests.Po
+#	$(AM_V_CXX)source='test/rpc_tests.cpp' object='test/test_test_asocoin-rpc_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-rpc_tests.obj `if test -f 'test/rpc_tests.cpp'; then $(CYGPATH_W) 'test/rpc_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-rpc_tests.obj `if test -f 'test/rpc_tests.cpp'; then $(CYGPATH_W) 'test/rpc_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_tests.cpp'; fi`
 
-test/test_test_condominium-sanity_tests.o: test/sanity_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-sanity_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-sanity_tests.Tpo -c -o test/test_test_condominium-sanity_tests.o `test -f 'test/sanity_tests.cpp' || echo '$(srcdir)/'`test/sanity_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-sanity_tests.Tpo test/$(DEPDIR)/test_test_condominium-sanity_tests.Po
-#	$(AM_V_CXX)source='test/sanity_tests.cpp' object='test/test_test_condominium-sanity_tests.o' libtool=no \
+test/test_test_asocoin-sanity_tests.o: test/sanity_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-sanity_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-sanity_tests.Tpo -c -o test/test_test_asocoin-sanity_tests.o `test -f 'test/sanity_tests.cpp' || echo '$(srcdir)/'`test/sanity_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-sanity_tests.Tpo test/$(DEPDIR)/test_test_asocoin-sanity_tests.Po
+#	$(AM_V_CXX)source='test/sanity_tests.cpp' object='test/test_test_asocoin-sanity_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-sanity_tests.o `test -f 'test/sanity_tests.cpp' || echo '$(srcdir)/'`test/sanity_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-sanity_tests.o `test -f 'test/sanity_tests.cpp' || echo '$(srcdir)/'`test/sanity_tests.cpp
 
-test/test_test_condominium-sanity_tests.obj: test/sanity_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-sanity_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-sanity_tests.Tpo -c -o test/test_test_condominium-sanity_tests.obj `if test -f 'test/sanity_tests.cpp'; then $(CYGPATH_W) 'test/sanity_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sanity_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-sanity_tests.Tpo test/$(DEPDIR)/test_test_condominium-sanity_tests.Po
-#	$(AM_V_CXX)source='test/sanity_tests.cpp' object='test/test_test_condominium-sanity_tests.obj' libtool=no \
+test/test_test_asocoin-sanity_tests.obj: test/sanity_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-sanity_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-sanity_tests.Tpo -c -o test/test_test_asocoin-sanity_tests.obj `if test -f 'test/sanity_tests.cpp'; then $(CYGPATH_W) 'test/sanity_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sanity_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-sanity_tests.Tpo test/$(DEPDIR)/test_test_asocoin-sanity_tests.Po
+#	$(AM_V_CXX)source='test/sanity_tests.cpp' object='test/test_test_asocoin-sanity_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-sanity_tests.obj `if test -f 'test/sanity_tests.cpp'; then $(CYGPATH_W) 'test/sanity_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sanity_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-sanity_tests.obj `if test -f 'test/sanity_tests.cpp'; then $(CYGPATH_W) 'test/sanity_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sanity_tests.cpp'; fi`
 
-test/test_test_condominium-script_P2SH_tests.o: test/script_P2SH_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-script_P2SH_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-script_P2SH_tests.Tpo -c -o test/test_test_condominium-script_P2SH_tests.o `test -f 'test/script_P2SH_tests.cpp' || echo '$(srcdir)/'`test/script_P2SH_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-script_P2SH_tests.Tpo test/$(DEPDIR)/test_test_condominium-script_P2SH_tests.Po
-#	$(AM_V_CXX)source='test/script_P2SH_tests.cpp' object='test/test_test_condominium-script_P2SH_tests.o' libtool=no \
+test/test_test_asocoin-script_P2SH_tests.o: test/script_P2SH_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-script_P2SH_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-script_P2SH_tests.Tpo -c -o test/test_test_asocoin-script_P2SH_tests.o `test -f 'test/script_P2SH_tests.cpp' || echo '$(srcdir)/'`test/script_P2SH_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-script_P2SH_tests.Tpo test/$(DEPDIR)/test_test_asocoin-script_P2SH_tests.Po
+#	$(AM_V_CXX)source='test/script_P2SH_tests.cpp' object='test/test_test_asocoin-script_P2SH_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-script_P2SH_tests.o `test -f 'test/script_P2SH_tests.cpp' || echo '$(srcdir)/'`test/script_P2SH_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-script_P2SH_tests.o `test -f 'test/script_P2SH_tests.cpp' || echo '$(srcdir)/'`test/script_P2SH_tests.cpp
 
-test/test_test_condominium-script_P2SH_tests.obj: test/script_P2SH_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-script_P2SH_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-script_P2SH_tests.Tpo -c -o test/test_test_condominium-script_P2SH_tests.obj `if test -f 'test/script_P2SH_tests.cpp'; then $(CYGPATH_W) 'test/script_P2SH_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_P2SH_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-script_P2SH_tests.Tpo test/$(DEPDIR)/test_test_condominium-script_P2SH_tests.Po
-#	$(AM_V_CXX)source='test/script_P2SH_tests.cpp' object='test/test_test_condominium-script_P2SH_tests.obj' libtool=no \
+test/test_test_asocoin-script_P2SH_tests.obj: test/script_P2SH_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-script_P2SH_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-script_P2SH_tests.Tpo -c -o test/test_test_asocoin-script_P2SH_tests.obj `if test -f 'test/script_P2SH_tests.cpp'; then $(CYGPATH_W) 'test/script_P2SH_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_P2SH_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-script_P2SH_tests.Tpo test/$(DEPDIR)/test_test_asocoin-script_P2SH_tests.Po
+#	$(AM_V_CXX)source='test/script_P2SH_tests.cpp' object='test/test_test_asocoin-script_P2SH_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-script_P2SH_tests.obj `if test -f 'test/script_P2SH_tests.cpp'; then $(CYGPATH_W) 'test/script_P2SH_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_P2SH_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-script_P2SH_tests.obj `if test -f 'test/script_P2SH_tests.cpp'; then $(CYGPATH_W) 'test/script_P2SH_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_P2SH_tests.cpp'; fi`
 
-test/test_test_condominium-script_tests.o: test/script_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-script_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-script_tests.Tpo -c -o test/test_test_condominium-script_tests.o `test -f 'test/script_tests.cpp' || echo '$(srcdir)/'`test/script_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-script_tests.Tpo test/$(DEPDIR)/test_test_condominium-script_tests.Po
-#	$(AM_V_CXX)source='test/script_tests.cpp' object='test/test_test_condominium-script_tests.o' libtool=no \
+test/test_test_asocoin-script_tests.o: test/script_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-script_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-script_tests.Tpo -c -o test/test_test_asocoin-script_tests.o `test -f 'test/script_tests.cpp' || echo '$(srcdir)/'`test/script_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-script_tests.Tpo test/$(DEPDIR)/test_test_asocoin-script_tests.Po
+#	$(AM_V_CXX)source='test/script_tests.cpp' object='test/test_test_asocoin-script_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-script_tests.o `test -f 'test/script_tests.cpp' || echo '$(srcdir)/'`test/script_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-script_tests.o `test -f 'test/script_tests.cpp' || echo '$(srcdir)/'`test/script_tests.cpp
 
-test/test_test_condominium-script_tests.obj: test/script_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-script_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-script_tests.Tpo -c -o test/test_test_condominium-script_tests.obj `if test -f 'test/script_tests.cpp'; then $(CYGPATH_W) 'test/script_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-script_tests.Tpo test/$(DEPDIR)/test_test_condominium-script_tests.Po
-#	$(AM_V_CXX)source='test/script_tests.cpp' object='test/test_test_condominium-script_tests.obj' libtool=no \
+test/test_test_asocoin-script_tests.obj: test/script_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-script_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-script_tests.Tpo -c -o test/test_test_asocoin-script_tests.obj `if test -f 'test/script_tests.cpp'; then $(CYGPATH_W) 'test/script_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-script_tests.Tpo test/$(DEPDIR)/test_test_asocoin-script_tests.Po
+#	$(AM_V_CXX)source='test/script_tests.cpp' object='test/test_test_asocoin-script_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-script_tests.obj `if test -f 'test/script_tests.cpp'; then $(CYGPATH_W) 'test/script_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-script_tests.obj `if test -f 'test/script_tests.cpp'; then $(CYGPATH_W) 'test/script_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_tests.cpp'; fi`
 
-test/test_test_condominium-scriptnum_tests.o: test/scriptnum_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-scriptnum_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-scriptnum_tests.Tpo -c -o test/test_test_condominium-scriptnum_tests.o `test -f 'test/scriptnum_tests.cpp' || echo '$(srcdir)/'`test/scriptnum_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-scriptnum_tests.Tpo test/$(DEPDIR)/test_test_condominium-scriptnum_tests.Po
-#	$(AM_V_CXX)source='test/scriptnum_tests.cpp' object='test/test_test_condominium-scriptnum_tests.o' libtool=no \
+test/test_test_asocoin-scriptnum_tests.o: test/scriptnum_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-scriptnum_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-scriptnum_tests.Tpo -c -o test/test_test_asocoin-scriptnum_tests.o `test -f 'test/scriptnum_tests.cpp' || echo '$(srcdir)/'`test/scriptnum_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-scriptnum_tests.Tpo test/$(DEPDIR)/test_test_asocoin-scriptnum_tests.Po
+#	$(AM_V_CXX)source='test/scriptnum_tests.cpp' object='test/test_test_asocoin-scriptnum_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-scriptnum_tests.o `test -f 'test/scriptnum_tests.cpp' || echo '$(srcdir)/'`test/scriptnum_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-scriptnum_tests.o `test -f 'test/scriptnum_tests.cpp' || echo '$(srcdir)/'`test/scriptnum_tests.cpp
 
-test/test_test_condominium-scriptnum_tests.obj: test/scriptnum_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-scriptnum_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-scriptnum_tests.Tpo -c -o test/test_test_condominium-scriptnum_tests.obj `if test -f 'test/scriptnum_tests.cpp'; then $(CYGPATH_W) 'test/scriptnum_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/scriptnum_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-scriptnum_tests.Tpo test/$(DEPDIR)/test_test_condominium-scriptnum_tests.Po
-#	$(AM_V_CXX)source='test/scriptnum_tests.cpp' object='test/test_test_condominium-scriptnum_tests.obj' libtool=no \
+test/test_test_asocoin-scriptnum_tests.obj: test/scriptnum_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-scriptnum_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-scriptnum_tests.Tpo -c -o test/test_test_asocoin-scriptnum_tests.obj `if test -f 'test/scriptnum_tests.cpp'; then $(CYGPATH_W) 'test/scriptnum_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/scriptnum_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-scriptnum_tests.Tpo test/$(DEPDIR)/test_test_asocoin-scriptnum_tests.Po
+#	$(AM_V_CXX)source='test/scriptnum_tests.cpp' object='test/test_test_asocoin-scriptnum_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-scriptnum_tests.obj `if test -f 'test/scriptnum_tests.cpp'; then $(CYGPATH_W) 'test/scriptnum_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/scriptnum_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-scriptnum_tests.obj `if test -f 'test/scriptnum_tests.cpp'; then $(CYGPATH_W) 'test/scriptnum_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/scriptnum_tests.cpp'; fi`
 
-test/test_test_condominium-serialize_tests.o: test/serialize_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-serialize_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-serialize_tests.Tpo -c -o test/test_test_condominium-serialize_tests.o `test -f 'test/serialize_tests.cpp' || echo '$(srcdir)/'`test/serialize_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-serialize_tests.Tpo test/$(DEPDIR)/test_test_condominium-serialize_tests.Po
-#	$(AM_V_CXX)source='test/serialize_tests.cpp' object='test/test_test_condominium-serialize_tests.o' libtool=no \
+test/test_test_asocoin-serialize_tests.o: test/serialize_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-serialize_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-serialize_tests.Tpo -c -o test/test_test_asocoin-serialize_tests.o `test -f 'test/serialize_tests.cpp' || echo '$(srcdir)/'`test/serialize_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-serialize_tests.Tpo test/$(DEPDIR)/test_test_asocoin-serialize_tests.Po
+#	$(AM_V_CXX)source='test/serialize_tests.cpp' object='test/test_test_asocoin-serialize_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-serialize_tests.o `test -f 'test/serialize_tests.cpp' || echo '$(srcdir)/'`test/serialize_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-serialize_tests.o `test -f 'test/serialize_tests.cpp' || echo '$(srcdir)/'`test/serialize_tests.cpp
 
-test/test_test_condominium-serialize_tests.obj: test/serialize_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-serialize_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-serialize_tests.Tpo -c -o test/test_test_condominium-serialize_tests.obj `if test -f 'test/serialize_tests.cpp'; then $(CYGPATH_W) 'test/serialize_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/serialize_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-serialize_tests.Tpo test/$(DEPDIR)/test_test_condominium-serialize_tests.Po
-#	$(AM_V_CXX)source='test/serialize_tests.cpp' object='test/test_test_condominium-serialize_tests.obj' libtool=no \
+test/test_test_asocoin-serialize_tests.obj: test/serialize_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-serialize_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-serialize_tests.Tpo -c -o test/test_test_asocoin-serialize_tests.obj `if test -f 'test/serialize_tests.cpp'; then $(CYGPATH_W) 'test/serialize_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/serialize_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-serialize_tests.Tpo test/$(DEPDIR)/test_test_asocoin-serialize_tests.Po
+#	$(AM_V_CXX)source='test/serialize_tests.cpp' object='test/test_test_asocoin-serialize_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-serialize_tests.obj `if test -f 'test/serialize_tests.cpp'; then $(CYGPATH_W) 'test/serialize_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/serialize_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-serialize_tests.obj `if test -f 'test/serialize_tests.cpp'; then $(CYGPATH_W) 'test/serialize_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/serialize_tests.cpp'; fi`
 
-test/test_test_condominium-sighash_tests.o: test/sighash_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-sighash_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-sighash_tests.Tpo -c -o test/test_test_condominium-sighash_tests.o `test -f 'test/sighash_tests.cpp' || echo '$(srcdir)/'`test/sighash_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-sighash_tests.Tpo test/$(DEPDIR)/test_test_condominium-sighash_tests.Po
-#	$(AM_V_CXX)source='test/sighash_tests.cpp' object='test/test_test_condominium-sighash_tests.o' libtool=no \
+test/test_test_asocoin-sighash_tests.o: test/sighash_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-sighash_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-sighash_tests.Tpo -c -o test/test_test_asocoin-sighash_tests.o `test -f 'test/sighash_tests.cpp' || echo '$(srcdir)/'`test/sighash_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-sighash_tests.Tpo test/$(DEPDIR)/test_test_asocoin-sighash_tests.Po
+#	$(AM_V_CXX)source='test/sighash_tests.cpp' object='test/test_test_asocoin-sighash_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-sighash_tests.o `test -f 'test/sighash_tests.cpp' || echo '$(srcdir)/'`test/sighash_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-sighash_tests.o `test -f 'test/sighash_tests.cpp' || echo '$(srcdir)/'`test/sighash_tests.cpp
 
-test/test_test_condominium-sighash_tests.obj: test/sighash_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-sighash_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-sighash_tests.Tpo -c -o test/test_test_condominium-sighash_tests.obj `if test -f 'test/sighash_tests.cpp'; then $(CYGPATH_W) 'test/sighash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sighash_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-sighash_tests.Tpo test/$(DEPDIR)/test_test_condominium-sighash_tests.Po
-#	$(AM_V_CXX)source='test/sighash_tests.cpp' object='test/test_test_condominium-sighash_tests.obj' libtool=no \
+test/test_test_asocoin-sighash_tests.obj: test/sighash_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-sighash_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-sighash_tests.Tpo -c -o test/test_test_asocoin-sighash_tests.obj `if test -f 'test/sighash_tests.cpp'; then $(CYGPATH_W) 'test/sighash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sighash_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-sighash_tests.Tpo test/$(DEPDIR)/test_test_asocoin-sighash_tests.Po
+#	$(AM_V_CXX)source='test/sighash_tests.cpp' object='test/test_test_asocoin-sighash_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-sighash_tests.obj `if test -f 'test/sighash_tests.cpp'; then $(CYGPATH_W) 'test/sighash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sighash_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-sighash_tests.obj `if test -f 'test/sighash_tests.cpp'; then $(CYGPATH_W) 'test/sighash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sighash_tests.cpp'; fi`
 
-test/test_test_condominium-sigopcount_tests.o: test/sigopcount_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-sigopcount_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-sigopcount_tests.Tpo -c -o test/test_test_condominium-sigopcount_tests.o `test -f 'test/sigopcount_tests.cpp' || echo '$(srcdir)/'`test/sigopcount_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-sigopcount_tests.Tpo test/$(DEPDIR)/test_test_condominium-sigopcount_tests.Po
-#	$(AM_V_CXX)source='test/sigopcount_tests.cpp' object='test/test_test_condominium-sigopcount_tests.o' libtool=no \
+test/test_test_asocoin-sigopcount_tests.o: test/sigopcount_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-sigopcount_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-sigopcount_tests.Tpo -c -o test/test_test_asocoin-sigopcount_tests.o `test -f 'test/sigopcount_tests.cpp' || echo '$(srcdir)/'`test/sigopcount_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-sigopcount_tests.Tpo test/$(DEPDIR)/test_test_asocoin-sigopcount_tests.Po
+#	$(AM_V_CXX)source='test/sigopcount_tests.cpp' object='test/test_test_asocoin-sigopcount_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-sigopcount_tests.o `test -f 'test/sigopcount_tests.cpp' || echo '$(srcdir)/'`test/sigopcount_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-sigopcount_tests.o `test -f 'test/sigopcount_tests.cpp' || echo '$(srcdir)/'`test/sigopcount_tests.cpp
 
-test/test_test_condominium-sigopcount_tests.obj: test/sigopcount_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-sigopcount_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-sigopcount_tests.Tpo -c -o test/test_test_condominium-sigopcount_tests.obj `if test -f 'test/sigopcount_tests.cpp'; then $(CYGPATH_W) 'test/sigopcount_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sigopcount_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-sigopcount_tests.Tpo test/$(DEPDIR)/test_test_condominium-sigopcount_tests.Po
-#	$(AM_V_CXX)source='test/sigopcount_tests.cpp' object='test/test_test_condominium-sigopcount_tests.obj' libtool=no \
+test/test_test_asocoin-sigopcount_tests.obj: test/sigopcount_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-sigopcount_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-sigopcount_tests.Tpo -c -o test/test_test_asocoin-sigopcount_tests.obj `if test -f 'test/sigopcount_tests.cpp'; then $(CYGPATH_W) 'test/sigopcount_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sigopcount_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-sigopcount_tests.Tpo test/$(DEPDIR)/test_test_asocoin-sigopcount_tests.Po
+#	$(AM_V_CXX)source='test/sigopcount_tests.cpp' object='test/test_test_asocoin-sigopcount_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-sigopcount_tests.obj `if test -f 'test/sigopcount_tests.cpp'; then $(CYGPATH_W) 'test/sigopcount_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sigopcount_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-sigopcount_tests.obj `if test -f 'test/sigopcount_tests.cpp'; then $(CYGPATH_W) 'test/sigopcount_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sigopcount_tests.cpp'; fi`
 
-test/test_test_condominium-skiplist_tests.o: test/skiplist_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-skiplist_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-skiplist_tests.Tpo -c -o test/test_test_condominium-skiplist_tests.o `test -f 'test/skiplist_tests.cpp' || echo '$(srcdir)/'`test/skiplist_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-skiplist_tests.Tpo test/$(DEPDIR)/test_test_condominium-skiplist_tests.Po
-#	$(AM_V_CXX)source='test/skiplist_tests.cpp' object='test/test_test_condominium-skiplist_tests.o' libtool=no \
+test/test_test_asocoin-skiplist_tests.o: test/skiplist_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-skiplist_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-skiplist_tests.Tpo -c -o test/test_test_asocoin-skiplist_tests.o `test -f 'test/skiplist_tests.cpp' || echo '$(srcdir)/'`test/skiplist_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-skiplist_tests.Tpo test/$(DEPDIR)/test_test_asocoin-skiplist_tests.Po
+#	$(AM_V_CXX)source='test/skiplist_tests.cpp' object='test/test_test_asocoin-skiplist_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-skiplist_tests.o `test -f 'test/skiplist_tests.cpp' || echo '$(srcdir)/'`test/skiplist_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-skiplist_tests.o `test -f 'test/skiplist_tests.cpp' || echo '$(srcdir)/'`test/skiplist_tests.cpp
 
-test/test_test_condominium-skiplist_tests.obj: test/skiplist_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-skiplist_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-skiplist_tests.Tpo -c -o test/test_test_condominium-skiplist_tests.obj `if test -f 'test/skiplist_tests.cpp'; then $(CYGPATH_W) 'test/skiplist_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/skiplist_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-skiplist_tests.Tpo test/$(DEPDIR)/test_test_condominium-skiplist_tests.Po
-#	$(AM_V_CXX)source='test/skiplist_tests.cpp' object='test/test_test_condominium-skiplist_tests.obj' libtool=no \
+test/test_test_asocoin-skiplist_tests.obj: test/skiplist_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-skiplist_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-skiplist_tests.Tpo -c -o test/test_test_asocoin-skiplist_tests.obj `if test -f 'test/skiplist_tests.cpp'; then $(CYGPATH_W) 'test/skiplist_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/skiplist_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-skiplist_tests.Tpo test/$(DEPDIR)/test_test_asocoin-skiplist_tests.Po
+#	$(AM_V_CXX)source='test/skiplist_tests.cpp' object='test/test_test_asocoin-skiplist_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-skiplist_tests.obj `if test -f 'test/skiplist_tests.cpp'; then $(CYGPATH_W) 'test/skiplist_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/skiplist_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-skiplist_tests.obj `if test -f 'test/skiplist_tests.cpp'; then $(CYGPATH_W) 'test/skiplist_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/skiplist_tests.cpp'; fi`
 
-test/test_test_condominium-test_condominium.o: test/test_condominium.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-test_condominium.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-test_condominium.Tpo -c -o test/test_test_condominium-test_condominium.o `test -f 'test/test_condominium.cpp' || echo '$(srcdir)/'`test/test_condominium.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-test_condominium.Tpo test/$(DEPDIR)/test_test_condominium-test_condominium.Po
-#	$(AM_V_CXX)source='test/test_condominium.cpp' object='test/test_test_condominium-test_condominium.o' libtool=no \
+test/test_test_asocoin-test_asocoin.o: test/test_asocoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-test_asocoin.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-test_asocoin.Tpo -c -o test/test_test_asocoin-test_asocoin.o `test -f 'test/test_asocoin.cpp' || echo '$(srcdir)/'`test/test_asocoin.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-test_asocoin.Tpo test/$(DEPDIR)/test_test_asocoin-test_asocoin.Po
+#	$(AM_V_CXX)source='test/test_asocoin.cpp' object='test/test_test_asocoin-test_asocoin.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-test_condominium.o `test -f 'test/test_condominium.cpp' || echo '$(srcdir)/'`test/test_condominium.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-test_asocoin.o `test -f 'test/test_asocoin.cpp' || echo '$(srcdir)/'`test/test_asocoin.cpp
 
-test/test_test_condominium-test_condominium.obj: test/test_condominium.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-test_condominium.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-test_condominium.Tpo -c -o test/test_test_condominium-test_condominium.obj `if test -f 'test/test_condominium.cpp'; then $(CYGPATH_W) 'test/test_condominium.cpp'; else $(CYGPATH_W) '$(srcdir)/test/test_condominium.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-test_condominium.Tpo test/$(DEPDIR)/test_test_condominium-test_condominium.Po
-#	$(AM_V_CXX)source='test/test_condominium.cpp' object='test/test_test_condominium-test_condominium.obj' libtool=no \
+test/test_test_asocoin-test_asocoin.obj: test/test_asocoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-test_asocoin.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-test_asocoin.Tpo -c -o test/test_test_asocoin-test_asocoin.obj `if test -f 'test/test_asocoin.cpp'; then $(CYGPATH_W) 'test/test_asocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/test_asocoin.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-test_asocoin.Tpo test/$(DEPDIR)/test_test_asocoin-test_asocoin.Po
+#	$(AM_V_CXX)source='test/test_asocoin.cpp' object='test/test_test_asocoin-test_asocoin.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-test_condominium.obj `if test -f 'test/test_condominium.cpp'; then $(CYGPATH_W) 'test/test_condominium.cpp'; else $(CYGPATH_W) '$(srcdir)/test/test_condominium.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-test_asocoin.obj `if test -f 'test/test_asocoin.cpp'; then $(CYGPATH_W) 'test/test_asocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/test_asocoin.cpp'; fi`
 
-test/test_test_condominium-timedata_tests.o: test/timedata_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-timedata_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-timedata_tests.Tpo -c -o test/test_test_condominium-timedata_tests.o `test -f 'test/timedata_tests.cpp' || echo '$(srcdir)/'`test/timedata_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-timedata_tests.Tpo test/$(DEPDIR)/test_test_condominium-timedata_tests.Po
-#	$(AM_V_CXX)source='test/timedata_tests.cpp' object='test/test_test_condominium-timedata_tests.o' libtool=no \
+test/test_test_asocoin-timedata_tests.o: test/timedata_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-timedata_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-timedata_tests.Tpo -c -o test/test_test_asocoin-timedata_tests.o `test -f 'test/timedata_tests.cpp' || echo '$(srcdir)/'`test/timedata_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-timedata_tests.Tpo test/$(DEPDIR)/test_test_asocoin-timedata_tests.Po
+#	$(AM_V_CXX)source='test/timedata_tests.cpp' object='test/test_test_asocoin-timedata_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-timedata_tests.o `test -f 'test/timedata_tests.cpp' || echo '$(srcdir)/'`test/timedata_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-timedata_tests.o `test -f 'test/timedata_tests.cpp' || echo '$(srcdir)/'`test/timedata_tests.cpp
 
-test/test_test_condominium-timedata_tests.obj: test/timedata_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-timedata_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-timedata_tests.Tpo -c -o test/test_test_condominium-timedata_tests.obj `if test -f 'test/timedata_tests.cpp'; then $(CYGPATH_W) 'test/timedata_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/timedata_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-timedata_tests.Tpo test/$(DEPDIR)/test_test_condominium-timedata_tests.Po
-#	$(AM_V_CXX)source='test/timedata_tests.cpp' object='test/test_test_condominium-timedata_tests.obj' libtool=no \
+test/test_test_asocoin-timedata_tests.obj: test/timedata_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-timedata_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-timedata_tests.Tpo -c -o test/test_test_asocoin-timedata_tests.obj `if test -f 'test/timedata_tests.cpp'; then $(CYGPATH_W) 'test/timedata_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/timedata_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-timedata_tests.Tpo test/$(DEPDIR)/test_test_asocoin-timedata_tests.Po
+#	$(AM_V_CXX)source='test/timedata_tests.cpp' object='test/test_test_asocoin-timedata_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-timedata_tests.obj `if test -f 'test/timedata_tests.cpp'; then $(CYGPATH_W) 'test/timedata_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/timedata_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-timedata_tests.obj `if test -f 'test/timedata_tests.cpp'; then $(CYGPATH_W) 'test/timedata_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/timedata_tests.cpp'; fi`
 
-test/test_test_condominium-torcontrol_tests.o: test/torcontrol_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-torcontrol_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-torcontrol_tests.Tpo -c -o test/test_test_condominium-torcontrol_tests.o `test -f 'test/torcontrol_tests.cpp' || echo '$(srcdir)/'`test/torcontrol_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-torcontrol_tests.Tpo test/$(DEPDIR)/test_test_condominium-torcontrol_tests.Po
-#	$(AM_V_CXX)source='test/torcontrol_tests.cpp' object='test/test_test_condominium-torcontrol_tests.o' libtool=no \
+test/test_test_asocoin-torcontrol_tests.o: test/torcontrol_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-torcontrol_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-torcontrol_tests.Tpo -c -o test/test_test_asocoin-torcontrol_tests.o `test -f 'test/torcontrol_tests.cpp' || echo '$(srcdir)/'`test/torcontrol_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-torcontrol_tests.Tpo test/$(DEPDIR)/test_test_asocoin-torcontrol_tests.Po
+#	$(AM_V_CXX)source='test/torcontrol_tests.cpp' object='test/test_test_asocoin-torcontrol_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-torcontrol_tests.o `test -f 'test/torcontrol_tests.cpp' || echo '$(srcdir)/'`test/torcontrol_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-torcontrol_tests.o `test -f 'test/torcontrol_tests.cpp' || echo '$(srcdir)/'`test/torcontrol_tests.cpp
 
-test/test_test_condominium-torcontrol_tests.obj: test/torcontrol_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-torcontrol_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-torcontrol_tests.Tpo -c -o test/test_test_condominium-torcontrol_tests.obj `if test -f 'test/torcontrol_tests.cpp'; then $(CYGPATH_W) 'test/torcontrol_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/torcontrol_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-torcontrol_tests.Tpo test/$(DEPDIR)/test_test_condominium-torcontrol_tests.Po
-#	$(AM_V_CXX)source='test/torcontrol_tests.cpp' object='test/test_test_condominium-torcontrol_tests.obj' libtool=no \
+test/test_test_asocoin-torcontrol_tests.obj: test/torcontrol_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-torcontrol_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-torcontrol_tests.Tpo -c -o test/test_test_asocoin-torcontrol_tests.obj `if test -f 'test/torcontrol_tests.cpp'; then $(CYGPATH_W) 'test/torcontrol_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/torcontrol_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-torcontrol_tests.Tpo test/$(DEPDIR)/test_test_asocoin-torcontrol_tests.Po
+#	$(AM_V_CXX)source='test/torcontrol_tests.cpp' object='test/test_test_asocoin-torcontrol_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-torcontrol_tests.obj `if test -f 'test/torcontrol_tests.cpp'; then $(CYGPATH_W) 'test/torcontrol_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/torcontrol_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-torcontrol_tests.obj `if test -f 'test/torcontrol_tests.cpp'; then $(CYGPATH_W) 'test/torcontrol_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/torcontrol_tests.cpp'; fi`
 
-test/test_test_condominium-transaction_tests.o: test/transaction_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-transaction_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-transaction_tests.Tpo -c -o test/test_test_condominium-transaction_tests.o `test -f 'test/transaction_tests.cpp' || echo '$(srcdir)/'`test/transaction_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-transaction_tests.Tpo test/$(DEPDIR)/test_test_condominium-transaction_tests.Po
-#	$(AM_V_CXX)source='test/transaction_tests.cpp' object='test/test_test_condominium-transaction_tests.o' libtool=no \
+test/test_test_asocoin-transaction_tests.o: test/transaction_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-transaction_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-transaction_tests.Tpo -c -o test/test_test_asocoin-transaction_tests.o `test -f 'test/transaction_tests.cpp' || echo '$(srcdir)/'`test/transaction_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-transaction_tests.Tpo test/$(DEPDIR)/test_test_asocoin-transaction_tests.Po
+#	$(AM_V_CXX)source='test/transaction_tests.cpp' object='test/test_test_asocoin-transaction_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-transaction_tests.o `test -f 'test/transaction_tests.cpp' || echo '$(srcdir)/'`test/transaction_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-transaction_tests.o `test -f 'test/transaction_tests.cpp' || echo '$(srcdir)/'`test/transaction_tests.cpp
 
-test/test_test_condominium-transaction_tests.obj: test/transaction_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-transaction_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-transaction_tests.Tpo -c -o test/test_test_condominium-transaction_tests.obj `if test -f 'test/transaction_tests.cpp'; then $(CYGPATH_W) 'test/transaction_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/transaction_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-transaction_tests.Tpo test/$(DEPDIR)/test_test_condominium-transaction_tests.Po
-#	$(AM_V_CXX)source='test/transaction_tests.cpp' object='test/test_test_condominium-transaction_tests.obj' libtool=no \
+test/test_test_asocoin-transaction_tests.obj: test/transaction_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-transaction_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-transaction_tests.Tpo -c -o test/test_test_asocoin-transaction_tests.obj `if test -f 'test/transaction_tests.cpp'; then $(CYGPATH_W) 'test/transaction_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/transaction_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-transaction_tests.Tpo test/$(DEPDIR)/test_test_asocoin-transaction_tests.Po
+#	$(AM_V_CXX)source='test/transaction_tests.cpp' object='test/test_test_asocoin-transaction_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-transaction_tests.obj `if test -f 'test/transaction_tests.cpp'; then $(CYGPATH_W) 'test/transaction_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/transaction_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-transaction_tests.obj `if test -f 'test/transaction_tests.cpp'; then $(CYGPATH_W) 'test/transaction_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/transaction_tests.cpp'; fi`
 
-test/test_test_condominium-uint256_tests.o: test/uint256_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-uint256_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-uint256_tests.Tpo -c -o test/test_test_condominium-uint256_tests.o `test -f 'test/uint256_tests.cpp' || echo '$(srcdir)/'`test/uint256_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-uint256_tests.Tpo test/$(DEPDIR)/test_test_condominium-uint256_tests.Po
-#	$(AM_V_CXX)source='test/uint256_tests.cpp' object='test/test_test_condominium-uint256_tests.o' libtool=no \
+test/test_test_asocoin-uint256_tests.o: test/uint256_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-uint256_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-uint256_tests.Tpo -c -o test/test_test_asocoin-uint256_tests.o `test -f 'test/uint256_tests.cpp' || echo '$(srcdir)/'`test/uint256_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-uint256_tests.Tpo test/$(DEPDIR)/test_test_asocoin-uint256_tests.Po
+#	$(AM_V_CXX)source='test/uint256_tests.cpp' object='test/test_test_asocoin-uint256_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-uint256_tests.o `test -f 'test/uint256_tests.cpp' || echo '$(srcdir)/'`test/uint256_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-uint256_tests.o `test -f 'test/uint256_tests.cpp' || echo '$(srcdir)/'`test/uint256_tests.cpp
 
-test/test_test_condominium-uint256_tests.obj: test/uint256_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-uint256_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-uint256_tests.Tpo -c -o test/test_test_condominium-uint256_tests.obj `if test -f 'test/uint256_tests.cpp'; then $(CYGPATH_W) 'test/uint256_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/uint256_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-uint256_tests.Tpo test/$(DEPDIR)/test_test_condominium-uint256_tests.Po
-#	$(AM_V_CXX)source='test/uint256_tests.cpp' object='test/test_test_condominium-uint256_tests.obj' libtool=no \
+test/test_test_asocoin-uint256_tests.obj: test/uint256_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-uint256_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-uint256_tests.Tpo -c -o test/test_test_asocoin-uint256_tests.obj `if test -f 'test/uint256_tests.cpp'; then $(CYGPATH_W) 'test/uint256_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/uint256_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-uint256_tests.Tpo test/$(DEPDIR)/test_test_asocoin-uint256_tests.Po
+#	$(AM_V_CXX)source='test/uint256_tests.cpp' object='test/test_test_asocoin-uint256_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-uint256_tests.obj `if test -f 'test/uint256_tests.cpp'; then $(CYGPATH_W) 'test/uint256_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/uint256_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-uint256_tests.obj `if test -f 'test/uint256_tests.cpp'; then $(CYGPATH_W) 'test/uint256_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/uint256_tests.cpp'; fi`
 
-test/test_test_condominium-univalue_tests.o: test/univalue_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-univalue_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-univalue_tests.Tpo -c -o test/test_test_condominium-univalue_tests.o `test -f 'test/univalue_tests.cpp' || echo '$(srcdir)/'`test/univalue_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-univalue_tests.Tpo test/$(DEPDIR)/test_test_condominium-univalue_tests.Po
-#	$(AM_V_CXX)source='test/univalue_tests.cpp' object='test/test_test_condominium-univalue_tests.o' libtool=no \
+test/test_test_asocoin-univalue_tests.o: test/univalue_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-univalue_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-univalue_tests.Tpo -c -o test/test_test_asocoin-univalue_tests.o `test -f 'test/univalue_tests.cpp' || echo '$(srcdir)/'`test/univalue_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-univalue_tests.Tpo test/$(DEPDIR)/test_test_asocoin-univalue_tests.Po
+#	$(AM_V_CXX)source='test/univalue_tests.cpp' object='test/test_test_asocoin-univalue_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-univalue_tests.o `test -f 'test/univalue_tests.cpp' || echo '$(srcdir)/'`test/univalue_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-univalue_tests.o `test -f 'test/univalue_tests.cpp' || echo '$(srcdir)/'`test/univalue_tests.cpp
 
-test/test_test_condominium-univalue_tests.obj: test/univalue_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-univalue_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-univalue_tests.Tpo -c -o test/test_test_condominium-univalue_tests.obj `if test -f 'test/univalue_tests.cpp'; then $(CYGPATH_W) 'test/univalue_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/univalue_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-univalue_tests.Tpo test/$(DEPDIR)/test_test_condominium-univalue_tests.Po
-#	$(AM_V_CXX)source='test/univalue_tests.cpp' object='test/test_test_condominium-univalue_tests.obj' libtool=no \
+test/test_test_asocoin-univalue_tests.obj: test/univalue_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-univalue_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-univalue_tests.Tpo -c -o test/test_test_asocoin-univalue_tests.obj `if test -f 'test/univalue_tests.cpp'; then $(CYGPATH_W) 'test/univalue_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/univalue_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-univalue_tests.Tpo test/$(DEPDIR)/test_test_asocoin-univalue_tests.Po
+#	$(AM_V_CXX)source='test/univalue_tests.cpp' object='test/test_test_asocoin-univalue_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-univalue_tests.obj `if test -f 'test/univalue_tests.cpp'; then $(CYGPATH_W) 'test/univalue_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/univalue_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-univalue_tests.obj `if test -f 'test/univalue_tests.cpp'; then $(CYGPATH_W) 'test/univalue_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/univalue_tests.cpp'; fi`
 
-test/test_test_condominium-util_tests.o: test/util_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-util_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-util_tests.Tpo -c -o test/test_test_condominium-util_tests.o `test -f 'test/util_tests.cpp' || echo '$(srcdir)/'`test/util_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-util_tests.Tpo test/$(DEPDIR)/test_test_condominium-util_tests.Po
-#	$(AM_V_CXX)source='test/util_tests.cpp' object='test/test_test_condominium-util_tests.o' libtool=no \
+test/test_test_asocoin-util_tests.o: test/util_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-util_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-util_tests.Tpo -c -o test/test_test_asocoin-util_tests.o `test -f 'test/util_tests.cpp' || echo '$(srcdir)/'`test/util_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-util_tests.Tpo test/$(DEPDIR)/test_test_asocoin-util_tests.Po
+#	$(AM_V_CXX)source='test/util_tests.cpp' object='test/test_test_asocoin-util_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-util_tests.o `test -f 'test/util_tests.cpp' || echo '$(srcdir)/'`test/util_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-util_tests.o `test -f 'test/util_tests.cpp' || echo '$(srcdir)/'`test/util_tests.cpp
 
-test/test_test_condominium-util_tests.obj: test/util_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-util_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-util_tests.Tpo -c -o test/test_test_condominium-util_tests.obj `if test -f 'test/util_tests.cpp'; then $(CYGPATH_W) 'test/util_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/util_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-util_tests.Tpo test/$(DEPDIR)/test_test_condominium-util_tests.Po
-#	$(AM_V_CXX)source='test/util_tests.cpp' object='test/test_test_condominium-util_tests.obj' libtool=no \
+test/test_test_asocoin-util_tests.obj: test/util_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-util_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-util_tests.Tpo -c -o test/test_test_asocoin-util_tests.obj `if test -f 'test/util_tests.cpp'; then $(CYGPATH_W) 'test/util_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/util_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-util_tests.Tpo test/$(DEPDIR)/test_test_asocoin-util_tests.Po
+#	$(AM_V_CXX)source='test/util_tests.cpp' object='test/test_test_asocoin-util_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-util_tests.obj `if test -f 'test/util_tests.cpp'; then $(CYGPATH_W) 'test/util_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/util_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-util_tests.obj `if test -f 'test/util_tests.cpp'; then $(CYGPATH_W) 'test/util_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/util_tests.cpp'; fi`
 
-test/test_test_condominium-accounting_tests.o: test/accounting_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-accounting_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-accounting_tests.Tpo -c -o test/test_test_condominium-accounting_tests.o `test -f 'test/accounting_tests.cpp' || echo '$(srcdir)/'`test/accounting_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-accounting_tests.Tpo test/$(DEPDIR)/test_test_condominium-accounting_tests.Po
-#	$(AM_V_CXX)source='test/accounting_tests.cpp' object='test/test_test_condominium-accounting_tests.o' libtool=no \
+test/test_test_asocoin-accounting_tests.o: test/accounting_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-accounting_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-accounting_tests.Tpo -c -o test/test_test_asocoin-accounting_tests.o `test -f 'test/accounting_tests.cpp' || echo '$(srcdir)/'`test/accounting_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-accounting_tests.Tpo test/$(DEPDIR)/test_test_asocoin-accounting_tests.Po
+#	$(AM_V_CXX)source='test/accounting_tests.cpp' object='test/test_test_asocoin-accounting_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-accounting_tests.o `test -f 'test/accounting_tests.cpp' || echo '$(srcdir)/'`test/accounting_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-accounting_tests.o `test -f 'test/accounting_tests.cpp' || echo '$(srcdir)/'`test/accounting_tests.cpp
 
-test/test_test_condominium-accounting_tests.obj: test/accounting_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-accounting_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-accounting_tests.Tpo -c -o test/test_test_condominium-accounting_tests.obj `if test -f 'test/accounting_tests.cpp'; then $(CYGPATH_W) 'test/accounting_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/accounting_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-accounting_tests.Tpo test/$(DEPDIR)/test_test_condominium-accounting_tests.Po
-#	$(AM_V_CXX)source='test/accounting_tests.cpp' object='test/test_test_condominium-accounting_tests.obj' libtool=no \
+test/test_test_asocoin-accounting_tests.obj: test/accounting_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-accounting_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-accounting_tests.Tpo -c -o test/test_test_asocoin-accounting_tests.obj `if test -f 'test/accounting_tests.cpp'; then $(CYGPATH_W) 'test/accounting_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/accounting_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-accounting_tests.Tpo test/$(DEPDIR)/test_test_asocoin-accounting_tests.Po
+#	$(AM_V_CXX)source='test/accounting_tests.cpp' object='test/test_test_asocoin-accounting_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-accounting_tests.obj `if test -f 'test/accounting_tests.cpp'; then $(CYGPATH_W) 'test/accounting_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/accounting_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-accounting_tests.obj `if test -f 'test/accounting_tests.cpp'; then $(CYGPATH_W) 'test/accounting_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/accounting_tests.cpp'; fi`
 
-test/test_test_condominium-wallet_tests.o: test/wallet_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-wallet_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-wallet_tests.Tpo -c -o test/test_test_condominium-wallet_tests.o `test -f 'test/wallet_tests.cpp' || echo '$(srcdir)/'`test/wallet_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-wallet_tests.Tpo test/$(DEPDIR)/test_test_condominium-wallet_tests.Po
-#	$(AM_V_CXX)source='test/wallet_tests.cpp' object='test/test_test_condominium-wallet_tests.o' libtool=no \
+test/test_test_asocoin-wallet_tests.o: test/wallet_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-wallet_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-wallet_tests.Tpo -c -o test/test_test_asocoin-wallet_tests.o `test -f 'test/wallet_tests.cpp' || echo '$(srcdir)/'`test/wallet_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-wallet_tests.Tpo test/$(DEPDIR)/test_test_asocoin-wallet_tests.Po
+#	$(AM_V_CXX)source='test/wallet_tests.cpp' object='test/test_test_asocoin-wallet_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-wallet_tests.o `test -f 'test/wallet_tests.cpp' || echo '$(srcdir)/'`test/wallet_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-wallet_tests.o `test -f 'test/wallet_tests.cpp' || echo '$(srcdir)/'`test/wallet_tests.cpp
 
-test/test_test_condominium-wallet_tests.obj: test/wallet_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-wallet_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-wallet_tests.Tpo -c -o test/test_test_condominium-wallet_tests.obj `if test -f 'test/wallet_tests.cpp'; then $(CYGPATH_W) 'test/wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/wallet_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-wallet_tests.Tpo test/$(DEPDIR)/test_test_condominium-wallet_tests.Po
-#	$(AM_V_CXX)source='test/wallet_tests.cpp' object='test/test_test_condominium-wallet_tests.obj' libtool=no \
+test/test_test_asocoin-wallet_tests.obj: test/wallet_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-wallet_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-wallet_tests.Tpo -c -o test/test_test_asocoin-wallet_tests.obj `if test -f 'test/wallet_tests.cpp'; then $(CYGPATH_W) 'test/wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/wallet_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-wallet_tests.Tpo test/$(DEPDIR)/test_test_asocoin-wallet_tests.Po
+#	$(AM_V_CXX)source='test/wallet_tests.cpp' object='test/test_test_asocoin-wallet_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-wallet_tests.obj `if test -f 'test/wallet_tests.cpp'; then $(CYGPATH_W) 'test/wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/wallet_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-wallet_tests.obj `if test -f 'test/wallet_tests.cpp'; then $(CYGPATH_W) 'test/wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/wallet_tests.cpp'; fi`
 
-test/test_test_condominium-rpc_wallet_tests.o: test/rpc_wallet_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-rpc_wallet_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_condominium-rpc_wallet_tests.Tpo -c -o test/test_test_condominium-rpc_wallet_tests.o `test -f 'test/rpc_wallet_tests.cpp' || echo '$(srcdir)/'`test/rpc_wallet_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-rpc_wallet_tests.Tpo test/$(DEPDIR)/test_test_condominium-rpc_wallet_tests.Po
-#	$(AM_V_CXX)source='test/rpc_wallet_tests.cpp' object='test/test_test_condominium-rpc_wallet_tests.o' libtool=no \
+test/test_test_asocoin-rpc_wallet_tests.o: test/rpc_wallet_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-rpc_wallet_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-rpc_wallet_tests.Tpo -c -o test/test_test_asocoin-rpc_wallet_tests.o `test -f 'test/rpc_wallet_tests.cpp' || echo '$(srcdir)/'`test/rpc_wallet_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-rpc_wallet_tests.Tpo test/$(DEPDIR)/test_test_asocoin-rpc_wallet_tests.Po
+#	$(AM_V_CXX)source='test/rpc_wallet_tests.cpp' object='test/test_test_asocoin-rpc_wallet_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-rpc_wallet_tests.o `test -f 'test/rpc_wallet_tests.cpp' || echo '$(srcdir)/'`test/rpc_wallet_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-rpc_wallet_tests.o `test -f 'test/rpc_wallet_tests.cpp' || echo '$(srcdir)/'`test/rpc_wallet_tests.cpp
 
-test/test_test_condominium-rpc_wallet_tests.obj: test/rpc_wallet_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_condominium-rpc_wallet_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_condominium-rpc_wallet_tests.Tpo -c -o test/test_test_condominium-rpc_wallet_tests.obj `if test -f 'test/rpc_wallet_tests.cpp'; then $(CYGPATH_W) 'test/rpc_wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_wallet_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_condominium-rpc_wallet_tests.Tpo test/$(DEPDIR)/test_test_condominium-rpc_wallet_tests.Po
-#	$(AM_V_CXX)source='test/rpc_wallet_tests.cpp' object='test/test_test_condominium-rpc_wallet_tests.obj' libtool=no \
+test/test_test_asocoin-rpc_wallet_tests.obj: test/rpc_wallet_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_asocoin-rpc_wallet_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_asocoin-rpc_wallet_tests.Tpo -c -o test/test_test_asocoin-rpc_wallet_tests.obj `if test -f 'test/rpc_wallet_tests.cpp'; then $(CYGPATH_W) 'test/rpc_wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_wallet_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_asocoin-rpc_wallet_tests.Tpo test/$(DEPDIR)/test_test_asocoin-rpc_wallet_tests.Po
+#	$(AM_V_CXX)source='test/rpc_wallet_tests.cpp' object='test/test_test_asocoin-rpc_wallet_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_condominium_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_condominium-rpc_wallet_tests.obj `if test -f 'test/rpc_wallet_tests.cpp'; then $(CYGPATH_W) 'test/rpc_wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_wallet_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_asocoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_asocoin-rpc_wallet_tests.obj `if test -f 'test/rpc_wallet_tests.cpp'; then $(CYGPATH_W) 'test/rpc_wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_wallet_tests.cpp'; fi`
 
 .cpp.o:
 	$(AM_V_CXX)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\
@@ -7762,33 +7762,33 @@ test/test_test_condominium-rpc_wallet_tests.obj: test/rpc_wallet_tests.cpp
 #	DEPDIR=$(DEPDIR) $(OBJCXXDEPMODE) $(depcomp) \
 #	$(AM_V_OBJCXX_no)$(LTOBJCXXCOMPILE) -c -o $@ $<
 
-qt/qt_condominium_qt-macdockiconhandler.o: qt/macdockiconhandler.mm
-	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_condominium_qt-macdockiconhandler.o -MD -MP -MF qt/$(DEPDIR)/qt_condominium_qt-macdockiconhandler.Tpo -c -o qt/qt_condominium_qt-macdockiconhandler.o `test -f 'qt/macdockiconhandler.mm' || echo '$(srcdir)/'`qt/macdockiconhandler.mm
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_condominium_qt-macdockiconhandler.Tpo qt/$(DEPDIR)/qt_condominium_qt-macdockiconhandler.Po
-#	$(AM_V_OBJCXX)source='qt/macdockiconhandler.mm' object='qt/qt_condominium_qt-macdockiconhandler.o' libtool=no \
+qt/qt_asocoin_qt-macdockiconhandler.o: qt/macdockiconhandler.mm
+	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_asocoin_qt-macdockiconhandler.o -MD -MP -MF qt/$(DEPDIR)/qt_asocoin_qt-macdockiconhandler.Tpo -c -o qt/qt_asocoin_qt-macdockiconhandler.o `test -f 'qt/macdockiconhandler.mm' || echo '$(srcdir)/'`qt/macdockiconhandler.mm
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_asocoin_qt-macdockiconhandler.Tpo qt/$(DEPDIR)/qt_asocoin_qt-macdockiconhandler.Po
+#	$(AM_V_OBJCXX)source='qt/macdockiconhandler.mm' object='qt/qt_asocoin_qt-macdockiconhandler.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(OBJCXXDEPMODE) $(depcomp) \
-#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_condominium_qt-macdockiconhandler.o `test -f 'qt/macdockiconhandler.mm' || echo '$(srcdir)/'`qt/macdockiconhandler.mm
+#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_asocoin_qt-macdockiconhandler.o `test -f 'qt/macdockiconhandler.mm' || echo '$(srcdir)/'`qt/macdockiconhandler.mm
 
-qt/qt_condominium_qt-macdockiconhandler.obj: qt/macdockiconhandler.mm
-	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_condominium_qt-macdockiconhandler.obj -MD -MP -MF qt/$(DEPDIR)/qt_condominium_qt-macdockiconhandler.Tpo -c -o qt/qt_condominium_qt-macdockiconhandler.obj `if test -f 'qt/macdockiconhandler.mm'; then $(CYGPATH_W) 'qt/macdockiconhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macdockiconhandler.mm'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_condominium_qt-macdockiconhandler.Tpo qt/$(DEPDIR)/qt_condominium_qt-macdockiconhandler.Po
-#	$(AM_V_OBJCXX)source='qt/macdockiconhandler.mm' object='qt/qt_condominium_qt-macdockiconhandler.obj' libtool=no \
+qt/qt_asocoin_qt-macdockiconhandler.obj: qt/macdockiconhandler.mm
+	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_asocoin_qt-macdockiconhandler.obj -MD -MP -MF qt/$(DEPDIR)/qt_asocoin_qt-macdockiconhandler.Tpo -c -o qt/qt_asocoin_qt-macdockiconhandler.obj `if test -f 'qt/macdockiconhandler.mm'; then $(CYGPATH_W) 'qt/macdockiconhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macdockiconhandler.mm'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_asocoin_qt-macdockiconhandler.Tpo qt/$(DEPDIR)/qt_asocoin_qt-macdockiconhandler.Po
+#	$(AM_V_OBJCXX)source='qt/macdockiconhandler.mm' object='qt/qt_asocoin_qt-macdockiconhandler.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(OBJCXXDEPMODE) $(depcomp) \
-#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_condominium_qt-macdockiconhandler.obj `if test -f 'qt/macdockiconhandler.mm'; then $(CYGPATH_W) 'qt/macdockiconhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macdockiconhandler.mm'; fi`
+#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_asocoin_qt-macdockiconhandler.obj `if test -f 'qt/macdockiconhandler.mm'; then $(CYGPATH_W) 'qt/macdockiconhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macdockiconhandler.mm'; fi`
 
-qt/qt_condominium_qt-macnotificationhandler.o: qt/macnotificationhandler.mm
-	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_condominium_qt-macnotificationhandler.o -MD -MP -MF qt/$(DEPDIR)/qt_condominium_qt-macnotificationhandler.Tpo -c -o qt/qt_condominium_qt-macnotificationhandler.o `test -f 'qt/macnotificationhandler.mm' || echo '$(srcdir)/'`qt/macnotificationhandler.mm
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_condominium_qt-macnotificationhandler.Tpo qt/$(DEPDIR)/qt_condominium_qt-macnotificationhandler.Po
-#	$(AM_V_OBJCXX)source='qt/macnotificationhandler.mm' object='qt/qt_condominium_qt-macnotificationhandler.o' libtool=no \
+qt/qt_asocoin_qt-macnotificationhandler.o: qt/macnotificationhandler.mm
+	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_asocoin_qt-macnotificationhandler.o -MD -MP -MF qt/$(DEPDIR)/qt_asocoin_qt-macnotificationhandler.Tpo -c -o qt/qt_asocoin_qt-macnotificationhandler.o `test -f 'qt/macnotificationhandler.mm' || echo '$(srcdir)/'`qt/macnotificationhandler.mm
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_asocoin_qt-macnotificationhandler.Tpo qt/$(DEPDIR)/qt_asocoin_qt-macnotificationhandler.Po
+#	$(AM_V_OBJCXX)source='qt/macnotificationhandler.mm' object='qt/qt_asocoin_qt-macnotificationhandler.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(OBJCXXDEPMODE) $(depcomp) \
-#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_condominium_qt-macnotificationhandler.o `test -f 'qt/macnotificationhandler.mm' || echo '$(srcdir)/'`qt/macnotificationhandler.mm
+#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_asocoin_qt-macnotificationhandler.o `test -f 'qt/macnotificationhandler.mm' || echo '$(srcdir)/'`qt/macnotificationhandler.mm
 
-qt/qt_condominium_qt-macnotificationhandler.obj: qt/macnotificationhandler.mm
-	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_condominium_qt-macnotificationhandler.obj -MD -MP -MF qt/$(DEPDIR)/qt_condominium_qt-macnotificationhandler.Tpo -c -o qt/qt_condominium_qt-macnotificationhandler.obj `if test -f 'qt/macnotificationhandler.mm'; then $(CYGPATH_W) 'qt/macnotificationhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macnotificationhandler.mm'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_condominium_qt-macnotificationhandler.Tpo qt/$(DEPDIR)/qt_condominium_qt-macnotificationhandler.Po
-#	$(AM_V_OBJCXX)source='qt/macnotificationhandler.mm' object='qt/qt_condominium_qt-macnotificationhandler.obj' libtool=no \
+qt/qt_asocoin_qt-macnotificationhandler.obj: qt/macnotificationhandler.mm
+	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_asocoin_qt-macnotificationhandler.obj -MD -MP -MF qt/$(DEPDIR)/qt_asocoin_qt-macnotificationhandler.Tpo -c -o qt/qt_asocoin_qt-macnotificationhandler.obj `if test -f 'qt/macnotificationhandler.mm'; then $(CYGPATH_W) 'qt/macnotificationhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macnotificationhandler.mm'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_asocoin_qt-macnotificationhandler.Tpo qt/$(DEPDIR)/qt_asocoin_qt-macnotificationhandler.Po
+#	$(AM_V_OBJCXX)source='qt/macnotificationhandler.mm' object='qt/qt_asocoin_qt-macnotificationhandler.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(OBJCXXDEPMODE) $(depcomp) \
-#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_condominium_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_condominium_qt-macnotificationhandler.obj `if test -f 'qt/macnotificationhandler.mm'; then $(CYGPATH_W) 'qt/macnotificationhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macnotificationhandler.mm'; fi`
+#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_asocoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_asocoin_qt-macnotificationhandler.obj `if test -f 'qt/macnotificationhandler.mm'; then $(CYGPATH_W) 'qt/macnotificationhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macnotificationhandler.mm'; fi`
 
 mostlyclean-libtool:
 	-rm -f *.lo
@@ -8064,9 +8064,9 @@ recheck: all
 	        am__force_recheck=am--force-recheck \
 	        TEST_LOGS="$$log_list"; \
 	exit $$?
-test/test_condominium.log: test/test_condominium$(EXEEXT)
-	@p='test/test_condominium$(EXEEXT)'; \
-	b='test/test_condominium'; \
+test/test_asocoin.log: test/test_asocoin$(EXEEXT)
+	@p='test/test_asocoin$(EXEEXT)'; \
+	b='test/test_asocoin'; \
 	$(am__check_pre) $(LOG_DRIVER) --test-name "$$f" \
 	--log-file $$b.log --trs-file $$b.trs \
 	$(am__common_driver_flags) $(AM_LOG_DRIVER_FLAGS) $(LOG_DRIVER_FLAGS) -- $(LOG_COMPILE) \
@@ -8078,9 +8078,9 @@ test/bitcoin-util-test.py.log: test/bitcoin-util-test.py
 	--log-file $$b.log --trs-file $$b.trs \
 	$(am__common_driver_flags) $(AM_LOG_DRIVER_FLAGS) $(LOG_DRIVER_FLAGS) -- $(LOG_COMPILE) \
 	"$$tst" $(AM_TESTS_FD_REDIRECT)
-qt/test/test_condominium-qt.log: qt/test/test_condominium-qt$(EXEEXT)
-	@p='qt/test/test_condominium-qt$(EXEEXT)'; \
-	b='qt/test/test_condominium-qt'; \
+qt/test/test_asocoin-qt.log: qt/test/test_asocoin-qt$(EXEEXT)
+	@p='qt/test/test_asocoin-qt$(EXEEXT)'; \
+	b='qt/test/test_asocoin-qt'; \
 	$(am__check_pre) $(LOG_DRIVER) --test-name "$$f" \
 	--log-file $$b.log --trs-file $$b.trs \
 	$(am__common_driver_flags) $(AM_LOG_DRIVER_FLAGS) $(LOG_DRIVER_FLAGS) -- $(LOG_COMPILE) \
@@ -8358,13 +8358,13 @@ clean-local:
 
 $(BITCOIN_TESTS): $(GENERATED_TEST_FILES)
 
-condominium_test: $(TEST_BINARY)
+asocoin_test: $(TEST_BINARY)
 
-condominium_test_check: $(TEST_BINARY) FORCE
+asocoin_test_check: $(TEST_BINARY) FORCE
 	$(MAKE) check-TESTS TESTS=$^
 
-condominium_test_clean : FORCE
-	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_condominium_OBJECTS) $(TEST_BINARY)
+asocoin_test_clean : FORCE
+	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_asocoin_OBJECTS) $(TEST_BINARY)
 
 check-local:
 	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C secp256k1 check
@@ -8388,7 +8388,7 @@ check-local:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_condominium_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_asocoin_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
@@ -8397,29 +8397,29 @@ $(QT_MOC_CPP): $(PROTOBUF_H)
 
 .SECONDARY: $(QT_QM)
 
-qt/condominiumstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
+qt/asocoinstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: qt/condominiumstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: qt/asocoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/condominium_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/asocoin_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@test -f $(@D)/$(<F) || cp -f $< $(@D)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name condominium_locale $(@D)/$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name asocoin_locale $(@D)/$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name condominium $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name asocoin $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
-condominium_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_condominium_qt_OBJECTS) qt/condominium-qt$(EXEEXT) $(LIBBITCOINQT)
+asocoin_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_asocoin_qt_OBJECTS) qt/asocoin-qt$(EXEEXT) $(LIBBITCOINQT)
 
-condominium_qt : qt/condominium-qt$(EXEEXT)
+asocoin_qt : qt/asocoin-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)
@@ -8439,13 +8439,13 @@ moc_%.cpp: %.h
 	@$(MKDIR_P) $(@D)
 	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LRELEASE) -silent $< -qm $@
 
-test_condominium_qt : qt/test/test_condominium-qt$(EXEEXT)
+test_asocoin_qt : qt/test/test_asocoin-qt$(EXEEXT)
 
-test_condominium_qt_check : qt/test/test_condominium-qt$(EXEEXT) FORCE
+test_asocoin_qt_check : qt/test/test_asocoin-qt$(EXEEXT) FORCE
 	$(MAKE) check-TESTS TESTS=$^
 
-test_condominium_qt_clean: FORCE
-	rm -f $(CLEAN_BITCOIN_QT_TEST) $(qt_test_test_condominium_qt_OBJECTS)
+test_asocoin_qt_clean: FORCE
+	rm -f $(CLEAN_BITCOIN_QT_TEST) $(qt_test_test_asocoin_qt_OBJECTS)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

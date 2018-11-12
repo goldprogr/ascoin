@@ -1,5 +1,5 @@
 libbitcoin_util_a-clientversion.o: clientversion.cpp clientversion.h \
- config/condominium-config.h \
+ config/asocoin-config.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/string \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/i686-w64-mingw32/bits/c++config.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/i686-w64-mingw32/bits/os_defines.h \
@@ -125,7 +125,7 @@ libbitcoin_util_a-clientversion.o: clientversion.cpp clientversion.h \
 
 clientversion.h:
 
-config/condominium-config.h:
+config/asocoin-config.h:
 
 /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/string:
 

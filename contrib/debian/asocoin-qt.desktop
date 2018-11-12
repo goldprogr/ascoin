@@ -1,12 +1,12 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Condominium
-Comment=Condominium P2P Cryptocurrency
-Comment[fr]=Condominium, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Condominium, eşten eşe kriptografik sanal para birimi
-Exec=condominium-qt %u
+Name=asocoin
+Comment=asocoin P2P Cryptocurrency
+Comment[fr]=asocoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=asocoin, eşten eşe kriptografik sanal para birimi
+Exec=asocoin-qt %u
 Terminal=false
 Type=Application
-Icon=condominium128
-MimeType=x-scheme-handler/condominium;
+Icon=asocoin128
+MimeType=x-scheme-handler/asocoin;
 Categories=Office;Finance;

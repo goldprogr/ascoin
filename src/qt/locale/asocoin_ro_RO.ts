@@ -186,6 +186,6 @@
     <name>ZPhrControlDialog</name>
     </context>
 <context>
-    <name>condominium-core</name>
+    <name>asocoin-core</name>
     </context>
 </TS>

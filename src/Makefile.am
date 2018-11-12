@@ -66,15 +66,15 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += condominiumd
+  bin_PROGRAMS += asocoind
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += condominium-cli condominium-tx
+  bin_PROGRAMS += asocoin-cli asocoin-tx
 endif
 
 .PHONY: FORCE
-# condominium core #
+# asocoin core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
@@ -190,7 +190,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between condominiumd and condominium-qt
+# server: shared between asocoind and asocoin-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -236,7 +236,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between condominiumd and condominium-qt, but only linked
+# wallet: shared between asocoind and asocoin-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -356,7 +356,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between condominiumd, and condominium-qt and non-server tools
+# common: shared between asocoind, and asocoin-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   accumulators.cpp \
@@ -416,7 +416,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between condominium-cli and condominium-qt
+# cli: shared between asocoin-cli and asocoin-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -426,7 +426,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-condominiumd_LDADD = \
+asocoind_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -438,26 +438,26 @@ condominiumd_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-condominiumd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+asocoind_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-condominiumd_LDADD += libbitcoin_wallet.a
+asocoind_LDADD += libbitcoin_wallet.a
 endif
-condominiumd_SOURCES = condominiumd.cpp
+asocoind_SOURCES = asocoind.cpp
 #
 
 if TARGET_WINDOWS
-condominiumd_SOURCES += condominiumd-res.rc
+asocoind_SOURCES += asocoind-res.rc
 endif
 
-condominiumd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-condominiumd_CPPFLAGS = $(BITCOIN_INCLUDES)
-condominiumd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+asocoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+asocoind_CPPFLAGS = $(BITCOIN_INCLUDES)
+asocoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# condominium-cli binary #
-condominium_cli_LDADD = \
+# asocoin-cli binary #
+asocoin_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
@@ -465,14 +465,14 @@ condominium_cli_LDADD = \
   $(CRYPTO_LIBS) \
   $(EVENT_LIBS)
 
-condominium_cli_SOURCES = \
-  condominium-cli.cpp
+asocoin_cli_SOURCES = \
+  asocoin-cli.cpp
 
-condominium_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+asocoin_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 #
 
-# condominium-tx binary #
-condominium_tx_LDADD = \
+# asocoin-tx binary #
+asocoin_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -482,15 +482,15 @@ condominium_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-condominium_tx_SOURCES = condominium-tx.cpp
-condominium_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+asocoin_tx_SOURCES = asocoin-tx.cpp
+asocoin_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-condominium_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+asocoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-condominium_cli_SOURCES += condominium-cli-res.rc
+asocoin_cli_SOURCES += asocoin-cli-res.rc
 endif
-condominium_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+asocoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h

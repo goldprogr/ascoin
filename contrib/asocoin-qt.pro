@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/condominium-config.h \
+           src/asocoin-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/condominium-config.h \
+           src/config/asocoin-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -333,7 +333,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/condominium.moc \
+           src/qt/asocoin.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -374,9 +374,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/condominium-cli.cpp \
-           src/condominium-tx.cpp \
-           src/condominium.cpp \
+           src/asocoin-cli.cpp \
+           src/asocoin-tx.cpp \
+           src/asocoin.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -471,8 +471,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/condominium.cpp \
-           src/qt/condominiumstrings.cpp \
+           src/qt/asocoin.cpp \
+           src/qt/asocoinstrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -550,7 +550,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_condominium.cpp \
+           src/test/test_asocoin.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -641,21 +641,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/condominium.qrc src/qt/condominium_locale.qrc
+RESOURCES += src/qt/asocoin.qrc src/qt/asocoin_locale.qrc
 
-TRANSLATIONS += src/qt/locale/condominium_bg.ts \
-                src/qt/locale/condominium_de.ts \
-                src/qt/locale/condominium_en.ts \
-                src/qt/locale/condominium_es.ts \
-                src/qt/locale/condominium_fi.ts \
-                src/qt/locale/condominium_fr.ts \
-                src/qt/locale/condominium_it.ts \
-                src/qt/locale/condominium_ja.ts \
-                src/qt/locale/condominium_pl.ts \
-                src/qt/locale/condominium_pt.ts \
-                src/qt/locale/condominium_ru.ts \
-                src/qt/locale/condominium_sk.ts \
-                src/qt/locale/condominium_sv.ts \
-                src/qt/locale/condominium_vi.ts \
-                src/qt/locale/condominium_zh_CN.ts \
-                src/qt/locale/condominium_zh_TW.ts
+TRANSLATIONS += src/qt/locale/asocoin_bg.ts \
+                src/qt/locale/asocoin_de.ts \
+                src/qt/locale/asocoin_en.ts \
+                src/qt/locale/asocoin_es.ts \
+                src/qt/locale/asocoin_fi.ts \
+                src/qt/locale/asocoin_fr.ts \
+                src/qt/locale/asocoin_it.ts \
+                src/qt/locale/asocoin_ja.ts \
+                src/qt/locale/asocoin_pl.ts \
+                src/qt/locale/asocoin_pt.ts \
+                src/qt/locale/asocoin_ru.ts \
+                src/qt/locale/asocoin_sk.ts \
+                src/qt/locale/asocoin_sv.ts \
+                src/qt/locale/asocoin_vi.ts \
+                src/qt/locale/asocoin_zh_CN.ts \
+                src/qt/locale/asocoin_zh_TW.ts

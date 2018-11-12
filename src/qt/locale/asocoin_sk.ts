@@ -62,12 +62,12 @@
         <translation>Prijímacia adresa</translation>
     </message>
     <message>
-        <source>These are your Condominium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú vaše Condominium adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
+        <source>These are your asocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú vaše asocoin adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
     </message>
     <message>
-        <source>These are your Condominium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše Condominium adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
+        <source>These are your asocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše asocoin adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Condominium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CONDOMINIUMs from being stolen by malware infecting your computer.</source>
-        <translation>Condominium sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše CONDOMINIUM pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>asocoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your asocoins from being stolen by malware infecting your computer.</source>
+        <translation>asocoin sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše asocoin pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Naozaj chcete zašifrovať svoju peňaženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CONDOMINIUM&lt;/b&gt;!</source>
-        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY CONDOMINIUM &lt;/ b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR asocoin&lt;/b&gt;!</source>
+        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY asocoin &lt;/ b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>BIP 38 Šifrovanie</translation>
     </message>
     <message>
-        <source>Enter a Condominium Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadajte adresu Condominium, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
+        <source>Enter a asocoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadajte adresu asocoin, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The Condominium address to sign the message with</source>
-        <translation>Adresa Condominium, ktorou chcete správu podpísať</translation>
+        <source>The asocoin address to sign the message with</source>
+        <translation>Adresa asocoin, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Condominium address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Condominium adresy</translation>
+        <source>Sign the message to prove you own this asocoin address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto asocoin adresy</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Zadajte súkromný kľúč zašifrovaný BIP 38. Zadajte prístupovú frázu do stredného poľa. Kliknite na Dešifrovať kľúč, ak chcete vypočítať privátny kľúč. Po dešifrovaní kľúča pridáte do peňaženky tento súkromný kľúč kliknutím na položku 'Importovať adresu'.</translation>
     </message>
     <message>
-        <source>The Condominium address the message was signed with</source>
-        <translation>Condominium adresa, ktorou bola správa podpísaná</translation>
+        <source>The asocoin address the message was signed with</source>
+        <translation>asocoin adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Condominium address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Condominium adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified asocoin address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou asocoin adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium Core</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin Core</translation>
     </message>
     <message>
-        <source>Send coins to a Condominium address</source>
-        <translation>Odoslať mince na adresu Condominium</translation>
+        <source>Send coins to a asocoin address</source>
+        <translation>Odoslať mince na adresu asocoin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and condominium: URIs)</source>
-        <translation>Vyžiadať platby (generuje QR kódy a condominium: identifikátory URI)</translation>
+        <source>Request payments (generates QR codes and asocoin: URIs)</source>
+        <translation>Vyžiadať platby (generuje QR kódy a asocoin: identifikátory URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About Condominium Core</source>
-        <translation>O Condominium Core</translation>
+        <source>&amp;About asocoin Core</source>
+        <translation>O asocoin Core</translation>
     </message>
     <message>
-        <source>Show information about Condominium Core</source>
-        <translation>Zobraziť informácie o Condominium Core</translation>
+        <source>Show information about asocoin Core</source>
+        <translation>Zobraziť informácie o asocoin Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Condominium</source>
-        <translation>Zmeňte možnosti konfigurácie pre Condominium</translation>
+        <source>Modify configuration options for asocoin</source>
+        <translation>Zmeňte možnosti konfigurácie pre asocoin</translation>
     </message>
     <message>
-        <source>Sign messages with your Condominium addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy Condominium, aby ste preukázali, že ich vlastníte</translation>
+        <source>Sign messages with your asocoin addresses to prove you own them</source>
+        <translation>Podpíšte správy pomocou adresy asocoin, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Condominium addresses</source>
-        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými Condominium adresami</translation>
+        <source>Verify messages to ensure they were signed with specified asocoin addresses</source>
+        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými asocoin adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a Condominium: URI or payment request</source>
-        <translation>Otvorte Condominium: URI alebo žiadosť o platbu</translation>
+        <source>Open a asocoin: URI or payment request</source>
+        <translation>Otvorte asocoin: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the Condominium Core help message to get a list with possible Condominium command-line options</source>
-        <translation>Zobraziť pomocnú správu programu Condominium Core a získajte zoznam možností príkazového riadka Condominium</translation>
+        <source>Show the asocoin Core help message to get a list with possible asocoin command-line options</source>
+        <translation>Zobraziť pomocnú správu programu asocoin Core a získajte zoznam možností príkazového riadka asocoin</translation>
     </message>
     <message>
-        <source>Condominium Core client</source>
-        <translation>Condominium Core klient</translation>
+        <source>asocoin Core client</source>
+        <translation>asocoin Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -813,8 +813,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (condominium.conf).</source>
-        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (condominium.conf) nastaviť txindex = 1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (asocoin.conf).</source>
+        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (asocoin.conf) nastaviť txindex = 1.</translation>
     </message>
 </context>
 <context>
@@ -904,15 +904,15 @@ MultiSend: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium Core</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium Core</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1136,8 +1136,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Condominium address to sign the message with</source>
-        <translation>Adresa Condominium, ktorou chcete správu podpísať</translation>
+        <source>The asocoin address to sign the message with</source>
+        <translation>Adresa asocoin, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1160,16 +1160,16 @@ MultiSend: %1</translation>
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Condominium address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Condominium adresy</translation>
+        <source>Sign the message to prove you own this asocoin address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto asocoin adresy</translation>
     </message>
     <message>
-        <source>The Condominium address the message was signed with</source>
-        <translation>Condominium adresa, ktorou bola správa podpísaná</translation>
+        <source>The asocoin address the message was signed with</source>
+        <translation>asocoin adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Condominium address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Condominium adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified asocoin address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou asocoin adresou</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1207,8 +1207,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium Core</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin Core</translation>
     </message>
     </context>
 <context>
@@ -1306,7 +1306,7 @@ MultiSend: %1</translation>
     <name>ZPhrControlDialog</name>
     </context>
 <context>
-    <name>condominium-core</name>
+    <name>asocoin-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

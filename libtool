@@ -1,5 +1,5 @@
 #! /bin/bash
-# Generated automatically by config.status (condominium) 1.1.0
+# Generated automatically by config.status (asocoin) 1.1.0
 # Libtool was configured on host mini:
 # NOTE: Changes made to this file will be lost: look at ltmain.sh.
 
@@ -162,7 +162,7 @@ old_postuninstall_cmds=""
 lock_old_archive_extraction=no
 
 # A C compiler.
-LTCC="/home/mini/condominium/depends/i686-w64-mingw32/share/../native/bin/ccache i686-w64-mingw32-gcc"
+LTCC="/home/mini/asocoin/depends/i686-w64-mingw32/share/../native/bin/ccache i686-w64-mingw32-gcc"
 
 # LTCC compiler flags.
 LTCFLAGS="-pipe -O2 "

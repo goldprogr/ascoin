@@ -1,12 +1,12 @@
-# bash programmable completion for condominiumd(1) and condominium-cli(1)
+# bash programmable completion for asocoind(1) and asocoin-cli(1)
 # Copyright (c) 2012,2014 Christian von Roques <roques@mti.ag>
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-have condominiumd && {
+have asocoind && {
 
-# call $condominiumd for RPC
-_condominium_rpc() {
+# call $asocoind for RPC
+_asocoin_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
     for i in ${COMP_LINE}; do
@@ -16,23 +16,23 @@ _condominium_rpc() {
                 ;;
         esac
     done
-    $condominiumd "${rpcargs[@]}" "$@"
+    $asocoind "${rpcargs[@]}" "$@"
 }
 
-# Add condominium accounts to COMPREPLY
-_condominium_accounts() {
+# Add asocoin accounts to COMPREPLY
+_asocoin_accounts() {
     local accounts
-    accounts=$(_condominium_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
+    accounts=$(_asocoin_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
     COMPREPLY=( "${COMPREPLY[@]}" $( compgen -W "$accounts" -- "$cur" ) )
 }
 
-_condominiumd() {
+_asocoind() {
     local cur prev words=() cword
-    local condominiumd
+    local asocoind
 
-    # save and use original argument to invoke condominiumd
-    # condominiumd might not be in $PATH
-    condominiumd="$1"
+    # save and use original argument to invoke asocoind
+    # asocoind might not be in $PATH
+    asocoind="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -53,7 +53,7 @@ _condominiumd() {
     if ((cword > 3)); then
         case ${words[cword-3]} in
             addmultisigaddress)
-                _condominium_accounts
+                _asocoin_accounts
                 return 0
                 ;;
             getbalance|gettxout|importaddress|importprivkey|listreceivedbyaccount|listreceivedbyaddress|listsinceblock)
@@ -74,7 +74,7 @@ _condominiumd() {
                 return 0
                 ;;
             move|setaccount)
-                _condominium_accounts
+                _asocoin_accounts
                 return 0
                 ;;
         esac
@@ -90,7 +90,7 @@ _condominiumd() {
             return 0
             ;;
         getaccountaddress|getaddressesbyaccount|getbalance|getnewaddress|getreceivedbyaccount|listtransactions|move|sendfrom|sendmany)
-            _condominium_accounts
+            _asocoin_accounts
             return 0
             ;;
     esac
@@ -114,12 +114,12 @@ _condominiumd() {
 
             # only parse --help if senseful
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
-                helpopts=$($condominiumd --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($asocoind --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
             fi
 
             # only parse help if senseful
             if [[ -z "$cur" || "$cur" =~ ^[a-z] ]]; then
-                commands=$(_condominium_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
+                commands=$(_asocoin_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
             fi
 
             COMPREPLY=( $( compgen -W "$helpopts $commands" -- "$cur" ) )
@@ -133,7 +133,7 @@ _condominiumd() {
     esac
 }
 
-complete -F _condominiumd condominiumd condominium-cli
+complete -F _asocoind asocoind asocoin-cli
 }
 
 # Local variables:

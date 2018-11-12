@@ -224,9 +224,9 @@ script/libbitcoin_common_a-interpreter.o: script/interpreter.cpp \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/allocator.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/codecvt.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/unique_ptr.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/sha.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h \
- /home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/sha.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h \
+ /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/sstream \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/istream \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/ostream \
@@ -731,11 +731,11 @@ crypto/sph_haval.h:
 
 /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/unique_ptr.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/sha.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/sha.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/e_os2.h:
 
-/home/mini/condominium/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h:
+/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/openssl/opensslconf.h:
 
 /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/sstream:
 

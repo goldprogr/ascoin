@@ -62,12 +62,12 @@
         <translation>Adreces de recepció</translation>
     </message>
     <message>
-        <source>These are your Condominium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Aquestes són les teves adreces Condominium per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
+        <source>These are your asocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Aquestes són les teves adreces asocoin per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
     </message>
     <message>
-        <source>These are your Condominium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Aquestes són les teves adreces Condominium per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
+        <source>These are your asocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Aquestes són les teves adreces asocoin per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,16 +168,16 @@
         <translation>Confirma l'encriptació del moneder</translation>
     </message>
     <message>
-        <source>Condominium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CONDOMINIUMs from being stolen by malware infecting your computer.</source>
-        <translation>Condominium es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus CONDOMINIUM de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
+        <source>asocoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your asocoins from being stolen by malware infecting your computer.</source>
+        <translation>asocoin es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus asocoin de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CONDOMINIUM&lt;/b&gt;!</source>
-        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES CONDOMINIUMS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR asocoin&lt;/b&gt;!</source>
+        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES asocoinS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -418,12 +418,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium Core</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin Core</translation>
     </message>
     <message>
-        <source>Send coins to a Condominium address</source>
-        <translation>Envia monedes a una adreça Condominium</translation>
+        <source>Send coins to a asocoin address</source>
+        <translation>Envia monedes a una adreça asocoin</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -434,8 +434,8 @@
         <translation>&amp;Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Condominium Core</source>
-        <translation>&amp;Sobre Condominium Core</translation>
+        <source>&amp;About asocoin Core</source>
+        <translation>&amp;Sobre asocoin Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -458,12 +458,12 @@
         <translation>Obre el fitxer de configuració del Masternode</translation>
     </message>
     <message>
-        <source>Condominium Core client</source>
-        <translation>Client Condominium core</translation>
+        <source>asocoin Core client</source>
+        <translation>Client asocoin core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Condominium network</source>
-        <translation><numerusform>%n connexió activa a la xarxa Condominium</numerusform><numerusform>%n connexions actives a la xarxa Condominium</numerusform></translation>
+        <source>%n active connection(s) to asocoin network</source>
+        <translation><numerusform>%n connexió activa a la xarxa asocoin</numerusform><numerusform>%n connexions actives a la xarxa asocoin</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -814,8 +814,8 @@
         <translation>Edita l'adreça d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Condominium address.</source>
-        <translation>L'adreça introduïda "%1" no és una adreça Condominium vàlida.</translation>
+        <source>The entered address "%1" is not a valid asocoin address.</source>
+        <translation>L'adreça introduïda "%1" no és una adreça asocoin vàlida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -860,16 +860,16 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium Core</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Condominium Core</source>
-        <translation>Sobre Condominium Core</translation>
+        <source>About asocoin Core</source>
+        <translation>Sobre asocoin Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -915,12 +915,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to Condominium Core.</source>
-        <translation>Benvingut a Condominium Core.</translation>
+        <source>Welcome to asocoin Core.</source>
+        <translation>Benvingut a asocoin Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Condominium Core will store its data.</source>
-        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del Condominium Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where asocoin Core will store its data.</source>
+        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del asocoin Core.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -931,8 +931,8 @@
         <translation>Usar una carpeta de dades personalitzada:</translation>
     </message>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium Core</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1142,24 +1142,24 @@
         <translation>Si us plau, selecciona un nivell de privacitat.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CONDOMINIUM</source>
-        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 CONDOMINIUM</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 asocoin</source>
+        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 asocoin</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 CONDOMINIUM</source>
-        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 CONDOMINIUM</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 asocoin</source>
+        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 asocoin</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utilitza 16 masternodes diferents</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 CONDOMINIUM to anonymize 10000 CONDOMINIUM</source>
-        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 CONDOMINIUM per anonimitzar 10000 CONDOMINIUM</translation>
+        <source>This option is the quickest and will cost about ~0.025 asocoin to anonymize 10000 asocoin</source>
+        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 asocoin per anonimitzar 10000 asocoin</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 CONDOMINIUM to anonymize 10000 CONDOMINIUM</source>
-        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 CONDOMINIUM per anonimitzar 10000 CONDOMINIUM</translation>
+        <source>This option is moderately fast and will cost about 0.05 asocoin to anonymize 10000 asocoin</source>
+        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 asocoin per anonimitzar 10000 asocoin</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1208,8 +1208,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Condominium after logging in to the system.</source>
-        <translation>Inicia Condominium automàticament després d'identificar-te en el sistema.</translation>
+        <source>Automatically start asocoin after logging in to the system.</source>
+        <translation>Inicia asocoin automàticament després d'identificar-te en el sistema.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1271,8 +1271,8 @@
         <translation>Total:</translation>
     </message>
     <message>
-        <source>CONDOMINIUM:</source>
-        <translation>CONDOMINIUM:</translation>
+        <source>asocoin:</source>
+        <translation>asocoin:</translation>
     </message>
     <message>
         <source>zCDM:</source>
@@ -1304,8 +1304,8 @@
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>Zerocoin CONDOMINIUM (zCDM)</source>
-        <translation>Zerocoin CONDOMINIUM (zCDM)</translation>
+        <source>Zerocoin asocoin (zCDM)</source>
+        <translation>Zerocoin asocoin (zCDM)</translation>
     </message>
     <message>
         <source>0</source>
@@ -1316,8 +1316,8 @@
         <translation>zCDM</translation>
     </message>
     <message>
-        <source>0.000 000 00 CONDOMINIUM</source>
-        <translation>0.000 000 00 CONDOMINIUM</translation>
+        <source>0.000 000 00 asocoin</source>
+        <translation>0.000 000 00 asocoin</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1719,8 +1719,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Condominium Core is shutting down...</source>
-        <translation>Condominium Core s'està tancant...</translation>
+        <source>asocoin Core is shutting down...</source>
+        <translation>asocoin Core s'està tancant...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1785,8 +1785,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Condominium Core</source>
-        <translation>Condominium Core</translation>
+        <source>asocoin Core</source>
+        <translation>asocoin Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1984,7 +1984,7 @@
     </message>
     </context>
 <context>
-    <name>condominium-core</name>
+    <name>asocoin-core</name>
     <message>
         <source>Can't mix while sync in progress.</source>
         <translation>No es pot mesclar mentre s'està sincronitzant.</translation>
