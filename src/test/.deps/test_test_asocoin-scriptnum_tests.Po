@@ -1,4 +1,4 @@
-test/test_test_condominium-scriptnum_tests.o: test/scriptnum_tests.cpp \
+test/test_test_asocoin-scriptnum_tests.o: test/scriptnum_tests.cpp \
  libzerocoin/bignum.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/stdexcept \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/exception \

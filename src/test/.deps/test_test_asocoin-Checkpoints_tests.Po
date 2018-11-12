@@ -1,4 +1,4 @@
-test/test_test_condominium-Checkpoints_tests.o: \
+test/test_test_asocoin-Checkpoints_tests.o: \
  test/Checkpoints_tests.cpp checkpoints.h uint256.h \
  /usr/share/mingw-w64/include/assert.h \
  /usr/share/mingw-w64/include/crtdefs.h \

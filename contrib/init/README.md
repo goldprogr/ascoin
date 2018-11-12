@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: condominiumd.service
-Upstart: condominiumd.conf
-OpenRC:  condominiumd.openrc
-         condominiumd.openrcconf
-CentOS:  condominiumd.init
+SystemD: asocoind.service
+Upstart: asocoind.conf
+OpenRC:  asocoind.openrc
+         asocoind.openrcconf
+CentOS:  asocoind.init
 
 have been made available to assist packagers in creating node packages here.
 

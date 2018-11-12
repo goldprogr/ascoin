@@ -1,4 +1,4 @@
-test/test_test_condominium-allocator_tests.o: test/allocator_tests.cpp \
+test/test_test_asocoin-allocator_tests.o: test/allocator_tests.cpp \
  util.h config/asocoin-config.h compat.h \
  /usr/share/mingw-w64/include/winsock2.h \
  /usr/share/mingw-w64/include/_mingw_unicode.h \

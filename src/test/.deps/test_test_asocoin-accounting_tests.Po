@@ -1,4 +1,4 @@
-test/test_test_condominium-accounting_tests.o: test/accounting_tests.cpp \
+test/test_test_asocoin-accounting_tests.o: test/accounting_tests.cpp \
  wallet.h amount.h serialize.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/algorithm \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/utility \

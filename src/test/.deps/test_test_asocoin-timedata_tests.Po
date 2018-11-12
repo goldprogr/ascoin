@@ -1,4 +1,4 @@
-test/test_test_condominium-timedata_tests.o: test/timedata_tests.cpp \
+test/test_test_asocoin-timedata_tests.o: test/timedata_tests.cpp \
  timedata.h /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/algorithm \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/utility \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/i686-w64-mingw32/bits/c++config.h \

@@ -1,4 +1,4 @@
-test/test_test_condominium-netbase_tests.o: test/netbase_tests.cpp \
+test/test_test_asocoin-netbase_tests.o: test/netbase_tests.cpp \
  netbase.h config/asocoin-config.h compat.h \
  /usr/share/mingw-w64/include/winsock2.h \
  /usr/share/mingw-w64/include/_mingw_unicode.h \

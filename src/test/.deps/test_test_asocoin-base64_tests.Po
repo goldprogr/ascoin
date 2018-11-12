@@ -1,4 +1,4 @@
-test/test_test_condominium-base64_tests.o: test/base64_tests.cpp \
+test/test_test_asocoin-base64_tests.o: test/base64_tests.cpp \
  utilstrencodings.h allocators.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/map \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/stl_tree.h \

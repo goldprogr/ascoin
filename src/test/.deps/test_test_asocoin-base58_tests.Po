@@ -1,4 +1,4 @@
-test/test_test_condominium-base58_tests.o: test/base58_tests.cpp base58.h \
+test/test_test_asocoin-base58_tests.o: test/base58_tests.cpp base58.h \
  chainparams.h chainparamsbase.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/string \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/i686-w64-mingw32/bits/c++config.h \

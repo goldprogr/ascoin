@@ -1,4 +1,4 @@
-test/test_test_condominium-sighash_tests.o: test/sighash_tests.cpp \
+test/test_test_asocoin-sighash_tests.o: test/sighash_tests.cpp \
  test/data/sighash.json.h main.h config/asocoin-config.h amount.h \
  serialize.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/algorithm \

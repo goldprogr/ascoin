@@ -1,2 +1,2 @@
-qt/qt_libbitcoinqt_a-qrc_condominium_locale.o: \
- qt/qrc_condominium_locale.cpp
+qt/qt_libbitcoinqt_a-qrc_asocoin_locale.o: \
+ qt/qrc_asocoin_locale.cpp

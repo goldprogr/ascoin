@@ -1,4 +1,4 @@
-test/test_test_condominium-tutorial_zerocoin.o: \
+test/test_test_asocoin-tutorial_zerocoin.o: \
  test/tutorial_zerocoin.cpp \
  /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/boost/test/unit_test.hpp \
  /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/boost/test/test_tools.hpp \

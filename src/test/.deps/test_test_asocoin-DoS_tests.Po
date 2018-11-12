@@ -1,4 +1,4 @@
-test/test_test_condominium-DoS_tests.o: test/DoS_tests.cpp keystore.h \
+test/test_test_asocoin-DoS_tests.o: test/DoS_tests.cpp keystore.h \
  key.h allocators.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/map \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/stl_tree.h \

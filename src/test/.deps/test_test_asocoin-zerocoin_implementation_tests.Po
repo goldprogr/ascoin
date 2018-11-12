@@ -1,4 +1,4 @@
-test/test_test_condominium-zerocoin_implementation_tests.o: \
+test/test_test_asocoin-zerocoin_implementation_tests.o: \
  test/zerocoin_implementation_tests.cpp libzerocoin/Denominations.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/cstdint \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/i686-w64-mingw32/bits/c++config.h \

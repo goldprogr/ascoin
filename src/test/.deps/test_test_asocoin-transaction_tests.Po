@@ -1,4 +1,4 @@
-test/test_test_condominium-transaction_tests.o: \
+test/test_test_asocoin-transaction_tests.o: \
  test/transaction_tests.cpp test/data/tx_invalid.json.h \
  test/data/tx_valid.json.h clientversion.h config/asocoin-config.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/string \

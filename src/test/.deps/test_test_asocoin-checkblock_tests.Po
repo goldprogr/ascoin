@@ -1,4 +1,4 @@
-test/test_test_condominium-checkblock_tests.o: test/checkblock_tests.cpp \
+test/test_test_asocoin-checkblock_tests.o: test/checkblock_tests.cpp \
  clientversion.h config/asocoin-config.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/string \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/i686-w64-mingw32/bits/c++config.h \

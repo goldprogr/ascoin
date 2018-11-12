@@ -1,4 +1,4 @@
-test/test_test_condominium-script_tests.o: test/script_tests.cpp \
+test/test_test_asocoin-script_tests.o: test/script_tests.cpp \
  test/data/script_invalid.json.h test/data/script_valid.json.h core_io.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/string \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/i686-w64-mingw32/bits/c++config.h \

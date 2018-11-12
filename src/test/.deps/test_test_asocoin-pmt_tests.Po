@@ -1,4 +1,4 @@
-test/test_test_condominium-pmt_tests.o: test/pmt_tests.cpp merkleblock.h \
+test/test_test_asocoin-pmt_tests.o: test/pmt_tests.cpp merkleblock.h \
  bloom.h serialize.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/algorithm \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/utility \

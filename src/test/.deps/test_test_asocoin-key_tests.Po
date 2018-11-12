@@ -1,4 +1,4 @@
-test/test_test_condominium-key_tests.o: test/key_tests.cpp key.h \
+test/test_test_asocoin-key_tests.o: test/key_tests.cpp key.h \
  allocators.h /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/map \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/stl_tree.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/stl_algobase.h \

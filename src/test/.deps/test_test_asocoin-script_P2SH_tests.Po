@@ -1,4 +1,4 @@
-test/test_test_condominium-script_P2SH_tests.o: \
+test/test_test_asocoin-script_P2SH_tests.o: \
  test/script_P2SH_tests.cpp key.h allocators.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/map \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/stl_tree.h \

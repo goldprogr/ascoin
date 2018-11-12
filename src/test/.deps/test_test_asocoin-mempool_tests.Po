@@ -1,4 +1,4 @@
-test/test_test_condominium-mempool_tests.o: test/mempool_tests.cpp main.h \
+test/test_test_asocoin-mempool_tests.o: test/mempool_tests.cpp main.h \
  config/asocoin-config.h amount.h serialize.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/algorithm \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/utility \

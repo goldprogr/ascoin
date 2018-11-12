@@ -1,4 +1,4 @@
-test/test_test_condominium-crypto_tests.o: test/crypto_tests.cpp \
+test/test_test_asocoin-crypto_tests.o: test/crypto_tests.cpp \
  crypto/rfc6979_hmac_sha256.h crypto/hmac_sha256.h crypto/sha256.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/stdint.h \
  /usr/share/mingw-w64/include/stdint.h \

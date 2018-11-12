@@ -1,4 +1,4 @@
-test/test_test_condominium-sigopcount_tests.o: test/sigopcount_tests.cpp \
+test/test_test_asocoin-sigopcount_tests.o: test/sigopcount_tests.cpp \
  pubkey.h hash.h crypto/ripemd160.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/stdint.h \
  /usr/share/mingw-w64/include/stdint.h \

@@ -1,4 +1,4 @@
-test/test_test_condominium-mruset_tests.o: test/mruset_tests.cpp mruset.h \
+test/test_test_asocoin-mruset_tests.o: test/mruset_tests.cpp mruset.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/deque \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/bits/stl_algobase.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/i686-w64-mingw32/bits/c++config.h \

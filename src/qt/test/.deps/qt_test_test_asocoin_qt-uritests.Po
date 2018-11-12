@@ -1,4 +1,4 @@
-qt/test/qt_test_test_condominium_qt-uritests.o: qt/test/uritests.cpp \
+qt/test/qt_test_test_asocoin_qt-uritests.o: qt/test/uritests.cpp \
  qt/test/uritests.h \
  /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/QObject \
  /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore/qobject.h \

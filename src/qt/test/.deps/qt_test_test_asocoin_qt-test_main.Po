@@ -1,4 +1,4 @@
-qt/test/qt_test_test_condominium_qt-test_main.o: qt/test/test_main.cpp \
+qt/test/qt_test_test_asocoin_qt-test_main.o: qt/test/test_main.cpp \
  config/asocoin-config.h util.h config/asocoin-config.h compat.h \
  /usr/share/mingw-w64/include/winsock2.h \
  /usr/share/mingw-w64/include/_mingw_unicode.h \

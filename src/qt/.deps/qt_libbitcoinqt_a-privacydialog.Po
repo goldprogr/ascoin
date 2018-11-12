@@ -1654,7 +1654,7 @@ qt/qt_libbitcoinqt_a-privacydialog.o: qt/privacydialog.cpp \
  wallet.h \
  /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/QStackedWidget \
  /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets/qstackedwidget.h \
- coincontrol.h qt/zcondominiumcontroldialog.h primitives/zerocoin.h \
+ coincontrol.h qt/zasocoincontroldialog.h primitives/zerocoin.h \
  spork.h \
  /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/QClipboard \
  /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui/qclipboard.h \
@@ -5595,7 +5595,7 @@ wallet.h:
 
 coincontrol.h:
 
-qt/zcondominiumcontroldialog.h:
+qt/zasocoincontroldialog.h:
 
 primitives/zerocoin.h:
 

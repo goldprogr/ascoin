@@ -148,7 +148,7 @@ public:
         genesis.nNonce = 1535568;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0000088e8b37c03dcb6fb3e479a97068e1b124fdd361ec00ce8d87e600e8b8ad"));
+        assert(hashGenesisBlock == uint256("0x0000088e8b37c03dcb6fb3e479a97068e1b124fdd361ec00ce8d87e600e8b8ad"));
         assert(genesis.hashMerkleRoot == uint256("0xa698fa86207f427103d6d8a258fe5049b244eaf6b498ed16d00038dc33e2da00"));
 
     		  vSeeds.push_back(CDNSSeedData("seed1.asocoin.org", "seed1.asocoin.org"));             // seed1

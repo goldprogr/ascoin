@@ -1,4 +1,4 @@
-test/test_test_condominium-hash_tests.o: test/hash_tests.cpp hash.h \
+test/test_test_asocoin-hash_tests.o: test/hash_tests.cpp hash.h \
  crypto/ripemd160.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/stdint.h \
  /usr/share/mingw-w64/include/stdint.h \

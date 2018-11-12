@@ -1,4 +1,4 @@
-test/test_test_condominium-torcontrol_tests.o: test/torcontrol_tests.cpp \
+test/test_test_asocoin-torcontrol_tests.o: test/torcontrol_tests.cpp \
  torcontrol.cpp torcontrol.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/string \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/i686-w64-mingw32/bits/c++config.h \

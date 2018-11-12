@@ -1,4 +1,4 @@
-test/test_test_condominium-zerocoin_denomination_tests.o: \
+test/test_test_asocoin-zerocoin_denomination_tests.o: \
  test/zerocoin_denomination_tests.cpp amount.h serialize.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/algorithm \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/utility \

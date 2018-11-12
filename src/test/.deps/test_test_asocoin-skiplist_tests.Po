@@ -1,4 +1,4 @@
-test/test_test_condominium-skiplist_tests.o: test/skiplist_tests.cpp \
+test/test_test_asocoin-skiplist_tests.o: test/skiplist_tests.cpp \
  main.h config/asocoin-config.h amount.h serialize.h \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/algorithm \
  /usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/c++/utility \

@@ -1,4 +1,4 @@
-test/test_test_condominium-uint256_tests.o: test/uint256_tests.cpp \
+test/test_test_asocoin-uint256_tests.o: test/uint256_tests.cpp \
  /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/boost/test/unit_test.hpp \
  /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/boost/test/test_tools.hpp \
  /home/mini/asocoin/depends/i686-w64-mingw32/share/../include/boost/config.hpp \
