@@ -2,24 +2,24 @@
 
 # backward compatibility for existing gentoo layout
 #
-if [ -d "/var/lib/condominium/.condominium" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/condominium/.condominium"
+if [ -d "/var/lib/asocoin/.asocoin" ]; then
+	BITCOIND_DEFAULT_DATADIR="/var/lib/asocoin/.asocoin"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/condominiumd"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/asocoind"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/condominium/condominium.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/condominiumd}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/condominiumd.pid}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/asocoin/asocoin.conf}
+BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/asocoind}
+BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/asocoind.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-condominium}
-BITCOIND_GROUP=${BITCOIND_GROUP:-condominium}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/condominiumd}
+BITCOIND_USER=${BITCOIND_USER:-asocoin}
+BITCOIND_GROUP=${BITCOIND_GROUP:-asocoin}
+BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/asocoind}
 
-name="Condominium Core Daemon"
-description="Condominium crypto-currency p2p network daemon"
+name="asocoin Core Daemon"
+description="asocoin crypto-currency p2p network daemon"
 
-command="/usr/bin/condominiumd"
+command="/usr/bin/asocoind"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
 		-conf=\"${BITCOIND_CONFIGFILE}\" \
 		-datadir=\"${BITCOIND_DATADIR}\" \
@@ -65,7 +65,7 @@ checkconfig()
 {
 	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run condominiumd."
+		eerror "ERROR: You must set a secure rpcpassword to run asocoind."
 		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "
@@ -78,7 +78,7 @@ checkconfig()
 		eerror "It is also recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Condominium Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"asocoin Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

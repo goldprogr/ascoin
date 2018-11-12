@@ -1,25 +1,25 @@
-# /etc/conf.d/condominiumd: config file for /etc/init.d/condominiumd
+# /etc/conf.d/asocoind: config file for /etc/init.d/asocoind
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/condominium/condominium.conf"
+#BITCOIND_CONFIGFILE="/etc/asocoin/asocoin.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/condominiumd"
+#BITCOIND_PIDDIR="/var/run/asocoind"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/condominiumd.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/asocoind.pid"
 
-# Where to write condominiumd data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/condominiumd"
+# Where to write asocoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/asocoind"
 
-# User and group to own condominiumd process
-#BITCOIND_USER="condominium"
-#BITCOIND_GROUP="condominium"
+# User and group to own asocoind process
+#BITCOIND_USER="asocoin"
+#BITCOIND_GROUP="asocoin"
 
-# Path to condominiumd executable
-#BITCOIND_BIN="/usr/bin/condominiumd"
+# Path to asocoind executable
+#BITCOIND_BIN="/usr/bin/asocoind"
 
-# Nice value to run condominiumd under
+# Nice value to run asocoind under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

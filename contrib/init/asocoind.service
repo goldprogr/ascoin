@@ -1,19 +1,19 @@
 [Unit]
-Description=Condominium's distributed currency daemon
+Description=asocoin's distributed currency daemon
 After=network.target
 
 [Service]
-User=condominium
-Group=condominium
+User=asocoin
+Group=asocoin
 
 Type=forking
-PIDFile=/var/lib/condominiumd/condominiumd.pid
+PIDFile=/var/lib/asocoind/asocoind.pid
 
-ExecStart=/usr/bin/condominiumd -daemon -pid=/var/lib/condominiumd/condominiumd.pid \
-          -conf=/etc/condominium/condominium.conf -datadir=/var/lib/condominiumd
+ExecStart=/usr/bin/asocoind -daemon -pid=/var/lib/asocoind/asocoind.pid \
+          -conf=/etc/asocoin/asocoin.conf -datadir=/var/lib/asocoind
 
-ExecStop=-/usr/bin/condominium-cli -conf=/etc/condominium/condominium.conf \
-         -datadir=/var/lib/condominiumd stop
+ExecStop=-/usr/bin/asocoin-cli -conf=/etc/asocoin/asocoin.conf \
+         -datadir=/var/lib/asocoind stop
 
 Restart=always
 PrivateTmp=true

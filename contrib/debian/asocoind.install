@@ -1,2 +1,2 @@
-usr/local/bin/condominiumd usr/bin
-usr/local/bin/condominium-cli usr/bin
+usr/local/bin/asocoind usr/bin
+usr/local/bin/asocoin-cli usr/bin
