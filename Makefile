@@ -74,10 +74,10 @@ am__make_running_with_option = \
   test $$has_opt = yes
 am__make_dryrun = (target_option=n; $(am__make_running_with_option))
 am__make_keepgoing = (target_option=k; $(am__make_running_with_option))
-pkgdatadir = $(datadir)/condominium
-pkgincludedir = $(includedir)/condominium
-pkglibdir = $(libdir)/condominium
-pkglibexecdir = $(libexecdir)/condominium
+pkgdatadir = $(datadir)/asocoin
+pkgincludedir = $(includedir)/asocoin
+pkglibdir = $(libdir)/asocoin
+pkglibexecdir = $(libexecdir)/asocoin
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -124,7 +124,7 @@ DIST_COMMON = $(srcdir)/Makefile.am $(top_srcdir)/configure \
 am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \
  configure.lineno config.status.lineno
 mkinstalldirs = $(install_sh) -d
-CONFIG_HEADER = $(top_builddir)/src/config/condominium-config.h
+CONFIG_HEADER = $(top_builddir)/src/config/asocoin-config.h
 CONFIG_CLEAN_FILES = share/setup.nsi share/qt/Info.plist \
 	src/test/buildenv.py qa/pull-tester/run-bitcoind-for-test.sh \
 	qa/pull-tester/tests-config.sh contrib/devtools/split-debug.sh
@@ -198,7 +198,7 @@ am__DIST_COMMON = $(srcdir)/Makefile.in \
 	$(top_srcdir)/qa/pull-tester/tests-config.sh.in \
 	$(top_srcdir)/share/qt/Info.plist.in \
 	$(top_srcdir)/share/setup.nsi.in \
-	$(top_srcdir)/src/config/condominium-config.h.in \
+	$(top_srcdir)/src/config/asocoin-config.h.in \
 	$(top_srcdir)/src/test/buildenv.py.in COPYING INSTALL \
 	build-aux/compile build-aux/config.guess build-aux/config.sub \
 	build-aux/depcomp build-aux/install-sh build-aux/ltmain.sh \
@@ -244,25 +244,25 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/mini/condominium/build-aux/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/mini/asocoin/build-aux/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = /usr/bin/i686-w64-mingw32-ar
-AUTOCONF = ${SHELL} /home/mini/condominium/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /home/mini/condominium/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /home/mini/condominium/build-aux/missing automake-1.15
+AUTOCONF = ${SHELL} /home/mini/asocoin/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /home/mini/asocoin/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /home/mini/asocoin/build-aux/missing automake-1.15
 AWK = mawk
 BDB_CPPFLAGS = 
 BDB_LIBS = -ldb_cxx-4.8
-BITCOIN_CLI_NAME = condominium-cli
-BITCOIN_DAEMON_NAME = condominiumd
-BITCOIN_GUI_NAME = condominium-qt
-BITCOIN_TX_NAME = condominium-tx
+BITCOIN_CLI_NAME = asocoin-cli
+BITCOIN_DAEMON_NAME = asocoind
+BITCOIN_GUI_NAME = asocoin-qt
+BITCOIN_TX_NAME = asocoin-tx
 BOOST_CHRONO_LIB = -lboost_chrono-mt-s
-BOOST_CPPFLAGS = -mthreads -I/home/mini/condominium/depends/i686-w64-mingw32/share/../include
+BOOST_CPPFLAGS = -mthreads -I/home/mini/asocoin/depends/i686-w64-mingw32/share/../include
 BOOST_FILESYSTEM_LIB = -lboost_filesystem-mt-s
-BOOST_LDFLAGS = -L/home/mini/condominium/depends/i686-w64-mingw32/share/../lib
-BOOST_LIBS = -L/home/mini/condominium/depends/i686-w64-mingw32/share/../lib -lboost_system-mt-s -lboost_filesystem-mt-s -lboost_program_options-mt-s -lboost_thread_win32-mt-s -lboost_chrono-mt-s
+BOOST_LDFLAGS = -L/home/mini/asocoin/depends/i686-w64-mingw32/share/../lib
+BOOST_LIBS = -L/home/mini/asocoin/depends/i686-w64-mingw32/share/../lib -lboost_system-mt-s -lboost_filesystem-mt-s -lboost_program_options-mt-s -lboost_thread_win32-mt-s -lboost_chrono-mt-s
 BOOST_PROGRAM_OPTIONS_LIB = -lboost_program_options-mt-s
 BOOST_SYSTEM_LIB = -lboost_system-mt-s
 BOOST_THREAD_LIB = -lboost_thread_win32-mt-s
@@ -271,8 +271,8 @@ BREW =
 BUILD_QT = qt
 BUILD_TEST = test
 BUILD_TEST_QT = test
-CC = /home/mini/condominium/depends/i686-w64-mingw32/share/../native/bin/ccache i686-w64-mingw32-gcc
-CCACHE = /home/mini/condominium/depends/i686-w64-mingw32/share/../native/bin/ccache
+CC = /home/mini/asocoin/depends/i686-w64-mingw32/share/../native/bin/ccache i686-w64-mingw32-gcc
+CCACHE = /home/mini/asocoin/depends/i686-w64-mingw32/share/../native/bin/ccache
 CCDEPMODE = depmode=gcc3
 CFLAGS = -pipe -O2 
 CLIENT_VERSION_BUILD = 0
@@ -284,10 +284,10 @@ COMPARISON_TOOL_REORG_TESTS = 0
 COPYRIGHT_YEAR = 2017
 CPP = i686-w64-mingw32-gcc -E
 CPPFILT = /usr/bin/i686-w64-mingw32-c++filt
-CPPFLAGS = -I/home/mini/condominium/depends/i686-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -DHAVE_QT5
+CPPFLAGS = -I/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -DHAVE_QT5
 CRYPTO_CFLAGS = 
 CRYPTO_LIBS = -lcrypto
-CXX = /home/mini/condominium/depends/i686-w64-mingw32/share/../native/bin/ccache i686-w64-mingw32-g++ -std=c++11
+CXX = /home/mini/asocoin/depends/i686-w64-mingw32/share/../native/bin/ccache i686-w64-mingw32-g++ -std=c++11
 CXXCPP = i686-w64-mingw32-g++ -std=c++11 -E
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -pipe -O2 -Wno-narrowing  -Wstack-protector -fstack-protector-all -fvisibility=hidden
@@ -325,7 +325,7 @@ JAVA =
 JAVA_COMPARISON_TOOL = 
 LCOV = 
 LD = /usr/bin/i686-w64-mingw32-ld
-LDFLAGS = -L/home/mini/condominium/depends/i686-w64-mingw32/share/../lib  -Wl,--large-address-aware  -Wl,--dynamicbase -Wl,--nxcompat
+LDFLAGS = -L/home/mini/asocoin/depends/i686-w64-mingw32/share/../lib  -Wl,--large-address-aware  -Wl,--dynamicbase -Wl,--nxcompat
 LEVELDB_CPPFLAGS = 
 LEVELDB_TARGET_FLAGS = TARGET_OS=OS_WINDOWS_CROSSCOMPILE
 LIBLEVELDB = 
@@ -336,18 +336,18 @@ LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIBTOOL_APP_LDFLAGS =  -all-static
 LIPO = 
 LN_S = ln -s
-LRELEASE = /home/mini/condominium/depends/i686-w64-mingw32/share/../native/bin/lrelease
+LRELEASE = /home/mini/asocoin/depends/i686-w64-mingw32/share/../native/bin/lrelease
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
 LUPDATE = 
 MAINT = 
-MAKEINFO = ${SHELL} /home/mini/condominium/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /home/mini/asocoin/build-aux/missing makeinfo
 MAKENSIS = none
 MANIFEST_TOOL = :
 MINIUPNPC_CPPFLAGS = -DSTATICLIB -DMINIUPNP_STATICLIB
 MINIUPNPC_LIBS = -lminiupnpc
 MKDIR_P = /bin/mkdir -p
-MOC = /home/mini/condominium/depends/i686-w64-mingw32/share/../native/bin/moc
+MOC = /home/mini/asocoin/depends/i686-w64-mingw32/share/../native/bin/moc
 MOC_DEFS = -DHAVE_CONFIG_H -I$(srcdir)
 NM = i686-w64-mingw32-nm
 NMEDIT = 
@@ -359,26 +359,26 @@ OBJDUMP = i686-w64-mingw32-objdump
 OBJEXT = o
 OTOOL = 
 OTOOL64 = 
-PACKAGE = condominium
-PACKAGE_BUGREPORT = www.condominium.org
-PACKAGE_NAME = Condominium Core
-PACKAGE_STRING = Condominium Core 1.1.0
-PACKAGE_TARNAME = condominium
+PACKAGE = asocoin
+PACKAGE_BUGREPORT = www.asocoin.org
+PACKAGE_NAME = asocoin Core
+PACKAGE_STRING = asocoin Core 1.1.0
+PACKAGE_TARNAME = asocoin
 PACKAGE_URL = 
 PACKAGE_VERSION = 1.1.0
 PATH_SEPARATOR = :
 PKG_CONFIG = /usr/bin/pkg-config --static
 PKG_CONFIG_LIBDIR = 
-PKG_CONFIG_PATH = /home/mini/condominium/depends/i686-w64-mingw32/share/../share/pkgconfig:/home/mini/condominium/depends/i686-w64-mingw32/share/../lib/pkgconfig
+PKG_CONFIG_PATH = /home/mini/asocoin/depends/i686-w64-mingw32/share/../share/pkgconfig:/home/mini/asocoin/depends/i686-w64-mingw32/share/../lib/pkgconfig
 PORT = 
 PROTOBUF_CFLAGS = 
 PROTOBUF_LIBS = -lprotobuf
-PROTOC = /home/mini/condominium/depends/i686-w64-mingw32/share/../native/bin/protoc
+PROTOC = /home/mini/asocoin/depends/i686-w64-mingw32/share/../native/bin/protoc
 PTHREAD_CC = i686-w64-mingw32-gcc
 PTHREAD_CFLAGS = -pthread
 PTHREAD_LIBS = 
 PYTHON = /usr/bin/python3
-PYTHONPATH = /home/mini/condominium/depends/i686-w64-mingw32/share/../native/lib/python/dist-packages:
+PYTHONPATH = /home/mini/asocoin/depends/i686-w64-mingw32/share/../native/lib/python/dist-packages:
 QR_CFLAGS = 
 QR_LIBS = -lqrencode
 QTPLATFORM_CFLAGS = 
@@ -390,18 +390,18 @@ QTXCBQPA_LIBS =
 QT_CFLAGS = 
 QT_DBUS_CFLAGS = 
 QT_DBUS_INCLUDES = 
-QT_DBUS_LIBS = -lQt5DBus -L/home/mini/condominium/depends/i686-w64-mingw32/share/../lib
-QT_INCLUDES = -I/home/mini/condominium/depends/i686-w64-mingw32/share/../include -I/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtCore -I/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtGui -I/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtWidgets -I/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtNetwork -I/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtTest -I/home/mini/condominium/depends/i686-w64-mingw32/share/../include/QtDBus
+QT_DBUS_LIBS = -lQt5DBus -L/home/mini/asocoin/depends/i686-w64-mingw32/share/../lib
+QT_INCLUDES = -I/home/mini/asocoin/depends/i686-w64-mingw32/share/../include -I/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtCore -I/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtGui -I/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtWidgets -I/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtNetwork -I/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtTest -I/home/mini/asocoin/depends/i686-w64-mingw32/share/../include/QtDBus
 QT_LDFLAGS =  -mwindows
-QT_LIBS = -lqwindows -lQt5Widgets -lQt5Network -lQt5Gui     -lQt5Core    -lqtharfbuzzng -lqtpcre -lqtpng -lz  -limm32  -L/home/mini/condominium/depends/i686-w64-mingw32/share/../lib -L/home/mini/condominium/depends/i686-w64-mingw32/share/../plugins/platforms
+QT_LIBS = -lqwindows -lQt5Widgets -lQt5Network -lQt5Gui     -lQt5Core    -lqtharfbuzzng -lqtpcre -lqtpng -lz  -limm32  -L/home/mini/asocoin/depends/i686-w64-mingw32/share/../lib -L/home/mini/asocoin/depends/i686-w64-mingw32/share/../plugins/platforms
 QT_PIE_FLAGS = 
 QT_SELECT = qt5
 QT_TEST_CFLAGS = 
 QT_TEST_INCLUDES = 
-QT_TEST_LIBS = -lQt5Test -L/home/mini/condominium/depends/i686-w64-mingw32/share/../lib
-QT_TRANSLATION_DIR = /home/mini/condominium/depends/i686-w64-mingw32/share/../translations
+QT_TEST_LIBS = -lQt5Test -L/home/mini/asocoin/depends/i686-w64-mingw32/share/../lib
+QT_TRANSLATION_DIR = /home/mini/asocoin/depends/i686-w64-mingw32/share/../translations
 RANLIB = /usr/bin/i686-w64-mingw32-ranlib
-RCC = /home/mini/condominium/depends/i686-w64-mingw32/share/../native/bin/rcc
+RCC = /home/mini/asocoin/depends/i686-w64-mingw32/share/../native/bin/rcc
 READELF = /usr/bin/i686-w64-mingw32-readelf
 RELDFLAGS = -Wl,--exclude-libs,ALL
 RSVG_CONVERT = 
@@ -413,7 +413,7 @@ SSL_LIBS = -lssl
 STRIP = /usr/bin/i686-w64-mingw32-strip
 TESTDEFS = 
 TIFFCP = 
-UIC = /home/mini/condominium/depends/i686-w64-mingw32/share/../native/bin/uic
+UIC = /home/mini/asocoin/depends/i686-w64-mingw32/share/../native/bin/uic
 USE_QRCODE = 
 USE_UPNP = 
 VERSION = 1.1.0
@@ -424,10 +424,10 @@ X11XCB_LIBS =
 XGETTEXT = /usr/bin/xgettext
 ZMQ_CFLAGS =  -DZMQ_STATIC
 ZMQ_LIBS = -lzmq
-abs_builddir = /home/mini/condominium
-abs_srcdir = /home/mini/condominium
-abs_top_builddir = /home/mini/condominium
-abs_top_srcdir = /home/mini/condominium
+abs_builddir = /home/mini/asocoin
+abs_srcdir = /home/mini/asocoin
+abs_top_builddir = /home/mini/asocoin
+abs_top_srcdir = /home/mini/asocoin
 ac_ct_AR = 
 ac_ct_CC = 
 ac_ct_CXX = 
@@ -459,7 +459,7 @@ host_vendor = w64
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/mini/condominium/build-aux/install-sh
+install_sh = ${SHELL} /home/mini/asocoin/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -468,7 +468,7 @@ mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /home/mini/condominium/depends/i686-w64-mingw32
+prefix = /home/mini/asocoin/depends/i686-w64-mingw32
 program_transform_name = s,x,x,
 psdir = ${docdir}
 runstatedir = ${localstatedir}/run
@@ -490,7 +490,7 @@ BITCOIN_CLI_BIN = $(top_builddir)/src/$(BITCOIN_CLI_NAME)$(EXEEXT)
 BITCOIN_WIN_INSTALLER = $(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
 empty := 
 space := $(empty) $(empty)
-OSX_APP = CONDOMINIUM-Qt.app
+OSX_APP = asocoin-Qt.app
 OSX_VOLNAME = $(subst $(space),-,$(PACKAGE_NAME))
 OSX_DMG = $(OSX_VOLNAME).dmg
 OSX_BACKGROUND_SVG = background.svg
@@ -515,13 +515,13 @@ OSX_PACKAGING = $(OSX_DEPLOY_SCRIPT) $(OSX_FANCY_PLIST) $(OSX_INSTALLER_ICONS) \
   $(top_srcdir)/contrib/macdeploy/detached-sig-create.sh
 
 COVERAGE_INFO = baseline_filtered_combined.info baseline.info block_test.info \
-  leveldb_baseline.info test_condominium_filtered.info total_coverage.info \
+  leveldb_baseline.info test_asocoin_filtered.info total_coverage.info \
   baseline_filtered.info block_test_filtered.info \
-  leveldb_baseline_filtered.info test_condominium_coverage.info test_condominium.info
+  leveldb_baseline_filtered.info test_asocoin_coverage.info test_asocoin.info
 
 OSX_APP_BUILT = $(OSX_APP)/Contents/PkgInfo $(OSX_APP)/Contents/Resources/empty.lproj \
   $(OSX_APP)/Contents/Resources/bitcoin.icns $(OSX_APP)/Contents/Info.plist \
-  $(OSX_APP)/Contents/MacOS/CONDOMINIUM-Qt $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings
+  $(OSX_APP)/Contents/MacOS/asocoin-Qt $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings
 
 APP_DIST_DIR = $(top_builddir)/dist
 APP_DIST_EXTRAS = $(APP_DIST_DIR)/.background/$(OSX_BACKGROUND_IMAGE) $(APP_DIST_DIR)/.DS_Store $(APP_DIST_DIR)/Applications
@@ -566,20 +566,20 @@ $(ACLOCAL_M4):  $(am__aclocal_m4_deps)
 	$(am__cd) $(srcdir) && $(ACLOCAL) $(ACLOCAL_AMFLAGS)
 $(am__aclocal_m4_deps):
 
-src/config/condominium-config.h: src/config/stamp-h1
+src/config/asocoin-config.h: src/config/stamp-h1
 	@test -f $@ || rm -f src/config/stamp-h1
 	@test -f $@ || $(MAKE) $(AM_MAKEFLAGS) src/config/stamp-h1
 
-src/config/stamp-h1: $(top_srcdir)/src/config/condominium-config.h.in $(top_builddir)/config.status
+src/config/stamp-h1: $(top_srcdir)/src/config/asocoin-config.h.in $(top_builddir)/config.status
 	@rm -f src/config/stamp-h1
-	cd $(top_builddir) && $(SHELL) ./config.status src/config/condominium-config.h
-$(top_srcdir)/src/config/condominium-config.h.in:  $(am__configure_deps) 
+	cd $(top_builddir) && $(SHELL) ./config.status src/config/asocoin-config.h
+$(top_srcdir)/src/config/asocoin-config.h.in:  $(am__configure_deps) 
 	($(am__cd) $(top_srcdir) && $(AUTOHEADER))
 	rm -f src/config/stamp-h1
 	touch $@
 
 distclean-hdr:
-	-rm -f src/config/condominium-config.h src/config/stamp-h1
+	-rm -f src/config/asocoin-config.h src/config/stamp-h1
 share/setup.nsi: $(top_builddir)/config.status $(top_srcdir)/share/setup.nsi.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
 share/qt/Info.plist: $(top_builddir)/config.status $(top_srcdir)/share/qt/Info.plist.in
@@ -1059,7 +1059,7 @@ $(OSX_APP)/Contents/Resources/bitcoin.icns: $(OSX_INSTALLER_ICONS)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
-$(OSX_APP)/Contents/MacOS/CONDOMINIUM-Qt: $(BITCOIN_QT_BIN)
+$(OSX_APP)/Contents/MacOS/asocoin-Qt: $(BITCOIN_QT_BIN)
 	$(MKDIR_P) $(@D)
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $< $@
 
@@ -1086,7 +1086,7 @@ $(APP_DIST_DIR)/Applications:
 	@rm -f $@
 	@cd $(@D); $(LN_S) /Applications $(@F)
 
-$(APP_DIST_EXTRAS): $(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/CONDOMINIUM-Qt
+$(APP_DIST_EXTRAS): $(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/asocoin-Qt
 
 $(OSX_DMG): $(APP_DIST_EXTRAS)
 	$(GENISOIMAGE) -no-cache-inodes -D -l -probe -V "$(OSX_VOLNAME)" -no-pad -r -dir-mode 0755 -apple -o $@ dist
@@ -1100,7 +1100,7 @@ $(APP_DIST_DIR)/.background/$(OSX_BACKGROUND_IMAGE): $(OSX_BACKGROUND_IMAGE_DPIF
 $(APP_DIST_DIR)/.DS_Store: $(OSX_DSSTORE_GEN)
 	$(PYTHON) $< "$@" "$(OSX_VOLNAME)"
 
-$(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/CONDOMINIUM-Qt: $(OSX_APP_BUILT) $(OSX_PACKAGING)
+$(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/asocoin-Qt: $(OSX_APP_BUILT) $(OSX_PACKAGING)
 	INSTALLNAMETOOL=$(INSTALLNAMETOOL)  OTOOL=$(OTOOL) STRIP=$(STRIP) $(PYTHON) $(OSX_DEPLOY_SCRIPT) $(OSX_APP) -translations-dir=$(QT_TRANSLATION_DIR) -add-qt-tr $(OSX_QT_TRANSLATIONS) -verbose 2
 
 deploydir: $(APP_DIST_EXTRAS)
@@ -1133,16 +1133,16 @@ $(BITCOIN_CLI_BIN): FORCE
 #baseline_filtered_combined.info: leveldb_baseline_filtered.info baseline_filtered.info
 #	$(LCOV) -a leveldb_baseline_filtered.info -a baseline_filtered.info -o $@
 
-#test_condominium.info: baseline_filtered_combined.info
+#test_asocoin.info: baseline_filtered_combined.info
 #	$(MAKE) -C src/ check
-#	$(LCOV) -c -d $(abs_builddir)/src -t test_condominium -o $@
+#	$(LCOV) -c -d $(abs_builddir)/src -t test_asocoin -o $@
 #	$(LCOV) -z -d $(abs_builddir)/src
 #	$(LCOV) -z -d $(abs_builddir)/src/leveldb
 
-#test_condominium_filtered.info: test_condominium.info
+#test_asocoin_filtered.info: test_asocoin.info
 #	$(LCOV) -r $< "/usr/include/*" -o $@
 
-#block_test.info: test_condominium_filtered.info
+#block_test.info: test_asocoin_filtered.info
 #	$(MKDIR_P) qa/tmp
 #	-@TIMEOUT=15 qa/pull-tester/run-bitcoind-for-test.sh $(JAVA) -jar $(JAVA_COMPARISON_TOOL) qa/tmp/compTool 0
 #	$(LCOV) -c -d $(abs_builddir)/src --t BitcoinJBlockTest -o $@
@@ -1152,13 +1152,13 @@ $(BITCOIN_CLI_BIN): FORCE
 #block_test_filtered.info: block_test.info
 #	$(LCOV) -r $< "/usr/include/*" -o $@
 
-#test_condominium_coverage.info: baseline_filtered_combined.info test_condominium_filtered.info
-#	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_condominium_filtered.info -o $@
+#test_asocoin_coverage.info: baseline_filtered_combined.info test_asocoin_filtered.info
+#	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_asocoin_filtered.info -o $@
 
-#total_coverage.info:  baseline_filtered_combined.info test_condominium_filtered.info block_test_filtered.info
-#	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_condominium_filtered.info -a block_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
+#total_coverage.info:  baseline_filtered_combined.info test_asocoin_filtered.info block_test_filtered.info
+#	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_asocoin_filtered.info -a block_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
 
-#test_condominium.coverage/.dirstamp:  test_condominium_coverage.info
+#test_asocoin.coverage/.dirstamp:  test_asocoin_coverage.info
 #	$(GENHTML) -s $< -o $(@D)
 #	@touch $@
 
@@ -1166,12 +1166,12 @@ $(BITCOIN_CLI_BIN): FORCE
 #	$(GENHTML) -s $< -o $(@D)
 #	@touch $@
 
-#cov: test_condominium.coverage/.dirstamp total.coverage/.dirstamp
+#cov: test_asocoin.coverage/.dirstamp total.coverage/.dirstamp
 
 .INTERMEDIATE: $(COVERAGE_INFO)
 
 clean-local:
-	rm -rf test_condominium.coverage/ total.coverage/ $(OSX_APP)
+	rm -rf test_asocoin.coverage/ total.coverage/ $(OSX_APP)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
